@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox prefHeight="377.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="376.0" prefWidth="343.0">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;">
+                     <children>
+                        <Canvas fx:id="canvas" height="186.0" width="343.0" />
+                     </children></Pane>
+                  <ScrollPane style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="327.0" />
+                    </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="376.0" prefWidth="257.0">
+               <children>
+                  <Pane prefHeight="296.0" prefWidth="343.0" style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" />
+                  <ScrollPane style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="438.0" prefWidth="243.0">
+                           <children>
+                              <ListView fx:id="listView" prefHeight="245.0" prefWidth="244.0" />
+                           </children></AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
