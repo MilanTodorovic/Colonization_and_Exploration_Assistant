@@ -27,7 +27,7 @@ public class Main extends Application {
 
         primaryStage.setTitle("Colonization and Exploration Assistant v0.1");
 
-        Scene mainScene = new Scene(root, 300, 300);
+        Scene mainScene = new Scene(root, 640, 400);
 
         primaryStage.setScene(mainScene);
         primaryStage.show();

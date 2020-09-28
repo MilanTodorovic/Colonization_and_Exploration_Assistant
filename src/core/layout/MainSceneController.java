@@ -9,6 +9,7 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 
 import java.net.URL;
@@ -18,9 +19,25 @@ import java.util.ResourceBundle;
 public class MainSceneController implements Initializable {
 
     @FXML
-    public AnchorPane parentPane;
+    public VBox leftVBox;
+    @FXML
+    public AnchorPane mapAnchorPane;
+    @FXML
+    public ScrollPane systemScrollPane;
+    @FXML
+    public AnchorPane systemPane;
+
+    @FXML
+    public VBox rightVBox;
+    @FXML
+    public Pane filterPane; //TODO mozda FlowPane?
+    @FXML
+    public ScrollPane tableScrollPane;
     @FXML
     public TableView tableView;
+
+    // TODO uzeti velicinu prozora i uraditi podelu pa dodeliti prozorima kao maxWidth/height
+    //  prozor A zauzima 2/3, prozor B 1/3, prozor C ...
 
     public static class ResizableCanvas extends Canvas{
 
