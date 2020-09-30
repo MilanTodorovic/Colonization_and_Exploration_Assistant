@@ -1,0 +1,16 @@
+{
+  "starsector_location": "Path",
+  "save_location": "Path",
+  "notes": {
+    "savefile": {
+      "location": "Path",
+      "system": {
+        "name": ""
+      },
+      "planet": {
+        "name": ""
+      }
+    }
+
+  }
+}
