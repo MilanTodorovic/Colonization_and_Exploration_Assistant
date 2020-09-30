@@ -16,30 +16,37 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 
+// TODO https://gist.github.com/jewelsea/5603471
+//	https://stackoverflow.com/questions/16606162/javafx-fullscreen-resizing-elements-based-upon-screen-size
+//	https://stackoverflow.com/questions/38216268/how-to-listen-resize-event-of-stage-in-javafx
+
 public class MainSceneController implements Initializable {
 
     @FXML
-    public VBox leftVBox;
-    @FXML
-    public AnchorPane mapAnchorPane;
-    @FXML
-    public ScrollPane systemScrollPane;
-    @FXML
-    public AnchorPane systemPane;
+    public MenuBarController menuBarController;  // TODO change to "private"
 
     @FXML
-    public VBox rightVBox;
+    private VBox leftVBox;
     @FXML
-    public Pane filterPane; //TODO mozda FlowPane?
+    private AnchorPane mapAnchorPane;
     @FXML
-    public ScrollPane tableScrollPane;
+    private ScrollPane systemScrollPane;
     @FXML
-    public TableView tableView;
+    private AnchorPane systemPane;
+
+    @FXML
+    private VBox rightVBox;
+    @FXML
+    private Pane filterPane; //TODO maybe FlowPane?
+    @FXML
+    private ScrollPane tableScrollPane;
+    @FXML
+    private TableView tableView;
 
     // TODO uzeti velicinu prozora i uraditi podelu pa dodeliti prozorima kao maxWidth/height
     //  prozor A zauzima 2/3, prozor B 1/3, prozor C ...
 
-    public static class ResizableCanvas extends Canvas{
+    private static class ResizableCanvas extends Canvas{
 
         public ResizableCanvas(double width, double height) {
 
@@ -66,7 +73,7 @@ public class MainSceneController implements Initializable {
         }
     }
 
-    public ResizableCanvas canvas = new ResizableCanvas(200.0f, 200.0f);
+    private ResizableCanvas canvas = new ResizableCanvas(200.0f, 200.0f);
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

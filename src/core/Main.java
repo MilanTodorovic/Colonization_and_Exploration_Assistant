@@ -15,7 +15,17 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.WatchEvent;
+
 public class Main extends Application {
+
+    private static final String version = "v0.1";
+    // TODO make 2 more controllers for each VBox
+    //  make one or more event listeners for clicks and selections (clicks on Nodes or toggles)
+
+    // TODO maybe make separate JSON files for each save file for notes
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -23,9 +33,12 @@ public class Main extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource("layout/mainScene.fxml"));
         Parent root = fxmlLoader.load();
-        MainSceneController controller = fxmlLoader.getController();
+        // TODO make a constructor in the Controller and pass a reference to the stage to call an alert window after an event
+        MainSceneController controller = (MainSceneController) fxmlLoader.getController();
+        controller.menuBarController.setRoot(primaryStage);
 
-        primaryStage.setTitle("Colonization and Exploration Assistant v0.1");
+        // TODO add name of the save file to the title
+        primaryStage.setTitle("Colonization and Exploration Assistant "+version);
 
         Scene mainScene = new Scene(root, 640, 400);
 

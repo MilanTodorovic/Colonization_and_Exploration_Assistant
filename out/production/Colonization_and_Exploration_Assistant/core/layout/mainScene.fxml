@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox minHeight="400.0" minWidth="640.0" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.layout.MainSceneController">
+   <children>
+      <MenuBar minHeight="24.0" minWidth="640.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox minHeight="376.0" minWidth="640.0" prefHeight="376.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox minHeight="376.0" minWidth="383.0" prefHeight="376.0" prefWidth="383.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <AnchorPane fx:id="parentPane" prefHeight="282.0" prefWidth="343.0" style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" VBox.vgrow="ALWAYS">
+                  </AnchorPane>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" minHeight="83.0" minWidth="383.0" prefHeight="83.0" prefWidth="383.0" style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" VBox.vgrow="ALWAYS">
+                    <content>
+                      <AnchorPane maxHeight="150.0" minHeight="82.0" minWidth="379.0" prefHeight="82.0" prefWidth="339.0" />
+                    </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <VBox minHeight="376.0" minWidth="257.0" prefHeight="376.0" prefWidth="257.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <Pane minHeight="115.0" minWidth="257.0" prefHeight="115.0" prefWidth="257.0" style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" VBox.vgrow="SOMETIMES" />
+                  <ScrollPane fitToHeight="true" fitToWidth="true" minHeight="261.0" minWidth="257.0" style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" VBox.vgrow="ALWAYS">
+                     <content>
+                        <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

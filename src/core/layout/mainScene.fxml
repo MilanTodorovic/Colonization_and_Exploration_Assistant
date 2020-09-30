@@ -5,17 +5,7 @@
 
 <VBox minHeight="400.0" minWidth="640.0" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1"
       xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.layout.MainSceneController">
-    <MenuBar minHeight="24.0" minWidth="640.0">
-        <Menu mnemonicParsing="false" text="File">
-            <MenuItem mnemonicParsing="false" text="Close"/>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Edit">
-            <MenuItem mnemonicParsing="false" text="Delete"/>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Help">
-            <MenuItem mnemonicParsing="false" text="About"/>
-        </Menu>
-    </MenuBar>
+    <fx:include fx:id="menuBar" source="menuBar.fxml"/>
     <HBox minHeight="376.0" minWidth="640.0" prefHeight="376.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
         <VBox fx:id="leftVBox" minHeight="376.0" minWidth="383.0" prefHeight="376.0" prefWidth="383.0"
               HBox.hgrow="ALWAYS">
