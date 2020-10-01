@@ -54,10 +54,6 @@ public class ListenForSaveUpdate extends ScheduledService<List<WatchEvent<Path>>
     private final Map<WatchKey,Path> keys;
     private boolean trace = false;
 
-    // TODO don't forget to change these two
-    private final String queue = "";
-    private final String saveFileName = "";
-
 
     @SuppressWarnings("unchecked")
     static <T> WatchEvent<T> cast(WatchEvent<?> event) {
@@ -70,8 +66,6 @@ public class ListenForSaveUpdate extends ScheduledService<List<WatchEvent<Path>>
     public ListenForSaveUpdate(Path dir) throws IOException {
         this.watcher = FileSystems.getDefault().newWatchService();
         this.keys = new HashMap<WatchKey,Path>();
-
-        //Path _dir = Paths.get(dir); TODO if the file explorer returns a string, else ignore
 
         register(dir);
 
@@ -108,7 +102,7 @@ public class ListenForSaveUpdate extends ScheduledService<List<WatchEvent<Path>>
      */
     class WatchTask extends Task<List<WatchEvent<Path>>> {
         @Override
-        protected List<WatchEvent<Path>> call() {
+        protected List<WatchEvent<Path>> call() throws InterruptedException {
             // wait for key to be signalled
             WatchKey key;
             try {
@@ -126,6 +120,8 @@ public class ListenForSaveUpdate extends ScheduledService<List<WatchEvent<Path>>
                 System.err.println("WatchKey not recognized");
                 return Collections.emptyList();
             }
+
+            // Thread.sleep(50); // used to prevent showing duplicate events
 
             List<WatchEvent<Path>> interestingEvents = new ArrayList<>();
             for (WatchEvent<?> event: key.pollEvents()) {
