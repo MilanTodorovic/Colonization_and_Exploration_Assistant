@@ -6,9 +6,12 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="core.layout.SystemViewController"
-            prefHeight="400.0" prefWidth="600.0">
+<ScrollPane fx:id="systemScrollPane" fitToHeight="true" fitToWidth="true" maxHeight="150.0"
+            minHeight="83.0" minWidth="383.0" prefHeight="83.0" prefWidth="383.0"
+            style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;"
+            VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1">
     <Label text="System view"/>
-</AnchorPane>
+    <AnchorPane fx:id="systemPane" maxHeight="150.0" minHeight="82.0" minWidth="379.0"
+            prefHeight="82.0" prefWidth="339.0"/>
+</ScrollPane>

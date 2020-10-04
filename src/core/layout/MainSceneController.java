@@ -24,6 +24,11 @@ public class MainSceneController implements Initializable {
 
     @FXML
     public MenuBarController menuBarController;  // TODO change to "private"
+    @FXML
+    public MapViewController mapAnchorPaneController;
+    @FXML
+    public SystemViewController systemScrollPaneController;
+
 
     @FXML
     private VBox leftVBox;
@@ -31,17 +36,15 @@ public class MainSceneController implements Initializable {
     private AnchorPane mapAnchorPane;
     @FXML
     private ScrollPane systemScrollPane;
-    @FXML
-    private AnchorPane systemPane;
+
 
     @FXML
     private VBox rightVBox;
     @FXML
-    private Pane filterPane; //TODO maybe FlowPane?
+    private AnchorPane filterAnchorPane; //TODO maybe FlowPane?
     @FXML
-    private ScrollPane tableScrollPane;
-    @FXML
-    private TableView tableView;
+    private ScrollPane planetScrollPane;
+
 
     // TODO uzeti velicinu prozora i uraditi podelu pa dodeliti prozorima kao maxWidth/height
     //  prozor A zauzima 2/3, prozor B 1/3, prozor C ...
@@ -78,19 +81,11 @@ public class MainSceneController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-
 //        parentPane.getChildren().add(canvas);
 //
 //        // Bind the width/height property to the wrapper Pane
 //        canvas.widthProperty().bind(parentPane.widthProperty());
 //        canvas.heightProperty().bind(parentPane.heightProperty());
-
-
-//        AnchorPane.setBottomAnchor(canvas , 8.0);
-//        AnchorPane.setRightAnchor(canvas , 5.0);
-//        AnchorPane.setTopAnchor(canvas , 8.0);
-//        AnchorPane.setLeftAnchor(canvas , 5.0);
-
 
     }
 }

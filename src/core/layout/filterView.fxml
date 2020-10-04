@@ -6,10 +6,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="core.layout.FilterViewController"
-            prefHeight="400.0" prefWidth="600.0">
+            fx:id="filterAnchorPane" minHeight="115.0" minWidth="257.0" prefHeight="115.0" prefWidth="257.0"
+            style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;"
+            VBox.vgrow="SOMETIMES">
 
     <fx:define>
         <ToggleGroup fx:id="toggleGroup"/>

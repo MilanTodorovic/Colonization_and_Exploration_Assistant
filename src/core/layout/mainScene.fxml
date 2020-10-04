@@ -9,34 +9,13 @@
     <HBox minHeight="376.0" minWidth="640.0" prefHeight="376.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
         <VBox fx:id="leftVBox" minHeight="376.0" minWidth="383.0" prefHeight="376.0" prefWidth="383.0"
               HBox.hgrow="ALWAYS">
-            <AnchorPane fx:id="mapAnchorPane" prefHeight="282.0" prefWidth="343.0"
-                        style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;"
-                        VBox.vgrow="ALWAYS">
-            </AnchorPane>
-            <ScrollPane fx:id="systemScrollPane" fitToHeight="true" fitToWidth="true" maxHeight="150.0"
-                        minHeight="83.0" minWidth="383.0" prefHeight="83.0" prefWidth="383.0"
-                        style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;"
-                        VBox.vgrow="ALWAYS">
-                <AnchorPane fx:id="systemPane" maxHeight="150.0" minHeight="82.0" minWidth="379.0"
-                            prefHeight="82.0" prefWidth="339.0"/>
-            </ScrollPane>
+            <fx:include fx:id="mapAnchorPane" source="mapView.fxml"/>
+            <fx:include fx:id="systemScrollPane" source="systemView.fxml"/>
         </VBox>
         <VBox fx:id="rightVBox" minHeight="376.0" minWidth="257.0" prefHeight="376.0" prefWidth="257.0"
               HBox.hgrow="SOMETIMES">
-            <Pane fx:id="filterPane" minHeight="115.0" minWidth="257.0" prefHeight="115.0" prefWidth="257.0"
-                  style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;"
-                  VBox.vgrow="SOMETIMES"/>
-            <ScrollPane fx:id="tableScrollPane" fitToHeight="true" fitToWidth="true" minHeight="261.0"
-                        minWidth="257.0"
-                        style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;"
-                        VBox.vgrow="ALWAYS">
-                <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
-                    <columns>
-                        <TableColumn prefWidth="75.0" text="C1"/>
-                        <TableColumn prefWidth="75.0" text="C2"/>
-                    </columns>
-                </TableView>
-            </ScrollPane>
+            <fx:include fx:id="filterAnchorPane" source="filterView.fxml"/>
+            <fx:include fx:id="planetScrollPane" source="planetView.fxml"/>
         </VBox>
     </HBox>
 </VBox>

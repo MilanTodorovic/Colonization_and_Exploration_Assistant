@@ -6,10 +6,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.canvas.Canvas?>
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="core.layout.MapViewController"
-            prefHeight="400.0" prefWidth="600.0">
-    <Label text="Map view"/>
+            fx:id="mapAnchorPane" prefHeight="282.0" prefWidth="343.0"
+            style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;"
+            VBox.vgrow="ALWAYS" >
+    <Label fx:id="canvasLabel" text="Map view" />
+    <Canvas fx:id="canvas" />
 </AnchorPane>

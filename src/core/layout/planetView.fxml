@@ -6,9 +6,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="core.layout.PlanetViewController"
-            prefHeight="400.0" prefWidth="600.0">
 
-</AnchorPane>
+<ScrollPane fx:id="planetScrollPane" fitToHeight="true" fitToWidth="true" minHeight="261.0"
+            minWidth="257.0" fx:controller="core.layout.PlanetViewController"
+            style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;"
+            VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+            <TableColumn prefWidth="75.0" text="C1"/>
+            <TableColumn prefWidth="75.0" text="C2"/>
+        </columns>
+    </TableView>
+</ScrollPane>
