@@ -3,6 +3,7 @@ package core.data;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -35,7 +36,10 @@ import core.data.CelestialBodies.*;
 // https://howtodoinjava.com/java/xml/read-xml-dom-parser-example/  OVO JE KORISNO
 
 // TODO make it a separate thread with a loading bar
+// TODO parse also the description xml file before this?
 // TODO go through every planets.json file and extract all the types and jpegs
+
+// TODO currently adapted only for normal saves, check nexerlin and varayas
 
 public final class ParseSaveFileXML extends Thread {
 
@@ -66,19 +70,7 @@ public final class ParseSaveFileXML extends Thread {
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 		doc = dBuilder.parse(fXmlFile);
-		doc.getDocumentElement().normalize();
-
-		//returns specific attribute
-		getAttribute("attributeName").getValue();
-
-		//returns a list of subelements of specified name
-		getChildren("subelementName").getText(); 
-
-		//returns a list of all child nodes
-		getChildren(); 
-
-		//returns first child node
-		getChild("subelementName"); 
+		doc.getDocumentElement().normalize(); // TODO check if it is performance intensive for larger files
 		
 	}
 
@@ -98,32 +90,19 @@ public final class ParseSaveFileXML extends Thread {
 
 
 	private void handleTheMess() {
-		// In Nexerlin LocationTokens can reffer to jumppoints within other tags, check vanilla
+		// In Nexerlin LocationTokens can refer to jumppoints within other tags, check vanilla
 
 		// everything is a lie. we have to search for the tag that contains all the data. doesnt have to be the first tag.
 		// search for <economy><stepper><econ><markets><Market>
 
 		Element rootNode = doc.getDocumentElement();
-		Element tagO = (Element) rootNode.getFirstChild().getFirstChild();
-		Element saved = (Element) tagO.getElementsByTagName("saved").item(0);
+		Element o = (Element) rootNode.getFirstChild().getFirstChild(); // <hyperspace><o>
+		Element saved = (Element) o.getElementsByTagName("saved").item(0);
 
 		NodeList allChildrenOfSaved = saved.getChildNodes();
 
-		for (int i=0; i < allChildrenOfSaved.getLength(); i++){
-			Element n = (Element) allChildrenOfSaved.item(i);
-			String name = n.getNodeName();
-			switch(name){
-				case "NGW": {
-					continue;
-				}
-				case "LokationToken":{
-					this.parseLocationToken(n);
-				}
-				case "JumpPoint":{
-					this.parseJumpPoint(n);
-				}
-			}
-		}
+		// parses all child tags: LocationToken, Plnt and so on
+		parseEachChildNode(allChildrenOfSaved);
 
 
 		// after that search for the first tage to contain <primaryEntry><orbit><f> with children
@@ -182,21 +161,71 @@ public final class ParseSaveFileXML extends Thread {
 			long a = Long.parseLong(node.getAttribute("ref"));
 		} else {
 			long a = Long.parseLong(node.getAttribute("z"));
+			// get <loc> tag
+			NodeList nList = node.getElementsByTagName("loc");
+			float[] location = parseLocTag(nList);
+			// walk the tree and find specific children
+			Element orbit = (Element) node.getElementsByTagName("orbit").item(0);
+			Element s = (Element) orbit.getElementsByTagName("s").item(0);
+			Element o = (Element) s.getElementsByTagName("o").item(0);
+			Element saved = (Element) o.getElementsByTagName("saved").item(0);
+
+			NodeList allChildrenOfSaved = saved.getChildNodes();
+
+			// contains all the elements of a star system: planets, debris fields, entities etc.
+			parseEachChildNode(allChildrenOfSaved);
+
+		}
+	}
+
+	// TODO don't return, but append to a List<Object> to the parent tag
+	// 	check if it is doable even with the major nested tags
+	private Plnt parsePlnt(Element node) {
+		// <j0>{"f6":0,"f0":"Pontus","f2":[255,220,190,255],"f4":"pontus"}</j0>
+		// <orbit><f> refers to the body it orbits (star or other planet)
+		// if it doesnt contain <orbit> then it is a star
+		// don't get <loc>, loc refers to the location within the star system
+		// take care of <market>: a normal Planet never has <economy><stepper>... under market
+
+		Plnt planet = new Plnt();
+
+		Element j0 = (Element) node.getElementsByTagName("j0").item(0);
+
+		NodeList orbit = node.getElementsByTagName("obit");
+		if (orbit.getLength() > 0) {
+			Element orb = (Element) orbit.item(0);
+			Element f = (Element) orb.getElementsByTagName("f").item(0);
+			// TODO store parent id
+			int parent = Integer.parseInt(f.getAttribute("ref"));
 		}
 
-		// TODO if the locationtoken carries all the info, performa check
+		Element tags = (Element) node.getElementsByTagName("tags").item(0); // check if <st>star<st>
 
-		this.parsePlnt(node);
-		this.parseJumpPoint(node);
-		this.parseCCEnt(node);
+		Element market = (Element) node.getElementsByTagName("market").item(0);
+
+		Element economy = (Element) market.getElementsByTagName("economy").item(0);
+
+		// stepper econ markets can occur multiple times, but they stay empty
+		NodeList stepper = market.getElementsByTagName("stepper");
+		if (stepper.getLength() > 0) {
+			Element step = (Element) stepper.item(0);
+			Element econ = (Element) step.getElementsByTagName("econ").item(0);
+			Element markets = (Element) econ.getElementsByTagName("markets").item(0);
+			NodeList uppercaseMarket = markets.getElementsByTagName("Market");
+			if (uppercaseMarket.getLength() > 0) {
+				// TODO parse every <Market>
+				for (int i=0; i<uppercaseMarket.getLength(); i++) {
+					Element uMarket = (Element) uppercaseMarket.item(i);
+					this.parseUppercaseMarket(uMarket);
+				}
+			}
+		}
+
+
+		return planet;
 	}
 	
-	private void parsePlnt(Element node) {
-		// if Plnt tag says planet, don't get <loc>
-		// take care of <market>
-	}
-	
-	private void parseCCEnt(Element node) {
+	private CCEnt parseCCEnt(Element node) {
 		// <j0> f0 is the name, getText and then extract f0 as json; f3: type
 		// <orbit><f> what planet/star it orbits, get ref
 		// <cL> starsystem, <ls> star, get ref
@@ -204,17 +233,113 @@ public final class ParseSaveFileXML extends Thread {
 		
 		// many more objects are under this tag. scrape anyway and just dont show?
 		// scrape nexerlin and other folders for CCEnt data?
-		
+		CCEnt entity = new CCEnt();
+
+		return entity;
 	}
 
-	private void parseJumpPoint(Element node) {
-		
+	private JumpPoint parseJumpPoint(Element node) {
+
+		JumpPoint jmp = new JumpPoint();
+
+		if (node.hasAttribute("ref")){
+			long a = Long.parseLong(node.getAttribute("ref"));
+		} else {
+			long a = Long.parseLong(node.getAttribute("z"));
+			// get <loc> tag
+			NodeList nList = node.getElementsByTagName("loc");
+			float[] location = parseLocTag(nList);
+		}
+
+		return jmp;
 	}
 	
-	private void parseCampaignTerrain(Element node) {
+	private CampaignTerrain parseCampaignTerrain(Element node) {
 		// can contain debris field
 		// get attribute type from tag "debris_field"
 		// has <orbit>, <cL>, <ls> tag, take a look at it
+
+		CampaignTerrain cmp = new CampaignTerrain();
+
+		return cmp;
+	}
+
+	private float[] parseLocTag(NodeList nList){
+		float[] location = new float[2];
+
+		if (nList.getLength() > 0){ // 123.4|123.4
+			String[] _loc = nList.item(0).getTextContent().split("|",1);
+			for (int i=0; i < _loc.length; i++) {
+				location[i] = Float.parseFloat(_loc[i]);
+			}
+		}
+
+		return location;
+	}
+
+	private void parseEachChildNode(NodeList allChildrenOfSaved){
+
+		for (int i=0; i < allChildrenOfSaved.getLength(); i++){
+			Element n = (Element) allChildrenOfSaved.item(i);
+			String name = n.getNodeName();
+			switch(name){
+				case "LocationToken": {
+					this.parseLocationToken(n);
+					break;
+				}
+				case "CampaignTerrain": {
+					this.parseCampaignTerrain(n);
+					break;
+				}
+				case "Plnt":{
+					this.parsePlnt(n);
+					break;
+				}
+				case "JumpPoint":{
+					this.parseJumpPoint(n);
+					break;
+				}
+				case "CCEnt":{
+					this.parseCCEnt(n);
+					break;
+				}
+				default: {
+					// Flt, NGW, RingBand
+					break;
+				}
+			}
+		}
+	}
+
+	private void parseUppercaseMarket(Element uMarket) {
+		// only occurs under lowercase <markets>
+
+		// get id, name, factionId
+		// primaryEntry can contain other Plnt data
+		// primaryEntry > orbit > f.hasChildren()
+		// f > cL > o > saved
+
+		if (uMarket.hasChildNodes()){
+			Element primaryEntry = (Element) uMarket.getElementsByTagName("primaryEntry").item(0);
+			Element orbit = (Element) primaryEntry.getElementsByTagName("orbit").item(0);
+			Element f = (Element) orbit.getElementsByTagName("f").item(0);
+			// <f> contains more nested Plnt and other stuff
+			if (f.hasChildNodes()) {
+				Element cL = (Element) f.getElementsByTagName("cL").item(0);
+				Element o = (Element) cL.getElementsByTagName("o").item(0);
+				Element saved = (Element) o.getElementsByTagName("saved").item(0);
+				NodeList allChildrenOfSaved = saved.getChildNodes();
+
+				parseEachChildNode(allChildrenOfSaved);
+			}
+
+		} else {
+			int ref = Integer.parseInt(uMarket.getAttribute("ref"));
+		}
+	}
+
+	private void parseLowercaseMarket(Element lMarket) {
+
 	}
 
     private void storeParsedData () {
