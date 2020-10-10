@@ -1,3 +1,4 @@
+/* TODO prompt the user to select the paths and if paths cannot be found, prompt again*/
 {
   "starsector_location": "Path",
   "save_location": "Path",

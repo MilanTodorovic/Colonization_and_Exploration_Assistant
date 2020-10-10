@@ -19,11 +19,11 @@ public class AlertBox {
 
     private abstract static class AbstractAlertBox {
 
-        private final Stage alertBox;
-        private final Label label;
-        private final Button closeButton;
-        private final VBox layout;
-        private final Scene scene;
+        protected final Stage alertBox;
+        protected final Label label;
+        protected final Button closeButton;
+        protected final VBox layout;
+        protected final Scene scene;
 
 
         public AbstractAlertBox(String title, String message) {
@@ -46,7 +46,7 @@ public class AlertBox {
             });
         }
 
-        private void defaultLayout() {
+        protected void defaultLayout() {
             layout.getChildren().addAll(label, closeButton);
             layout.setAlignment(Pos.CENTER);
         }

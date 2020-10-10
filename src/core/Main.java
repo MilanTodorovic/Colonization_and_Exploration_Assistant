@@ -17,6 +17,9 @@ public class Main extends Application {
 
     // TODO maybe make separate JSON files for each save file for notes
 
+    // TODO convert all double to int, int can store large numbers
+    // Array.binarySearch() works only on sorted arrays, maybe find something like this
+    //
     @Override
     public void start(Stage primaryStage) throws Exception{
 
