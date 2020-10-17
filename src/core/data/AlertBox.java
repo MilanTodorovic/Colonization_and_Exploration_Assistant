@@ -9,8 +9,12 @@ import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import java.io.File;
+import java.io.IOException;
 
 import core.data.ParseSaveFileXML;
+import org.xml.sax.SAXException;
+
+import javax.xml.parsers.ParserConfigurationException;
 
 // TODO https://javapapers.com/core-java/abstract-and-interface-core-java-2/difference-between-a-java-interface-and-a-java-abstract-class/
 
@@ -60,7 +64,6 @@ public class AlertBox {
             } else {
                 this.setLayout();
             }
-
             alertBox.setScene(scene);
             alertBox.show();
         }
@@ -75,7 +78,15 @@ public class AlertBox {
             super(title, message);
             this.loadButton = new Button("Load new file");
             this.loadButton.setOnAction(e -> {
-                chooseNewSaveFile(fileChooser, rootStage);
+                try {
+                    chooseNewSaveFile(fileChooser, rootStage);
+                } catch (IOException exception) {
+                    exception.printStackTrace();
+                } catch (SAXException saxException) {
+                    saxException.printStackTrace();
+                } catch (ParserConfigurationException parserConfigurationException) {
+                    parserConfigurationException.printStackTrace();
+                }
             });
         }
 
@@ -84,12 +95,13 @@ public class AlertBox {
             super.layout.setAlignment(Pos.CENTER);
         }
 
-        void chooseNewSaveFile (FileChooser fileChooser, Stage rootStage) {
+        void chooseNewSaveFile (FileChooser fileChooser, Stage rootStage) throws IOException, SAXException, ParserConfigurationException {
             File newSaveFile = fileChooser.showOpenDialog(rootStage);
             super.alertBox.close();
             // TODO forward file to parsing
             //  Dont forward directly. get some function to put everything on hold while parsing and redraw/reload every pane
-            ParseSaveFileXML.parse(newSaveFile.getAbsolutePath());
+            ParseSaveFileXML ps = new ParseSaveFileXML(newSaveFile.getAbsolutePath());
+            ps.parse();
         }
     }
 
@@ -102,7 +114,17 @@ public class AlertBox {
             super.loadButton.setText("Reload file");
             super.loadButton.setOnAction(e -> {
                 // TODO forward file to parsing
-                ParseSaveFileXML.parse(path);
+                ParseSaveFileXML ps = null;
+                try {
+                    ps = new ParseSaveFileXML(path);
+                } catch (ParserConfigurationException parserConfigurationException) {
+                    parserConfigurationException.printStackTrace();
+                } catch (IOException exception) {
+                    exception.printStackTrace();
+                } catch (SAXException saxException) {
+                    saxException.printStackTrace();
+                }
+                ps.parse();
                 super.alertBox.close();
             });
         }

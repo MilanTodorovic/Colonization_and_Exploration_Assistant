@@ -1,12 +1,15 @@
 package core.layout;
 
+import core.data.AlertBox.AboutAlertBox;
+import core.data.AlertBox.LoadDifferentSaveFile;
+import core.data.AlertBox.ReloadSaveFile;
 import core.data.ListenForSaveUpdate;
-import core.data.AlertBox.*;
-import javafx.stage.FileChooser; // https://docs.oracle.com/javafx/2/ui_controls/file-chooser.htm
+import core.data.ParseSaveFileXML;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import org.xml.sax.SAXException;
 
-
-// For the WatchService
+import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -15,9 +18,7 @@ import java.nio.file.Paths;
 import java.nio.file.WatchEvent;
 import java.util.HashMap;
 
-import static java.nio.file.StandardWatchEventKinds.ENTRY_CREATE;
-import static java.nio.file.StandardWatchEventKinds.ENTRY_MODIFY;
-import static java.nio.file.StandardWatchEventKinds.ENTRY_DELETE;
+import static java.nio.file.StandardWatchEventKinds.*;
 
 public class MenuBarController {
 
@@ -80,8 +81,18 @@ public class MenuBarController {
             );
 
             startWatchServices();
+
+            ParseSaveFileXML ps = new ParseSaveFileXML(WATCH_FILE.getAbsolutePath());
+            ps.parse();
+
         } catch (NullPointerException e) {
             // ignore
+        } catch (ParserConfigurationException e) {
+            e.printStackTrace();
+        } catch (IOException exception) {
+            exception.printStackTrace();
+        } catch (SAXException e) {
+            e.printStackTrace();
         }
     }
 

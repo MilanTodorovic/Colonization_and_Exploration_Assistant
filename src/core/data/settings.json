@@ -1,17 +1,15 @@
-/* TODO prompt the user to select the paths and if paths cannot be found, prompt again*/
+/* TODO prompt the user to select the paths and if paths cannot be found, prompt again */
 {
   "starsector_location": "Path",
   "save_location": "Path",
-  "notes": {
-    "savefile": {
+  "notes": [ // TODO use angle brackets
+    {
+      "savefile": {
       "location": "Path",
-      "system": {
-        "name": ""
-      },
-      "planet": {
-        "name": ""
+      "system": "",
+      "planet": ""
       }
-    }
-
-  }
+    },
+    {}
+  ]
 }
