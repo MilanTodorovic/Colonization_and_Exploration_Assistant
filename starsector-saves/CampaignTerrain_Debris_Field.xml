@@ -1,0 +1,93 @@
+// many variants of the debris field, doesn't say it is is discovered or note
+
+<CampaignTerrain z="20629" dxp="60.0" dRDOM="0.4" type="debris_field" radius="300.0">
+	<loc z="20630">-5566.6353|3317.0728</loc>
+	<vel z="20631">0.0|0.0</vel>
+	<j0>{"f6":90,"f0":"Debris Field","f2":[235,235,225,255],"f4":"nikolaev_debrisBelt2"}</j0>
+	<ow ref="13"/>
+	<orbit cl="COrbt" z="20632" r="6480.0" op="240.0" ca="149.20993">
+		<e cl="CampaignTerrain" ref="20629"/>
+		<f cl="Plnt" ref="19831"/>
+	</orbit>
+	<cL cl="Sstm" ref="19834"/>
+	<ls cl="Plnt" ref="19831"/>
+	<me z="20633">
+		<d z="20634">
+			<e>
+				<st>$salvageSeed</st>
+				<Lp>8020998713415177256</Lp>
+			</e>
+			<e>
+				<st>$option</st>
+				<st>salPerform</st>
+			</e>
+		</d>
+	</me>
+	<sc z="20635"/>
+	<dV z="20636">
+		<DrDat z="20637">
+			<j>{"v":6500,"g":"basic"}</j>
+		</DrDat>
+	</dV>
+	<tags z="20638">
+		<st>terrain</st>
+		<st>debris</st>
+	</tags>
+	<dRM z="20639" fB="1600.0" m="1.0" pM="0.0" nR="false">
+		<fBs z="20640" s="gen" v="1600.0"/>
+	</dRM>
+	<plugin cl="DebrisFieldTerrainPlugin" z="20641" tid="debris_field" n="Debris Field">
+		<entity cl="CampaignTerrain" ref="20629"/>
+		<params cl="DebrisFieldParams" defined-in="BaseRingTerrain" z="20642" bWIE="300.0" mR="150.0" d="0.70000005" bD="1.2" gD="0.0" lD="1.0E7" min1="4.0" max1="16.0" dP="0.0" min2="0" max2="0" mDS="4" xp="500" s="MIXED">
+			<gC z="20643">255,165,100,255</gC>
+		</params>
+		<params ref="20642"/>
+		<fadingOut>false</fadingOut>
+		<expander z="20644" b="1.0" i="0.6" o="0.6" s="IDLE" d="false" u="false"/>
+		<elapsed>1579.8492</elapsed>
+	</plugin>
+</CampaignTerrain>
+
+<CampaignTerrain z="21462" di="true" dxp="140.0" sP="600.0" dRDOM="0.4" type="debris_field" radius="700.0">
+	<loc z="21463">-4274.7666|9917.982</loc>
+	<vel z="21464">0.0|0.0</vel>
+	<j0>{"f6":90,"f0":"Debris Field","f2":[235,235,225,255],"f4":"nikolaev_debrisL4"}</j0>
+	<ow ref="13"/>
+	<orbit cl="COrbt" z="21465" r="10800.0" op="300.0" ca="113.31662">
+		<e cl="CampaignTerrain" ref="21462"/>
+		<f cl="Plnt" ref="19831"/>
+	</orbit>
+	<cL cl="Sstm" ref="19834"/>
+	<ls cl="Plnt" ref="19831"/>
+	<me z="21466">
+		<d z="21467">
+			<e>
+				<st>$salvageSeed</st>
+				<Lp>6515681469075442318</Lp>
+			</e>
+		</d>
+	</me>
+	<sc z="21468"/>
+	<dV z="21469">
+		<DrDat z="21470">
+			<j>{"v":8500,"g":"basic"}</j>
+		</DrDat>
+	</dV>
+	<tags z="21471">
+		<st>terrain</st>
+		<st>debris</st>
+	</tags>
+	<dRM z="21472" fB="0.0" m="1.0" pM="0.0" nR="true">
+		<fBs z="21473" s="gen" v="2000.0"/>
+	</dRM>
+	<plugin cl="DebrisFieldTerrainPlugin" z="21474" tid="debris_field" n="Debris Field">
+		<entity cl="CampaignTerrain" ref="21462"/>
+		<params cl="DebrisFieldParams" defined-in="BaseRingTerrain" z="21475" bWIE="700.0" mR="350.0" d="1.0" bD="1.0" gD="0.0" lD="1.0E7" min1="4.0" max1="16.0" dP="0.0" min2="0" max2="0" mDS="4" xp="500" s="SALVAGE">
+			<gC z="21476">255,165,100,255</gC>
+		</params>
+		<params ref="21475"/>
+		<fadingOut>false</fadingOut>
+		<expander z="21477" b="1.0" i="1.4" o="1.4" s="IDLE" d="false" u="false"/>
+		<elapsed>1579.8492</elapsed>
+	</plugin>
+</CampaignTerrain>

@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 import java.io.File;
 import java.io.IOException;
 
-import core.data.ParseSaveFileXML;
+import core.data.ParseSaveFileXML_2;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -80,12 +80,8 @@ public class AlertBox {
             this.loadButton.setOnAction(e -> {
                 try {
                     chooseNewSaveFile(fileChooser, rootStage);
-                } catch (IOException exception) {
+                } catch (IOException | ParserConfigurationException | SAXException exception) {
                     exception.printStackTrace();
-                } catch (SAXException saxException) {
-                    saxException.printStackTrace();
-                } catch (ParserConfigurationException parserConfigurationException) {
-                    parserConfigurationException.printStackTrace();
                 }
             });
         }
@@ -100,7 +96,7 @@ public class AlertBox {
             super.alertBox.close();
             // TODO forward file to parsing
             //  Dont forward directly. get some function to put everything on hold while parsing and redraw/reload every pane
-            ParseSaveFileXML ps = new ParseSaveFileXML(newSaveFile.getAbsolutePath());
+            ParseSaveFileXML_2 ps = new ParseSaveFileXML_2(newSaveFile.getAbsolutePath());
             ps.parse();
         }
     }
@@ -114,17 +110,13 @@ public class AlertBox {
             super.loadButton.setText("Reload file");
             super.loadButton.setOnAction(e -> {
                 // TODO forward file to parsing
-                ParseSaveFileXML ps = null;
+                ParseSaveFileXML_2 ps;
                 try {
-                    ps = new ParseSaveFileXML(path);
-                } catch (ParserConfigurationException parserConfigurationException) {
+                    ps = new ParseSaveFileXML_2(path);
+                    ps.parse();
+                } catch (ParserConfigurationException | IOException | SAXException parserConfigurationException) {
                     parserConfigurationException.printStackTrace();
-                } catch (IOException exception) {
-                    exception.printStackTrace();
-                } catch (SAXException saxException) {
-                    saxException.printStackTrace();
                 }
-                ps.parse();
                 super.alertBox.close();
             });
         }
@@ -146,7 +138,7 @@ public class AlertBox {
 
 
     public static class GenericAlertBox extends AbstractAlertBox {
-
+        // tODO complete generic alertbox
         public GenericAlertBox(String title, String message){
             super(title, message);
         }

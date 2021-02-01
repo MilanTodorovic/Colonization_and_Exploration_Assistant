@@ -12,5 +12,6 @@ public class StarSystem {
 
     protected Star star;
     protected Plnt[] plnts;
-    JumpPoint[] jumppoints;
+    protected JumpPoint[] jumppoints;
+    protected Object[] ccent;
 }

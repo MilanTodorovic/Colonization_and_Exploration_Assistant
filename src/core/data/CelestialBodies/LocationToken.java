@@ -5,6 +5,7 @@ import java.util.List;
 public class LocationToken {
 
     protected int zValue;
+    protected int ref;
     protected float[] coordinates;
 
     protected List<StarSystem> systems; // TODO multiple star systems at one location?
@@ -16,6 +17,14 @@ public class LocationToken {
 
     public void setzValue(int zValue) {
         this.zValue = zValue;
+    }
+
+    public int getrefValue() {
+        return ref;
+    }
+
+    public void setrefValue(int ref) {
+        this.ref = ref;
     }
 
     public float[] getCoordinates() {
@@ -36,7 +45,7 @@ public class LocationToken {
 
     @Override
     public String toString(){
-        return "LocationToken " + zValue;
+        return "LocationToken z: " + this.zValue + ", ref: " + this.ref;
     }
 
 }

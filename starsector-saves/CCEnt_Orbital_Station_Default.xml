@@ -1,0 +1,28 @@
+<CCEnt z="11914" fL="STATIONS">
+	<loc z="11915">-1178.3405|2345.253</loc>
+	<vel z="11916">0.0|0.0</vel>
+	<j0>{"f6":272.02917,"f0":"Command &amp; Control","f3":"orbital_station_default","f2":[255,210,200,255],"f4":"diktat_cnc"}</j0>
+	<ow ref="9924"/>
+	<orbit cl="COrbtPD" z="11917" r="300.0" op="50.0" ca="272.02917">
+		<e cl="CCEnt" ref="11914"/>
+		<f cl="Plnt" ref="9921"/>
+	</orbit>
+	<cL cl="Sstm" ref="9957"/>
+	<ls cl="Plnt" ref="9954"/>
+	<me z="11918">
+		<d z="11919">
+			<e>
+				<st>$stationFleet</st>
+				<st>enRef_3587</st>
+			</e>
+		</d>
+	</me>
+	<market cl="Market" ref="9677"/>
+	<sc z="11920"/>
+	<cV z="11921" sn="graphics/illustrations/orbital.jpg" sIW="640.0" sIH="400.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+	<tags z="11922">
+		<st>station</st>
+	</tags>
+	<j1>{"f1":80,"f0":80,"f3":-1,"f2":50,"f5":"station_side02","f4":-1}</j1>
+	<la z="11923" enum-type="CaEnLa">STATIONS</la>
+</CCEnt>

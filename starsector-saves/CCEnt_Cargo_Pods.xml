@@ -1,0 +1,123 @@
+<CCEnt z="12165" sP="1.0" dRDOM="0.5" fL="TERRAIN_7A">
+	<loc z="12166">-32736.242|-16870.494</loc>
+	<vel z="12167">-10.953883|-8.329638</vel>
+	<j0>{"f6":90,"f0":"Cargo Pods","f3":"cargo_pods","f2":[255,210,200,255],"f4":"2f7786"}</j0>
+	<ow ref="69"/>
+	<cL cl="Sstm" ref="9957"/>
+	<ls cl="Plnt" ref="9954"/>
+	<me z="12168">
+		<d z="12169"/>
+	</me>
+	<sc z="12170"/>
+	<cV z="12171" sn="graphics/illustrations/cargo_pod_drift.jpg" sIW="640.0" sIH="400.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+	<tags z="12172">
+		<st>has_interaction_dialog</st>
+		<st>neutrino</st>
+	</tags>
+	<dRM z="12173" fB="1831.3708" m="1.0" pM="0.0" nR="false">
+		<fBs z="12174" s="gen" v="1831.3708"/>
+	</dRM>
+	<j1>{"f1":64,"f0":64,"f3":-1,"f2":62.915024,"f5":"cargo_pods","f4":-1}</j1>
+	<cargo z="12175" uS="true" mC="1000.0" sU="668.0" mF="500.0" mP="750.0" fT="false">
+		<s z="12176">
+			<CIStack z="12177" rS="false" s="411.0" mS="1000000.0" cSPU="0.0" bVPU="25.0" t="RESOURCES">
+				<d cl="st">fuel</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12178" rS="false" s="571.0" mS="1000000.0" cSPU="1.0" bVPU="30.0" t="RESOURCES">
+				<d cl="st">metals</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12179" rS="true" s="1.0" mS="1000000.0" cSPU="8.0" bVPU="3000.0" t="WEAPONS">
+				<d cl="st">mark9</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12180" rS="true" s="2.0" mS="1000000.0" cSPU="4.0" bVPU="600.0" t="WEAPONS">
+				<d cl="st">heavymortar</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12181" rS="true" s="2.0" mS="1000000.0" cSPU="4.0" bVPU="1200.0" t="WEAPONS">
+				<d cl="st">pulselaser</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12182" rS="true" s="1.0" mS="1000000.0" cSPU="4.0" bVPU="1000.0" t="WEAPONS">
+				<d cl="st">miningblaster</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12183" rS="true" s="6.0" mS="1000000.0" cSPU="2.0" bVPU="150.0" t="WEAPONS">
+				<d cl="st">annihilator</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12184" rS="true" s="4.0" mS="1000000.0" cSPU="2.0" bVPU="225.0" t="WEAPONS">
+				<d cl="st">heatseeker</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12185" rS="true" s="3.0" mS="1000000.0" cSPU="2.0" bVPU="100.0" t="WEAPONS">
+				<d cl="st">harpoon_single</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12186" rS="true" s="3.0" mS="1000000.0" cSPU="2.0" bVPU="300.0" t="WEAPONS">
+				<d cl="st">lightag</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12187" rS="true" s="3.0" mS="1000000.0" cSPU="2.0" bVPU="300.0" t="WEAPONS">
+				<d cl="st">lightdualac</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12188" rS="true" s="3.0" mS="1000000.0" cSPU="2.0" bVPU="100.0" t="WEAPONS">
+				<d cl="st">lightmg</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12189" rS="true" s="3.0" mS="1000000.0" cSPU="2.0" bVPU="200.0" t="WEAPONS">
+				<d cl="st">vulcan</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12190" rS="true" s="2.0" mS="1000000.0" cSPU="2.0" bVPU="125.0" t="WEAPONS">
+				<d cl="st">lightac</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12191" rS="true" s="1.0" mS="1000000.0" cSPU="2.0" bVPU="200.0" t="WEAPONS">
+				<d cl="st">harpoon</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12192" rS="true" s="1.0" mS="1000000.0" cSPU="2.0" bVPU="500.0" t="WEAPONS">
+				<d cl="st">ioncannon</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12193" rS="true" s="1.0" mS="1000000.0" cSPU="2.0" bVPU="400.0" t="WEAPONS">
+				<d cl="st">lightdualmg</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12194" rS="true" s="1.0" mS="1000000.0" cSPU="2.0" bVPU="75.0" t="WEAPONS">
+				<d cl="st">lightmortar</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12195" rS="true" s="1.0" mS="1000000.0" cSPU="2.0" bVPU="100.0" t="WEAPONS">
+				<d cl="st">mininglaser</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12196" rS="true" s="1.0" mS="1000000.0" cSPU="2.0" bVPU="200.0" t="WEAPONS">
+				<d cl="st">reaper</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12197" rS="true" s="1.0" mS="1000000.0" cSPU="2.0" bVPU="100.0" t="WEAPONS">
+				<d cl="st">sabot_single</d>
+				<c ref="12175"/>
+			</CIStack>
+			<CIStack z="12198" rS="true" s="1.0" mS="1000000.0" cSPU="1.0" bVPU="2000.0" t="FIGHTER_CHIP">
+				<d cl="st">talon_wing</d>
+				<c ref="12175"/>
+			</CIStack>
+		</s>
+		<c z="12199">
+			<value>0.0</value>
+		</c>
+		<mS z="12200" nP="ISS" nSf="neutral" nS="false" oSML="false">
+			<m z="12201"/>
+		</mS>
+	</cargo>
+	<la z="12202" enum-type="CaEnLa">TERRAIN_7A</la>
+	<p cl="CargoPodsEntityPlugin" z="12203" el="23.054052" mD="32.0" eD="0.0">
+		<e cl="CCEnt" ref="12165"/>
+	</p>
+</CCEnt>

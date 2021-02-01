@@ -1,0 +1,106 @@
+<CCEnt z="1094" fL="STATIONS">
+	<loc z="1095">8603.275|4275.2715</loc>
+	<vel z="1096">0.0|0.0</vel>
+	<j0>{"f6":26.424408,"f0":"Stable Location","f3":"stable_location","f2":[255,222,222,255],"f4":"144f"}</j0>
+	<ow ref="69"/>
+	<orbit cl="COrbtPD" z="1097" r="9606.992" op="384.6389" ca="26.424408">
+		<e cl="CCEnt" ref="1094"/>
+		<f cl="Plnt" ref="872"/>
+	</orbit>
+	<cL cl="Sstm" ref="875"/>
+	<ls cl="Plnt" ref="872"/>
+	<me z="1098">
+		<d z="1099">
+			<e>
+				<st>$tag:has_interaction_dialog</st>
+				<bp>true</bp>
+			</e>
+			<e>
+				<st>$tag:stable_location</st>
+				<bp>true</bp>
+			</e>
+			<e>
+				<st>$onOrAt</st>
+				<st>on</st>
+			</e>
+			<e>
+				<st>$id</st>
+				<st>144f</st>
+			</e>
+			<e>
+				<st>$transponderOn</st>
+				<bp>false</bp>
+			</e>
+			<e>
+				<st>$name</st>
+				<st>Stable Location</st>
+			</e>
+			<e>
+				<st>$fullName</st>
+				<st>Stable Location</st>
+			</e>
+			<e>
+				<st>$inHyperspace</st>
+				<bp>false</bp>
+			</e>
+			<e>
+				<st>$customType</st>
+				<st>stable_location</st>
+			</e>
+			<e>
+				<st>$nameInText</st>
+				<st>stable location</st>
+			</e>
+			<e>
+				<st>$shortName</st>
+				<st>stable location</st>
+			</e>
+			<e>
+				<st>$isOrAre</st>
+				<st>is</st>
+			</e>
+			<e>
+				<st>$aOrAn</st>
+				<st>a</st>
+			</e>
+			<e>
+				<st>$isHostile</st>
+				<bp>false</bp>
+			</e>
+			<e>
+				<st>$option</st>
+				<st>SL_buildProceed</st>
+			</e>
+			<e>
+				<st>$slBuildType</st>
+				<st>comm_relay_makeshift</st>
+			</e>
+		</d>
+		<e z="1100">
+			<MExp z="1101" k="$tag:has_interaction_dialog" t="0.0"/>
+			<MExp z="1102" k="$tag:stable_location" t="0.0"/>
+			<MExp z="1103" k="$onOrAt" t="0.0"/>
+			<MExp z="1104" k="$id" t="0.0"/>
+			<MExp z="1105" k="$transponderOn" t="0.0"/>
+			<MExp z="1106" k="$name" t="0.0"/>
+			<MExp z="1107" k="$fullName" t="0.0"/>
+			<MExp z="1108" k="$inHyperspace" t="0.0"/>
+			<MExp z="1109" k="$customType" t="0.0"/>
+			<MExp z="1110" k="$nameInText" t="0.0"/>
+			<MExp z="1111" k="$shortName" t="0.0"/>
+			<MExp z="1112" k="$isOrAre" t="0.0"/>
+			<MExp z="1113" k="$aOrAn" t="0.0"/>
+			<MExp z="1114" k="$isHostile" t="0.0"/>
+			<MExp z="1115" k="$slBuildType" t="0.0"/>
+			<MExp z="1116" k="$option" t="0.0"/>
+		</e>
+	</me>
+	<sc z="1117"/>
+	<cV z="1118" sn="graphics/illustrations/free_orbit.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+	<tags z="1119">
+		<st>has_interaction_dialog</st>
+		<st>stable_location</st>
+	</tags>
+	<j1>{"f1":64,"f0":64,"f3":-1,"f2":75,"f5":"stable_location","f4":-1}</j1>
+	<la z="1120" enum-type="CaEnLa">STATIONS</la>
+</CCEnt>

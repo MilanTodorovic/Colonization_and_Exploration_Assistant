@@ -1,0 +1,154 @@
+<CCEnt z="86372" fL="STATIONS">
+	<loc z="86373">44.285778|4449.78</loc>
+	<vel z="86374">0.0|0.0</vel>
+	<j0>{"f6":89.42981,"f0":"Abandoned Research Station","f3":"station_tiataxet_spacedock","f2":[255,230,200,255],"f4":"abandoned_spacedock"}</j0>
+	<ow ref="69"/>
+	<orbit cl="COrbtPD" z="86375" r="4450.0" op="250.0" ca="89.42981">
+		<e cl="CCEnt" ref="86372"/>
+		<f cl="Plnt" ref="86281"/>
+	</orbit>
+	<cL cl="Sstm" ref="86273"/>
+	<ls cl="Plnt" ref="86281"/>
+	<me z="86376">
+		<d z="86377"/>
+	</me>
+	<sc z="86378"/>
+	<cV z="86379" sn="graphics/illustrations/space_wreckage.jpg" sIW="640.0" sIH="400.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+	<tags z="86380">
+		<st>station</st>
+	</tags>
+	<j1>{"f1":80,"f0":80,"f3":-1,"f2":50,"f5":"station_side00","f4":-1}</j1>
+	<la z="86381" enum-type="CaEnLa">STATIONS</la>
+</CCEnt>
+
+<CCEnt z="20645" di="true" dxp="1500.0" sP="0.25" fL="STATIONS">
+	<loc z="20646">5654.907|3164.2412</loc>
+	<vel z="20647">0.0|0.0</vel>
+	<j0>{"f6":92.89508,"f0":"Abandoned Belt Station","f3":"nikolaev_beltstation","f2":[235,235,225,255],"f4":"nikolaev_abandoned_station"}</j0>
+	<ow ref="13"/>
+	<orbit cl="CircularOrbitWithSpin" z="20648" r="6480.0" op="240.0" ca="29.229492" cF="92.89508" sV="-6.1668158">
+		<e cl="CCEnt" ref="20645"/>
+		<f cl="Plnt" ref="19831"/>
+	</orbit>
+	<cL cl="Sstm" ref="19834"/>
+	<ls cl="Plnt" ref="19831"/>
+	<me z="20649">
+		<d z="20650">
+			<e>
+				<st>$abandonedStation</st>
+				<bp>true</bp>
+			</e>
+		</d>
+	</me>
+	<market cl="Market" z="20651">
+		<id>nikolaev_abandoned_station_market</id>
+		<name>Abandoned Belt Station</name>
+		<commodities z="20652"/>
+		<demandData z="20653">
+			<market ref="20651"/>
+		</demandData>
+		<size>0</size>
+		<location z="20654">-6800.0|-19200.0</location>
+		<economy ref="516"/>
+		<demandPriceMod z="20655" fB="0.0" m="1.0" pM="0.0" nR="false"/>
+		<supplyPriceMod z="20656" fB="0.0" m="1.0" pM="0.0" nR="false"/>
+		<tariff z="20657" b="0.0" m="0.0" nR="false"/>
+		<factionId>neutral</factionId>
+		<power z="20658" b="0.0" m="0.0" nR="false"/>
+		<hazard z="20659" b="0.0" m="0.0" nR="true">
+			<fMs z="20660" s="haz_base" d="Base value" v="1.0"/>
+		</hazard>
+		<primaryEntity cl="CCEnt" ref="20645"/>
+		<submarkets z="20661">
+			<Submarket z="20662" s="storage">
+				<m ref="20651"/>
+				<p cl="NexStoreSubmkt" z="20663" mSWUI="30.0" msSWU="31.0" sLCU="31.0" paid="true">
+					<m cl="Market" ref="20651"/>
+					<s cl="Submarket" ref="20662"/>
+					<c cl="CargoData" z="20664" uS="true" mC="1000.0" sU="800.0" mF="500.0" mP="750.0" fT="false">
+						<s z="20665">
+							<CIStack z="20666" rS="false" s="500.0" mS="1000000.0" cSPU="1.0" bVPU="30.0" t="RESOURCES">
+								<d cl="st">metals</d>
+								<c ref="20664"/>
+							</CIStack>
+							<CIStack z="20667" rS="false" s="150.0" mS="1000000.0" cSPU="1.0" bVPU="200.0" t="RESOURCES">
+								<d cl="st">rare_metals</d>
+								<c ref="20664"/>
+							</CIStack>
+							<CIStack z="20668" rS="false" s="100.0" mS="1000000.0" cSPU="1.0" bVPU="20.0" t="RESOURCES">
+								<d cl="st">food</d>
+								<c ref="20664"/>
+							</CIStack>
+							<CIStack z="20669" rS="false" s="50.0" mS="1000000.0" cSPU="1.0" bVPU="150.0" t="RESOURCES">
+								<d cl="st">heavy_machinery</d>
+								<c ref="20664"/>
+							</CIStack>
+						</s>
+						<c z="20670">
+							<value>0.0</value>
+						</c>
+						<mS z="20671" nP="ISS" nSf="player" nS="true" oSML="false">
+							<m z="20672"/>
+						</mS>
+					</c>
+					<iGR z="20673" serialization="custom">
+						<Random>
+							<default>
+								<s>72935324530661</s>
+								<n>0.0</n>
+								<h>false</h>
+							</default>
+						</Random>
+					</iGR>
+				</p>
+				<f ref="1367"/>
+			</Submarket>
+		</submarkets>
+		<stats z="20674">
+			<dynamic z="20675">
+				<stats z="20676"/>
+				<mods z="20677"/>
+			</dynamic>
+		</stats>
+		<isPlanetConditionMarketOnly>false</isPlanetConditionMarketOnly>
+		<accessibilityMod z="20678" fB="0.0" m="1.0" pM="0.0" nR="false"/>
+		<incomeMult z="20679" b="1.0" m="1.0" nR="false"/>
+		<upkeepMult z="20680" b="1.0" m="1.0" nR="false"/>
+		<useStockpilesForShortages>false</useStockpilesForShortages>
+		<industries z="20681"/>
+		<playerOwned>false</playerOwned>
+		<hasSpaceport>false</hasSpaceport>
+		<hasWaystation>false</hasWaystation>
+		<immigrationModifiers z="20682"/>
+		<allowImport>true</allowImport>
+		<allowExport>true</allowExport>
+		<incentiveCredits>0.0</incentiveCredits>
+		<hidden>false</hidden>
+		<constructionQueue z="20683">
+			<items z="20684"/>
+		</constructionQueue>
+		<commDirectory z="20685">
+			<entries z="20686"/>
+		</commDirectory>
+		<prevStability>-1.0</prevStability>
+		<daysInExistence>0.0</daysInExistence>
+		<connectedEntities z="20687">
+			<CCEnt ref="20645"/>
+		</connectedEntities>
+		<conditions z="20688">
+			<MCon z="20689" i="abandoned_station" u="764" s="true">
+				<m cl="Market" ref="20651"/>
+			</MCon>
+		</conditions>
+		<surveyLevel>FULL</surveyLevel>
+		<forceNoConvertOnSave>false</forceNoConvertOnSave>
+		<isFreePort>false</isFreePort>
+	</market>
+	<sc z="20690"/>
+	<cV z="20691" sn="graphics/illustrations/abandoned_station2.jpg" sIW="640.0" sIH="400.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+	<tags z="20692">
+		<st>station</st>
+	</tags>
+	<j1>{"f1":36,"f0":36,"f3":-1,"f2":32,"f5":"station_dme_belt","f4":-1}</j1>
+	<la z="20693" enum-type="CaEnLa">STATIONS</la>
+</CCEnt>

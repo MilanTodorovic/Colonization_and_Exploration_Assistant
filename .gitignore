@@ -1,3 +1,7 @@
 .idea/
-out/
 .gradle/
+.out/
+.functionality_testing/
+.starsector_saves/
+.spisak_ficera.txt
+.nacrt_aplikacije.png

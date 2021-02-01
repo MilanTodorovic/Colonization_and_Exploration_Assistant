@@ -1,0 +1,1750 @@
+<LocationToken z="12117">
+	<loc z="12118">-140.11353|1476.9219</loc>
+	<where cl="Sstm" ref="9957"/>
+	<orbit cl="COrbt" z="12119" r="165.0" op="1000000.0" ca="38.631012">
+		<e cl="LocationToken" ref="12117"/>
+		<f cl="CCEnt" ref="10921"/>
+	</orbit>
+	<id>1b9646</id>
+	<faction ref="69"/>
+	<tags z="12120">
+		<st>non_clickable</st>
+	</tags>
+</LocationToken>
+
+<LocationToken z="85954">
+	<loc z="85955">-2300.0|-7950.0</loc>
+	<where cl="Hyperspace" ref="2"/>
+	<orbit cl="UFHLOrbt" z="85956">
+		<s cl="Sstm" z="85957" dN="Duzahk Star System" bTF="graphics/backgrounds/background1.jpg" hM="false" lPV="-55056273924000" ty="SINGLE" pg="false" bN="Duzahk" mRIH="772.61615" eBP="true">
+			<o z="85958">
+				<lists z="85959"/>
+				<maps z="85960"/>
+				<classifier cl="FastIterationClassifier" z="85961">
+					<cache z="85962"/>
+				</classifier>
+				<nextId>0</nextId>
+				<forFastContains z="85963"/>
+				<saved z="85964">
+					<Plnt z="85965">
+						<loc z="85966">0.0|0.0</loc>
+						<vel z="85967">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Duzahk","f2":[255,240,220,255],"f4":"duzahk"}</j0>
+						<ow ref="24"/>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="85968">
+							<d z="85969"/>
+						</me>
+						<sc z="85970"/>
+						<tags z="85971">
+							<st>star</st>
+						</tags>
+						<angle>-234242.73</angle>
+						<cloudAngle>0.0</cloudAngle>
+						<radius>600.0</radius>
+						<type>star_orange</type>
+						<diff z="85972">
+							<j>{"glowTexture":"graphics/planets/clouds_banded01.png","glowColor":[255,235,50,128],"atmosphereThickness":0.5}</j>
+						</diff>
+						<layers z="85973" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<CampaignTerrain z="85974" type="corona" radius="0.0">
+						<loc z="85975">0.0|0.0</loc>
+						<vel z="85976">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,240,220,255],"f4":"2f1"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbt" z="85977" r="0.0" op="100.0" ca="0.0">
+							<e cl="CampaignTerrain" ref="85974"/>
+							<f cl="Plnt" ref="85965"/>
+						</orbit>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="85978">
+							<d z="85979"/>
+						</me>
+						<sc z="85980"/>
+						<tags z="85981">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="StarCoronaTerrainPlugin" z="85982" tid="corona" n="Corona">
+							<entity cl="CampaignTerrain" ref="85974"/>
+							<params cl="CoronaParams" defined-in="BaseRingTerrain" z="85983" bWIE="1100.0" mR="550.0" wBL="10.0" fP="0.25" crLM="3.0">
+								<e cl="Plnt" ref="85965"/>
+							</params>
+							<renderer z="85984" a="189.68274">
+								<d cl="StarCoronaTerrainPlugin" ref="85982"/>
+							</renderer>
+							<flareManager z="85985">
+								<fT z="85986" i="0.5" a="1.5" c="1.2978045" e="0.2" ie="false"/>
+								<d cl="StarCoronaTerrainPlugin" ref="85982"/>
+							</flareManager>
+							<params ref="85983"/>
+						</plugin>
+					</CampaignTerrain>
+					<Plnt z="85987">
+						<loc z="85988">-1487.4482|435.88733</loc>
+						<vel z="85989">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Aka Mainyu","f3":"planet_aka_mainyu","f2":[255,240,220,255],"f4":"duzahk1"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="85990" r="1550.0" op="24.0" ca="163.66711">
+							<e cl="Plnt" ref="85987"/>
+							<f cl="Plnt" ref="85965"/>
+						</orbit>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="85991">
+							<d z="85992">
+								<e>
+									<st>$salvageSeed</st>
+									<Lp>-910951400305443528</Lp>
+								</e>
+							</d>
+						</me>
+						<market cl="PCMarket" z="85993">
+							<id>market_duzahk1</id>
+							<name>Aka Mainyu</name>
+							<primaryEntity cl="Plnt" ref="85987"/>
+							<surveyLevel>PRELIMINARY</surveyLevel>
+							<cond z="85994">
+								<st>very_hot</st>
+								<st>volatiles_diffuse</st>
+								<st>dense_atmosphere</st>
+								<st>high_gravity</st>
+							</cond>
+							<surveyed z="85995">
+								<st>very_hot</st>
+								<st>dense_atmosphere</st>
+								<st>high_gravity</st>
+							</surveyed>
+						</market>
+						<sc z="85996"/>
+						<tags z="85997">
+							<st>planet</st>
+						</tags>
+						<angle>-234100.8</angle>
+						<cloudAngle>1171997.6</cloudAngle>
+						<radius>230.0</radius>
+						<type>gas_giant</type>
+						<diff z="85998">
+							<j>{"atmosphereColor":[138,118,255,245],"cloudRotation":15,"tilt":30,"glowTexture":"graphics/planets/clouds_banded01.png","glowColor":[235,38,8,145],"useReverseLightForGlow":true,"pitch":-5,"planetColor":[16,16,255,255],"atmosphereThickness":0.5}</j>
+						</diff>
+						<layers z="85999" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<CampaignTerrain z="86000" type="corona_aka_mainyu" radius="0.0">
+						<loc z="86001">-1487.4482|435.88733</loc>
+						<vel z="86002">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,240,220,255],"f4":"2f2"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbt" z="86003" r="0.0" op="100.0" ca="0.0">
+							<e cl="CampaignTerrain" ref="86000"/>
+							<f cl="Plnt" ref="85987"/>
+						</orbit>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="86004">
+							<d z="86005"/>
+						</me>
+						<sc z="86006"/>
+						<tags z="86007">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="StarCoronaAkaMainyuTerrainPlugin" z="86008" tid="corona_aka_mainyu" n="Corona">
+							<entity cl="CampaignTerrain" ref="86000"/>
+							<params cl="CoronaParams" defined-in="BaseRingTerrain" z="86009" bWIE="530.0" mR="265.0" wBL="5.0" fP="0.0" crLM="1.0">
+								<e cl="Plnt" ref="85987"/>
+							</params>
+							<renderer z="86010" a="189.68274">
+								<d cl="StarCoronaAkaMainyuTerrainPlugin" ref="86008"/>
+							</renderer>
+							<flareManager z="86011">
+								<fT z="86012" i="0.5" a="1.5" c="0.9243125" e="0.4" ie="false"/>
+								<d cl="StarCoronaAkaMainyuTerrainPlugin" ref="86008"/>
+							</flareManager>
+							<params ref="86009"/>
+						</plugin>
+					</CampaignTerrain>
+					<CampaignTerrain z="86013" type="magnetic_field" radius="0.0">
+						<loc z="86014">0.0|0.0</loc>
+						<vel z="86015">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,240,220,255],"f4":"2f3"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbt" z="86016" r="0.0" op="150.0" ca="0.0">
+							<e cl="CampaignTerrain" ref="86013"/>
+							<f cl="Plnt" ref="85965"/>
+						</orbit>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="86017">
+							<d z="86018"/>
+						</me>
+						<sc z="86019"/>
+						<tags z="86020">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="MagneticFieldTerrainPlugin" z="86021" tid="magnetic_field" n="Magnetic Field">
+							<e cl="CampaignTerrain" ref="86013"/>
+							<params cl="MagneticFieldParams" defined-in="BaseRingTerrain" z="86022" bWIE="500.0" mR="2000.0" c="ff32146e|ff961e78|ffc83282|fffa4696|ffc85082|ff4b00a0|ff7f00ff" aF="1.0" iR="1750.0" oR="2250.0">
+								<e cl="Plnt" ref="85965"/>
+								<bC z="86023">50,20,100,40</bC>
+							</params>
+							<r z="86024" a="189.68274">
+								<d cl="MagneticFieldTerrainPlugin" ref="86021"/>
+							</r>
+							<params ref="86022"/>
+							<fM z="86025">
+								<fT z="86026" i="0.5" a="1.5" c="1.3642011" e="0.70000005" ie="false"/>
+								<f z="86027">
+									<Flare z="86028" d="75.28577" a="56.833878" eLM="1.0" eLF="0.0" sFM="0.8" c="ff961e78|ffc83282|fffa4696|ffc85082|ff4b00a0|ff7f00ff">
+										<f z="86029" b="0.27793723" i="1.4859698" o="2.354365" s="OUT" d="true" u="false"/>
+									</Flare>
+								</f>
+								<d cl="MagneticFieldTerrainPlugin" ref="86021"/>
+							</fM>
+						</plugin>
+					</CampaignTerrain>
+					<RingBand z="86030">
+						<loc z="86031">0.0|0.0</loc>
+						<vel z="86032">0.0|0.0</vel>
+						<j0>{"f6":0,"f2":[255,240,220,255],"f4":"2f4"}</j0>
+						<ow ref="24"/>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="86033">
+							<d z="86034"/>
+						</me>
+						<sc z="86035"/>
+						<j1>{"f6":-82496.24,"f7":"misc","f8":"rings_asteroids0","f11":2,"f10":0,"f0":256,"f3":256,"f2":[255,255,255,255],"f5":2420,"f4":34}</j1>
+						<focus cl="Plnt" ref="85965"/>
+						<layers z="86036" enum-type="CaEnLa">RINGS</layers>
+					</RingBand>
+					<CampaignTerrain z="86037" type="asteroid_belt" radius="0.0">
+						<loc z="86038">0.0|0.0</loc>
+						<vel z="86039">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,240,220,255],"f4":"2f5"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbt" z="86040" r="0.0" op="100.0" ca="0.0">
+							<e cl="CampaignTerrain" ref="86037"/>
+							<f cl="Plnt" ref="85965"/>
+						</orbit>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="86041">
+							<d z="86042"/>
+						</me>
+						<sc z="86043"/>
+						<tags z="86044">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="AsteroidBeltTerrainPlugin" z="86045" tid="asteroid_belt" n="The Daevas" nTCA="false">
+							<entity cl="CampaignTerrain" ref="86037"/>
+							<params cl="AsteroidBeltParams" defined-in="BaseRingTerrain" z="86046" bWIE="100.0" mR="2400.0" n="The Daevas" nA="50" minO="30.0" maxO="40.0" minS="4.0" maxS="16.0"/>
+							<params ref="86046"/>
+						</plugin>
+					</CampaignTerrain>
+					<Plnt z="86047">
+						<loc z="86048">-4186.435|337.28897</loc>
+						<vel z="86049">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Druj","f3":"planet_druj","f2":[255,240,220,255],"f4":"duzahk2"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="86050" r="4200.0" op="135.0" ca="175.3938">
+							<e cl="Plnt" ref="86047"/>
+							<f cl="Plnt" ref="85965"/>
+						</orbit>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="86051">
+							<d z="86052">
+								<e>
+									<st>$salvageSeed</st>
+									<Lp>422130629992425977</Lp>
+								</e>
+							</d>
+						</me>
+						<market cl="PCMarket" z="86053">
+							<id>market_duzahk2</id>
+							<name>Druj</name>
+							<primaryEntity cl="Plnt" ref="86047"/>
+							<surveyLevel>FULL</surveyLevel>
+							<cond z="86054">
+								<st>ore_sparse</st>
+								<st>no_atmosphere</st>
+								<st>hot</st>
+							</cond>
+							<surveyed z="86055">
+								<st>ore_sparse</st>
+								<st>no_atmosphere</st>
+								<st>hot</st>
+							</surveyed>
+						</market>
+						<sc z="86056"/>
+						<tags z="86057">
+							<st>planet</st>
+						</tags>
+						<angle>-234280.33</angle>
+						<cloudAngle>0.0</cloudAngle>
+						<radius>60.0</radius>
+						<type>barren</type>
+						<diff z="86058">
+							<j>{"glowTexture":"graphics/planets/clouds_aurorae.png","glowColor":[20,255,48,125],"useReverseLightForGlow":true}</j>
+						</diff>
+						<layers z="86059" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<CCEnt z="86060" fL="STATIONS">
+						<loc z="86061">-1806.4337|3791.6748</loc>
+						<vel z="86062">0.0|0.0</vel>
+						<j0>{"f6":115.47412,"f0":"Makeshift Sensor Array","f3":"sensor_array_makeshift","f2":[255,240,220,255],"f4":"2f6"}</j0>
+						<ow ref="610"/>
+						<orbit cl="COrbtPD" z="86063" r="4200.0" op="135.0" ca="115.47412">
+							<e cl="CCEnt" ref="86060"/>
+							<f cl="Plnt" ref="85965"/>
+						</orbit>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="86064">
+							<d z="86065"/>
+						</me>
+						<sc z="86066"/>
+						<cV z="86067" sn="graphics/illustrations/sensor_array_makeshift.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+						<tags z="86068">
+							<st>objective</st>
+							<st>makeshift</st>
+							<st>sensor_array</st>
+							<st>neutrino_high</st>
+						</tags>
+						<j1>{"f1":86,"f0":86,"f3":-1,"f2":75,"f5":"sensor_array_makeshift","f4":-1}</j1>
+						<la z="86069" enum-type="CaEnLa">STATIONS</la>
+						<p cl="SensorArrayEP" z="86070">
+							<e cl="CCEnt" ref="86060"/>
+						</p>
+					</CCEnt>
+					<CCEnt z="86071" fL="STATIONS">
+						<loc z="86072">-2381.0627|-3459.847</loc>
+						<vel z="86073">0.0|0.0</vel>
+						<j0>{"f6":235.4643,"f0":"Stable Location","f3":"stable_location","f2":[255,240,220,255],"f4":"2f7"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbtPD" z="86074" r="4200.0" op="135.0" ca="235.4643">
+							<e cl="CCEnt" ref="86071"/>
+							<f cl="Plnt" ref="85965"/>
+						</orbit>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="86075">
+							<d z="86076"/>
+						</me>
+						<sc z="86077"/>
+						<cV z="86078" sn="graphics/illustrations/free_orbit.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+						<tags z="86079">
+							<st>has_interaction_dialog</st>
+							<st>stable_location</st>
+						</tags>
+						<j1>{"f1":64,"f0":64,"f3":-1,"f2":75,"f5":"stable_location","f4":-1}</j1>
+						<la z="86080" enum-type="CaEnLa">STATIONS</la>
+					</CCEnt>
+					<RingBand z="86081">
+						<loc z="86082">0.0|0.0</loc>
+						<vel z="86083">0.0|0.0</vel>
+						<j0>{"f6":0,"f2":[255,240,220,255],"f4":"2f8"}</j0>
+						<ow ref="24"/>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="86084">
+							<d z="86085"/>
+						</me>
+						<sc z="86086"/>
+						<j1>{"f6":-5398.4688,"f7":"misc","f8":"rings_dust0","f11":2,"f10":0,"f0":256,"f3":256,"f2":[246,251,235,255],"f5":7128,"f4":489.11075}</j1>
+						<focus cl="Plnt" ref="85965"/>
+						<layers z="86087" enum-type="CaEnLa">RINGS</layers>
+					</RingBand>
+					<CampaignTerrain z="86088" type="ring" radius="0.0">
+						<loc z="86089">0.0|0.0</loc>
+						<vel z="86090">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,240,220,255],"f4":"2f9"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbt" z="86091" r="0.0" op="100.0" ca="0.0">
+							<e cl="CampaignTerrain" ref="86088"/>
+							<f cl="Plnt" ref="85965"/>
+						</orbit>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="86092">
+							<d z="86093"/>
+						</me>
+						<sc z="86094"/>
+						<tags z="86095">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="RingSystemTerrainPlugin" z="86096" tid="ring" n="Ring System">
+							<entity cl="CampaignTerrain" ref="86088"/>
+							<params z="86097" bWIE="192.0" mR="7128.0">
+								<e cl="RingBand" ref="86081"/>
+							</params>
+						</plugin>
+					</CampaignTerrain>
+					<Plnt z="86098">
+						<loc z="86099">-8007.429|-4822.566</loc>
+						<vel z="86100">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Duzahk III","f2":[255,240,220,255],"f4":"duzahk:planet_4"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="86101" r="9347.517" op="404.99808" ca="211.05896">
+							<e cl="Plnt" ref="86098"/>
+							<f cl="Plnt" ref="85965"/>
+						</orbit>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="86102">
+							<d z="86103">
+								<e>
+									<st>$salvageSeed</st>
+									<Lp>-8405086990524168594</Lp>
+								</e>
+							</d>
+						</me>
+						<market cl="PCMarket" z="86104">
+							<id>market_duzahk:planet_4</id>
+							<name>Duzahk III</name>
+							<primaryEntity cl="Plnt" ref="86098"/>
+							<surveyLevel>FULL</surveyLevel>
+							<cond z="86105">
+								<st>no_atmosphere</st>
+								<st>ore_moderate</st>
+							</cond>
+							<surveyed z="86106">
+								<st>no_atmosphere</st>
+								<st>ore_moderate</st>
+							</surveyed>
+						</market>
+						<sc z="86107"/>
+						<tags z="86108">
+							<st>planet</st>
+						</tags>
+						<angle>-234357.42</angle>
+						<cloudAngle>0.0</cloudAngle>
+						<radius>137.44087</radius>
+						<type>barren2</type>
+						<diff z="86109">
+							<j>{"tilt":-58.050533294677734,"pitch":27.612056732177734,"planetColor":[230,221,254,255]}</j>
+						</diff>
+						<layers z="86110" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<RingBand z="86111">
+						<loc z="86112">-8007.429|-4822.566</loc>
+						<vel z="86113">0.0|0.0</vel>
+						<j0>{"f6":0,"f2":[255,240,220,255],"f4":"2fa"}</j0>
+						<ow ref="24"/>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="86114">
+							<d z="86115"/>
+						</me>
+						<sc z="86116"/>
+						<j1>{"f6":-51916.01,"f7":"misc","f8":"rings_dust0","f11":2,"f10":0,"f0":256,"f3":256,"f2":[234,235,234,255],"f5":652.46136,"f4":54.180454}</j1>
+						<focus cl="Plnt" ref="86098"/>
+						<layers z="86117" enum-type="CaEnLa">RINGS</layers>
+					</RingBand>
+					<CampaignTerrain z="86118" type="ring" radius="0.0">
+						<loc z="86119">-8007.429|-4822.566</loc>
+						<vel z="86120">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,240,220,255],"f4":"2fb"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbt" z="86121" r="0.0" op="100.0" ca="0.0">
+							<e cl="CampaignTerrain" ref="86118"/>
+							<f cl="Plnt" ref="86098"/>
+						</orbit>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="86122">
+							<d z="86123"/>
+						</me>
+						<sc z="86124"/>
+						<tags z="86125">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="RingSystemTerrainPlugin" z="86126" tid="ring" n="Ring System">
+							<entity cl="CampaignTerrain" ref="86118"/>
+							<params z="86127" bWIE="192.0" mR="652.46136">
+								<e cl="RingBand" ref="86111"/>
+							</params>
+						</plugin>
+					</CampaignTerrain>
+					<RingBand z="86128">
+						<loc z="86129">-8007.429|-4822.566</loc>
+						<vel z="86130">0.0|0.0</vel>
+						<j0>{"f6":0,"f2":[255,240,220,255],"f4":"2fc"}</j0>
+						<ow ref="24"/>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="86131">
+							<d z="86132"/>
+						</me>
+						<sc z="86133"/>
+						<j1>{"f6":-37758.902,"f7":"misc","f8":"rings_dust0","f11":2,"f10":0,"f1":3,"f0":256,"f3":256,"f2":[234,235,234,255],"f5":955.46136,"f4":73.90821}</j1>
+						<focus cl="Plnt" ref="86098"/>
+						<layers z="86134" enum-type="CaEnLa">RINGS</layers>
+					</RingBand>
+					<CampaignTerrain z="86135" type="ring" radius="0.0">
+						<loc z="86136">-8007.429|-4822.566</loc>
+						<vel z="86137">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,240,220,255],"f4":"2fd"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbt" z="86138" r="0.0" op="100.0" ca="0.0">
+							<e cl="CampaignTerrain" ref="86135"/>
+							<f cl="Plnt" ref="86098"/>
+						</orbit>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="86139">
+							<d z="86140"/>
+						</me>
+						<sc z="86141"/>
+						<tags z="86142">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="RingSystemTerrainPlugin" z="86143" tid="ring" n="Ring System">
+							<entity cl="CampaignTerrain" ref="86135"/>
+							<params z="86144" bWIE="192.0" mR="955.46136">
+								<e cl="RingBand" ref="86128"/>
+							</params>
+						</plugin>
+					</CampaignTerrain>
+					<JumpPoint z="86145" r="50.0" dSC="misc" dSI="wormhole_hyper" sO="7473.643">
+						<loc z="86146">-2037.9543|-12473.819</loc>
+						<vel z="86147">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Fringe Jump-point","f2":[255,240,220,255],"f4":"306"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="86148" r="12639.202" op="1134.7517" ca="260.72107">
+							<e cl="JumpPoint" ref="86145"/>
+							<f cl="Plnt" ref="85965"/>
+						</orbit>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="86149">
+							<d z="86150"/>
+						</me>
+						<sc z="86151"/>
+						<tags z="86152">
+							<st>jump_point</st>
+						</tags>
+						<dst z="86153">
+							<JumpDestination z="86154" l="hyperspace" minD="0.0" maxD="0.0">
+								<d cl="JumpPoint" z="86155" r="50.0" dSC="misc" dSI="wormhole_stars" sO="7468.6025">
+									<loc z="86156">-2415.862|-8663.267</loc>
+									<vel z="86157">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Duzahk, Fringe Jump-point","f2":[255,255,255,255],"f4":"305"}</j0>
+									<ow ref="24"/>
+									<orbit cl="UpdateFromSystemLocationOrbit" z="86158" oR="722.61615" lI="0.9999997" e="0.15">
+										<sP cl="LocationToken" ref="85954"/>
+										<s cl="Plnt" ref="85965"/>
+										<iSE cl="JumpPoint" ref="86145"/>
+										<iH cl="JumpPoint" ref="86155"/>
+										<p z="86159">-2415.7437|-8663.286</p>
+										<l z="86160">-2416.5337|-8663.158</l>
+									</orbit>
+									<cL cl="Hyperspace" ref="2"/>
+									<me z="86161">
+										<d z="86162"/>
+									</me>
+									<sc z="86163"/>
+									<tags z="86164">
+										<st>jump_point</st>
+									</tags>
+									<dst z="86165">
+										<JumpDestination z="86166" l="the fringe of the Duzahk system" minD="0.0" maxD="0.0">
+											<d cl="JumpPoint" ref="86145"/>
+										</JumpDestination>
+									</dst>
+									<f z="86167" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+									<layers z="86168" enum-type="CaEnLa">JUMP_POINTS</layers>
+								</d>
+							</JumpDestination>
+						</dst>
+						<f z="86169" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+						<layers z="86170" enum-type="CaEnLa">JUMP_POINTS</layers>
+					</JumpPoint>
+					<CCEnt z="86171" sP="1.0" dRDOM="0.5" fL="TERRAIN_7A">
+						<loc z="86172">-49791.89|89154.98</loc>
+						<vel z="86173">-6.9409847|11.427484</vel>
+						<j0>{"f6":90,"f0":"Cargo Pods","f3":"cargo_pods","f2":[255,240,220,255],"f4":"2bbd4d"}</j0>
+						<ow ref="69"/>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="86174">
+							<d z="86175"/>
+						</me>
+						<sc z="86176"/>
+						<cV z="86177" sn="graphics/illustrations/cargo_pod_drift.jpg" sIW="640.0" sIH="400.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+						<tags z="86178">
+							<st>has_interaction_dialog</st>
+							<st>neutrino</st>
+						</tags>
+						<dRM z="86179" fB="1758.3005" m="1.0" pM="0.0" nR="false">
+							<fBs z="86180" s="gen" v="1758.3005"/>
+						</dRM>
+						<j1>{"f1":64,"f0":64,"f3":-1,"f2":58.989796,"f5":"cargo_pods","f4":-1}</j1>
+						<cargo z="86181" uS="true" mC="1000.0" sU="810.0" mF="500.0" mP="750.0" fT="false">
+							<s z="86182">
+								<CIStack z="86183" rS="false" s="810.0" mS="1000000.0" cSPU="1.0" bVPU="30.0" t="RESOURCES">
+									<d cl="st">metals</d>
+									<c ref="86181"/>
+								</CIStack>
+							</s>
+							<c z="86184">
+								<value>0.0</value>
+							</c>
+							<mS z="86185" nP="ISS" nSf="neutral" nS="true" oSML="false">
+								<m z="86186"/>
+							</mS>
+						</cargo>
+						<la z="86187" enum-type="CaEnLa">TERRAIN_7A</la>
+						<p cl="CargoPodsEntityPlugin" z="86188" el="11.035767" mD="28.0" eD="0.0">
+							<e cl="CCEnt" ref="86171"/>
+						</p>
+					</CCEnt>
+					<CCEnt z="86189" sP="1.0" dRDOM="0.5" fL="TERRAIN_7A">
+						<loc z="86190">-55781.47|-44468.09</loc>
+						<vel z="86191">-7.770866|-6.265047</vel>
+						<j0>{"f6":90,"f0":"Cargo Pods","f3":"cargo_pods","f2":[255,240,220,255],"f4":"2bc06d"}</j0>
+						<ow ref="69"/>
+						<cL cl="Sstm" ref="85957"/>
+						<ls cl="Plnt" ref="85965"/>
+						<me z="86192">
+							<d z="86193"/>
+						</me>
+						<sc z="86194"/>
+						<cV z="86195" sn="graphics/illustrations/cargo_pod_drift.jpg" sIW="640.0" sIH="400.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+						<tags z="86196">
+							<st>has_interaction_dialog</st>
+							<st>neutrino</st>
+						</tags>
+						<dRM z="86197" fB="1679.7959" m="1.0" pM="0.0" nR="false">
+							<fBs z="86198" s="gen" v="1679.7959"/>
+						</dRM>
+						<j1>{"f1":64,"f0":64,"f3":-1,"f2":54.72136,"f5":"cargo_pods","f4":-1}</j1>
+						<cargo z="86199" uS="true" mC="1000.0" sU="303.0" mF="500.0" mP="750.0" fT="false">
+							<s z="86200">
+								<CIStack z="86201" rS="false" s="292.0" mS="1000000.0" cSPU="0.0" bVPU="25.0" t="RESOURCES">
+									<d cl="st">fuel</d>
+									<c ref="86199"/>
+								</CIStack>
+								<CIStack z="86202" rS="false" s="303.0" mS="1000000.0" cSPU="1.0" bVPU="30.0" t="RESOURCES">
+									<d cl="st">metals</d>
+									<c ref="86199"/>
+								</CIStack>
+							</s>
+							<c z="86203">
+								<value>0.0</value>
+							</c>
+							<mS z="86204" nP="ISS" nSf="neutral" nS="true" oSML="false">
+								<m z="86205"/>
+							</mS>
+						</cargo>
+						<la z="86206" enum-type="CaEnLa">TERRAIN_7A</la>
+						<p cl="CargoPodsEntityPlugin" z="86207" el="6.3092275" mD="24.0" eD="0.0">
+							<e cl="CCEnt" ref="86189"/>
+						</p>
+					</CCEnt>
+				</saved>
+			</o>
+			<b z="86208" hM="false">
+				<bgO z="86209">96.77048|121.05627</bgO>
+				<s z="86210" o="graphics/backgrounds/background4.jpg" t="graphics/backgrounds/background1.jpg">
+					<d cl="BackgroundAndStars" ref="86208"/>
+				</s>
+			</b>
+			<hP z="86211" d="1.0" nF="1" lp="false" r="false" e="0.0" pr="0.0" cF="0" cL="0" sN="false" l="500">
+				<p z="86212"/>
+			</hP>
+			<l z="86213">-2300.0|-7950.0</l>
+			<lC z="86214">255,240,220,255</lC>
+			<lH z="86215" b="0.32000065" i="10.0" o="10.0" s="OUT" d="true" u="true"/>
+			<fS z="86216"/>
+			<pDat z="86217"/>
+			<sPts z="86218"/>
+			<scr z="86219"/>
+			<activeThisFrame>false</activeThisFrame>
+			<tags z="86220">
+				<st>theme_core_unpopulated</st>
+			</tags>
+			<memory z="86221">
+				<d z="86222"/>
+			</memory>
+			<star ref="85965"/>
+			<hA cl="LocationToken" ref="85954"/>
+		</s>
+		<a cl="LocationToken" ref="85954"/>
+	</orbit>
+	<id>300</id>
+	<faction ref="69"/>
+	<tags z="86223">
+		<st>system_anchor</st>
+	</tags>
+	<memory z="86224">
+		<d z="86225">
+			<e>
+				<st>$anchor_starSystem</st>
+				<Sstm ref="85957"/>
+			</e>
+		</d>
+	</memory>
+</LocationToken>
+
+
+<LocationToken z="85357">
+	<loc z="85358">-9500.0|-14500.0</loc>
+	<where cl="Hyperspace" ref="2"/>
+	<orbit cl="UFHLOrbt" z="85359">
+		<s cl="Sstm" z="85360" dN="Penelope's Star Star System" bTF="graphics/backgrounds/background4.jpg" hM="false" lPV="-55275277462000" ty="SINGLE" pg="false" bN="Penelope's Star" mRIH="1439.5" eBP="true">
+			<o z="85361">
+				<lists z="85362"/>
+				<maps z="85363"/>
+				<classifier cl="FastIterationClassifier" z="85364">
+					<cache z="85365"/>
+				</classifier>
+				<nextId>0</nextId>
+				<forFastContains z="85366"/>
+				<saved z="85367">
+					<Plnt z="85368">
+						<loc z="85369">0.0|0.0</loc>
+						<vel z="85370">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Penelope's Star","f2":[255,200,210,255],"f4":"penelope"}</j0>
+						<ow ref="24"/>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85371">
+							<d z="85372"/>
+						</me>
+						<sc z="85373"/>
+						<tags z="85374">
+							<st>star</st>
+						</tags>
+						<angle>-235155.69</angle>
+						<cloudAngle>0.0</cloudAngle>
+						<radius>1100.0</radius>
+						<type>star_red_giant</type>
+						<layers z="85375" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<CampaignTerrain z="85376" type="corona" radius="0.0">
+						<loc z="85377">0.0|0.0</loc>
+						<vel z="85378">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,200,210,255],"f4":"230"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbt" z="85379" r="0.0" op="100.0" ca="0.0">
+							<e cl="CampaignTerrain" ref="85376"/>
+							<f cl="Plnt" ref="85368"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85380">
+							<d z="85381"/>
+						</me>
+						<sc z="85382"/>
+						<tags z="85383">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="StarCoronaTerrainPlugin" z="85384" tid="corona" n="Corona">
+							<entity cl="CampaignTerrain" ref="85376"/>
+							<params cl="CoronaParams" defined-in="BaseRingTerrain" z="85385" bWIE="1600.0" mR="800.0" wBL="10.0" fP="0.25" crLM="3.0">
+								<e cl="Plnt" ref="85368"/>
+							</params>
+							<renderer z="85386" a="178.83685">
+								<d cl="StarCoronaTerrainPlugin" ref="85384"/>
+							</renderer>
+							<flareManager z="85387">
+								<fT z="85388" i="0.5" a="1.5" c="0.9902705" e="0.8000001" ie="false"/>
+								<f z="85389">
+									<Flare z="85390" d="56.47158" a="18.17957" eLM="1.0205191" eLF="75.1931" sFM="0.05" c="ffff0000">
+										<f z="85391" b="0.54185575" i="1.4087429" o="1.5279033" s="OUT" d="true" u="false"/>
+									</Flare>
+									<Flare z="85392" d="35.668076" a="13.904138" eLM="1.0223019" eLF="88.50586" sFM="0.05" c="ffff0000">
+										<f z="85393" b="0.0" i="1.9270046" o="1.0067823" s="IDLE" d="true" u="false"/>
+									</Flare>
+									<Flare z="85394" d="54.721138" a="12.682072" eLM="1.0061483" eLF="74.789505" sFM="0.05" c="ffff0000">
+										<f z="85395" b="0.0" i="1.2494963" o="1.8704" s="IDLE" d="true" u="false"/>
+									</Flare>
+									<Flare z="85396" d="46.23883" a="55.193882" eLM="1.0121676" eLF="261.67868" sFM="0.05" c="ffff0000">
+										<f z="85397" b="0.0" i="8.952574" o="8.718451" s="IDLE" d="true" u="false"/>
+									</Flare>
+								</f>
+								<d cl="StarCoronaTerrainPlugin" ref="85384"/>
+							</flareManager>
+							<params ref="85385"/>
+						</plugin>
+					</CampaignTerrain>
+					<CampaignTerrain z="85398" type="asteroid_belt" radius="0.0">
+						<loc z="85399">0.0|0.0</loc>
+						<vel z="85400">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,200,210,255],"f4":"231"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbt" z="85401" r="0.0" op="100.0" ca="0.0">
+							<e cl="CampaignTerrain" ref="85398"/>
+							<f cl="Plnt" ref="85368"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85402">
+							<d z="85403"/>
+						</me>
+						<sc z="85404"/>
+						<tags z="85405">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="AsteroidBeltTerrainPlugin" z="85406" tid="asteroid_belt" n="Asteroid Belt" nTCA="false">
+							<entity cl="CampaignTerrain" ref="85398"/>
+							<params cl="AsteroidBeltParams" defined-in="BaseRingTerrain" z="85407" bWIE="100.0" mR="2200.0" nA="50" minO="30.0" maxO="40.0" minS="4.0" maxS="16.0"/>
+							<params ref="85407"/>
+						</plugin>
+					</CampaignTerrain>
+					<RingBand z="85408">
+						<loc z="85409">0.0|0.0</loc>
+						<vel z="85410">0.0|0.0</vel>
+						<j0>{"f6":0,"f2":[255,200,210,255],"f4":"232"}</j0>
+						<ow ref="24"/>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85411">
+							<d z="85412"/>
+						</me>
+						<sc z="85413"/>
+						<j1>{"f6":-8057.2114,"f7":"misc","f8":"rings_asteroids0","f11":2,"f10":0,"f1":3,"f0":256,"f3":256,"f2":[255,255,255,255],"f5":2200,"f4":345}</j1>
+						<focus cl="Plnt" ref="85368"/>
+						<layers z="85414" enum-type="CaEnLa">RINGS</layers>
+					</RingBand>
+					<Plnt z="85415">
+						<loc z="85416">2766.7766|-683.7013</loc>
+						<vel z="85417">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Thrinakia","f2":[255,200,210,255],"f4":"penelope1"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="85418" r="2850.0" op="90.0" ca="346.11963">
+							<e cl="Plnt" ref="85415"/>
+							<f cl="Plnt" ref="85368"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85419">
+							<d z="85420">
+								<e>
+									<st>$salvageSeed</st>
+									<Lp>7762402598965591242</Lp>
+								</e>
+							</d>
+						</me>
+						<market cl="PCMarket" z="85421">
+							<id>market_penelope1</id>
+							<name>Thrinakia</name>
+							<primaryEntity cl="Plnt" ref="85415"/>
+							<surveyLevel>FULL</surveyLevel>
+							<cond z="85422">
+								<st>very_hot</st>
+								<st>tectonic_activity</st>
+								<st>rare_ore_abundant</st>
+								<st>toxic_atmosphere</st>
+								<st>ore_rich</st>
+							</cond>
+							<surveyed z="85423">
+								<st>very_hot</st>
+								<st>tectonic_activity</st>
+								<st>rare_ore_abundant</st>
+								<st>toxic_atmosphere</st>
+								<st>ore_rich</st>
+							</surveyed>
+						</market>
+						<sc z="85424"/>
+						<tags z="85425">
+							<st>planet</st>
+						</tags>
+						<angle>-274226.3</angle>
+						<cloudAngle>-156787.45</cloudAngle>
+						<radius>110.0</radius>
+						<type>lava_minor</type>
+						<layers z="85426" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<Plnt z="85427">
+						<loc z="85428">4211.5293|1585.2506</loc>
+						<vel z="85429">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Ithaca","f3":"planet_ithaca","f2":[255,200,210,255],"f4":"penelope2"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="85430" r="4500.0" op="135.0" ca="20.626709">
+							<e cl="Plnt" ref="85427"/>
+							<f cl="Plnt" ref="85368"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85431">
+							<d z="85432">
+								<e>
+									<st>$salvageSeed</st>
+									<Lp>-5009257350624872276</Lp>
+								</e>
+							</d>
+						</me>
+						<market cl="PCMarket" z="85433">
+							<id>market_penelope2</id>
+							<name>Ithaca</name>
+							<primaryEntity cl="Plnt" ref="85427"/>
+							<surveyLevel>FULL</surveyLevel>
+							<cond z="85434">
+								<st>extreme_weather</st>
+								<st>farmland_poor</st>
+								<st>hot</st>
+								<st>ore_moderate</st>
+								<st>habitable</st>
+							</cond>
+							<surveyed z="85435">
+								<st>extreme_weather</st>
+								<st>farmland_poor</st>
+								<st>hot</st>
+								<st>ore_moderate</st>
+								<st>habitable</st>
+							</surveyed>
+						</market>
+						<sc z="85436"/>
+						<tags z="85437">
+							<st>planet</st>
+						</tags>
+						<angle>-234922.98</angle>
+						<cloudAngle>-783899.94</cloudAngle>
+						<radius>150.0</radius>
+						<type>desert</type>
+						<layers z="85438" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<CCEnt z="85439" fL="STATIONS">
+						<loc z="85440">733.0872|4439.8857</loc>
+						<vel z="85441">0.0|0.0</vel>
+						<j0>{"f6":80.62427,"f0":"Stable Location","f3":"stable_location","f2":[255,200,210,255],"f4":"233"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbtPD" z="85442" r="4500.0" op="135.0" ca="80.62427">
+							<e cl="CCEnt" ref="85439"/>
+							<f cl="Plnt" ref="85368"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85443">
+							<d z="85444"/>
+						</me>
+						<sc z="85445"/>
+						<cV z="85446" sn="graphics/illustrations/free_orbit.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+						<tags z="85447">
+							<st>has_interaction_dialog</st>
+							<st>stable_location</st>
+						</tags>
+						<j1>{"f1":64,"f0":64,"f3":-1,"f2":75,"f5":"stable_location","f4":-1}</j1>
+						<la z="85448" enum-type="CaEnLa">STATIONS</la>
+					</CCEnt>
+					<Plnt z="85449">
+						<loc z="85450">-4646.352|4965.0186</loc>
+						<vel z="85451">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Ogygia","f3":"planet_ogygia","f2":[255,200,210,255],"f4":"penelope3"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="85452" r="6800.0" op="225.0" ca="133.10104">
+							<e cl="Plnt" ref="85449"/>
+							<f cl="Plnt" ref="85368"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85453">
+							<d z="85454">
+								<e>
+									<st>$salvageSeed</st>
+									<Lp>-1591833256995135890</Lp>
+								</e>
+								<e>
+									<st>$salvageSpecId</st>
+									<st>ruins_scattered</st>
+								</e>
+								<e>
+									<st>$salvageLeaveText</st>
+									<st>Go back</st>
+								</e>
+							</d>
+						</me>
+						<market cl="PCMarket" z="85455">
+							<id>market_penelope3</id>
+							<name>Ogygia</name>
+							<primaryEntity cl="Plnt" ref="85449"/>
+							<memory cl="Memory" z="85456">
+								<d z="85457">
+									<e>
+										<st>$ruinsExplored</st>
+										<st>true</st>
+									</e>
+								</d>
+							</memory>
+							<surveyLevel>FULL</surveyLevel>
+							<cond z="85458">
+								<st>ruins_scattered</st>
+								<st>no_atmosphere</st>
+								<st>hot</st>
+								<st>ore_moderate</st>
+							</cond>
+							<surveyed z="85459">
+								<st>ruins_scattered</st>
+								<st>no_atmosphere</st>
+								<st>hot</st>
+								<st>ore_moderate</st>
+							</surveyed>
+						</market>
+						<sc z="85460"/>
+						<tags z="85461">
+							<st>planet</st>
+						</tags>
+						<angle>-313286.38</angle>
+						<cloudAngle>0.0</cloudAngle>
+						<radius>130.0</radius>
+						<type>barren-bombarded</type>
+						<diff z="85462">
+							<j>{"planetColor":[230,240,255,255]}</j>
+						</diff>
+						<layers z="85463" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<Plnt z="85464">
+						<loc z="85465">-4993.5815|4766.445</loc>
+						<vel z="85466">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Calypso","f2":[255,200,210,255],"f4":"penelope3a"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="85467" r="400.0" op="25.0" ca="209.7644">
+							<e cl="Plnt" ref="85464"/>
+							<f cl="Plnt" ref="85449"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85468">
+							<d z="85469">
+								<e>
+									<st>$salvageSeed</st>
+									<Lp>1012078724526472130</Lp>
+								</e>
+							</d>
+						</me>
+						<market cl="PCMarket" z="85470">
+							<id>market_penelope3a</id>
+							<name>Calypso</name>
+							<primaryEntity cl="Plnt" ref="85464"/>
+							<surveyLevel>FULL</surveyLevel>
+							<cond z="85471">
+								<st>rare_ore_sparse</st>
+								<st>ore_sparse</st>
+								<st>no_atmosphere</st>
+								<st>hot</st>
+								<st>low_gravity</st>
+							</cond>
+							<surveyed z="85472">
+								<st>rare_ore_sparse</st>
+								<st>ore_sparse</st>
+								<st>no_atmosphere</st>
+								<st>hot</st>
+								<st>low_gravity</st>
+							</surveyed>
+						</market>
+						<sc z="85473"/>
+						<tags z="85474">
+							<st>planet</st>
+						</tags>
+						<angle>-313499.56</angle>
+						<cloudAngle>0.0</cloudAngle>
+						<radius>60.0</radius>
+						<type>barren-bombarded</type>
+						<diff z="85475">
+							<j>{"texture":"graphics/planets/barren02.jpg","planetColor":[220,230,255,255]}</j>
+						</diff>
+						<layers z="85476" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<JumpPoint z="85477" r="50.0" dSC="misc" dSI="wormhole_hyper" sO="5.0000105">
+						<loc z="85478">-6636.4995|-1482.187</loc>
+						<vel z="85479">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Penelope's Inner Jump-point","f2":[255,200,210,255],"f4":"penelope_jump"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="85480" r="6800.0" op="225.0" ca="192.58972">
+							<e cl="JumpPoint" ref="85477"/>
+							<f cl="Plnt" ref="85368"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85481">
+							<d z="85482"/>
+						</me>
+						<sc z="85483"/>
+						<tags z="85484">
+							<st>jump_point</st>
+						</tags>
+						<dst z="85485">
+							<JumpDestination z="85486" l="hyperspace" minD="0.0" maxD="0.0">
+								<d cl="JumpPoint" z="85487" r="75.0" dSC="misc" dSI="wormhole_stars" sO="77770.65">
+									<loc z="85488">-10126.775|-14641.272</loc>
+									<vel z="85489">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Penelope's Inner Jump-point","f2":[255,255,255,255],"f4":"242"}</j0>
+									<ow ref="24"/>
+									<orbit cl="UpdateFromSystemLocationOrbit" z="85490" oR="642.5" lI="0.9999997" e="0.2">
+										<sP cl="LocationToken" ref="85357"/>
+										<s cl="Plnt" ref="85368"/>
+										<iSE cl="JumpPoint" ref="85477"/>
+										<iH cl="JumpPoint" ref="85487"/>
+										<p z="85491">-10126.691|-14641.649</p>
+										<l z="85492">-10127.113|-14639.767</l>
+									</orbit>
+									<cL cl="Hyperspace" ref="2"/>
+									<me z="85493">
+										<d z="85494"/>
+									</me>
+									<sc z="85495"/>
+									<tags z="85496">
+										<st>jump_point</st>
+									</tags>
+									<dst z="85497">
+										<JumpDestination z="85498" l="Penelope's Inner Jump-point" minD="0.0" maxD="0.0">
+											<d cl="JumpPoint" ref="85477"/>
+										</JumpDestination>
+									</dst>
+									<dP ref="85449"/>
+									<f z="85499" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+									<layers z="85500" enum-type="CaEnLa">JUMP_POINTS</layers>
+								</d>
+							</JumpDestination>
+						</dst>
+						<rP ref="85449"/>
+						<f z="85501" b="0.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+						<layers z="85502" enum-type="CaEnLa">JUMP_POINTS</layers>
+					</JumpPoint>
+					<Plnt z="85503">
+						<loc z="85504">2146.113|9254.415</loc>
+						<vel z="85505">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Aeolus","f2":[255,200,210,255],"f4":"penelope4"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="85506" r="9500.0" op="450.0" ca="76.94379">
+							<e cl="Plnt" ref="85503"/>
+							<f cl="Plnt" ref="85368"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85507">
+							<d z="85508">
+								<e>
+									<st>$salvageSeed</st>
+									<Lp>8708648325533605521</Lp>
+								</e>
+							</d>
+						</me>
+						<market cl="PCMarket" z="85509">
+							<id>market_penelope4</id>
+							<name>Aeolus</name>
+							<primaryEntity cl="Plnt" ref="85503"/>
+							<surveyLevel>PRELIMINARY</surveyLevel>
+							<cond z="85510">
+								<st>volatiles_plentiful</st>
+								<st>toxic_atmosphere</st>
+								<st>high_gravity</st>
+							</cond>
+							<surveyed z="85511">
+								<st>toxic_atmosphere</st>
+								<st>high_gravity</st>
+							</surveyed>
+						</market>
+						<sc z="85512"/>
+						<tags z="85513">
+							<st>planet</st>
+						</tags>
+						<angle>-235031.64</angle>
+						<cloudAngle>-548892.7</cloudAngle>
+						<radius>275.0</radius>
+						<type>gas_giant</type>
+						<diff z="85514">
+							<j>{"glowTexture":"graphics/planets/clouds_banded01.png","glowColor":[250,225,55,64],"useReverseLightForGlow":true,"planetColor":[150,245,255,255]}</j>
+						</diff>
+						<layers z="85515" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<CampaignTerrain z="85516" type="magnetic_field" radius="0.0">
+						<loc z="85517">2146.113|9254.415</loc>
+						<vel z="85518">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,200,210,255],"f4":"234"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbt" z="85519" r="0.0" op="100.0" ca="0.0">
+							<e cl="CampaignTerrain" ref="85516"/>
+							<f cl="Plnt" ref="85503"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85520">
+							<d z="85521"/>
+						</me>
+						<sc z="85522"/>
+						<tags z="85523">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="MagneticFieldTerrainPlugin" z="85524" tid="magnetic_field" n="Magnetic Field">
+							<e cl="CampaignTerrain" ref="85516"/>
+							<params cl="MagneticFieldParams" defined-in="BaseRingTerrain" z="85525" bWIE="435.0" mR="217.5" c="ff5ab428|ff82915a|ffa56e91|ff5f37a0|ff2d0082|ff140082|ff0a0096" aF="0.5" iR="325.0" oR="525.0">
+								<e cl="Plnt" ref="85503"/>
+								<bC z="85526">50,20,100,50</bC>
+							</params>
+							<r z="85527" a="178.83685">
+								<d cl="MagneticFieldTerrainPlugin" ref="85524"/>
+							</r>
+							<params ref="85525"/>
+							<fM z="85528">
+								<fT z="85529" i="0.5" a="1.5" c="1.4924573" e="0.4" ie="false"/>
+								<f z="85530">
+									<Flare z="85531" d="137.7619" a="14.510345" eLM="1.0" eLF="0.0" sFM="0.8" c="ff5f37a0|ff2d0082|ff140082|ff0a0096">
+										<f z="85532" b="1.0" i="0.92289996" o="0.9990124" s="OUT" d="true" u="false"/>
+									</Flare>
+									<Flare z="85533" d="143.23141" a="14.66427" eLM="1.0" eLF="0.0" sFM="0.8" c="ff5ab428|ff82915a|ffa56e91|ff5f37a0|ff2d0082|ff140082|ff0a0096">
+										<f z="85534" b="0.0" i="0.53431165" o="0.76050687" s="IDLE" d="true" u="false"/>
+									</Flare>
+									<Flare z="85535" d="126.81712" a="15.53316" eLM="1.0" eLF="0.0" sFM="0.8" c="ffa56e91|ff5f37a0|ff2d0082|ff140082|ff0a0096">
+										<f z="85536" b="0.0" i="0.6202465" o="0.7354693" s="IDLE" d="true" u="false"/>
+									</Flare>
+									<Flare z="85537" d="137.48402" a="13.966341" eLM="1.0" eLF="0.0" sFM="0.8" c="ff2d0082|ff140082|ff0a0096">
+										<f z="85538" b="0.0" i="0.7936539" o="0.76018345" s="IDLE" d="true" u="false"/>
+									</Flare>
+									<Flare z="85539" d="134.7807" a="11.610337" eLM="1.0" eLF="0.0" sFM="0.8" c="ffa56e91|ff5f37a0|ff2d0082|ff140082|ff0a0096">
+										<f z="85540" b="0.0" i="0.59376013" o="0.6748287" s="IDLE" d="true" u="false"/>
+									</Flare>
+									<Flare z="85541" d="126.84543" a="33.79242" eLM="1.0" eLF="0.0" sFM="0.8" c="ff5ab428|ff82915a|ffa56e91|ff5f37a0|ff2d0082|ff140082|ff0a0096">
+										<f z="85542" b="0.0" i="1.7166867" o="4.845832" s="IDLE" d="true" u="false"/>
+									</Flare>
+								</f>
+								<d cl="MagneticFieldTerrainPlugin" ref="85524"/>
+							</fM>
+						</plugin>
+					</CampaignTerrain>
+					<Plnt z="85543">
+						<loc z="85544">1830.4762|8629.616</loc>
+						<vel z="85545">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Dorus","f2":[255,200,210,255],"f4":"penelope4a"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="85546" r="700.0" op="22.0" ca="243.19794">
+							<e cl="Plnt" ref="85543"/>
+							<f cl="Plnt" ref="85503"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85547">
+							<d z="85548">
+								<e>
+									<st>$salvageSeed</st>
+									<Lp>-2746614676233162678</Lp>
+								</e>
+							</d>
+						</me>
+						<market cl="PCMarket" z="85549">
+							<id>market_penelope4a</id>
+							<name>Dorus</name>
+							<primaryEntity cl="Plnt" ref="85543"/>
+							<surveyLevel>FULL</surveyLevel>
+							<cond z="85550">
+								<st>no_atmosphere</st>
+								<st>ore_moderate</st>
+							</cond>
+							<surveyed z="85551">
+								<st>no_atmosphere</st>
+								<st>ore_moderate</st>
+							</surveyed>
+						</market>
+						<sc z="85552"/>
+						<tags z="85553">
+							<st>planet</st>
+						</tags>
+						<angle>-234952.42</angle>
+						<cloudAngle>0.0</cloudAngle>
+						<radius>50.0</radius>
+						<type>barren</type>
+						<diff z="85554">
+							<j>{"texture":"graphics/planets/venuslike.jpg","planetColor":[185,245,255,255]}</j>
+						</diff>
+						<layers z="85555" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<Plnt z="85556">
+						<loc z="85557">2981.47|9804.123</loc>
+						<vel z="85558">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Xuthus","f2":[255,200,210,255],"f4":"penelope4b"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="85559" r="1000.0" op="45.0" ca="33.346985">
+							<e cl="Plnt" ref="85556"/>
+							<f cl="Plnt" ref="85503"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85560">
+							<d z="85561">
+								<e>
+									<st>$salvageSeed</st>
+									<Lp>8846038091525785980</Lp>
+								</e>
+							</d>
+						</me>
+						<market cl="PCMarket" z="85562">
+							<id>market_penelope4b</id>
+							<name>Xuthus</name>
+							<primaryEntity cl="Plnt" ref="85556"/>
+							<surveyLevel>FULL</surveyLevel>
+							<cond z="85563">
+								<st>toxic_atmosphere</st>
+								<st>ore_moderate</st>
+								<st>very_cold</st>
+							</cond>
+							<surveyed z="85564">
+								<st>toxic_atmosphere</st>
+								<st>ore_moderate</st>
+								<st>very_cold</st>
+							</surveyed>
+						</market>
+						<sc z="85565"/>
+						<tags z="85566">
+							<st>planet</st>
+						</tags>
+						<angle>-234912.42</angle>
+						<cloudAngle>627149.8</cloudAngle>
+						<radius>70.0</radius>
+						<type>toxic_cold</type>
+						<diff z="85567">
+							<j>{"planetColor":[190,235,255,255]}</j>
+						</diff>
+						<layers z="85568" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<CampaignTerrain z="85569" type="asteroid_field" radius="0.0">
+						<loc z="85570">-6939.0137|6488.4585</loc>
+						<vel z="85571">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,200,210,255],"f4":"235"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbt" z="85572" r="9500.0" op="450.0" ca="136.92181">
+							<e cl="CampaignTerrain" ref="85569"/>
+							<f cl="Plnt" ref="85368"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85573">
+							<d z="85574"/>
+						</me>
+						<sc z="85575"/>
+						<tags z="85576">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="AsteroidFieldTerrainPlugin" z="85577" tid="asteroid_field" n="Penelope L4 Asteroids" nTCA="false">
+							<entity cl="CampaignTerrain" ref="85569"/>
+							<params cl="AsteroidFieldParams" defined-in="BaseRingTerrain" z="85578" bWIE="586.86444" mR="293.43222" n="Penelope L4 Asteroids" minR="400.0" maxR="600.0" minA="16" maxA="24" minS="4.0" maxS="16.0" nA="16"/>
+							<params ref="85578"/>
+						</plugin>
+					</CampaignTerrain>
+					<CampaignTerrain z="85579" type="asteroid_field" radius="0.0">
+						<loc z="85580">9089.922|2761.0383</loc>
+						<vel z="85581">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,200,210,255],"f4":"236"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbt" z="85582" r="9500.0" op="450.0" ca="16.896027">
+							<e cl="CampaignTerrain" ref="85579"/>
+							<f cl="Plnt" ref="85368"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85583">
+							<d z="85584"/>
+						</me>
+						<sc z="85585"/>
+						<tags z="85586">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="AsteroidFieldTerrainPlugin" z="85587" tid="asteroid_field" n="Penelope L5 Asteroids" nTCA="false">
+							<entity cl="CampaignTerrain" ref="85579"/>
+							<params cl="AsteroidFieldParams" defined-in="BaseRingTerrain" z="85588" bWIE="586.8465" mR="293.42325" n="Penelope L5 Asteroids" minR="400.0" maxR="600.0" minA="16" maxA="24" minS="4.0" maxS="16.0" nA="17"/>
+							<params ref="85588"/>
+						</plugin>
+					</CampaignTerrain>
+					<CCEnt z="85589" fL="STATIONS">
+						<loc z="85590">9089.922|2761.0383</loc>
+						<vel z="85591">0.0|0.0</vel>
+						<j0>{"f6":16.896027,"f0":"Stable Location","f3":"stable_location","f2":[255,200,210,255],"f4":"237"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbtPD" z="85592" r="9500.0" op="450.0" ca="16.896027">
+							<e cl="CCEnt" ref="85589"/>
+							<f cl="Plnt" ref="85368"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85593">
+							<d z="85594"/>
+						</me>
+						<sc z="85595"/>
+						<cV z="85596" sn="graphics/illustrations/free_orbit.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+						<tags z="85597">
+							<st>has_interaction_dialog</st>
+							<st>stable_location</st>
+						</tags>
+						<j1>{"f1":64,"f0":64,"f3":-1,"f2":75,"f5":"stable_location","f4":-1}</j1>
+						<la z="85598" enum-type="CaEnLa">STATIONS</la>
+					</CCEnt>
+					<CCEnt z="85599" fL="STATIONS">
+						<loc z="85600">-2139.0532|-9256.05</loc>
+						<vel z="85601">0.0|0.0</vel>
+						<j0>{"f6":256.98755,"f0":"Stable Location","f3":"stable_location","f2":[255,200,210,255],"f4":"238"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbtPD" z="85602" r="9500.0" op="450.0" ca="256.98755">
+							<e cl="CCEnt" ref="85599"/>
+							<f cl="Plnt" ref="85368"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85603">
+							<d z="85604"/>
+						</me>
+						<sc z="85605"/>
+						<cV z="85606" sn="graphics/illustrations/free_orbit.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+						<tags z="85607">
+							<st>has_interaction_dialog</st>
+							<st>stable_location</st>
+						</tags>
+						<j1>{"f1":64,"f0":64,"f3":-1,"f2":75,"f5":"stable_location","f4":-1}</j1>
+						<la z="85608" enum-type="CaEnLa">STATIONS</la>
+					</CCEnt>
+					<Plnt z="85609">
+						<loc z="85610">-8343.497|-8694.169</loc>
+						<vel z="85611">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Telepylus","f2":[255,200,210,255],"f4":"penelope5"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="85612" r="12050.0" op="650.0" ca="226.17908">
+							<e cl="Plnt" ref="85609"/>
+							<f cl="Plnt" ref="85368"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85613">
+							<d z="85614">
+								<e>
+									<st>$salvageSeed</st>
+									<Lp>-6684338836255524759</Lp>
+								</e>
+							</d>
+						</me>
+						<market cl="PCMarket" z="85615">
+							<id>market_penelope5</id>
+							<name>Telepylus</name>
+							<primaryEntity cl="Plnt" ref="85609"/>
+							<surveyLevel>PRELIMINARY</surveyLevel>
+							<cond z="85616">
+								<st>cold</st>
+								<st>extreme_weather</st>
+								<st>volatiles_trace</st>
+								<st>dense_atmosphere</st>
+								<st>high_gravity</st>
+							</cond>
+							<surveyed z="85617">
+								<st>cold</st>
+								<st>extreme_weather</st>
+								<st>dense_atmosphere</st>
+								<st>high_gravity</st>
+							</surveyed>
+						</market>
+						<sc z="85618"/>
+						<tags z="85619">
+							<st>planet</st>
+						</tags>
+						<angle>-234975.83</angle>
+						<cloudAngle>-548892.7</cloudAngle>
+						<radius>280.0</radius>
+						<type>gas_giant</type>
+						<diff z="85620">
+							<j>{"glowTexture":"graphics/planets/clouds_banded01.png","glowColor":[250,225,155,32],"planetColor":[170,190,255,255]}</j>
+						</diff>
+						<layers z="85621" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<CCEnt z="85622" fL="STATIONS">
+						<loc z="85623">-8666.337|-8962.821</loc>
+						<vel z="85624">0.0|0.0</vel>
+						<j0>{"f6":219.76569,"f0":"Telepylus Station","f3":"station_telepylus","f2":[255,200,210,255],"f4":"telepylus_station"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbtPD" z="85625" r="420.0" op="25.0" ca="219.76569">
+							<e cl="CCEnt" ref="85622"/>
+							<f cl="Plnt" ref="85609"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85626">
+							<d z="85627"/>
+						</me>
+						<sc z="85628"/>
+						<cV z="85629" sn="graphics/illustrations/abandoned_station3.jpg" sIW="640.0" sIH="400.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+						<tags z="85630">
+							<st>station</st>
+						</tags>
+						<j1>{"f1":90,"f0":90,"f3":-1,"f2":70,"f5":"station_sporeship_derelict","f4":-1}</j1>
+						<la z="85631" enum-type="CaEnLa">STATIONS</la>
+					</CCEnt>
+					<RingBand z="85632">
+						<loc z="85633">-8343.497|-8694.169</loc>
+						<vel z="85634">0.0|0.0</vel>
+						<j0>{"f6":0,"f2":[255,200,210,255],"f4":"239"}</j0>
+						<ow ref="24"/>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85635">
+							<d z="85636"/>
+						</me>
+						<sc z="85637"/>
+						<j1>{"f6":-93795.4,"f7":"misc","f8":"rings_special0","f11":2,"f10":0,"f1":1,"f0":256,"f3":256,"f2":[200,200,200,255],"f5":600,"f4":30}</j1>
+						<focus cl="Plnt" ref="85609"/>
+						<layers z="85638" enum-type="CaEnLa">RINGS</layers>
+					</RingBand>
+					<CampaignTerrain z="85639" type="ring" radius="0.0">
+						<loc z="85640">-8343.497|-8694.169</loc>
+						<vel z="85641">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,200,210,255],"f4":"23a"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbt" z="85642" r="0.0" op="100.0" ca="0.0">
+							<e cl="CampaignTerrain" ref="85639"/>
+							<f cl="Plnt" ref="85609"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85643">
+							<d z="85644"/>
+						</me>
+						<sc z="85645"/>
+						<tags z="85646">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="RingSystemTerrainPlugin" z="85647" tid="ring" n="Ring System">
+							<entity cl="CampaignTerrain" ref="85639"/>
+							<params z="85648" bWIE="192.0" mR="600.0">
+								<e cl="RingBand" ref="85632"/>
+							</params>
+						</plugin>
+					</CampaignTerrain>
+					<JumpPoint z="85649" r="50.0" dSC="misc" dSI="wormhole_hyper" sO="33031.914">
+						<loc z="85650">-11701.112|2878.621</loc>
+						<vel z="85651">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Penelope's Outer Jump-point","f2":[255,200,210,255],"f4":"penelope_jump"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="85652" r="12050.0" op="650.0" ca="166.17896">
+							<e cl="JumpPoint" ref="85649"/>
+							<f cl="Plnt" ref="85368"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85653">
+							<d z="85654"/>
+						</me>
+						<sc z="85655"/>
+						<tags z="85656">
+							<st>jump_point</st>
+						</tags>
+						<dst z="85657">
+							<JumpDestination z="85658" l="hyperspace" minD="0.0" maxD="0.0">
+								<d cl="JumpPoint" z="85659" r="50.0" dSC="misc" dSI="wormhole_stars" sO="32874.824">
+									<loc z="85660">-10536.926|-14246.345</loc>
+									<vel z="85661">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Penelope's Outer Jump-point","f2":[255,255,255,255],"f4":"244"}</j0>
+									<ow ref="24"/>
+									<orbit cl="UpdateFromSystemLocationOrbit" z="85662" oR="1067.5" lI="0.9999997" e="0.2">
+										<sP cl="LocationToken" ref="85357"/>
+										<s cl="Plnt" ref="85368"/>
+										<iSE cl="JumpPoint" ref="85649"/>
+										<iH cl="JumpPoint" ref="85659"/>
+										<p z="85663">-10536.984|-14246.583</p>
+										<l z="85664">-10536.692|-14245.392</l>
+									</orbit>
+									<cL cl="Hyperspace" ref="2"/>
+									<me z="85665">
+										<d z="85666"/>
+									</me>
+									<sc z="85667"/>
+									<tags z="85668">
+										<st>jump_point</st>
+									</tags>
+									<dst z="85669">
+										<JumpDestination z="85670" l="Penelope's Outer Jump-point" minD="0.0" maxD="0.0">
+											<d cl="JumpPoint" ref="85649"/>
+										</JumpDestination>
+									</dst>
+									<f z="85671" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+									<layers z="85672" enum-type="CaEnLa">JUMP_POINTS</layers>
+								</d>
+							</JumpDestination>
+						</dst>
+						<f z="85673" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+						<layers z="85674" enum-type="CaEnLa">JUMP_POINTS</layers>
+					</JumpPoint>
+					<CampaignTerrain z="85675" type="asteroid_belt" radius="0.0">
+						<loc z="85676">0.0|0.0</loc>
+						<vel z="85677">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,200,210,255],"f4":"23b"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbt" z="85678" r="0.0" op="100.0" ca="0.0">
+							<e cl="CampaignTerrain" ref="85675"/>
+							<f cl="Plnt" ref="85368"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85679">
+							<d z="85680"/>
+						</me>
+						<sc z="85681"/>
+						<tags z="85682">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="AsteroidBeltTerrainPlugin" z="85683" tid="asteroid_belt" n="The Cyclopeans" nTCA="false">
+							<entity cl="CampaignTerrain" ref="85675"/>
+							<params cl="AsteroidBeltParams" defined-in="BaseRingTerrain" z="85684" bWIE="200.0" mR="13750.0" n="The Cyclopeans" nA="100" minO="330.0" maxO="360.0" minS="4.0" maxS="16.0"/>
+							<params ref="85684"/>
+						</plugin>
+					</CampaignTerrain>
+					<RingBand z="85685">
+						<loc z="85686">0.0|0.0</loc>
+						<vel z="85687">0.0|0.0</vel>
+						<j0>{"f6":0,"f2":[255,200,210,255],"f4":"23c"}</j0>
+						<ow ref="24"/>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85688">
+							<d z="85689"/>
+						</me>
+						<sc z="85690"/>
+						<j1>{"f6":-8138.797,"f7":"misc","f8":"rings_asteroids0","f11":2,"f10":0,"f0":256,"f3":256,"f2":[255,255,255,255],"f5":13750,"f4":345}</j1>
+						<focus cl="Plnt" ref="85368"/>
+						<layers z="85691" enum-type="CaEnLa">RINGS</layers>
+					</RingBand>
+					<Plnt z="85692">
+						<loc z="85693">13901.524|-4192.6157</loc>
+						<vel z="85694">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Ismara","f3":"planet_ismara","f2":[255,200,210,255],"f4":"penelope6"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="85695" r="14520.0" op="335.0" ca="343.21704">
+							<e cl="Plnt" ref="85692"/>
+							<f cl="Plnt" ref="85368"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85696">
+							<d z="85697">
+								<e>
+									<st>$salvageSeed</st>
+									<Lp>255921983444182705</Lp>
+								</e>
+							</d>
+						</me>
+						<market cl="PCMarket" z="85698">
+							<id>market_penelope6</id>
+							<name>Ismara</name>
+							<primaryEntity cl="Plnt" ref="85692"/>
+							<surveyLevel>FULL</surveyLevel>
+							<cond z="85699">
+								<st>ore_abundant</st>
+								<st>rare_ore_moderate</st>
+								<st>tectonic_activity</st>
+								<st>poor_light</st>
+								<st>very_cold</st>
+								<st>volatiles_diffuse</st>
+							</cond>
+							<surveyed z="85700">
+								<st>ore_abundant</st>
+								<st>rare_ore_moderate</st>
+								<st>tectonic_activity</st>
+								<st>poor_light</st>
+								<st>very_cold</st>
+								<st>volatiles_diffuse</st>
+							</surveyed>
+						</market>
+						<sc z="85701"/>
+						<tags z="85702">
+							<st>planet</st>
+						</tags>
+						<angle>-235151.4</angle>
+						<cloudAngle>-391949.97</cloudAngle>
+						<radius>100.0</radius>
+						<type>cryovolcanic</type>
+						<layers z="85703" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<JumpPoint z="85704" r="50.0" dSC="misc" dSI="wormhole_hyper" sO="62746.992">
+						<loc z="85705">-1058.2563|-17133.629</loc>
+						<vel z="85706">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Fringe Jump-point","f2":[255,200,210,255],"f4":"248"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="85707" r="17166.28" op="1652.0" ca="266.46564">
+							<e cl="JumpPoint" ref="85704"/>
+							<f cl="Plnt" ref="85368"/>
+						</orbit>
+						<cL cl="Sstm" ref="85360"/>
+						<ls cl="Plnt" ref="85368"/>
+						<me z="85708">
+							<d z="85709"/>
+						</me>
+						<sc z="85710"/>
+						<tags z="85711">
+							<st>jump_point</st>
+						</tags>
+						<dst z="85712">
+							<JumpDestination z="85713" l="hyperspace" minD="0.0" maxD="0.0">
+								<d cl="JumpPoint" z="85714" r="50.0" dSC="misc" dSI="wormhole_stars" sO="62446.18">
+									<loc z="85715">-9584.329|-15886.938</loc>
+									<vel z="85716">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Penelope's Star, Fringe Jump-point","f2":[255,255,255,255],"f4":"247"}</j0>
+									<ow ref="24"/>
+									<orbit cl="UpdateFromSystemLocationOrbit" z="85717" oR="1389.5" lI="0.9999997" e="0.2">
+										<sP cl="LocationToken" ref="85357"/>
+										<s cl="Plnt" ref="85368"/>
+										<iSE cl="JumpPoint" ref="85704"/>
+										<iH cl="JumpPoint" ref="85714"/>
+										<p z="85718">-9584.059|-15886.955</p>
+										<l z="85719">-9585.409|-15886.873</l>
+									</orbit>
+									<cL cl="Hyperspace" ref="2"/>
+									<me z="85720">
+										<d z="85721"/>
+									</me>
+									<sc z="85722"/>
+									<tags z="85723">
+										<st>jump_point</st>
+									</tags>
+									<dst z="85724">
+										<JumpDestination z="85725" l="the fringe of the Penelope's Star system" minD="0.0" maxD="0.0">
+											<d cl="JumpPoint" ref="85704"/>
+										</JumpDestination>
+									</dst>
+									<f z="85726" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+									<layers z="85727" enum-type="CaEnLa">JUMP_POINTS</layers>
+								</d>
+							</JumpDestination>
+						</dst>
+						<f z="85728" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+						<layers z="85729" enum-type="CaEnLa">JUMP_POINTS</layers>
+					</JumpPoint>
+				</saved>
+			</o>
+			<b z="85730" hM="false">
+				<bgO z="85731">116.62761|389.07745</bgO>
+				<s z="85732" o="graphics/backgrounds/background4.jpg" t="graphics/backgrounds/background4.jpg">
+					<d cl="BackgroundAndStars" ref="85730"/>
+				</s>
+			</b>
+			<hP z="85733" d="1.0" nF="1" lp="false" r="false" e="0.0" pr="0.0" cF="0" cL="0" sN="false" l="500">
+				<p z="85734"/>
+			</hP>
+			<l z="85735">-9500.0|-14500.0</l>
+			<lC z="85736">255,200,210,255</lC>
+			<lH z="85737" b="0.42999986" i="10.0" o="10.0" s="IN" d="true" u="true"/>
+			<fS z="85738"/>
+			<pDat z="85739"/>
+			<sPts z="85740"/>
+			<scr z="85741"/>
+			<activeThisFrame>false</activeThisFrame>
+			<tags z="85742">
+				<st>theme_core_unpopulated</st>
+			</tags>
+			<memory z="85743">
+				<d z="85744"/>
+			</memory>
+			<star ref="85368"/>
+			<hA cl="LocationToken" ref="85357"/>
+		</s>
+		<a cl="LocationToken" ref="85357"/>
+	</orbit>
+	<id>23d</id>
+	<faction ref="69"/>
+	<tags z="85745">
+		<st>system_anchor</st>
+	</tags>
+	<memory z="85746">
+		<d z="85747">
+			<e>
+				<st>$anchor_starSystem</st>
+				<Sstm ref="85360"/>
+			</e>
+		</d>
+	</memory>
+</LocationToken>

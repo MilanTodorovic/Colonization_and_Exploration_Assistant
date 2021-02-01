@@ -1,0 +1,83 @@
+<CCEnt z="10921" fL="STATIONS">
+	<loc z="10922">-269.00867|1373.912</loc>
+	<vel z="10923">0.0|0.0</vel>
+	<j0>{"f6":101.07825,"f0":"Salus Navigation Buoy","f3":"nav_buoy","f2":[255,210,200,255],"f4":"72"}</j0>
+	<ow ref="9924"/>
+	<orbit cl="COrbtPD" z="10924" r="1400.0" op="45.0" ca="101.07825">
+		<e cl="CCEnt" ref="10921"/>
+		<f cl="Plnt" ref="9954"/>
+	</orbit>
+	<cL cl="Sstm" ref="9957"/>
+	<ls cl="Plnt" ref="9954"/>
+	<me z="10925">
+		<d z="10926"/>
+	</me>
+	<sc z="10927"/>
+	<cV z="10928" sn="graphics/illustrations/nav_buoy.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+	<tags z="10929">
+		<st>objective</st>
+		<st>nav_buoy</st>
+		<st>neutrino_high</st>
+	</tags>
+	<j1>{"f1":64,"f0":64,"f3":-1,"f2":75,"f5":"nav_buoy","f4":-1}</j1>
+	<la z="10930" enum-type="CaEnLa">STATIONS</la>
+	<p cl="NavBuoyEP" z="10931">
+		<e cl="CCEnt" ref="10921"/>
+	</p>
+</CCEnt>
+
+<CCEnt z="13698" fL="STATIONS">
+	<loc z="13699">3263.5571|6752.718</loc>
+	<vel z="13700">0.0|0.0</vel>
+	<j0>{"f6":64.20575,"f0":"Makeshift Nav Buoy","f3":"nav_buoy_makeshift","f2":[255,220,190,255],"f4":"cdf7"}</j0>
+	<ow ref="114"/>
+	<orbit cl="COrbtPD" z="13701" r="7500.0" op="500.0" ca="64.20575">
+		<e cl="CCEnt" ref="13698"/>
+		<f cl="Plnt" ref="12778"/>
+	</orbit>
+	<cL cl="Sstm" ref="12781"/>
+	<ls cl="Plnt" ref="12778"/>
+	<me z="13702">
+		<d z="13703">
+			<e>
+				<st>$originalStableLocation</st>
+				<CCEnt z="13704" fL="STATIONS">
+					<loc z="13705">4374.4507|-6092.1406</loc>
+					<vel z="13706">0.0|0.0</vel>
+					<j0>{"f6":305.68018,"f0":"Stable Location","f3":"stable_location","f2":[255,220,190,255],"f4":"1be"}</j0>
+					<ow ref="69"/>
+					<orbit cl="COrbtPD" z="13707" r="7500.0" op="500.0" ca="305.68018">
+						<e cl="CCEnt" ref="13704"/>
+						<f cl="Plnt" ref="12778"/>
+					</orbit>
+					<cL cl="Sstm" ref="12781"/>
+					<ls cl="Plnt" ref="12778"/>
+					<me z="13708">
+						<d z="13709"/>
+					</me>
+					<sc z="13710"/>
+					<cV z="13711" sn="graphics/illustrations/free_orbit.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+					<tags z="13712">
+						<st>has_interaction_dialog</st>
+						<st>stable_location</st>
+					</tags>
+					<j1>{"f1":64,"f0":64,"f3":-1,"f2":75,"f5":"stable_location","f4":-1}</j1>
+					<la z="13713" enum-type="CaEnLa">STATIONS</la>
+				</CCEnt>
+			</e>
+		</d>
+	</me>
+	<sc z="13714"/>
+	<cV z="13715" sn="graphics/illustrations/nav_buoy.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+	<tags z="13716">
+		<st>objective</st>
+		<st>nav_buoy</st>
+		<st>makeshift</st>
+		<st>neutrino_high</st>
+	</tags>
+	<j1>{"f1":64,"f0":64,"f3":-1,"f2":75,"f5":"nav_buoy_makeshift","f4":-1}</j1>
+	<la z="13717" enum-type="CaEnLa">STATIONS</la>
+	<p cl="NavBuoyEP" z="13718">
+		<e cl="CCEnt" ref="13698"/>
+	</p>
+</CCEnt>

@@ -1,0 +1,42 @@
+Sta treba da radi:
+	- odvojeni prozori za: celu mapu, suncani sistem i pojedinacnu planetu na koju se klikne
+	- ako se fajl izmeni da se obavesti korisnik i da se ucita (https://docs.oracle.com/javase/tutorial/essential/io/notification.html)
+	- merenje udaljenosti od A do B
+	- da pokaze koliko goriva je neophodno za putovanja
+	- pretrazivanje po klasi, udaljenosti, resursima
+
+	- kombinovano pretrazivanje:
+		a) naci sistem sa XY i u njegovom radijusu jos jedan takav
+		b) naci sistem sa X planeta od kojih N ima Y atribut(e)
+		c) hazard rating
+		d) u istom sistemu/ istoj konstelaciji
+		e) dodatna dropdown polja za custom stvari iz modova koja mogu da se dodaju naknadno (da se ne pretrpa UI)
+	- pretrazivanje OBJEKATA unutar sistema:
+		a) orbital ststaion, remnant base, probe, derilict i survey brodove
+		b) stable location i da li su iskorisceni
+		c) cryosleeper i ostale dodatne gradjevine (iz modova)
+
+	- nacrtati krug za warning beacon oko same zvezde (zeleno, zuto, crveno)
+	- proci sve foldere u mods i potraziti sve neophodne teksture za planete, modifikatore, i ostalo (windows, macos, linux)
+	- proracunati sansu za efikasnu rutu istrazivanjna na osnvu prikupljenih podataka o sansi za spawnovanje odredjenih stvari oko odredjenih tipova zvezda
+	- PISANJE BELESKI, custom save fajl koji sadrzai samo identifikator sistema uz koji tokom ucitavanja prilepi belesku (JSON ili XML?)
+	- ubaciti opciju da proveri za UPDATE preko github-a
+	- u About sekciji taviti link do thread-a i github-a
+	- settings.json
+	- PLANET inspection za strukture, itd.
+
+Interfejs:
+	- da bude tabbed window i da moze da se ucita vise sajvova?
+	- da bude separataora izmedju Pane-ova kako bi mogli da se podesavaju kako se kome svidja
+	- ctrl+levi klik da se o(d)znaci vise sistema i da se svi odmah ucitaju
+	- SCALING!!!!
+	- u System view treba da pise "Left-click a star on the Map view to display information about it."
+	- placeholder teksture ako program ne moze da ucita sta treba
+	- skinovi za interfejs/light theme, dark theme, high contrast, color blind ODVOJENO od layout-a
+	- pretraga planeta/sistema putem imena (search box filtrira dok kucas)
+
+	- Map view: https://stackoverflow.com/questions/32220042/pick-and-move-a-node-in-a-pannable-zoomable-pane
+		- na mapi dodati opciju desni klik -> player location
+		- mozda i opciju da se od te tacke pokaze krug kao za fuel
+		- od te tacke koliko bi kostalo fuel, supplies i dana da se istraze sve planete u radijusu (procena rastojanja itd.)
+		- MORA DA BUDE NEKIH EXPLORATION ELEMENTATA! U NASLOVU JE!

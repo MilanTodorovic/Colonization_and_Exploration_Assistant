@@ -1,0 +1,1256 @@
+<Plnt z="12958">
+	<loc z="12959">-4262.739|-6419.4854</loc>
+	<vel z="12960">0.0|0.0</vel>
+	<j0>{"f6":0,"f0":"Coatl","f3":"planet_coatl","f2":[255,220,190,255],"f4":"coatl"}</j0>
+	<ow ref="114"/>
+	<orbit cl="COrbt" z="12961" r="1050.0" op="25.0" ca="161.57935">
+		<e cl="Plnt" ref="12958"/>
+		<f cl="Plnt" ref="12918"/>
+	</orbit>
+	<cL cl="Sstm" ref="12781"/>
+	<ls cl="Plnt" ref="12778"/>
+	<me z="12962">
+		<d z="12963">
+			<e>
+				<st>$salvageSeed</st>
+				<Lp>5630836784358729982</Lp>
+			</e>
+		</d>
+	</me>
+	<market cl="Market" z="12964">
+		<id>coatl</id>
+		<name>Coatl</name>
+		<commodities z="12965">
+			<COMkt z="12966" c="organics" sto="4079.3467" mS="0" iSL="true" mD="4" iDL="true" eU="0.0">
+				<m ref="12964"/>
+				<g z="12967" b="0.0" m="969.00916" nR="false">
+					<fMs z="12968" s="core" v="969.00916"/>
+				</g>
+				<d z="12969" dC="organics">
+					<d z="12970" b="0.0" m="2907.0273" nR="false">
+						<fMs z="12971" s="core" v="2907.0273"/>
+					</d>
+					<m ref="12964"/>
+				</d>
+				<pM z="12972" fB="0.0" m="1.0" pM="0.0" nR="false"/>
+				<available z="12973" b="0.0" m="4.0" nR="false">
+					<fMs z="12974" s="core_base" d="Desired import volume (in-faction)" v="4.0"/>
+				</available>
+				<tradeMod z="12975" b="0.0" m="0.0" nR="false"/>
+				<tradeModPlus z="12976" b="0.0" m="0.0" nR="false"/>
+				<tradeModMinus z="12977" b="0.0" m="0.0" nR="false"/>
+			</COMkt>
+			<COMkt z="12978" c="crew" sto="3004.931" mS="6" iSL="true" mD="5" iDL="true" eU="0.0">
+				<m ref="12964"/>
+				<g z="12979" b="0.0" m="600.7574" nR="false">
+					<fMs z="12980" s="core" v="600.7574"/>
+				</g>
+				<d z="12981" dC="crew">
+					<d z="12982" b="0.0" m="1802.2722" nR="false">
+						<fMs z="12983" s="core" v="1802.2722"/>
+					</d>
+					<m ref="12964"/>
+				</d>
+				<pM z="12984" fB="0.0" m="1.0" pM="0.0" nR="false"/>
+				<available z="12985" b="0.0" m="6.0" nR="false">
+					<fMs z="12986" s="core_local" d="Local production" v="6.0"/>
+				</available>
+				<tradeMod z="12987" b="0.0" m="0.0" nR="false"/>
+				<tradeModPlus z="12988" b="0.0" m="0.0" nR="false"/>
+				<tradeModMinus z="12989" b="0.0" m="0.0" nR="false"/>
+			</COMkt>
+			<COMkt z="12990" c="marines" sto="3215.5251" mS="6" iSL="true" mD="5" iDL="true" eU="0.0">
+				<m ref="12964"/>
+				<g z="12991" b="0.0" m="623.61816" nR="false">
+					<fMs z="12992" s="core" v="623.61816"/>
+				</g>
+				<d z="12993" dC="marines">
+					<d z="12994" b="0.0" m="1870.8545" nR="false">
+						<fMs z="12995" s="core" v="1870.8545"/>
+					</d>
+					<m ref="12964"/>
+				</d>
+				<pM z="12996" fB="0.0" m="1.0" pM="0.0" nR="false"/>
+				<available z="12997" b="0.0" m="6.0" nR="false">
+					<fMs z="12998" s="core_local" d="Local production" v="6.0"/>
+				</available>
+				<tradeMod z="12999" b="0.0" m="0.0" nR="false"/>
+				<tradeModPlus z="13000" b="0.0" m="0.0" nR="false"/>
+				<tradeModMinus z="13001" b="0.0" m="0.0" nR="false"/>
+			</COMkt>
+			<COMkt z="13002" c="fuel" sto="5035.312" mS="0" iSL="true" mD="5" iDL="true" eU="0.0">
+				<m ref="12964"/>
+				<g z="13003" b="0.0" m="1273.5176" nR="false">
+					<fMs z="13004" s="core" v="1273.5176"/>
+				</g>
+				<d z="13005" dC="fuel">
+					<d z="13006" b="0.0" m="3820.5527" nR="false">
+						<fMs z="13007" s="core" v="3820.5527"/>
+					</d>
+					<m ref="12964"/>
+				</d>
+				<pM z="13008" fB="0.0" m="1.0" pM="0.0" nR="false"/>
+				<available z="13009" b="0.0" m="5.0" nR="false">
+					<fMs z="13010" s="core_base" d="Desired import volume (in-faction)" v="5.0"/>
+				</available>
+				<tradeMod z="13011" b="0.0" m="0.0" nR="false"/>
+				<tradeModPlus z="13012" b="0.0" m="0.0" nR="false"/>
+				<tradeModMinus z="13013" b="0.0" m="0.0" nR="false"/>
+			</COMkt>
+			<COMkt z="13014" c="organs" sto="793.5876" mS="0" iSL="true" mD="2" iDL="false" eU="0.0">
+				<m ref="12964"/>
+				<g z="13015" b="0.0" m="191.10748" nR="false">
+					<fMs z="13016" s="core" v="191.10748"/>
+				</g>
+				<d z="13017" dC="organs">
+					<d z="13018" b="0.0" m="573.32245" nR="false">
+						<fMs z="13019" s="core" v="573.32245"/>
+					</d>
+					<m ref="12964"/>
+				</d>
+				<pM z="13020" fB="0.0" m="1.0" pM="0.0" nR="false"/>
+				<available z="13021" b="0.0" m="2.0" nR="false">
+					<fMs z="13022" s="core_base" d="Desired smuggling volume" v="2.0"/>
+				</available>
+				<tradeMod z="13023" b="0.0" m="0.0" nR="false"/>
+				<tradeModPlus z="13024" b="0.0" m="0.0" nR="false"/>
+				<tradeModMinus z="13025" b="0.0" m="0.0" nR="false"/>
+			</COMkt>
+			<COMkt z="13026" c="ships" sto="1963.0525" mS="0" iSL="true" mD="5" iDL="true" eU="0.0">
+				<m ref="12964"/>
+				<g z="13027" b="0.0" m="499.88388" nR="false">
+					<fMs z="13028" s="core" v="499.88388"/>
+				</g>
+				<d z="13029" dC="ships">
+					<d z="13030" b="0.0" m="1499.6516" nR="false">
+						<fMs z="13031" s="core" v="1499.6516"/>
+					</d>
+					<m ref="12964"/>
+				</d>
+				<pM z="13032" fB="0.0" m="1.0" pM="0.0" nR="false"/>
+				<available z="13033" b="0.0" m="5.0" nR="false">
+					<fMs z="13034" s="core_base" d="Desired import volume (in-faction)" v="5.0"/>
+				</available>
+				<tradeMod z="13035" b="0.0" m="0.0" nR="false"/>
+				<tradeModPlus z="13036" b="0.0" m="0.0" nR="false"/>
+				<tradeModMinus z="13037" b="0.0" m="0.0" nR="false"/>
+			</COMkt>
+			<COMkt z="13038" c="supplies" sto="2087.0679" mS="0" iSL="true" mD="5" iDL="true" eU="0.0">
+				<m ref="12964"/>
+				<g z="13039" b="0.0" m="488.01276" nR="false">
+					<fMs z="13040" s="core" v="488.01276"/>
+				</g>
+				<d z="13041" dC="supplies">
+					<d z="13042" b="0.0" m="1464.0383" nR="false">
+						<fMs z="13043" s="core" v="1464.0383"/>
+					</d>
+					<m ref="12964"/>
+				</d>
+				<pM z="13044" fB="0.0" m="1.0" pM="0.0" nR="false"/>
+				<available z="13045" b="0.0" m="5.0" nR="false">
+					<fMs z="13046" s="core_base" d="Desired import volume (in-faction)" v="5.0"/>
+				</available>
+				<tradeMod z="13047" b="0.0" m="0.0" nR="false"/>
+				<tradeModPlus z="13048" b="0.0" m="0.0" nR="false"/>
+				<tradeModMinus z="13049" b="0.0" m="0.0" nR="false"/>
+			</COMkt>
+			<COMkt z="13050" c="drugs" sto="1585.2819" mS="2" iSL="false" mD="3" iDL="false" eU="0.0">
+				<m ref="12964"/>
+				<g z="13051" b="0.0" m="289.85236" nR="false">
+					<fMs z="13052" s="core" v="289.85236"/>
+				</g>
+				<d z="13053" dC="drugs">
+					<d z="13054" b="0.0" m="869.55707" nR="false">
+						<fMs z="13055" s="core" v="869.55707"/>
+					</d>
+					<m ref="12964"/>
+				</d>
+				<pM z="13056" fB="0.0" m="1.0" pM="0.0" nR="false"/>
+				<available z="13057" b="0.0" m="3.0" nR="false">
+					<fMs z="13058" s="core_local" d="Local production" v="2.0"/>
+					<fMs z="13059" s="core_base" d="Desired smuggling volume" v="1.0"/>
+				</available>
+				<tradeMod z="13060" b="0.0" m="0.0" nR="false"/>
+				<tradeModPlus z="13061" b="0.0" m="0.0" nR="false"/>
+				<tradeModMinus z="13062" b="0.0" m="0.0" nR="false"/>
+			</COMkt>
+			<COMkt z="13063" c="hand_weapons" sto="595.7497" mS="0" iSL="true" mD="3" iDL="true" eU="0.0">
+				<m ref="12964"/>
+				<g z="13064" b="0.0" m="145.85239" nR="false">
+					<fMs z="13065" s="core" v="145.85239"/>
+				</g>
+				<d z="13066" dC="hand_weapons">
+					<d z="13067" b="0.0" m="437.55716" nR="false">
+						<fMs z="13068" s="core" v="437.55716"/>
+					</d>
+					<m ref="12964"/>
+				</d>
+				<pM z="13069" fB="0.0" m="1.0" pM="0.0" nR="false"/>
+				<available z="13070" b="0.0" m="3.0" nR="false">
+					<fMs z="13071" s="core_base" d="Desired import volume (in-faction)" v="3.0"/>
+				</available>
+				<tradeMod z="13072" b="0.0" m="0.0" nR="false"/>
+				<tradeModPlus z="13073" b="0.0" m="0.0" nR="false"/>
+				<tradeModMinus z="13074" b="0.0" m="0.0" nR="false"/>
+			</COMkt>
+			<COMkt z="13075" c="domestic_goods" sto="1629.6305" mS="0" iSL="true" mD="4" iDL="true" eU="0.0">
+				<m ref="12964"/>
+				<g z="13076" b="0.0" m="417.8379" nR="false">
+					<fMs z="13077" s="core" v="417.8379"/>
+				</g>
+				<d z="13078" dC="domestic_goods">
+					<d z="13079" b="0.0" m="1253.5137" nR="false">
+						<fMs z="13080" s="core" v="1253.5137"/>
+					</d>
+					<m ref="12964"/>
+				</d>
+				<pM z="13081" fB="0.0" m="1.0" pM="0.0" nR="false"/>
+				<available z="13082" b="0.0" m="4.0" nR="false">
+					<fMs z="13083" s="core_base" d="Desired import volume (in-faction)" v="4.0"/>
+				</available>
+				<tradeMod z="13084" b="0.0" m="0.0" nR="false"/>
+				<tradeModPlus z="13085" b="0.0" m="0.0" nR="false"/>
+				<tradeModMinus z="13086" b="0.0" m="0.0" nR="false"/>
+			</COMkt>
+			<COMkt z="13087" c="food" sto="4100.1504" mS="0" iSL="true" mD="4" iDL="true" eU="0.0">
+				<m ref="12964"/>
+				<g z="13088" b="0.0" m="1006.74713" nR="false">
+					<fMs z="13089" s="core" v="1006.74713"/>
+				</g>
+				<d z="13090" dC="food">
+					<d z="13091" b="0.0" m="3020.2415" nR="false">
+						<fMs z="13092" s="core" v="3020.2415"/>
+					</d>
+					<m ref="12964"/>
+				</d>
+				<pM z="13093" fB="0.0" m="1.0" pM="0.0" nR="false"/>
+				<available z="13094" b="0.0" m="4.0" nR="false">
+					<fMs z="13095" s="core_base" d="Desired import volume (in-faction)" v="4.0"/>
+				</available>
+				<tradeMod z="13096" b="0.0" m="0.0" nR="false"/>
+				<tradeModPlus z="13097" b="0.0" m="0.0" nR="false"/>
+				<tradeModMinus z="13098" b="0.0" m="0.0" nR="false"/>
+			</COMkt>
+			<COMkt z="13099" c="luxury_goods" sto="839.6859" mS="0" iSL="true" mD="2" iDL="true" eU="0.0">
+				<m ref="12964"/>
+				<g z="13100" b="0.0" m="197.07973" nR="false">
+					<fMs z="13101" s="core" v="197.07973"/>
+				</g>
+				<d z="13102" dC="luxury_goods">
+					<d z="13103" b="0.0" m="591.2392" nR="false">
+						<fMs z="13104" s="core" v="591.2392"/>
+					</d>
+					<m ref="12964"/>
+				</d>
+				<pM z="13105" fB="0.0" m="1.0" pM="0.0" nR="false"/>
+				<available z="13106" b="0.0" m="2.0" nR="false">
+					<fMs z="13107" s="core_base" d="Desired import volume (in-faction)" v="2.0"/>
+				</available>
+				<tradeMod z="13108" b="0.0" m="0.0" nR="false"/>
+				<tradeModPlus z="13109" b="0.0" m="0.0" nR="false"/>
+				<tradeModMinus z="13110" b="0.0" m="0.0" nR="false"/>
+			</COMkt>
+		</commodities>
+		<demandData z="13111">
+			<demand z="13112" dC="rare_metals">
+				<d z="13113" b="0.0" m="157.28381" nR="false">
+					<fMs z="13114" s="core" v="157.28381"/>
+				</d>
+				<m ref="12964"/>
+			</demand>
+			<demand ref="12969"/>
+			<demand ref="13066"/>
+			<demand ref="13053"/>
+			<demand ref="13078"/>
+			<demand ref="12981"/>
+			<demand ref="12993"/>
+			<demand z="13115" dC="ore">
+				<d z="13116" b="0.0" m="742.38367" nR="false">
+					<fMs z="13117" s="core" v="742.38367"/>
+				</d>
+				<m ref="12964"/>
+			</demand>
+			<demand z="13118" dC="rare_ore">
+				<d z="13119" b="0.0" m="308.02112" nR="false">
+					<fMs z="13120" s="core" v="308.02112"/>
+				</d>
+				<m ref="12964"/>
+			</demand>
+			<demand z="13121" dC="volatiles">
+				<d z="13122" b="0.0" m="149.24562" nR="false">
+					<fMs z="13123" s="core" v="149.24562"/>
+				</d>
+				<m ref="12964"/>
+			</demand>
+			<demand z="13124" dC="heavy_machinery">
+				<d z="13125" b="0.0" m="145.22874" nR="false">
+					<fMs z="13126" s="core" v="145.22874"/>
+				</d>
+				<m ref="12964"/>
+			</demand>
+			<demand z="13127" dC="metals">
+				<d z="13128" b="0.0" m="730.58594" nR="false">
+					<fMs z="13129" s="core" v="730.58594"/>
+				</d>
+				<m ref="12964"/>
+			</demand>
+			<demand ref="13090"/>
+			<demand ref="13017"/>
+			<demand ref="13005"/>
+			<demand ref="13029"/>
+			<demand ref="13102"/>
+			<demand ref="13041"/>
+			<market ref="12964"/>
+		</demandData>
+		<size>5</size>
+		<location z="13130">5900.0|-7300.0</location>
+		<demandPriceMod z="13131" fB="0.0" m="1.0" pM="0.0" nR="false"/>
+		<supplyPriceMod z="13132" fB="0.0" m="1.0" pM="0.0" nR="false"/>
+		<tariff z="13133" b="0.0" m="0.3" nR="false">
+			<fMs z="13134" s="default_tariff" v="0.3"/>
+		</tariff>
+		<factionId>hegemony</factionId>
+		<power z="13135" b="0.0" m="14.0" nR="false">
+			<fMs z="13136" s="core_comm_relay" d="Comm relay" v="2.0"/>
+			<fMs z="13137" s="_ind_population_3_ms" d="Base value" v="5.0"/>
+			<fMs z="13138" s="ind_population_0" d="Domestic goods demand met" v="1.0"/>
+			<fMs z="13139" s="ind_population_1" d="Luxury goods demand met" v="1.0"/>
+			<fMs z="13140" s="ind_heavybatteries" d="Heavy batteries" v="1.0"/>
+			<fMs z="13141" s="ind_militarybase" d="Military base" v="2.0"/>
+			<fMs z="13142" s="ind_battlestation" d="Battlestation - low tech" v="2.0"/>
+		</power>
+		<hazard z="13143" b="0.0" m="1.5" nR="false">
+			<fMs z="13144" s="haz_base" d="Base value" v="1.0"/>
+			<fMs z="13145" s="no_atmosphere_261c" d="No Atmosphere" v="0.5"/>
+		</hazard>
+		<primaryEntity cl="Plnt" ref="12958"/>
+		<submarkets z="13146">
+			<Submarket z="13147" s="open_market">
+				<m ref="12964"/>
+				<p cl="OpenMarketPlugin" z="13148" mSWUI="30.0" msSWU="3893.2598" sLCU="3893.2598">
+					<m cl="Market" ref="12964"/>
+					<s cl="Submarket" ref="13147"/>
+					<c cl="CargoData" z="13149" uS="true" mC="1000.0" sU="2967.0" mF="500.0" mP="750.0" fT="false">
+						<s z="13150">
+							<CIStack z="13151" rS="false" s="283.0" mS="1000000.0" cSPU="1.0" bVPU="100.0" t="RESOURCES">
+								<d cl="st">supplies</d>
+								<c ref="13149"/>
+							</CIStack>
+							<CIStack z="13152" rS="false" s="959.0" mS="1000000.0" cSPU="0.0" bVPU="25.0" t="RESOURCES">
+								<d cl="st">fuel</d>
+								<c ref="13149"/>
+							</CIStack>
+							<CIStack z="13153" rS="false" s="575.0" mS="1000000.0" cSPU="0.0" bVPU="50.0" t="RESOURCES">
+								<d cl="st">crew</d>
+								<c ref="13149"/>
+							</CIStack>
+							<CIStack z="13154" rS="false" s="575.0" mS="1000000.0" cSPU="0.0" bVPU="200.0" t="RESOURCES">
+								<d cl="st">marines</d>
+								<c ref="13149"/>
+							</CIStack>
+							<CIStack z="13155" rS="false" s="383.0" mS="1000000.0" cSPU="1.0" bVPU="100.0" t="RESOURCES">
+								<d cl="st">luxury_goods</d>
+								<c ref="13149"/>
+							</CIStack>
+							<CIStack z="13156" rS="false" s="383.0" mS="1000000.0" cSPU="1.0" bVPU="50.0" t="RESOURCES">
+								<d cl="st">domestic_goods</d>
+								<c ref="13149"/>
+							</CIStack>
+							<CIStack z="13157" rS="false" s="959.0" mS="1000000.0" cSPU="1.0" bVPU="30.0" t="RESOURCES">
+								<d cl="st">organics</d>
+								<c ref="13149"/>
+							</CIStack>
+							<CIStack z="13158" rS="false" s="959.0" mS="1000000.0" cSPU="1.0" bVPU="20.0" t="RESOURCES">
+								<d cl="st">food</d>
+								<c ref="13149"/>
+							</CIStack>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+						</s>
+						<c z="13159">
+							<value>0.0</value>
+						</c>
+						<mS z="13160" nP="HSS" nSf="hegemony" nS="true" oSML="false">
+							<m z="13161"/>
+						</mS>
+					</c>
+					<iGR z="13162" serialization="custom">
+						<Random>
+							<default>
+								<s>159654895159655</s>
+								<n>0.0</n>
+								<h>false</h>
+							</default>
+						</Random>
+					</iGR>
+				</p>
+				<f ref="114"/>
+			</Submarket>
+			<Submarket z="13163" s="generic_military">
+				<m ref="12964"/>
+				<p cl="MilitarySubmarketPlugin" z="13164" mSWUI="30.0" msSWU="3893.2598" sLCU="3893.2598" mS="FAVORABLE">
+					<m cl="Market" ref="12964"/>
+					<s cl="Submarket" ref="13163"/>
+					<c cl="CargoData" z="13165" uS="true" mC="1000.0" sU="562.0" mF="500.0" mP="750.0" fT="false">
+						<s z="13166">
+							<CIStack z="13167" rS="false" s="375.0" mS="1000000.0" cSPU="1.0" bVPU="100.0" t="RESOURCES">
+								<d cl="st">supplies</d>
+								<c ref="13165"/>
+							</CIStack>
+							<CIStack z="13168" rS="false" s="939.0" mS="1000000.0" cSPU="0.0" bVPU="25.0" t="RESOURCES">
+								<d cl="st">fuel</d>
+								<c ref="13165"/>
+							</CIStack>
+							<CIStack z="13169" rS="false" s="563.0" mS="1000000.0" cSPU="0.0" bVPU="50.0" t="RESOURCES">
+								<d cl="st">crew</d>
+								<c ref="13165"/>
+							</CIStack>
+							<CIStack z="13170" rS="false" s="563.0" mS="1000000.0" cSPU="0.0" bVPU="200.0" t="RESOURCES">
+								<d cl="st">marines</d>
+								<c ref="13165"/>
+							</CIStack>
+							<CIStack z="13171" rS="false" s="187.0" mS="1000000.0" cSPU="1.0" bVPU="500.0" t="RESOURCES">
+								<d cl="st">hand_weapons</d>
+								<c ref="13165"/>
+							</CIStack>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+						</s>
+						<c z="13172">
+							<value>0.0</value>
+						</c>
+						<mS z="13173" nP="HSS" nSf="hegemony" nS="true" oSML="false">
+							<m z="13174"/>
+						</mS>
+					</c>
+					<iGR z="13175" serialization="custom">
+						<Random>
+							<default>
+								<s>209015892483599</s>
+								<n>0.0</n>
+								<h>false</h>
+							</default>
+						</Random>
+					</iGR>
+				</p>
+				<f ref="114"/>
+			</Submarket>
+			<Submarket z="13176" s="black_market">
+				<m ref="12964"/>
+				<p cl="BlackMarketPlugin" z="13177" mSWUI="30.0" msSWU="3893.2598" sLCU="3893.2598">
+					<m cl="Market" ref="12964"/>
+					<s cl="Submarket" ref="13176"/>
+					<c cl="CargoData" z="13178" uS="true" mC="1000.0" sU="2017.0" mF="500.0" mP="750.0" fT="false">
+						<s z="13179">
+							<CIStack z="13180" rS="false" s="269.0" mS="1000000.0" cSPU="1.0" bVPU="100.0" t="RESOURCES">
+								<d cl="st">supplies</d>
+								<c ref="13178"/>
+							</CIStack>
+							<CIStack z="13181" rS="false" s="674.0" mS="1000000.0" cSPU="0.0" bVPU="25.0" t="RESOURCES">
+								<d cl="st">fuel</d>
+								<c ref="13178"/>
+							</CIStack>
+							<CIStack z="13182" rS="false" s="323.0" mS="1000000.0" cSPU="0.0" bVPU="50.0" t="RESOURCES">
+								<d cl="st">crew</d>
+								<c ref="13178"/>
+							</CIStack>
+							<CIStack z="13183" rS="false" s="323.0" mS="1000000.0" cSPU="0.0" bVPU="200.0" t="RESOURCES">
+								<d cl="st">marines</d>
+								<c ref="13178"/>
+							</CIStack>
+							<CIStack z="13184" rS="false" s="107.0" mS="1000000.0" cSPU="1.0" bVPU="100.0" t="RESOURCES">
+								<d cl="st">luxury_goods</d>
+								<c ref="13178"/>
+							</CIStack>
+							<CIStack z="13185" rS="false" s="80.0" mS="1000000.0" cSPU="1.0" bVPU="500.0" t="RESOURCES">
+								<d cl="st">hand_weapons</d>
+								<c ref="13178"/>
+							</CIStack>
+							<CIStack z="13186" rS="false" s="161.0" mS="1000000.0" cSPU="1.0" bVPU="200.0" t="RESOURCES">
+								<d cl="st">drugs</d>
+								<c ref="13178"/>
+							</CIStack>
+							<CIStack z="13187" rS="false" s="107.0" mS="1000000.0" cSPU="1.0" bVPU="300.0" t="RESOURCES">
+								<d cl="st">organs</d>
+								<c ref="13178"/>
+							</CIStack>
+							<CIStack z="13188" rS="false" s="215.0" mS="1000000.0" cSPU="1.0" bVPU="50.0" t="RESOURCES">
+								<d cl="st">domestic_goods</d>
+								<c ref="13178"/>
+							</CIStack>
+							<CIStack z="13189" rS="false" s="539.0" mS="1000000.0" cSPU="1.0" bVPU="30.0" t="RESOURCES">
+								<d cl="st">organics</d>
+								<c ref="13178"/>
+							</CIStack>
+							<CIStack z="13190" rS="false" s="539.0" mS="1000000.0" cSPU="1.0" bVPU="20.0" t="RESOURCES">
+								<d cl="st">food</d>
+								<c ref="13178"/>
+							</CIStack>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+							<CIStack ref="11717"/>
+						</s>
+						<c z="13191">
+							<value>0.0</value>
+						</c>
+						<mS z="13192" nP="" nSf="pirates" nS="true" oSML="false">
+							<m z="13193"/>
+						</mS>
+					</c>
+					<iGR z="13194" serialization="custom">
+						<Random>
+							<default>
+								<s>145821614253659</s>
+								<n>0.0</n>
+								<h>false</h>
+							</default>
+						</Random>
+					</iGR>
+				</p>
+				<f ref="555"/>
+			</Submarket>
+			<Submarket z="13195" s="storage">
+				<m ref="12964"/>
+				<p cl="StoragePlugin" z="13196" mSWUI="30.0" msSWU="7526.4995" sLCU="7526.4995" paid="false">
+					<m cl="Market" ref="12964"/>
+					<s cl="Submarket" ref="13195"/>
+					<c cl="CargoData" z="13197" uS="true" mC="1000.0" sU="50.0" mF="500.0" mP="750.0" fT="false">
+						<s z="13198"/>
+						<c z="13199">
+							<value>0.0</value>
+						</c>
+						<mS z="13200" nP="R-M" nSf="player" nS="true" oSML="false">
+							<m z="13201"/>
+						</mS>
+					</c>
+					<iGR z="13202" serialization="custom">
+						<Random>
+							<default>
+								<s>82155866476145</s>
+								<n>0.0</n>
+								<h>false</h>
+							</default>
+						</Random>
+					</iGR>
+				</p>
+				<f ref="610"/>
+			</Submarket>
+		</submarkets>
+		<memory cl="Memory" z="13203">
+			<d z="13204">
+				<e>
+					<st>$patrol</st>
+					<bp>true</bp>
+				</e>
+				<e>
+					<st>$patrol_ind_militarybase</st>
+					<bp>true</bp>
+				</e>
+				<e>
+					<st>$military</st>
+					<bp>true</bp>
+				</e>
+				<e>
+					<st>$military_ind_militarybase</st>
+					<bp>true</bp>
+				</e>
+			</d>
+			<r z="13205">
+				<e>
+					<st>$patrol</st>
+					<MReq z="13206" k="$patrol">
+						<r z="13207">
+							<st>$patrol_ind_militarybase</st>
+						</r>
+					</MReq>
+				</e>
+				<e>
+					<st>$military</st>
+					<MReq z="13208" k="$military">
+						<r z="13209">
+							<st>$military_ind_militarybase</st>
+						</r>
+					</MReq>
+				</e>
+			</r>
+			<rF z="13210">
+				<e>
+					<st>$patrol_ind_militarybase</st>
+					<st>$patrol</st>
+				</e>
+				<e>
+					<st>$military_ind_militarybase</st>
+					<st>$military</st>
+				</e>
+			</rF>
+		</memory>
+		<stats z="13211">
+			<dynamic z="13212">
+				<stats z="13213"/>
+				<mods z="13214">
+					<e>
+						<st>max_industries</st>
+						<SBonus z="13215" fB="3.0" m="1.0" pM="0.0" nR="true">
+							<fBs z="13216" s="ind_population" v="3.0"/>
+						</SBonus>
+					</e>
+					<e>
+						<st>combat_fleet_size_mult</st>
+						<SBonus z="13217" fB="1.0" m="1.25" pM="0.0" nR="true">
+							<fBs z="13218" s="ind_population_0" d="Colony size" v="1.0"/>
+							<mBs z="13219" s="ind_population_1" d="Hegemony fleet doctrine" v="1.0"/>
+							<mBs z="13220" s="ind_population_2" d="Ship hulls &amp; weapons demand met" v="1.0"/>
+							<mBs z="13221" s="ind_population_3" d="Stability" v="1.25"/>
+						</SBonus>
+					</e>
+					<e>
+						<st>patrol_num_medium_mod</st>
+						<SBonus z="13222" fB="2.0" m="1.0" pM="0.0" nR="true">
+							<fBs z="13223" s="ind_militarybase" v="2.0"/>
+						</SBonus>
+					</e>
+					<e>
+						<st>fleet_quality_mod</st>
+						<SBonus z="13224" fB="0.25" m="1.0" pM="0.0" nR="false">
+							<fBs z="13225" s="ind_population_0" d="Stability" v="0.25"/>
+							<fBs z="13226" s="ind_population_1" d="Hegemony fleet doctrine" v="0.0"/>
+						</SBonus>
+					</e>
+					<e>
+						<st>patrol_num_heavy_mod</st>
+						<SBonus z="13227" fB="1.0" m="1.0" pM="0.0" nR="true">
+							<fBs z="13228" s="ind_militarybase" v="1.0"/>
+						</SBonus>
+					</e>
+					<e>
+						<st>patrol_num_light_mod</st>
+						<SBonus z="13229" fB="2.0" m="1.0" pM="0.0" nR="true">
+							<fBs z="13230" s="ind_militarybase" v="2.0"/>
+						</SBonus>
+					</e>
+					<e>
+						<st>ground_defenses_mod</st>
+						<SBonus z="13231" fB="200.0" m="10.8" pM="0.0" nR="true">
+							<fBs z="13232" s="ind_population" d="Base value for a size 5 colony" v="200.0"/>
+							<mBs z="13233" s="ind_population" d="Stability" v="1.5"/>
+							<mBs z="13234" s="ind_heavybatteries" d="Heavy batteries" v="3.0"/>
+							<mBs z="13235" s="ind_militarybase" d="Military base" v="1.2"/>
+							<mBs z="13236" s="ind_battlestation" d="Battlestation - low tech" v="2.0"/>
+						</SBonus>
+					</e>
+				</mods>
+			</dynamic>
+		</stats>
+		<isPlanetConditionMarketOnly>false</isPlanetConditionMarketOnly>
+		<accessibilityMod z="13237" fB="0.77" m="1.0" pM="0.0" nR="false">
+			<fBs z="13238" s="core_base" d="Proximity to other colonies" v="0.44"/>
+			<fBs z="13239" s="core_hostile" d="Hostilities with other factions" v="-0.27"/>
+			<fBs z="13240" s="ind_population_1" d="Colony size" v="0.1"/>
+			<fBs z="13241" s="ind_spaceport_0" d="Spaceport" v="0.5"/>
+		</accessibilityMod>
+		<incomeMult z="13242" b="1.0" m="1.6500001" nR="false">
+			<mMs z="13243" s="industrial_planning_GO_2" d="Industrial planning" v="1.1"/>
+			<mMs z="13244" s="ind_population_3" d="Stability" v="1.5"/>
+		</incomeMult>
+		<upkeepMult z="13245" b="1.0" m="0.67499995" nR="false">
+			<mMs z="13246" s="industrial_planning_GO_0" d="Industrial planning" v="0.9"/>
+			<mMs z="13247" s="ind_population_3" d="Hazard rating" v="1.5"/>
+			<mMs z="13248" s="ind_population_3ifi" d="All demand supplied in-faction" v="0.5"/>
+		</upkeepMult>
+		<useStockpilesForShortages>false</useStockpilesForShortages>
+		<industries z="13249">
+			<PopulationAndInfrastructure z="13250" id="population" bP="0.0" b="false" wD="false">
+				<m cl="Market" ref="12964"/>
+				<buildTime>1.0</buildTime>
+				<dR z="13251" b="0.0" m="0.0" nR="true"/>
+				<sB z="13252" b="0.0" m="1.0" nR="false">
+					<fMs z="13253" s="ind_population_1" d="Administrator" v="1.0"/>
+				</sB>
+			</PopulationAndInfrastructure>
+			<Spaceport z="13254" id="spaceport" bP="0.0" b="false" wD="false">
+				<m cl="Market" ref="12964"/>
+				<buildTime>1.0</buildTime>
+				<dR z="13255" b="0.0" m="0.0" nR="true"/>
+				<sB z="13256" b="0.0" m="1.0" nR="false">
+					<fMs z="13257" s="ind_spaceport_1" d="Administrator" v="1.0"/>
+				</sB>
+			</Spaceport>
+			<GroundDefenses z="13258" id="heavybatteries" bP="0.0" b="false" wD="false">
+				<m cl="Market" ref="12964"/>
+				<buildTime>1.0</buildTime>
+				<dR z="13259" b="0.0" m="0.0" nR="true"/>
+				<sB z="13260" b="0.0" m="0.0" nR="true">
+					<fMs z="13261" s="ind_heavybatteries_1" d="Administrator" v="1.0"/>
+				</sB>
+			</GroundDefenses>
+			<MilitaryBase z="13262" id="militarybase" bP="0.0" b="false" wD="false">
+				<m cl="Market" ref="12964"/>
+				<buildTime>1.0</buildTime>
+				<dR z="13263" b="0.0" m="0.0" nR="true"/>
+				<sB z="13264" b="0.0" m="1.0" nR="false">
+					<fMs z="13265" s="ind_militarybase_1" d="Administrator" v="1.0"/>
+				</sB>
+				<tracker z="13266" i="9.8" a="18.199999" c="14.775551" e="0.4516663" ie="false"/>
+				<returningPatrolValue>0.0</returningPatrolValue>
+			</MilitaryBase>
+			<OrbitalStation z="13267" id="battlestation" bP="0.0" b="false" wD="false" uES="true">
+				<m cl="Market" ref="12964"/>
+				<buildTime>1.0</buildTime>
+				<dR z="13268" b="0.0" m="0.0" nR="true"/>
+				<sB z="13269" b="0.0" m="0.0" nR="true">
+					<fMs z="13270" s="ind_battlestation_1" d="Administrator" v="1.0"/>
+				</sB>
+				<sF cl="Flt" z="13271" sS="450.0" sP="450.0" mO="false" f="90.0" n="Coatl Bastion" aM="true" nFIN="true" sM="true" dF="90.0">
+					<loc z="13272">-4089.8057|-6319.0156</loc>
+					<vel z="13273">0.0|0.0</vel>
+					<j0>{"f6":0,"f2":[255,220,190,255],"f5":true,"f4":"3597"}</j0>
+					<o ref="114"/>
+					<orbit cl="COrbt" z="13274" r="0.0" op="100.0" ca="0.0">
+						<e cl="Flt" ref="13271"/>
+						<f cl="CCEnt" z="13275" fL="STATIONS">
+							<loc z="13276">-4089.8057|-6319.0156</loc>
+							<vel z="13277">0.0|0.0</vel>
+							<j0>{"f6":30.155518,"f0":"Coatl Bastion","f3":"station_coatl","f2":[255,220,190,255],"f4":"coatl_station"}</j0>
+							<ow ref="114"/>
+							<orbit cl="COrbtPD" z="13278" r="200.0" op="20.0" ca="30.155518">
+								<e cl="CCEnt" ref="13275"/>
+								<f cl="Plnt" ref="12958"/>
+							</orbit>
+							<cL cl="Sstm" ref="12781"/>
+							<ls cl="Plnt" ref="12778"/>
+							<me z="13279">
+								<d z="13280">
+									<e>
+										<st>$stationFleet</st>
+										<st>enRef_3597</st>
+									</e>
+								</d>
+							</me>
+							<market cl="Market" ref="12964"/>
+							<sc z="13281"/>
+							<cV z="13282" sn="graphics/illustrations/hound_hangar.jpg" sIW="640.0" sIH="400.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+							<tags z="13283">
+								<st>station</st>
+							</tags>
+							<j1>{"f1":80,"f0":80,"f3":-1,"f2":50,"f5":"station_side02","f4":-1}</j1>
+							<la z="13284" enum-type="CaEnLa">STATIONS</la>
+						</f>
+					</orbit>
+					<cL cl="Sstm" ref="12781"/>
+					<ls cl="Plnt" ref="12778"/>
+					<me z="13285">
+						<d z="13286">
+							<e>
+								<st>$fleetType</st>
+								<st>patrolSmall</st>
+							</e>
+							<e>
+								<st>$stationMarket</st>
+								<st>mRef_coatl</st>
+							</e>
+						</d>
+					</me>
+					<sc z="13287">
+						<TrA z="13288" id="transponder" dF="0" tO="true" cL="0.0" iAC="true" l="1.0">
+							<e cl="Flt" ref="13271"/>
+						</TrA>
+					</sc>
+					<abilities cl="l-h-m" z="13289">
+						<e>
+							<st>transponder</st>
+							<TrA ref="13288"/>
+						</e>
+					</abilities>
+					<fD z="13290" nP="HSS" nSf="hegemony" nS="false" oSML="false">
+						<m z="13291">
+							<FMmbr z="13292" o="0" sid="station2_Standard" sN="Coatl Bastion" t="SHIP" iF="false" id="3599" sUN="false" civ="false" cCiv="false">
+								<c z="13293" id="p_cdb4" pid="steady" spr="graphics/portraits/portrait_hegemony10.png" rnk="spaceLieutenant" pst="mercenary" wTCRC="0" cW="1.0" fid="hegemony" a="false">
+									<n z="13294" f="Hera" l="Ortiz" g="FEMALE"/>
+									<stats z="13295" xp="31500" l="6" pt="0">
+										<s>{"impact_mitigation":3,"combat_endurance":3,"gunnery_implants":1}</s>
+									</stats>
+								</c>
+								<rT z="13296" cr="0.96000004" crPTM="0.0" sR="false" mo="false" lCR="true">
+									<m ref="13292"/>
+								</rT>
+								<fD ref="13290"/>
+							</FMmbr>
+						</m>
+						<c z="13297" id="p_3598" pid="steady" spr="graphics/portraits/portrait15.png" rnk="spaceCommander" pst="fleetCommander" wTCRC="0" cW="1.0" fid="hegemony" a="true">
+							<n z="13298" f="Ganymede" l="Khan" g="MALE"/>
+							<stats z="13299" xp="0" l="1" pt="0">
+								<fleet cl="Flt" ref="13271"/>
+							</stats>
+						</c>
+						<f ref="13271"/>
+					</fD>
+					<mM z="13300" a="1.0" s="2.0" sC="true">
+						<v z="13301">0.0|0.0</v>
+						<l z="13302">0.0|0.0</l>
+						<aV z="13303">0.0|0.0</aV>
+						<d cl="Flt" ref="13271"/>
+						<hardSpeedLimit>-1.0</hardSpeedLimit>
+					</mM>
+					<fM z="13304" a="150.0" m="100.0" r="0.0" f="90.0"/>
+					<s z="13305">
+						<tempMod z="13306">
+							<timeRemaining>0.1</timeRemaining>
+							<source>nav_buoy</source>
+							<stat z="13307" fB="2.0" m="1.0" pM="0.0" nR="true">
+								<fBs z="13308" s="nav_buoy" d="Makeshift nav buoy" v="2.0"/>
+							</stat>
+						</tempMod>
+						<dynamic z="13309">
+							<stats z="13310"/>
+							<mods z="13311"/>
+						</dynamic>
+						<fMBM ref="13307"/>
+						<dRM z="13312" fB="11000.0" m="1.0" pM="0.0" nR="false">
+							<fBs z="13313" s="transponder_ability_mod" d="Transponder on" v="1000.0"/>
+							<fBs z="13314" s="gen" v="10000.0"/>
+						</dRM>
+					</s>
+					<lgst z="13315">
+						<f ref="13271"/>
+					</lgst>
+					<nCP z="13316" b="0.0" i="0.1" o="0.1" s="IDLE" d="true" u="false"/>
+					<dL z="13317">
+						<OrbitalStation ref="13267"/>
+					</dL>
+					<inflater cl="DFInfl" z="13318">
+						<p z="13319" s="-3939658153556169624" p="true" q="1.0" m="IMPORTED">
+							<allWeapons>true</allWeapons>
+							<factionId>hegemony</factionId>
+						</p>
+					</inflater>
+					<hidden>true</hidden>
+				</sF>
+				<sE cl="CCEnt" ref="13275"/>
+			</OrbitalStation>
+		</industries>
+		<playerOwned>false</playerOwned>
+		<hasSpaceport>true</hasSpaceport>
+		<hasWaystation>false</hasWaystation>
+		<population z="13320">
+			<comp z="13321">
+				<e>
+					<st>hegemony</st>
+					<fp>1028.7183</fp>
+				</e>
+				<e>
+					<st>pirates</st>
+					<fp>47.60696</fp>
+				</e>
+				<e>
+					<st>poor</st>
+					<fp>47.60696</fp>
+				</e>
+				<e>
+					<st>independent</st>
+					<fp>476.0678</fp>
+				</e>
+			</comp>
+			<weight z="13322" b="0.0" m="1600.0" nR="false">
+				<fMs z="13323" s="core_set" v="1600.0"/>
+			</weight>
+		</population>
+		<incoming z="13324">
+			<comp z="13325">
+				<e>
+					<st>pirates</st>
+					<fp>1.25</fp>
+				</e>
+				<e>
+					<st>poor</st>
+					<fp>1.25</fp>
+				</e>
+				<e>
+					<st>independent</st>
+					<fp>12.5</fp>
+				</e>
+			</comp>
+			<weight z="13326" b="0.0" m="11.0" nR="false">
+				<fMs z="13327" s="inc_access" d="Accessibility" v="7.0"/>
+				<fMs z="13328" s="inc_hazard" d="Hazard rating" v="-4.0"/>
+				<fMs z="13329" s="inc_insys" d="Larger non-hostile market in same system" v="6.0"/>
+				<fMs z="13330" s="ind_spaceport" d="Spaceport" v="2.0"/>
+			</weight>
+		</incoming>
+		<immigrationModifiers z="13331"/>
+		<allowImport>true</allowImport>
+		<allowExport>true</allowExport>
+		<incentiveCredits>0.0</incentiveCredits>
+		<hidden>false</hidden>
+		<constructionQueue z="13332">
+			<items z="13333"/>
+		</constructionQueue>
+		<commDirectory z="13334">
+			<entries z="13335">
+				<CommDirectoryEntry z="13336">
+					<id>3404</id>
+					<type>PERSON</type>
+					<entryData cl="Person" z="13337" id="p_3403" pid="steady" spr="graphics/portraits/portrait_hegemony14.png" rnk="groundColonel" pst="baseCommander" wTCRC="0" cW="1.0" fid="hegemony" a="true">
+						<n z="13338" f="Nil" l="Luytenian" g="FEMALE"/>
+						<m z="13339">
+							<d z="13340"/>
+						</m>
+						<stats z="13341" xp="0" l="1" pt="0"/>
+					</entryData>
+				</CommDirectoryEntry>
+				<CommDirectoryEntry z="13342">
+					<id>3406</id>
+					<type>PERSON</type>
+					<entryData cl="Person" z="13343" id="p_3405" pid="steady" spr="graphics/portraits/portrait_hegemony05.png" rnk="spaceCaptain" pst="stationCommander" wTCRC="0" cW="1.0" fid="hegemony" a="true">
+						<n z="13344" f="Jordan" l="Deimos" g="MALE"/>
+						<m z="13345">
+							<d z="13346"/>
+						</m>
+						<stats z="13347" xp="0" l="1" pt="0"/>
+					</entryData>
+				</CommDirectoryEntry>
+				<CommDirectoryEntry z="13348">
+					<id>3408</id>
+					<type>PERSON</type>
+					<entryData cl="Person" z="13349" id="p_3407" pid="steady" spr="graphics/portraits/portrait_hegemony03.png" rnk="spaceCommander" pst="portmaster" wTCRC="0" cW="1.0" fid="hegemony" a="true">
+						<n z="13350" f="Lapis" l="Nielsen" g="FEMALE"/>
+						<m z="13351">
+							<d z="13352"/>
+						</m>
+						<stats z="13353" xp="0" l="1" pt="0"/>
+					</entryData>
+				</CommDirectoryEntry>
+				<CommDirectoryEntry z="13354">
+					<id>340a</id>
+					<type>PERSON</type>
+					<entryData cl="Person" z="13355" id="p_3409" pid="steady" spr="graphics/portraits/portrait_hegemony10.png" rnk="spaceCommander" pst="supplyOfficer" wTCRC="0" cW="1.0" fid="hegemony" a="true">
+						<n z="13356" f="Casey" l="Z" g="FEMALE"/>
+						<m z="13357">
+							<d z="13358"/>
+						</m>
+						<stats z="13359" xp="0" l="1" pt="0"/>
+					</entryData>
+				</CommDirectoryEntry>
+				<CommDirectoryEntry z="13360">
+					<id>340c</id>
+					<type>PERSON</type>
+					<entryData cl="Person" z="13361" id="p_340b" pid="steady" spr="graphics/portraits/portrait_hegemony08.png" rnk="citizen" pst="administrator" wTCRC="0" cW="1.0" fid="hegemony" a="true">
+						<n z="13362" f="Callisto" l="Rodriguez" g="FEMALE"/>
+						<m z="13363">
+							<d z="13364"/>
+						</m>
+						<stats z="13365" xp="0" l="1" pt="0">
+							<s>{"industrial_planning":3}</s>
+							<dynamic z="13366">
+								<stats z="13367"/>
+								<mods z="13368">
+									<e>
+										<st>supply_bonus</st>
+										<SBonus z="13369" fB="1.0" m="1.0" pM="0.0" nR="false">
+											<fBs z="13370" s="industrial_planning_stats_1" v="1.0"/>
+										</SBonus>
+									</e>
+								</mods>
+							</dynamic>
+						</stats>
+					</entryData>
+				</CommDirectoryEntry>
+			</entries>
+		</commDirectory>
+		<people z="13371">
+			<Person ref="13349"/>
+			<Person ref="13343"/>
+			<Person ref="13337"/>
+			<Person z="13372" id="p_b04cb" pid="steady" spr="graphics/portraits/portrait_hegemony02.png" rnk="citizen" pst="commodities_agent" wTCRC="0" cW="1.0" fid="hegemony" a="true">
+				<n z="13373" f="Leonard" l="Garcia" g="MALE"/>
+				<m z="13374">
+					<d z="13375"/>
+				</m>
+				<stats z="13376" xp="0" l="1" pt="0"/>
+			</Person>
+			<Person ref="13361"/>
+			<Person z="13377" id="p_10b12" pid="steady" spr="graphics/portraits/portrait_hegemony04.png" rnk="citizen" pst="commodities_agent" wTCRC="0" cW="1.0" fid="hegemony" a="true">
+				<n z="13378" f="Riley" l="Battle" g="FEMALE"/>
+				<m z="13379">
+					<d z="13380"/>
+				</m>
+				<stats z="13381" xp="0" l="1" pt="0"/>
+			</Person>
+			<Person z="13382" id="p_10b00" pid="steady" spr="graphics/portraits/portrait_hegemony04.png" rnk="citizen" pst="commodities_agent" wTCRC="0" cW="1.0" fid="hegemony" a="true">
+				<n z="13383" f="Ocean" l="Ross" g="FEMALE"/>
+				<m z="13384">
+					<d z="13385"/>
+				</m>
+				<stats z="13386" xp="0" l="1" pt="0"/>
+			</Person>
+			<Person ref="13355"/>
+			<Person z="13387" id="p_ae87f" pid="steady" spr="graphics/portraits/portrait13.png" rnk="citizen" pst="investor" wTCRC="0" cW="1.0" fid="hegemony" a="true">
+				<n z="13388" f="Sunday" l="Glover" g="MALE"/>
+				<m z="13389">
+					<d z="13390"/>
+				</m>
+				<stats z="13391" xp="0" l="1" pt="0"/>
+			</Person>
+			<Person z="13392" id="p_698ab" pid="steady" spr="graphics/portraits/portrait_pirate02.png" rnk="citizen" pst="fence" wTCRC="0" cW="1.0" fid="pirates" a="true">
+				<n z="13393" f="Bombard" l="Solomon" g="MALE"/>
+				<m z="13394">
+					<d z="13395"/>
+				</m>
+				<stats z="13396" xp="0" l="1" pt="0"/>
+			</Person>
+		</people>
+		<admin ref="13361"/>
+		<prevStability>10.0</prevStability>
+		<daysInExistence>7499.141</daysInExistence>
+		<connectedEntities z="13397">
+			<Plnt ref="12958"/>
+			<CCEnt ref="13275"/>
+		</connectedEntities>
+		<conditions z="13398">
+			<MCon z="13399" i="no_atmosphere" u="261c" s="true">
+				<m cl="Market" ref="12964"/>
+			</MCon>
+			<MCon z="13400" i="population_5" u="261d" s="true">
+				<m cl="Market" ref="12964"/>
+			</MCon>
+			<MCon z="13401" i="comm_relay" u="2e4ed6" s="true">
+				<m cl="Market" ref="12964"/>
+			</MCon>
+		</conditions>
+		<surveyLevel>FULL</surveyLevel>
+		<forceNoConvertOnSave>false</forceNoConvertOnSave>
+		<isFreePort>false</isFreePort>
+	</market>
+	<sc z="13402"/>
+	<tags z="13403">
+		<st>planet</st>
+	</tags>
+	<angle>-313427.62</angle>
+	<cloudAngle>0.0</cloudAngle>
+	<radius>90.0</radius>
+	<type>barren-bombarded</type>
+	<diff z="13404">
+		<j>{"glowTexture":"graphics/planets/barren_bombarded_lights.png","glowColor":[200,225,255,255],"useReverseLightForGlow":true}</j>
+	</diff>
+	<layers z="13405" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+</Plnt>
+
+<Plnt z="10054">
+	<loc z="10055">3792.4807|6470.4785</loc>
+	<vel z="10056">0.0|0.0</vel>
+	<j0>{"f6":0,"f0":"Salus","f3":"planet_salus","f2":[255,210,200,255],"f4":"salus"}</j0>
+	<ow ref="24"/>
+	<orbit cl="COrbt" z="10057" r="7500.0" op="250.0" ca="59.624542">
+		<e cl="Plnt" ref="10054"/>
+		<f cl="Plnt" ref="9954"/>
+	</orbit>
+	<cL cl="Sstm" ref="9957"/>
+	<ls cl="Plnt" ref="9954"/>
+	<me z="10058">
+		<d z="10059">
+			<e>
+				<st>$salvageSeed</st>
+				<Lp>-8246461237060430317</Lp>
+			</e>
+		</d>
+	</me>
+	<market cl="PCMarket" z="10060">
+		<id>market_salus</id>
+		<name>Salus</name>
+		<primaryEntity cl="Plnt" ref="10054"/>
+		<surveyLevel>FULL</surveyLevel>
+		<cond z="10061">
+			<st>extreme_weather</st>
+			<st>volatiles_trace</st>
+			<st>hot</st>
+			<st>toxic_atmosphere</st>
+			<st>high_gravity</st>
+		</cond>
+		<surveyed z="10062">
+			<st>extreme_weather</st>
+			<st>volatiles_trace</st>
+			<st>hot</st>
+			<st>toxic_atmosphere</st>
+			<st>high_gravity</st>
+		</surveyed>
+	</market>
+	<sc z="10063"/>
+	<tags z="10064">
+		<st>planet</st>
+	</tags>
+	<angle>-235681.45</angle>
+	<cloudAngle>-550959.25</cloudAngle>
+	<radius>350.0</radius>
+	<type>gas_giant</type>
+	<diff z="10065">
+		<j>{"atmosphereColor":[160,110,45,140],"tilt":15,"cloudColor":[255,164,96,200],"planetColor":[255,225,170,255]}</j>
+	</diff>
+	<layers z="10066" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+</Plnt>
+
+<Plnt z="21">
+	<loc z="22">0.0|0.0</loc>
+	<vel z="23">0.0|0.0</vel>
+	<j0>{"f6":0,"f0":"Galatia","f2":[255,220,190,255],"f4":"galatia"}</j0>
+	<ow z="24">
+		<id>neutral</id>
+		<memory z="25">
+			<d z="26">
+				<e>
+					<st>$id</st>
+					<st>neutral</st>
+				</e>
+				<e>
+					<st>$neutralToPlayer</st>
+					<bp>true</bp>
+				</e>
+				<e>
+					<st>$isHostile</st>
+					<bp>false</bp>
+				</e>
+				<e>
+					<st>$c:starshipLegendsConfig</st>
+					<st>{"allowFamousFlagshipBarEvent":"false","allowFamousDerelictBarEvent":"false"}</st>
+				</e>
+				<e>
+					<st>$color</st>
+					<st>100,100,100,255</st>
+				</e>
+				<e>
+					<st>$baseColor</st>
+					<st>155,155,155,255</st>
+				</e>
+				<e>
+					<st>$brightColor</st>
+					<st>171,186,190,255</st>
+				</e>
+				<e>
+					<st>$darkColor</st>
+					<st>40,40,40,175</st>
+				</e>
+				<e>
+					<st>$gridColor</st>
+					<st>100,100,100,75</st>
+				</e>
+				<e>
+					<st>$isNeutralFaction</st>
+					<bp>true</bp>
+				</e>
+				<e>
+					<st>$relValue</st>
+					<fp>0.0</fp>
+				</e>
+				<e>
+					<st>$rel</st>
+					<st>NEUTRAL</st>
+				</e>
+			</d>
+			<e z="27">
+				<MExp z="28" k="$id" t="0.0"/>
+				<MExp z="29" k="$neutralToPlayer" t="0.0"/>
+				<MExp z="30" k="$isHostile" t="0.0"/>
+				<MExp z="31" k="$c:starshipLegendsConfig" t="0.0"/>
+				<MExp z="32" k="$color" t="0.0"/>
+				<MExp z="33" k="$baseColor" t="0.0"/>
+				<MExp z="34" k="$brightColor" t="0.0"/>
+				<MExp z="35" k="$darkColor" t="0.0"/>
+				<MExp z="36" k="$gridColor" t="0.0"/>
+				<MExp z="37" k="$isNeutralFaction" t="0.0"/>
+				<MExp z="38" k="$relValue" t="0.0"/>
+				<MExp z="39" k="$rel" t="0.0"/>
+			</e>
+		</memory>
+		<illegal z="40"/>
+		<shipsWhenImporting z="41"/>
+		<knownShips z="42"/>
+		<knownWeapons z="43"/>
+		<knownFighters z="44"/>
+		<knownIndustries z="45"/>
+		<knownHullMods z="46"/>
+		<priorityShips z="47"/>
+		<priorityWeapons z="48"/>
+		<priorityFighters z="49"/>
+		<priorityHullMods z="50"/>
+		<hullFrequency cl="l-h-m" z="51"/>
+		<variantOverrides cl="l-h-m" z="52"/>
+		<overriddenHulls z="53"/>
+		<doctrine z="54">
+			<warships>4</warships>
+			<carriers>2</carriers>
+			<phaseShips>1</phaseShips>
+			<officerQuality>2</officerQuality>
+			<shipQuality>3</shipQuality>
+			<numShips>2</numShips>
+			<shipSize>3</shipSize>
+			<aggression>3</aggression>
+			<fleets>3</fleets>
+			<autofitRandomizeProbability>0.0</autofitRandomizeProbability>
+			<combatFreighterProbability>0.0</combatFreighterProbability>
+			<combatFreighterCombatUseFraction>0.0</combatFreighterCombatUseFraction>
+			<combatFreighterCombatUseFractionWhenPriority>0.0</combatFreighterCombatUseFractionWhenPriority>
+			<commanderSkillsShuffleProbability>0.0</commanderSkillsShuffleProbability>
+			<commanderSkills z="55"/>
+		</doctrine>
+		<production z="56">
+			<interrupted z="57"/>
+			<current z="58"/>
+			<faction cl="Faction" ref="24"/>
+			<accruedProduction>0</accruedProduction>
+		</production>
+		<weaponTimestamps cl="l-h-m" z="59"/>
+		<fighterTimestamps cl="l-h-m" z="60"/>
+		<shipTimestamps cl="l-h-m" z="61"/>
+		<showInIntelTabOverridden>false</showInIntelTabOverridden>
+		<isShowInIntelTab>false</isShowInIntelTab>
+		<autoEnableKnownShips>false</autoEnableKnownShips>
+		<autoEnableKnownWeapons>false</autoEnableKnownWeapons>
+		<autoEnableKnownFighters>false</autoEnableKnownFighters>
+		<autoEnableKnownHullmods>false</autoEnableKnownHullmods>
+	</ow>
+	<cL cl="Sstm" ref="13"/>
+	<ls cl="Plnt" ref="21"/>
+	<me z="62">
+		<d z="63"/>
+	</me>
+	<sc z="64"/>
+	<tags z="65">
+		<st>star</st>
+	</tags>
+	<angle>-1711.2792</angle>
+	<cloudAngle>0.0</cloudAngle>
+	<radius>600.0</radius>
+	<type>star_yellow</type>
+	<layers z="66" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+</Plnt>

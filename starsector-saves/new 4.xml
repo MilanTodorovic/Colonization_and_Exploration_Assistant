@@ -1,0 +1,203 @@
+// Descriptor.xml
+<SaveGameData>
+	<characterName>NAME</characterName>
+	<characterLevel>1</characterLevel>
+	<isIronMode>false</isIronMode>
+	<difficulty>easy</difficulty>
+	<saveDate>2020-10-06 09:09:19.4 UTC</saveDate>
+	// for this save
+	<allModsEverEnabled>
+		<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="79894">
+			<spec>
+				<version></version>
+				<name></name>
+			</spec>
+		</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+	</allModsEverEnabled>
+	
+	// currently, see if the list changes in the launcher
+	<enabledMods>
+		<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="79943">
+			<spec ref="79895"></spec>
+		</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+	</enabledMods>
+</SaveGameData>
+
+// campaign.xml
+<CampaingEngine>
+	
+	<hyperspace>
+	// ignore everythign else
+		<o>
+			<saved>
+				// PRVI LocationToken JE NAJBITNIJI !!PROVERITI ZA NEXERLIN!!
+				<LocationToken>
+					<orbit>
+						<s z="XXXXX" dN="NAME OF THE STAR SYSTEM"> // proveriti sta je jos bitno
+							<o>
+								<saved>
+									<Plnt> // zvezda u cijem sistemu se stvorimo
+										<ow></ow> // ako ima ow, onda je claimed???
+										<radius></radius>
+										<type>star_yellow</type> // planets.json!! ima i u modovima
+									</Plnt>
+									<Plnt> // ovo je planeta oko koje se stvorimo
+										<ow></ow> // doktrina i ilegalne stvari
+										<market> // ako pripada nekome, imace ovaj tag
+											<commodities>jos podtagova</commodities>
+											<demandData>jos podtagova</demandData>
+											<size>5</size>
+											<location z="464">2850.0|-11550.0</location> // lokacija u hyperspace-u
+											<economy>
+												<stepper>
+													<econ>
+														<markets>
+															// mnogo pojedinacnih marketa
+															// prvi uvek upucuje na sebe tj. Plnt tag u kom se nalazi
+															// ovde ima i nekih Station-a koji nemaju 'saved' tag
+															<Market>
+																// sve isto kao 'market' tag
+																// izgleda da je polovina prazna i da samo upucuje na druge
+																<primaryEntry> // ovde se nalazi jos marketa...
+																	<orbit>
+																		<cL cl="Sstm" z="919" dN="Askonia Star System">
+																			<o>
+																				<saved>
+																					<Plnt></Plnt>
+																					<JumpPoint></JumpPoint>
+																					<CCEnt z="XXXXX" fL="STATIONS">
+																						<orbit>
+																							<f cl="Plnt" ref="916"></f>
+																						</orbit>
+																					</CCEnt>
+																				</saved>
+																			</o>
+																			<tags> // proveriti da li postoji svugde
+																				<st>theme_core_populated</st>
+																			</tags>
+																		</cL>
+																	</orbit>
+																</primaryEntry>
+															</Market>
+														</markets>
+														<tags>
+															<st>planet</st> // videti ostalo
+														</tags>
+														<radius>150.0</radius> // float
+														<type>arid</type> // ostalo
+													</econ>
+												</stepper>
+											</economy>
+											<factionid>hegemony/pirates</factionId>
+											<power></power> // naoruzanje za odbranu
+											// market tag ima jos mnogo slicnih tagova kao obican za praznu planetu
+										</market>
+									</Plnt>
+									<CCEnt></CCEnt> // moze da uputi na drugo mesto
+								</saved>
+							</o>
+						</s>
+					</orbit>
+				</LocationToken>
+				
+				<NGW> // Nascent gravity well IGNORISATI ZA SADA
+					<l z="51629">2859.1997|-11886.124</l>
+					<orbit>
+						<s cl="Plnt" ref="21"></s> // main star
+						<iSE cl="Plnt" ref="116"></iSE> // planet
+					</orbit>
+				</NGW>
+				<JumpPoint> // ovo je i gravity well i jumppoint
+					<loc>2850.0|-11550.0</loc>
+					<j0>{"f6":0,"f0":"Galatia, Yellow Star","f2":[255,255,255,255],"f4":"5e"}</j0> // is f0 the tageted location?
+					<ow ref="24"></ow> // ow je nesto za frakcije i naoruzanje
+					<orbit>
+						// 21 is the star Galatia
+						<s cl="Plnt" ref="21"></s>
+					</orbit>
+					<dst>
+						<JumpDestination>
+							<d cl="Plnt" ref="21"></d>
+						</JumpDestination>
+					</dst>
+				</JumpPoint>
+			</saved>
+		</o>
+	</hyperspace>
+	
+	<starSystems>
+		<Sstm ref="XXXXX"></Sstm> // references a StarSystem
+	</starSystems>
+
+	<pings>
+	// ovde su neki aktivni(?) Warning Beacon
+	</pings>
+	
+	<playerFleet ref="XXXXX"></playerFleet>
+	
+	<characterData>
+		<name>Name</name>
+		<person ref="XXXXX"></person> // references details about that person, tu ima skilova i svega
+	</characterData>
+	
+	// ukazuje na lokaciju igraca unutar sistema
+	<currentLocation cl="Sstm", ref="XXXXX"></currentLocation>
+	
+	<uiData>
+		<hyperMapCoordinates>72.89575|252.19226</hyperMapCoordinates>
+	</uiData>
+	
+	// malo dugacko
+	<modAndPluginData>
+		isto sto i modovi u SaveGameData
+	</modAndPluginData>
+	
+</CampaingEngine>
+
+
+
+<Plnt z="84396">
+	<loc z="84397">2744.6504|-5559.397</loc>
+	<vel z="84398">0.0|0.0</vel>
+	<j0>{"f6":0,"f0":"Pontus","f2":[255,220,190,255],"f4":"pontus"}</j0>
+	<ow ref="24"/>
+	<orbit cl="COrbt" z="84399" r="6200.0" op="400.0" ca="296.2754">
+		<e cl="Plnt" ref="84396"/>
+		<f cl="Plnt" ref="21"/>
+	</orbit>
+	<cL cl="Sstm" ref="13"/>
+	<ls cl="Plnt" ref="21"/>
+	<me z="84400">
+		<d z="84401">
+			<e>
+				<st>$salvageSeed</st>
+				<Lp>-5717880105698098714</Lp>
+			</e>
+		</d>
+	</me>
+	<market cl="PCMarket" z="84402">
+		<id>market_pontus</id>
+		<name>Pontus</name>
+		<primaryEntity cl="Plnt" ref="84396"/>
+		<surveyLevel>FULL</surveyLevel>
+		<cond z="84403">
+			<st>volatiles_plentiful</st>
+			<st>extreme_weather</st>
+			<st>high_gravity</st>
+		</cond>
+		<surveyed z="84404">
+			<st>volatiles_plentiful</st>
+			<st>extreme_weather</st>
+			<st>high_gravity</st>
+		</surveyed>
+	</market>
+	<sc z="84405"/>
+	<tags z="84406">
+		<st>planet</st>
+	</tags>
+	<angle>-236789.28</angle>
+	<cloudAngle>-552416.6</cloudAngle>
+	<radius>300.0</radius>
+	<type>gas_giant</type>
+	<layers z="84407" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+</Plnt>

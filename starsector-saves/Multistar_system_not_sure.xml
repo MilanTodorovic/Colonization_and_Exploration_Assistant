@@ -1,0 +1,1965 @@
+// Needs to be verified old_vanilla_campaign
+<LocationToken z="87631">
+	<loc z="87632">61817.0|-6537.0</loc>
+	<where cl="Hyperspace" ref="2"/>
+	<orbit cl="UFHLOrbt" z="87633">
+		<s cl="Sstm" z="87634" dN="Delta Xanthe Che Star System" bTF="graphics/backgrounds/background2.jpg" hM="false" lPV="0" ty="SINGLE" pg="true" bN="Delta Xanthe Che" mRIH="418.46933" eBP="false">
+			<o z="87635">
+				<lists z="87636"/>
+				<maps z="87637"/>
+				<classifier cl="FastIterationClassifier" z="87638">
+					<cache z="87639"/>
+				</classifier>
+				<nextId>0</nextId>
+				<forFastContains z="87640"/>
+				<saved z="87641">
+					<Plnt z="87642">
+						<loc z="87643">0.0|0.0</loc>
+						<vel z="87644">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Delta Xanthe Che","f2":[255,209,169,255],"f4":"system_562"}</j0>
+						<ow ref="24"/>
+						<cL cl="Sstm" ref="87634"/>
+						<ls cl="Plnt" ref="87642"/>
+						<me z="87645">
+							<d z="87646"/>
+						</me>
+						<sc z="87647"/>
+						<tags z="87648">
+							<st>star</st>
+						</tags>
+						<angle>-234542.98</angle>
+						<cloudAngle>0.0</cloudAngle>
+						<radius>673.8773</radius>
+						<type>star_orange</type>
+						<layers z="87649" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<CampaignTerrain z="87650" type="corona" radius="0.0">
+						<loc z="87651">0.0|0.0</loc>
+						<vel z="87652">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,209,169,255],"f4":"563"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbt" z="87653" r="0.0" op="100.0" ca="0.0">
+							<e cl="CampaignTerrain" ref="87650"/>
+							<f cl="Plnt" ref="87642"/>
+						</orbit>
+						<cL cl="Sstm" ref="87634"/>
+						<ls cl="Plnt" ref="87642"/>
+						<sc z="87654"/>
+						<tags z="87655">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="StarCoronaTerrainPlugin" z="87656" tid="corona" n="Corona">
+							<entity cl="CampaignTerrain" ref="87650"/>
+							<params cl="CoronaParams" defined-in="BaseRingTerrain" z="87657" bWIE="1234.8" mR="617.4" wBL="10.0" fP="0.4308666" crLM="3.0">
+								<e cl="Plnt" ref="87642"/>
+							</params>
+							<renderer z="87658" a="78.75256">
+								<d cl="StarCoronaTerrainPlugin" ref="87656"/>
+							</renderer>
+							<flareManager z="87659">
+								<fT z="87660" i="0.5" a="1.5" c="1.0353838" e="0.8000001" ie="false"/>
+								<f z="87661">
+									<Flare z="87662" d="135.06372" a="16.04949" eLM="1.0064713" eLF="66.180824" sFM="0.05" c="fffff096">
+										<f z="87663" b="0.36984825" i="1.973748" o="1.9043036" s="OUT" d="true" u="false"/>
+									</Flare>
+									<Flare z="87664" d="117.37613" a="51.97146" eLM="1.1840343" eLF="455.7013" sFM="0.05" c="fffff096">
+										<f z="87665" b="0.0" i="3.3197281" o="7.9276705" s="IDLE" d="true" u="false"/>
+									</Flare>
+								</f>
+								<d cl="StarCoronaTerrainPlugin" ref="87656"/>
+							</flareManager>
+							<params ref="87657"/>
+						</plugin>
+					</CampaignTerrain>
+					<JumpPoint z="87666" r="50.0" dSC="misc" dSI="wormhole_hyper" sO="1000.0">
+						<loc z="87667">-1379.5007|621.0098</loc>
+						<vel z="87668">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Fringe Jump-point","f2":[255,209,169,255],"f4":"564"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="87669" r="1512.8369" op="98.140976" ca="155.76416">
+							<e cl="JumpPoint" ref="87666"/>
+							<f cl="Plnt" ref="87642"/>
+						</orbit>
+						<cL cl="Sstm" ref="87634"/>
+						<ls cl="Plnt" ref="87642"/>
+						<sc z="87670"/>
+						<tags z="87671">
+							<st>jump_point</st>
+						</tags>
+						<dst z="87672">
+							<JumpDestination z="87673" l="hyperspace" minD="0.0" maxD="0.0">
+								<d cl="JumpPoint" z="87674" r="50.0" dSC="misc" dSI="wormhole_stars" sO="77770.65">
+									<loc z="87675">61480.895|-6385.9985</loc>
+									<vel z="87676">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Fringe Jump-point","f2":[255,255,255,255],"f4":"567"}</j0>
+									<ow ref="24"/>
+									<orbit cl="UpdateFromSystemLocationOrbit" z="87677" oR="368.46933" lI="0.9999997" e="0.94999975">
+										<sP cl="LocationToken" ref="87631"/>
+										<s cl="Plnt" ref="87642"/>
+										<iSE cl="JumpPoint" ref="87666"/>
+										<iH cl="JumpPoint" ref="87674"/>
+										<p z="87678">61479.965|-6388.0845</p>
+										<l z="87679">61480.94|-6385.8887</l>
+									</orbit>
+									<cL cl="Hyperspace" ref="2"/>
+									<me z="87680">
+										<d z="87681"/>
+									</me>
+									<sc z="87682"/>
+									<tags z="87683">
+										<st>jump_point</st>
+									</tags>
+									<dst z="87684">
+										<JumpDestination z="87685" l="the Delta Xanthe Che star system" minD="0.0" maxD="0.0">
+											<d cl="JumpPoint" ref="87666"/>
+										</JumpDestination>
+									</dst>
+									<f z="87686" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+									<layers z="87687" enum-type="CaEnLa">JUMP_POINTS</layers>
+								</d>
+							</JumpDestination>
+						</dst>
+						<f z="87688" b="0.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+						<layers z="87689" enum-type="CaEnLa">JUMP_POINTS</layers>
+					</JumpPoint>
+					<CCEnt z="87690" fL="STATIONS">
+						<loc z="87691">-2529.5588|-3171.0586</loc>
+						<vel z="87692">0.0|0.0</vel>
+						<j0>{"f6":231.4206,"f0":"Stable Location","f3":"stable_location","f2":[255,209,169,255],"f4":"568"}</j0>
+						<ow ref="69"/>
+						<orbit cl="COrbtPD" z="87693" r="4056.3877" op="169.73538" ca="231.4206">
+							<e cl="CCEnt" ref="87690"/>
+							<f cl="Plnt" ref="87642"/>
+						</orbit>
+						<cL cl="Sstm" ref="87634"/>
+						<ls cl="Plnt" ref="87642"/>
+						<sc z="87694"/>
+						<cV z="87695" sn="graphics/illustrations/free_orbit.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+						<tags z="87696">
+							<st>has_interaction_dialog</st>
+							<st>stable_location</st>
+						</tags>
+						<j1>{"f1":64,"f0":64,"f3":-1,"f2":75,"f5":"stable_location","f4":-1}</j1>
+						<la z="87697" enum-type="CaEnLa">STATIONS</la>
+					</CCEnt>
+					<CampaignTerrain z="87698" type="nebula" radius="0.0">
+						<loc z="87699">0.0|0.0</loc>
+						<vel z="87700">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,209,169,255],"f4":"569"}</j0>
+						<ow ref="69"/>
+						<cL cl="Sstm" ref="87634"/>
+						<ls cl="Plnt" ref="87642"/>
+						<sc z="87701"/>
+						<tags z="87702">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="NTP" z="87703" tid="nebula" n="Nebula">
+							<entity cl="CampaignTerrain" ref="87698"/>
+							<params z="87704">
+								<w>128</w>
+								<h>128</h>
+								<cat>terrain</cat>
+								<key>nebula</key>
+								<tW>4</tW>
+								<tH>4</tH>
+							</params>
+							<tileSeed>-4960955799871330826</tileSeed>
+							<savedTiles>eJw1VWFsFMcZfbOzd3u2D++aqnAhtndVFOFKDZySVBAVfEsbBdQiIBFSEoHko6mSSKXxNU5iU+zbOQyOW9Fi1P6gwcX+0aiRItWn5EfcBtnrJHVRg8r1T+IqUjmXRFEqitclcQ==1nC302/2zEq3t29mdr5v3ve+tyEAdt7HlhBHS6Gx2sUEWJUGa/DZdFameBWcINJwcckBTB93L82lm+k8uQZdoaUAg4XAd54K4iH/OBIsQHvue0O0LazpBHSWhyeveWob8QLgLQ==umzozpuyAjQ5XwH9i9gk6+dk1UW7c91Cn48HpDwvFwLmWn/6F/qq6JTSkjcG2BjLvfy3//q0/k5GXgnxOA5IseSjfVaO9oYhipr94dabAu2H5eufvXS5ukMzV65GFPfrUrwtTw==0oPdb88w+qv5x4eSYJr9cXqawzFkebB+UQO377SWOfSeIVF/Z+IhWL1DvKoBOW9y17LXDSZ9zSd27JvWrsVrxMaUKEGDY3/W2SHkP/2ncRlCy+D7y0eazshPK2wEDrSDzuHl/w==adhSO9h2Cu+DV5y+lVvPWUnvEHTKiU9m+m4/lcns/81ttgGwaOgeOWthz1+KeBgHFa1cyi7wOY8FWoPnnKQqiT8MrxK50HUk5aLg4ldzR5sVzU0Wm6oK7k/4z9uUZIpZwva1Nw==xNn8sR0CrpZoCwzR8sbei/mfXICVTbGHa1y0j8Cu7j+koauVI2RId4uLqdZpvSufRqnmYny7mH3O/iKVchN4oQa8q/vvX04X0laYwGMCmNRPHRE4kcmGu8UPKWWxHi+Ppi5k7g==r/ULlXLdTwyMgjlNtR/EOOcn+q6kD2f1QVKYVkAOLHwU5qFLkUnzDkzBQoNG10VblDxhVFhNg3nfgWhjjHmFFV3M2KY0Y05YhQfP6r0HPojfp8vhk6+VDnRyaa7plYsFvPQAIg==/S4eXRDPFNxaDKpqPsTPsn6kVE7tQBGmUVyck0QpaxpU6i7D++StiLbvgk731DhOLP1a0sxOQRmrnvH+XlL4GKCSegTbfilrVNF2YBCbaKSntkQ7O2l6BV+jWvdKL3QRUB91gg==+w51igx81igyn0xhSlJlY5yCkU+hd4Vwx+04Fq8kSz0fyfew+e0G9vlueV3OwxgWCjPBxGBdjmB4Mx0p7VBDo/fLKI33nlXJZjFfxfwtmcHcXykAFXZPAHEryiD4VAX8EXgANw==/FYG2brCL2LbF0B4LIusp/C4s/kS0H0l6+x8kCyAvYqmFeqIdN55127ge4skzlTe+cqgMxu3kblGnqDn8xPDkdI0Wi4hQTaSl7tVk+5Ci6+wyN+ajBoOBPyUcHZ9ueis1axAvw==yQ0L3TvLMUx5dLOMcXNdU2xTmQzdxh6bMTq+uY+edCtetdsbtpeoY5Bp+Bakv+lDKeeThIkp4dTL/BkpRbKsafEKWW55Ql47ZZTXwsoxc+vqRyeN6o8buAhb1uXJRPW6WMvLlg==q1Iz/M/vYnPfP34nEqXlhi6A5M+XJzRjuLY2jYRYnNUMXr0rxbkq+1JLcmhNje38EL/VdLCj2/IK5+YWuKDczMVupc695+bC78bjfpuKaLQthutU1D/631BYm/53VmvVsX/GHQ==UMrh9+RjvmQROxSvhvefT0hybOKGs0ONk68dY3B57vckOVIlk9VM0hLJ7tFJKGXC87P0neiQnVRAMjzYl4ESvi0PZWNlwhgliPull9cFJTjKLigfOx4NVZkiuJX2oLd6SNxMuA==DGcR82zKaAyCtLTWsVJKClNA4mpcTLZdyoNs5CHwegP3z9YD9soRsKuvx+v/PCML7kgNyRM7FdTPTsjAMVZEc+lJ9fnSzXe8wOERmkvj+AVxnuuXQYHNkM46tK30VXilRwYLPA==cg3avpvm5+3ngzSivczfAHWw/Yenxs6QBcUUUNd6HwcipTzbKZ6nuort91bwaOzhyhPAjDsjjkTDXtJ0xI2rzWIfyvHhBgib56bo/exJYogWGVjXdnNuLyztkYYGcKYl8lOWhQ==0zEmps0bJRTS2msuGt3A5elKATytumAwpUNbOi0GWOnMi7Q6VA6wkVkDKL16NI89IQX01ycEabz5TRw/1fAU4/8vok9f</savedTiles>
+							<elapsed>7830.486</elapsed>
+						</plugin>
+					</CampaignTerrain>
+				</saved>
+			</o>
+			<b z="87705" hM="false">
+				<bgO z="87706">3.4203758|456.05154</bgO>
+				<s z="87707" o="graphics/backgrounds/background4.jpg" t="graphics/backgrounds/background4.jpg" p="graphics/backgrounds/background2.jpg">
+					<d cl="BackgroundAndStars" ref="87705"/>
+				</s>
+			</b>
+			<hP z="87708" d="1.0" nF="1" lp="false" r="false" e="0.0" pr="0.0" cF="0" cL="0" sN="false" l="500">
+				<p z="87709"/>
+			</hP>
+			<l z="87710">61817.0|-6537.0</l>
+			<lC z="87711">255,209,169,255</lC>
+			<lH z="87712" b="1.0" i="10.0" o="10.0" s="OUT" d="true" u="true"/>
+			<fS z="87713"/>
+			<pDat z="87714"/>
+			<sPts z="87715"/>
+			<scr z="87716"/>
+			<activeThisFrame>false</activeThisFrame>
+			<tags z="87717">
+				<st>theme_core_unpopulated</st>
+			</tags>
+			<con z="87718">
+				<age>AVERAGE</age>
+				<namePick z="87719">
+					<spec z="87720">
+						<name>Xanthe Che</name>
+						<frequency>1.0</frequency>
+						<reusable>false</reusable>
+						<tags z="87721">
+							<st>planet</st>
+							<st>moon</st>
+							<st>nebula</st>
+							<st>constellation</st>
+							<st>star</st>
+						</tags>
+						<parents z="87722"/>
+					</spec>
+					<nameWithRomanSuffixIfAny>Xanthe Che</nameWithRomanSuffixIfAny>
+				</namePick>
+				<systems z="87723">
+					<Sstm z="87724" dN="Alpha Xanthe Che Star System" bTF="graphics/backgrounds/background2.jpg" hM="false" lPV="0" ty="SINGLE" pg="true" bN="Alpha Xanthe Che" mRIH="683.8439" eBP="false">
+						<o z="87725">
+							<lists z="87726"/>
+							<maps z="87727"/>
+							<classifier cl="FastIterationClassifier" z="87728">
+								<cache z="87729"/>
+							</classifier>
+							<nextId>0</nextId>
+							<forFastContains z="87730"/>
+							<saved z="87731">
+								<Plnt z="87732">
+									<loc z="87733">0.0|0.0</loc>
+									<vel z="87734">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Alpha Xanthe Che","f2":[255,212,172,255],"f4":"system_5ad"}</j0>
+									<ow ref="24"/>
+									<cL cl="Sstm" ref="87724"/>
+									<ls cl="Plnt" ref="87732"/>
+									<me z="87735">
+										<d z="87736"/>
+									</me>
+									<sc z="87737"/>
+									<tags z="87738">
+										<st>star</st>
+									</tags>
+									<angle>-234237.5</angle>
+									<cloudAngle>0.0</cloudAngle>
+									<radius>653.3179</radius>
+									<type>star_orange</type>
+									<layers z="87739" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+								</Plnt>
+								<CampaignTerrain z="87740" type="corona" radius="0.0">
+									<loc z="87741">0.0|0.0</loc>
+									<vel z="87742">0.0|0.0</vel>
+									<j0>{"f6":90,"f2":[255,212,172,255],"f4":"5ae"}</j0>
+									<ow ref="69"/>
+									<orbit cl="COrbt" z="87743" r="0.0" op="100.0" ca="0.0">
+										<e cl="CampaignTerrain" ref="87740"/>
+										<f cl="Plnt" ref="87732"/>
+									</orbit>
+									<cL cl="Sstm" ref="87724"/>
+									<ls cl="Plnt" ref="87732"/>
+									<sc z="87744"/>
+									<tags z="87745">
+										<st>terrain</st>
+									</tags>
+									<plugin cl="StarCoronaTerrainPlugin" z="87746" tid="corona" n="Corona">
+										<entity cl="CampaignTerrain" ref="87740"/>
+										<params cl="CoronaParams" defined-in="BaseRingTerrain" z="87747" bWIE="1324.7036" mR="662.3518" wBL="10.0" fP="0.34234935" crLM="3.0">
+											<e cl="Plnt" ref="87732"/>
+										</params>
+										<renderer z="87748" a="149.67322">
+											<d cl="StarCoronaTerrainPlugin" ref="87746"/>
+										</renderer>
+										<flareManager z="87749">
+											<fT z="87750" i="0.5" a="1.5" c="0.9913584" e="1.0000001" ie="true"/>
+											<f z="87751">
+												<Flare z="87752" d="337.75128" a="17.402552" eLM="1.0138872" eLF="83.22956" sFM="0.05" c="fffff096">
+													<f z="87753" b="0.26112166" i="1.5318531" o="1.1242331" s="IN" d="true" u="false"/>
+												</Flare>
+												<Flare z="87754" d="340.9936" a="40.10355" eLM="1.1314133" eLF="223.81139" sFM="0.05" c="fffff096">
+													<f z="87755" b="0.0" i="8.993359" o="8.382685" s="IDLE" d="true" u="false"/>
+												</Flare>
+											</f>
+											<d cl="StarCoronaTerrainPlugin" ref="87746"/>
+										</flareManager>
+										<params ref="87747"/>
+									</plugin>
+								</CampaignTerrain>
+								<CampaignTerrain z="87756" type="magnetic_field" radius="0.0">
+									<loc z="87757">0.0|0.0</loc>
+									<vel z="87758">0.0|0.0</vel>
+									<j0>{"f6":90,"f2":[255,212,172,255],"f4":"5af"}</j0>
+									<ow ref="69"/>
+									<orbit cl="COrbt" z="87759" r="0.0" op="100.0" ca="0.0">
+										<e cl="CampaignTerrain" ref="87756"/>
+										<f cl="Plnt" ref="87732"/>
+									</orbit>
+									<cL cl="Sstm" ref="87724"/>
+									<ls cl="Plnt" ref="87732"/>
+									<sc z="87760"/>
+									<tags z="87761">
+										<st>terrain</st>
+									</tags>
+									<plugin cl="MagneticFieldTerrainPlugin" z="87762" tid="magnetic_field" n="Magnetic Field">
+										<e cl="CampaignTerrain" ref="87756"/>
+										<params cl="MagneticFieldParams" defined-in="BaseRingTerrain" z="87763" bWIE="400.0" mR="2060.4822" c="ff32146e|ff961e78|ffc83282|fffa4696|ffc85082|ff4b00a0|ff7f00ff" aF="1.0" iR="1860.4822" oR="2260.4822">
+											<e cl="Plnt" ref="87732"/>
+											<bC ref="1930"/>
+										</params>
+										<r z="87764" a="149.67322">
+											<d cl="MagneticFieldTerrainPlugin" ref="87762"/>
+										</r>
+										<params ref="87763"/>
+										<fM z="87765">
+											<fT z="87766" i="0.5" a="1.5" c="0.76767737" e="0.6" ie="false"/>
+											<f z="87767">
+												<Flare z="87768" d="261.5643" a="74.388954" eLM="1.0" eLF="0.0" sFM="0.8" c="ff32146e|ff961e78|ffc83282|fffa4696|ffc85082|ff4b00a0|ff7f00ff">
+													<f z="87769" b="0.010982139" i="1.6767625" o="4.347749" s="OUT" d="true" u="false"/>
+												</Flare>
+											</f>
+											<d cl="MagneticFieldTerrainPlugin" ref="87762"/>
+										</fM>
+									</plugin>
+								</CampaignTerrain>
+								<Plnt z="87770">
+									<loc z="87771">3071.5417|-909.50586</loc>
+									<vel z="87772">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Alpha Xanthe Che I","f2":[255,212,172,255],"f4":"system_5ad:planet_1"}</j0>
+									<ow ref="24"/>
+									<orbit cl="COrbt" z="87773" r="3203.3684" op="155.94298" ca="343.5056">
+										<e cl="Plnt" ref="87770"/>
+										<f cl="Plnt" ref="87732"/>
+									</orbit>
+									<cL cl="Sstm" ref="87724"/>
+									<ls cl="Plnt" ref="87732"/>
+									<me z="87774">
+										<d z="87775">
+											<e>
+												<st>$salvageSeed</st>
+												<Lp>-9077831210840929659</Lp>
+											</e>
+										</d>
+									</me>
+									<market cl="PCMarket" z="87776">
+										<id>market_system_5ad:planet_1</id>
+										<name>Alpha Xanthe Che I</name>
+										<primaryEntity cl="Plnt" ref="87770"/>
+										<cond z="87777">
+											<st>very_hot</st>
+											<st>no_atmosphere</st>
+											<st>ore_moderate</st>
+										</cond>
+										<surveyed z="87778">
+											<st>very_hot</st>
+											<st>no_atmosphere</st>
+										</surveyed>
+									</market>
+									<sc z="87779"/>
+									<tags z="87780">
+										<st>planet</st>
+									</tags>
+									<angle>-234207.31</angle>
+									<cloudAngle>0.0</cloudAngle>
+									<radius>140.37354</radius>
+									<type>barren3</type>
+									<diff z="87781">
+										<j>{"tilt":-11.802504539489746,"pitch":26.698884963989258,"planetColor":[227,225,239,255]}</j>
+									</diff>
+									<layers z="87782" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+								</Plnt>
+								<Plnt z="87783">
+									<loc z="87784">1670.3726|-4250.073</loc>
+									<vel z="87785">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Alpha Xanthe Che II","f2":[255,212,172,255],"f4":"system_5ad:planet_2"}</j0>
+									<ow ref="24"/>
+									<orbit cl="COrbt" z="87786" r="4566.538" op="187.79567" ca="291.45593">
+										<e cl="Plnt" ref="87783"/>
+										<f cl="Plnt" ref="87732"/>
+									</orbit>
+									<cL cl="Sstm" ref="87724"/>
+									<ls cl="Plnt" ref="87732"/>
+									<me z="87787">
+										<d z="87788">
+											<e>
+												<st>$salvageSeed</st>
+												<Lp>1013678985193987703</Lp>
+											</e>
+										</d>
+									</me>
+									<market cl="PCMarket" z="87789">
+										<id>market_system_5ad:planet_2</id>
+										<name>Alpha Xanthe Che II</name>
+										<primaryEntity cl="Plnt" ref="87783"/>
+										<cond z="87790">
+											<st>ore_abundant</st>
+											<st>no_atmosphere</st>
+											<st>hot</st>
+										</cond>
+										<surveyed z="87791">
+											<st>no_atmosphere</st>
+											<st>hot</st>
+										</surveyed>
+									</market>
+									<sc z="87792"/>
+									<tags z="87793">
+										<st>planet</st>
+									</tags>
+									<angle>-234336.81</angle>
+									<cloudAngle>0.0</cloudAngle>
+									<radius>136.76268</radius>
+									<type>barren3</type>
+									<diff z="87794">
+										<j>{"tilt":1.8029422760009766,"planetColor":[222,239,225,255]}</j>
+									</diff>
+									<layers z="87795" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+								</Plnt>
+								<RingBand z="87796">
+									<loc z="87797">0.0|0.0</loc>
+									<vel z="87798">0.0|0.0</vel>
+									<j0>{"f6":0,"f2":[255,212,172,255],"f4":"5b6"}</j0>
+									<ow ref="24"/>
+									<cL cl="Sstm" ref="87724"/>
+									<ls cl="Plnt" ref="87732"/>
+									<sc z="87799"/>
+									<j1>{"f6":-9165.962,"f7":"misc","f8":"rings_dust0","f11":2,"f10":0,"f1":1,"f0":256,"f3":256,"f2":[240,242,241,255],"f5":5656.035,"f4":305.11023}</j1>
+									<focus cl="Plnt" ref="87732"/>
+									<layers z="87800" enum-type="CaEnLa">RINGS</layers>
+								</RingBand>
+								<CampaignTerrain z="87801" type="ring" radius="0.0">
+									<loc z="87802">0.0|0.0</loc>
+									<vel z="87803">0.0|0.0</vel>
+									<j0>{"f6":90,"f2":[255,212,172,255],"f4":"5b7"}</j0>
+									<ow ref="69"/>
+									<orbit cl="COrbt" z="87804" r="0.0" op="100.0" ca="0.0">
+										<e cl="CampaignTerrain" ref="87801"/>
+										<f cl="Plnt" ref="87732"/>
+									</orbit>
+									<cL cl="Sstm" ref="87724"/>
+									<ls cl="Plnt" ref="87732"/>
+									<sc z="87805"/>
+									<tags z="87806">
+										<st>terrain</st>
+									</tags>
+									<plugin cl="RingSystemTerrainPlugin" z="87807" tid="ring" n="Ring System">
+										<entity cl="CampaignTerrain" ref="87801"/>
+										<params z="87808" bWIE="192.0" mR="5656.035">
+											<e cl="RingBand" ref="87796"/>
+										</params>
+									</plugin>
+								</CampaignTerrain>
+								<RingBand z="87809">
+									<loc z="87810">0.0|0.0</loc>
+									<vel z="87811">0.0|0.0</vel>
+									<j0>{"f6":0,"f2":[255,212,172,255],"f4":"5b8"}</j0>
+									<ow ref="24"/>
+									<cL cl="Sstm" ref="87724"/>
+									<ls cl="Plnt" ref="87732"/>
+									<sc z="87812"/>
+									<j1>{"f6":-7066.3037,"f7":"misc","f8":"rings_dust0","f11":2,"f10":0,"f1":1,"f0":256,"f3":256,"f2":[240,242,241,255],"f5":5959.035,"f4":387.94177}</j1>
+									<focus cl="Plnt" ref="87732"/>
+									<layers z="87813" enum-type="CaEnLa">RINGS</layers>
+								</RingBand>
+								<CampaignTerrain z="87814" type="ring" radius="0.0">
+									<loc z="87815">0.0|0.0</loc>
+									<vel z="87816">0.0|0.0</vel>
+									<j0>{"f6":90,"f2":[255,212,172,255],"f4":"5b9"}</j0>
+									<ow ref="69"/>
+									<orbit cl="COrbt" z="87817" r="0.0" op="100.0" ca="0.0">
+										<e cl="CampaignTerrain" ref="87814"/>
+										<f cl="Plnt" ref="87732"/>
+									</orbit>
+									<cL cl="Sstm" ref="87724"/>
+									<ls cl="Plnt" ref="87732"/>
+									<sc z="87818"/>
+									<tags z="87819">
+										<st>terrain</st>
+									</tags>
+									<plugin cl="RingSystemTerrainPlugin" z="87820" tid="ring" n="Ring System">
+										<entity cl="CampaignTerrain" ref="87814"/>
+										<params z="87821" bWIE="192.0" mR="5959.035">
+											<e cl="RingBand" ref="87809"/>
+										</params>
+									</plugin>
+								</CampaignTerrain>
+								<JumpPoint z="87822" r="50.0" dSC="misc" dSI="wormhole_hyper" sO="1000.0">
+									<loc z="87823">1277.9238|6592.314</loc>
+									<vel z="87824">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Fringe Jump-point","f2":[255,212,172,255],"f4":"5ba"}</j0>
+									<ow ref="24"/>
+									<orbit cl="COrbt" z="87825" r="6715.035" op="404.6286" ca="79.029236">
+										<e cl="JumpPoint" ref="87822"/>
+										<f cl="Plnt" ref="87732"/>
+									</orbit>
+									<cL cl="Sstm" ref="87724"/>
+									<ls cl="Plnt" ref="87732"/>
+									<sc z="87826"/>
+									<tags z="87827">
+										<st>jump_point</st>
+									</tags>
+									<dst z="87828">
+										<JumpDestination z="87829" l="hyperspace" minD="0.0" maxD="0.0">
+											<d cl="JumpPoint" z="87830" r="50.0" dSC="misc" dSI="wormhole_stars" sO="77770.65">
+												<loc z="87831">56511.43|-4839.7017</loc>
+												<vel z="87832">0.0|0.0</vel>
+												<j0>{"f6":0,"f0":"Fringe Jump-point","f2":[255,255,255,255],"f4":"5c1"}</j0>
+												<ow ref="24"/>
+												<orbit cl="UpdateFromSystemLocationOrbit" z="87833" oR="633.8439" lI="0.9999997" e="0.8999998">
+													<sP cl="LocationToken" z="87834">
+														<loc z="87835">56391.0|-5462.0</loc>
+														<where cl="Hyperspace" ref="2"/>
+														<orbit cl="UFHLOrbt" z="87836">
+															<s cl="Sstm" ref="87724"/>
+															<a cl="LocationToken" ref="87834"/>
+														</orbit>
+														<id>5bc</id>
+														<faction ref="69"/>
+														<tags z="87837">
+															<st>system_anchor</st>
+														</tags>
+														<memory z="87838">
+															<d z="87839">
+																<e>
+																	<st>$anchor_starSystem</st>
+																	<Sstm ref="87724"/>
+																</e>
+															</d>
+														</memory>
+													</sP>
+													<s cl="Plnt" ref="87732"/>
+													<iSE cl="JumpPoint" ref="87822"/>
+													<iH cl="JumpPoint" ref="87830"/>
+													<p z="87840">56510.27|-4839.479</p>
+													<l z="87841">56511.56|-4839.7266</l>
+												</orbit>
+												<cL cl="Hyperspace" ref="2"/>
+												<me z="87842">
+													<d z="87843"/>
+												</me>
+												<sc z="87844"/>
+												<tags z="87845">
+													<st>jump_point</st>
+												</tags>
+												<dst z="87846">
+													<JumpDestination z="87847" l="the Alpha Xanthe Che star system" minD="0.0" maxD="0.0">
+														<d cl="JumpPoint" ref="87822"/>
+													</JumpDestination>
+												</dst>
+												<f z="87848" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+												<layers z="87849" enum-type="CaEnLa">JUMP_POINTS</layers>
+											</d>
+										</JumpDestination>
+									</dst>
+									<f z="87850" b="0.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+									<layers z="87851" enum-type="CaEnLa">JUMP_POINTS</layers>
+								</JumpPoint>
+								<JumpPoint z="87852" r="50.0" dSC="misc" dSI="wormhole_hyper" sO="1000.0">
+									<loc z="87853">748.5797|-3114.6746</loc>
+									<vel z="87854">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Inner System Jump-point","f2":[255,212,172,255],"f4":"5bb"}</j0>
+									<ow ref="24"/>
+									<orbit cl="COrbt" z="87855" r="3203.3684" op="155.94298" ca="283.51416">
+										<e cl="JumpPoint" ref="87852"/>
+										<f cl="Plnt" ref="87732"/>
+									</orbit>
+									<cL cl="Sstm" ref="87724"/>
+									<ls cl="Plnt" ref="87732"/>
+									<sc z="87856"/>
+									<tags z="87857">
+										<st>jump_point</st>
+									</tags>
+									<dst z="87858">
+										<JumpDestination z="87859" l="hyperspace" minD="0.0" maxD="0.0">
+											<d cl="JumpPoint" z="87860" r="75.0" dSC="misc" dSI="wormhole_stars" sO="77770.65">
+												<loc z="87861">56481.63|-5839.606</loc>
+												<vel z="87862">0.0|0.0</vel>
+												<j0>{"f6":0,"f0":"Inner System Jump-point","f2":[255,255,255,255],"f4":"5bf"}</j0>
+												<ow ref="24"/>
+												<orbit cl="UpdateFromSystemLocationOrbit" z="87863" oR="388.32947" lI="0.9999997" e="0.8999998">
+													<sP cl="LocationToken" ref="87834"/>
+													<s cl="Plnt" ref="87732"/>
+													<iSE cl="JumpPoint" ref="87852"/>
+													<iH cl="JumpPoint" ref="87860"/>
+													<p z="87864">56483.273|-5839.2075</p>
+													<l z="87865">56481.445|-5839.6504</l>
+												</orbit>
+												<cL cl="Hyperspace" ref="2"/>
+												<me z="87866">
+													<d z="87867"/>
+												</me>
+												<sc z="87868"/>
+												<tags z="87869">
+													<st>jump_point</st>
+												</tags>
+												<dst z="87870">
+													<JumpDestination z="87871" l="the Alpha Xanthe Che star system" minD="0.0" maxD="0.0">
+														<d cl="JumpPoint" ref="87852"/>
+													</JumpDestination>
+												</dst>
+												<dP ref="87770"/>
+												<f z="87872" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+												<layers z="87873" enum-type="CaEnLa">JUMP_POINTS</layers>
+											</d>
+										</JumpDestination>
+									</dst>
+									<rP ref="87770"/>
+									<f z="87874" b="0.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+									<layers z="87875" enum-type="CaEnLa">JUMP_POINTS</layers>
+								</JumpPoint>
+								<CCEnt z="87876" fL="STATIONS">
+									<loc z="87877">6867.8076|4091.587</loc>
+									<vel z="87878">0.0|0.0</vel>
+									<j0>{"f6":30.784943,"f0":"Stable Location","f3":"stable_location","f2":[255,212,172,255],"f4":"5c2"}</j0>
+									<ow ref="69"/>
+									<orbit cl="COrbtPD" z="87879" r="7994.2393" op="374.5672" ca="30.784943">
+										<e cl="CCEnt" ref="87876"/>
+										<f cl="Plnt" ref="87732"/>
+									</orbit>
+									<cL cl="Sstm" ref="87724"/>
+									<ls cl="Plnt" ref="87732"/>
+									<sc z="87880"/>
+									<cV z="87881" sn="graphics/illustrations/free_orbit.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+									<tags z="87882">
+										<st>has_interaction_dialog</st>
+										<st>stable_location</st>
+									</tags>
+									<j1>{"f1":64,"f0":64,"f3":-1,"f2":75,"f5":"stable_location","f4":-1}</j1>
+									<la z="87883" enum-type="CaEnLa">STATIONS</la>
+								</CCEnt>
+								<CCEnt z="87884" fL="STATIONS">
+									<loc z="87885">8718.85|-2157.4102</loc>
+									<vel z="87886">0.0|0.0</vel>
+									<j0>{"f6":346.1018,"f0":"Stable Location","f3":"stable_location","f2":[255,212,172,255],"f4":"5c3"}</j0>
+									<ow ref="69"/>
+									<orbit cl="COrbtPD" z="87887" r="8981.802" op="414.61337" ca="346.1018">
+										<e cl="CCEnt" ref="87884"/>
+										<f cl="Plnt" ref="87732"/>
+									</orbit>
+									<cL cl="Sstm" ref="87724"/>
+									<ls cl="Plnt" ref="87732"/>
+									<sc z="87888"/>
+									<cV z="87889" sn="graphics/illustrations/free_orbit.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+									<tags z="87890">
+										<st>has_interaction_dialog</st>
+										<st>stable_location</st>
+									</tags>
+									<j1>{"f1":64,"f0":64,"f3":-1,"f2":75,"f5":"stable_location","f4":-1}</j1>
+									<la z="87891" enum-type="CaEnLa">STATIONS</la>
+								</CCEnt>
+								<CCEnt z="87892" fL="STATIONS">
+									<loc z="87893">-678.68164|-4515.823</loc>
+									<vel z="87894">0.0|0.0</vel>
+									<j0>{"f6":261.453,"f0":"Stable Location","f3":"stable_location","f2":[255,212,172,255],"f4":"5c4"}</j0>
+									<ow ref="69"/>
+									<orbit cl="COrbtPD" z="87895" r="4566.538" op="187.79567" ca="261.453">
+										<e cl="CCEnt" ref="87892"/>
+										<f cl="Plnt" ref="87732"/>
+									</orbit>
+									<cL cl="Sstm" ref="87724"/>
+									<ls cl="Plnt" ref="87732"/>
+									<sc z="87896"/>
+									<cV z="87897" sn="graphics/illustrations/free_orbit.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+									<tags z="87898">
+										<st>has_interaction_dialog</st>
+										<st>stable_location</st>
+									</tags>
+									<j1>{"f1":64,"f0":64,"f3":-1,"f2":75,"f5":"stable_location","f4":-1}</j1>
+									<la z="87899" enum-type="CaEnLa">STATIONS</la>
+								</CCEnt>
+								<CampaignTerrain z="87900" type="nebula" radius="0.0">
+									<loc z="87901">0.0|0.0</loc>
+									<vel z="87902">0.0|0.0</vel>
+									<j0>{"f6":90,"f2":[255,212,172,255],"f4":"5c5"}</j0>
+									<ow ref="69"/>
+									<cL cl="Sstm" ref="87724"/>
+									<ls cl="Plnt" ref="87732"/>
+									<sc z="87903"/>
+									<tags z="87904">
+										<st>terrain</st>
+									</tags>
+									<plugin cl="NTP" z="87905" tid="nebula" n="Nebula">
+										<entity cl="CampaignTerrain" ref="87900"/>
+										<params z="87906">
+											<w>128</w>
+											<h>128</h>
+											<cat>terrain</cat>
+											<key>nebula</key>
+											<tW>4</tW>
+											<tH>4</tH>
+										</params>
+										<tileSeed>1268993347041380391</tileSeed>
+										<savedTiles>eJxFlW1sHMUZx/+zs77dOJfbIyXgpkluk1hJVAE+qiKs1mTnYkRSCZHApyAKLAKUSEjkRJC4SE52zuc6kQgv/dRULcTfyBdQPtA3Ccq4QYDAilw+gAGDFykiFhi8hpDb2MsNzw==rB0YaW/vt7szzzz/52VQ0VohHxV95VTBub+tgTrKwLrx73c2XD07i5JAFXCu2TJ92NFLISoCcRn8VO3p56A/VQgUlBsDLfdl6IS+VEyhAfz58GfsdcAGmPC/BCbhoQfopUd7yA==Bo0++LBuPmt17cE2WCFulQitNbTUHpRcHssAHGvv3CyxHiPPQp10UEH9EwFaZqhAczmOscX1PtDfPX+76FVNlvHvOrTwDmuiKNilc07q6WPENnvhpEAivJgcNpZ798sxq3vOUw==xBZQGq6d6EX4eqAEmHkvmBzE5t19EsYYeWDXHpbMibAyLGv8gIRzw1UGv2N3CEfA0+nyg7cvkhKS65z/CDzaFhgklTW5hw1gn399AkwGpD8JdAPY8ftG0EKktdwEa6fE9qXLNA==/+jxDq71sb6G7f94H57Q/8qMoFBwmv+lqx2lNlzhx3D+P4XVTT0TF0HhCsFVij4yHw/4FM664B/PysccWn6I9MITIfRlGRluG/fIET2nIk9rdsV4PAsc6RGBpzs8M96MAb8Hgg==is6cRUmi9ANbpeGUdcNE0cYvdqlKQPwMI4ZFwfErt5C3zzFjkElel78KNInWNAu2JBPSu58Wt0WuH9ijtne9ESteYSad++j/uhD5fHjSoen3ODHJh4ckRuG0wUc2KrcsMZbgJg==ONOwPmySCdrhLIrg/bA/IDmuV7AuUVLxBGzOQqMAk9ICrQSF90YRnfB9mFC24okSKyI6TWnwJvHw+MgmTCE614JJaHrQWMtSK4ppNw24qKlGubDPp10JCvEeNHGw2hWGJuPIaQ==F82/Nqqr1UFyci0F7RqwVal/Y/w5OTlA2V4G25iw/yhlnLZ20E9tdcJeGV9IljOoiNrfEv7PnCnIsuqyStL3m+ZknBfVGNl/I6lcbCWxkbv37IYSgqSieT1n9LjFWhQfWGotsw==PeX2siiOdCslLthsEiHTcWeGp7nAXfuKYTOKtXaS0Hxvuc4+dlHtPe2Y91aRiWIdbeXMONM5F0/Zk2jL3S86JkHsYmFyq4KW8+edzMS7WHh+awwt3n6LX6DuAdfat1/Qe32+9Q==rimoHbJ8pIwOoktN023gDuPI/9ApR9+ziaIpOsouEB+6wEdLZn/n8CRYpxqlTe3kFWqKKKseStjl4xKsKbDKcJTUOsdjKuJ36OJDCBbFZ4MJmVCkGUsbwUehHs+uVm3qBvFYVA==Swu5YrabHgwWykfHpnKmbfSMVRafH5CpnX894k5llaS6UdWXZ29w09e8K7Ou+K3Er4nPsDTzrsy5YoD8o5aRIOl4305A9OSCcsPOl+dJHIkStvBJJPNdo6chydx12DxIHarBzw==a+kWTMcCi5E8yb+hBjEMS/A/STWcLLIsii2qGMHfAlP1v7BOlMAE0J4wfJv8wTQcl3JLhAwNPXZEUy1vMxIr3tXQKtLJVe+Z3a+TINv1c1PrDxIvE2dzMlHr3/tvZykzBeqTBA==LnqizIqyx4nLRD6KUadwLB0B7nwgl6h4yER0CKq036C0+yLMP3L0D69aw3YvzbGDttwb6zOSX6D5ZHHnU/LAwgyVa1q9FnSrZKG3ELzTjSolEfHG+WTN36PYzXckbKzRadfU6Q==RKxEQBaXMjb9hrp7C23GZ77iSxmyCDWmaHusx7eWfpC/G0KXZ5pKWSRcZ6oUw7+OGpqYpCLWWcipfFOZrzeEyqKxFd+lcqazZID48Fmeo62XzW5f/DC/11fYe5WWd+17Kb/x0w==+KUs4+rhaja/ZqQbefNfGScpJ3Tuh8l3H+sM54dHQF+pL5jlLzPT1MUHJdUYZjoU64rhXRDWHB5sI2p/1dbR+E01CoJNp0nQpjNENzeJbasmNkTzsfdSHzHfueCXps1xQC1f6w==jqXTOS8b/RHXjGKm</savedTiles>
+										<elapsed>7814.942</elapsed>
+									</plugin>
+								</CampaignTerrain>
+								<CCEnt z="87907" di="true" sP="1.0" fL="STATIONS">
+									<loc z="87908">234.9116|1098.5118</loc>
+									<vel z="87909">0.0|0.0</vel>
+									<j0>{"f6":137.5445,"f0":"Domain-era Probe","f3":"derelict_probe","f2":[255,212,172,255],"f4":"1f6d"}</j0>
+									<ow ref="21585"/>
+									<orbit cl="CircularOrbitWithSpin" z="87910" r="1123.3485" op="51.219666" ca="77.92938" cF="137.5445" sV="8.874603">
+										<e cl="CCEnt" ref="87907"/>
+										<f cl="Plnt" ref="87732"/>
+									</orbit>
+									<cL cl="Sstm" ref="87724"/>
+									<ls cl="Plnt" ref="87732"/>
+									<me z="87911">
+										<d z="87912">
+											<e>
+												<st>$salvageSeed</st>
+												<Lp>7750042526672320525</Lp>
+											</e>
+										</d>
+									</me>
+									<sc z="87913"/>
+									<cV z="87914" sn="graphics/illustrations/space_wreckage.jpg" sIW="640.0" sIH="400.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+									<tags z="87915">
+										<st>has_interaction_dialog</st>
+										<st>salvageable</st>
+										<st>neutrino</st>
+									</tags>
+									<dRM z="87916" fB="0.0" m="1.0" pM="0.0" nR="true">
+										<fBs z="87917" s="gen" v="1700.0"/>
+									</dRM>
+									<j1>{"f1":40,"f0":40,"f3":-1,"f2":35,"f5":"derelict_probe","f4":-1}</j1>
+									<la z="87918" enum-type="CaEnLa">STATIONS</la>
+								</CCEnt>
+							</saved>
+						</o>
+						<b z="87919" hM="false">
+							<bgO z="87920">12.853141|511.30768</bgO>
+							<s z="87921" o="graphics/backgrounds/background4.jpg" t="graphics/backgrounds/background4.jpg" p="graphics/backgrounds/background2.jpg">
+								<d cl="BackgroundAndStars" ref="87919"/>
+							</s>
+						</b>
+						<hP z="87922" d="1.0" nF="1" lp="false" r="false" e="0.0" pr="0.0" cF="0" cL="0" sN="false" l="500">
+							<p z="87923"/>
+						</hP>
+						<l z="87924">56391.0|-5462.0</l>
+						<lC z="87925">255,212,172,255</lC>
+						<lH z="87926" b="0.6000004" i="10.0" o="10.0" s="OUT" d="true" u="true"/>
+						<fS z="87927"/>
+						<pDat z="87928"/>
+						<sPts z="87929"/>
+						<scr z="87930"/>
+						<activeThisFrame>false</activeThisFrame>
+						<tags z="87931">
+							<st>theme_derelict</st>
+							<st>theme_derelict_probes</st>
+							<st>theme_misc_skip</st>
+						</tags>
+						<con ref="87718"/>
+						<star ref="87732"/>
+						<hA cl="LocationToken" ref="87834"/>
+					</Sstm>
+					<Sstm z="87932" dN="Asmoday Star System" bTF="graphics/backgrounds/background2.jpg" hM="false" lPV="0" ty="SINGLE" pg="true" bN="Asmoday" mRIH="898.5267" eBP="false">
+						<o z="87933">
+							<lists z="87934"/>
+							<maps z="87935"/>
+							<classifier cl="FastIterationClassifier" z="87936">
+								<cache z="87937"/>
+							</classifier>
+							<nextId>0</nextId>
+							<forFastContains z="87938"/>
+							<saved z="87939">
+								<Plnt z="87940">
+									<loc z="87941">0.0|0.0</loc>
+									<vel z="87942">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Asmoday","f2":[255,204,164,255],"f4":"system_58d"}</j0>
+									<ow ref="24"/>
+									<cL cl="Sstm" ref="87932"/>
+									<ls cl="Plnt" ref="87940"/>
+									<me z="87943">
+										<d z="87944"/>
+									</me>
+									<sc z="87945"/>
+									<tags z="87946">
+										<st>star</st>
+									</tags>
+									<angle>-234324.88</angle>
+									<cloudAngle>0.0</cloudAngle>
+									<radius>684.20526</radius>
+									<type>star_orange</type>
+									<layers z="87947" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+								</Plnt>
+								<CampaignTerrain z="87948" type="corona" radius="0.0">
+									<loc z="87949">0.0|0.0</loc>
+									<vel z="87950">0.0|0.0</vel>
+									<j0>{"f6":90,"f2":[255,204,164,255],"f4":"58e"}</j0>
+									<ow ref="69"/>
+									<orbit cl="COrbt" z="87951" r="0.0" op="100.0" ca="0.0">
+										<e cl="CampaignTerrain" ref="87948"/>
+										<f cl="Plnt" ref="87940"/>
+									</orbit>
+									<cL cl="Sstm" ref="87932"/>
+									<ls cl="Plnt" ref="87940"/>
+									<sc z="87952"/>
+									<tags z="87953">
+										<st>terrain</st>
+									</tags>
+									<plugin cl="StarCoronaTerrainPlugin" z="87954" tid="corona" n="Corona">
+										<entity cl="CampaignTerrain" ref="87948"/>
+										<params cl="CoronaParams" defined-in="BaseRingTerrain" z="87955" bWIE="1285.3511" mR="642.67554" wBL="10.0" fP="0.9894782" crLM="3.0">
+											<e cl="Plnt" ref="87940"/>
+										</params>
+										<renderer z="87956" a="23.665771">
+											<d cl="StarCoronaTerrainPlugin" ref="87954"/>
+										</renderer>
+										<flareManager z="87957">
+											<fT z="87958" i="0.5" a="1.5" c="1.2637086" e="0.70000005" ie="false"/>
+											<f z="87959">
+												<Flare z="87960" d="66.95874" a="15.626678" eLM="1.0157337" eLF="59.980217" sFM="0.05" c="fffff096">
+													<f z="87961" b="0.23691566" i="1.6883645" o="1.0108317" s="IN" d="true" u="false"/>
+												</Flare>
+												<Flare z="87962" d="86.78018" a="19.67207" eLM="1.0475744" eLF="93.69029" sFM="0.05" c="fffff096">
+													<f z="87963" b="0.0" i="1.3900256" o="1.3704052" s="IDLE" d="true" u="false"/>
+												</Flare>
+												<Flare z="87964" d="96.2593" a="19.126837" eLM="1.0262762" eLF="99.024796" sFM="0.05" c="fffff096">
+													<f z="87965" b="0.0" i="1.9781951" o="1.8007704" s="IDLE" d="true" u="false"/>
+												</Flare>
+												<Flare z="87966" d="86.974945" a="40.148678" eLM="1.2822118" eLF="239.62721" sFM="0.05" c="fffff096">
+													<f z="87967" b="0.0" i="3.9839847" o="6.077041" s="IDLE" d="true" u="false"/>
+												</Flare>
+											</f>
+											<d cl="StarCoronaTerrainPlugin" ref="87954"/>
+										</flareManager>
+										<params ref="87955"/>
+									</plugin>
+								</CampaignTerrain>
+								<Plnt z="87968">
+									<loc z="87969">-1208.0613|-974.3583</loc>
+									<vel z="87970">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Neos Bohol","f2":[255,204,164,255],"f4":"system_58d:planet_0"}</j0>
+									<ow ref="24"/>
+									<orbit cl="COrbt" z="87971" r="1552.0264" op="67.82694" ca="218.88782">
+										<e cl="Plnt" ref="87968"/>
+										<f cl="Plnt" ref="87940"/>
+									</orbit>
+									<cL cl="Sstm" ref="87932"/>
+									<ls cl="Plnt" ref="87940"/>
+									<me z="87972">
+										<d z="87973">
+											<e>
+												<st>$salvageSeed</st>
+												<Lp>1649130216911023962</Lp>
+											</e>
+										</d>
+									</me>
+									<market cl="PCMarket" z="87974">
+										<id>market_system_58d:planet_0</id>
+										<name>Neos Bohol</name>
+										<primaryEntity cl="Plnt" ref="87968"/>
+										<cond z="87975">
+											<st>ore_abundant</st>
+											<st>very_hot</st>
+											<st>no_atmosphere</st>
+											<st>rare_ore_rich</st>
+										</cond>
+										<surveyed z="87976">
+											<st>very_hot</st>
+											<st>no_atmosphere</st>
+										</surveyed>
+									</market>
+									<sc z="87977"/>
+									<tags z="87978">
+										<st>planet</st>
+									</tags>
+									<angle>-78135.29</angle>
+									<cloudAngle>0.0</cloudAngle>
+									<radius>112.31841</radius>
+									<type>rocky_metallic</type>
+									<diff z="87979">
+										<j>{"tilt":0.509124755859375,"planetColor":[245,249,252,255]}</j>
+									</diff>
+									<layers z="87980" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+								</Plnt>
+								<Plnt z="87981">
+									<loc z="87982">2732.35|-2562.1018</loc>
+									<vel z="87983">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Soleyn","f2":[255,204,164,255],"f4":"system_58d:planet_1"}</j0>
+									<ow ref="24"/>
+									<orbit cl="COrbt" z="87984" r="3745.678" op="168.68549" ca="316.8418">
+										<e cl="Plnt" ref="87981"/>
+										<f cl="Plnt" ref="87940"/>
+									</orbit>
+									<cL cl="Sstm" ref="87932"/>
+									<ls cl="Plnt" ref="87940"/>
+									<me z="87985">
+										<d z="87986">
+											<e>
+												<st>$salvageSeed</st>
+												<Lp>3653053152889319470</Lp>
+											</e>
+										</d>
+									</me>
+									<market cl="PCMarket" z="87987">
+										<id>market_system_58d:planet_1</id>
+										<name>Soleyn</name>
+										<primaryEntity cl="Plnt" ref="87981"/>
+										<cond z="87988">
+											<st>rare_ore_sparse</st>
+											<st>extreme_weather</st>
+											<st>hot</st>
+											<st>ore_moderate</st>
+											<st>habitable</st>
+										</cond>
+										<surveyed z="87989">
+											<st>extreme_weather</st>
+											<st>hot</st>
+											<st>habitable</st>
+										</surveyed>
+									</market>
+									<sc z="87990"/>
+									<tags z="87991">
+										<st>planet</st>
+									</tags>
+									<angle>-234559.1</angle>
+									<cloudAngle>-781909.5</cloudAngle>
+									<radius>168.6884</radius>
+									<type>desert1</type>
+									<diff z="87992">
+										<j>{"atmosphereColor":[175,173,167,130],"tilt":59.389305114746094,"planetColor":[249,240,231,255]}</j>
+									</diff>
+									<layers z="87993" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+								</Plnt>
+								<Plnt z="87994">
+									<loc z="87995">2623.8665|-3113.1482</loc>
+									<vel z="87996">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Mosrael","f2":[255,204,164,255],"f4":"system 58d_moon_system_58d_system_58d:planet_1_0"}</j0>
+									<ow ref="24"/>
+									<orbit cl="COrbt" z="87997" r="561.6234" op="24.468363" ca="258.86267">
+										<e cl="Plnt" ref="87994"/>
+										<f cl="Plnt" ref="87981"/>
+									</orbit>
+									<cL cl="Sstm" ref="87932"/>
+									<ls cl="Plnt" ref="87940"/>
+									<me z="87998">
+										<d z="87999">
+											<e>
+												<st>$salvageSeed</st>
+												<Lp>-8178891360196235898</Lp>
+											</e>
+										</d>
+									</me>
+									<market cl="PCMarket" z="88000">
+										<id>market_system 58d_moon_system_58d_system_58d:planet_1_0</id>
+										<name>Mosrael</name>
+										<primaryEntity cl="Plnt" ref="87994"/>
+										<cond z="88001">
+											<st>very_hot</st>
+											<st>toxic_atmosphere</st>
+											<st>ore_moderate</st>
+										</cond>
+										<surveyed z="88002">
+											<st>very_hot</st>
+											<st>toxic_atmosphere</st>
+										</surveyed>
+									</market>
+									<sc z="88003"/>
+									<tags z="88004">
+										<st>planet</st>
+									</tags>
+									<angle>-234271.98</angle>
+									<cloudAngle>547275.44</cloudAngle>
+									<radius>64.4477</radius>
+									<type>toxic</type>
+									<diff z="88005">
+										<j>{"atmosphereColor":[248,234,172,220],"tilt":2.0654163360595703,"planetColor":[227,232,251,255]}</j>
+									</diff>
+									<layers z="88006" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+								</Plnt>
+								<CampaignTerrain z="88007" type="magnetic_field" radius="0.0">
+									<loc z="88008">2623.8665|-3113.1482</loc>
+									<vel z="88009">0.0|0.0</vel>
+									<j0>{"f6":90,"f0":"Mosrael's Wreath","f2":[255,204,164,255],"f4":"593"}</j0>
+									<ow ref="69"/>
+									<orbit cl="COrbt" z="88010" r="0.0" op="100.0" ca="0.0">
+										<e cl="CampaignTerrain" ref="88007"/>
+										<f cl="Plnt" ref="87994"/>
+									</orbit>
+									<cL cl="Sstm" ref="87932"/>
+									<ls cl="Plnt" ref="87940"/>
+									<sc z="88011"/>
+									<tags z="88012">
+										<st>terrain</st>
+									</tags>
+									<plugin cl="MagneticFieldTerrainPlugin" z="88013" tid="magnetic_field" n="Mosrael's Wreath">
+										<e cl="CampaignTerrain" ref="88007"/>
+										<params cl="MagneticFieldParams" defined-in="BaseRingTerrain" z="88014" bWIE="264.4477" mR="132.22385" c="ff8c64eb|ffb46ed2|ff968cbe|ff8cbed2|ff5ac8aa|ff41e6a0|ff14dc46" aF="0.41353142" iR="64.4477" oR="314.4477">
+											<e cl="Plnt" ref="87994"/>
+											<bC ref="1930"/>
+										</params>
+										<r z="88015" a="23.665771">
+											<d cl="MagneticFieldTerrainPlugin" ref="88013"/>
+										</r>
+										<params ref="88014"/>
+										<fM z="88016">
+											<fT z="88017" i="0.5" a="1.5" c="1.0763798" e="0.1" ie="false"/>
+											<f z="88018">
+												<Flare z="88019" d="21.27483" a="17.563982" eLM="1.0" eLF="0.0" sFM="0.8" c="ff5ac8aa|ff41e6a0|ff14dc46">
+													<f z="88020" b="0.8845054" i="0.76796067" o="0.86584115" s="OUT" d="true" u="false"/>
+												</Flare>
+												<Flare z="88021" d="20.73294" a="11.800709" eLM="1.0" eLF="0.0" sFM="0.8" c="ff5ac8aa|ff41e6a0|ff14dc46">
+													<f z="88022" b="0.0" i="0.5397119" o="0.91432285" s="IDLE" d="true" u="false"/>
+												</Flare>
+												<Flare z="88023" d="-10.961054" a="17.349155" eLM="1.0" eLF="0.0" sFM="0.8" c="ffb46ed2|ff968cbe|ff8cbed2|ff5ac8aa|ff41e6a0|ff14dc46">
+													<f z="88024" b="0.0" i="0.9622228" o="0.727468" s="IDLE" d="true" u="false"/>
+												</Flare>
+												<Flare z="88025" d="-24.834637" a="13.894092" eLM="1.0" eLF="0.0" sFM="0.8" c="ff41e6a0|ff14dc46">
+													<f z="88026" b="0.0" i="0.6517206" o="0.84931886" s="IDLE" d="true" u="false"/>
+												</Flare>
+												<Flare z="88027" d="28.179909" a="18.85374" eLM="1.0" eLF="0.0" sFM="0.8" c="ffb46ed2|ff968cbe|ff8cbed2|ff5ac8aa|ff41e6a0|ff14dc46">
+													<f z="88028" b="0.0" i="0.58515495" o="0.588253" s="IDLE" d="true" u="false"/>
+												</Flare>
+												<Flare z="88029" d="1.8466187" a="68.81856" eLM="1.0" eLF="0.0" sFM="0.8" c="ff8c64eb|ffb46ed2|ff968cbe|ff8cbed2|ff5ac8aa|ff41e6a0|ff14dc46">
+													<f z="88030" b="0.0" i="1.7202984" o="3.6501129" s="IDLE" d="true" u="false"/>
+												</Flare>
+											</f>
+											<d cl="MagneticFieldTerrainPlugin" ref="88013"/>
+										</fM>
+									</plugin>
+								</CampaignTerrain>
+								<Plnt z="88031">
+									<loc z="88032">-5223.526|-1277.3619</loc>
+									<vel z="88033">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Humility","f2":[255,204,164,255],"f4":"system_58d:planet_3"}</j0>
+									<ow ref="24"/>
+									<orbit cl="COrbt" z="88034" r="5377.4414" op="250.42026" ca="193.74146">
+										<e cl="Plnt" ref="88031"/>
+										<f cl="Plnt" ref="87940"/>
+									</orbit>
+									<cL cl="Sstm" ref="87932"/>
+									<ls cl="Plnt" ref="87940"/>
+									<me z="88035">
+										<d z="88036">
+											<e>
+												<st>$salvageSeed</st>
+												<Lp>1293510296746014731</Lp>
+											</e>
+										</d>
+									</me>
+									<market cl="PCMarket" z="88037">
+										<id>market_system_58d:planet_3</id>
+										<name>Humility</name>
+										<primaryEntity cl="Plnt" ref="88031"/>
+										<cond z="88038">
+											<st>farmland_adequate</st>
+											<st>habitable</st>
+											<st>organics_common</st>
+										</cond>
+										<surveyed z="88039">
+											<st>habitable</st>
+										</surveyed>
+									</market>
+									<sc z="88040"/>
+									<tags z="88041">
+										<st>planet</st>
+									</tags>
+									<angle>-234428.94</angle>
+									<cloudAngle>-390954.75</cloudAngle>
+									<radius>147.82082</radius>
+									<type>terran</type>
+									<diff z="88042">
+										<j>{"atmosphereColor":[105,181,223,160],"tilt":-21.717008590698242,"pitch":64.65760803222656,"planetColor":[238,243,247,255]}</j>
+									</diff>
+									<layers z="88043" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+								</Plnt>
+								<JumpPoint z="88044" r="50.0" dSC="misc" dSI="wormhole_hyper" sO="1000.0">
+									<loc z="88045">6384.7583|2512.8315</loc>
+									<vel z="88046">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Fringe Jump-point","f2":[255,204,164,255],"f4":"59f"}</j0>
+									<ow ref="24"/>
+									<orbit cl="COrbt" z="88047" r="6861.4473" op="407.47595" ca="21.482971">
+										<e cl="JumpPoint" ref="88044"/>
+										<f cl="Plnt" ref="87940"/>
+									</orbit>
+									<cL cl="Sstm" ref="87932"/>
+									<ls cl="Plnt" ref="87940"/>
+									<sc z="88048"/>
+									<tags z="88049">
+										<st>jump_point</st>
+									</tags>
+									<dst z="88050">
+										<JumpDestination z="88051" l="hyperspace" minD="0.0" maxD="0.0">
+											<d cl="JumpPoint" z="88052" r="50.0" dSC="misc" dSI="wormhole_stars" sO="77770.65">
+												<loc z="88053">59796.695|-6029.5513</loc>
+												<vel z="88054">0.0|0.0</vel>
+												<j0>{"f6":0,"f0":"Fringe Jump-point","f2":[255,255,255,255],"f4":"5a9"}</j0>
+												<ow ref="24"/>
+												<orbit cl="UpdateFromSystemLocationOrbit" z="88055" oR="848.5267" lI="0.9999997" e="0.91666645">
+													<sP cl="LocationToken" z="88056">
+														<loc z="88057">59007.0|-6340.0</loc>
+														<where cl="Hyperspace" ref="2"/>
+														<orbit cl="UFHLOrbt" z="88058">
+															<s cl="Sstm" ref="87932"/>
+															<a cl="LocationToken" ref="88056"/>
+														</orbit>
+														<id>5a2</id>
+														<faction ref="69"/>
+														<tags z="88059">
+															<st>system_anchor</st>
+														</tags>
+														<memory z="88060">
+															<d z="88061">
+																<e>
+																	<st>$anchor_starSystem</st>
+																	<Sstm ref="87932"/>
+																</e>
+															</d>
+														</memory>
+													</sP>
+													<s cl="Plnt" ref="87940"/>
+													<iSE cl="JumpPoint" ref="88044"/>
+													<iH cl="JumpPoint" ref="88052"/>
+													<p z="88062">59796.215|-6028.326</p>
+													<l z="88063">59796.74|-6029.6626</l>
+												</orbit>
+												<cL cl="Hyperspace" ref="2"/>
+												<me z="88064">
+													<d z="88065"/>
+												</me>
+												<sc z="88066"/>
+												<tags z="88067">
+													<st>jump_point</st>
+												</tags>
+												<dst z="88068">
+													<JumpDestination z="88069" l="the Asmoday star system" minD="0.0" maxD="0.0">
+														<d cl="JumpPoint" ref="88044"/>
+													</JumpDestination>
+												</dst>
+												<f z="88070" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+												<layers z="88071" enum-type="CaEnLa">JUMP_POINTS</layers>
+											</d>
+										</JumpDestination>
+									</dst>
+									<f z="88072" b="0.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+									<layers z="88073" enum-type="CaEnLa">JUMP_POINTS</layers>
+								</JumpPoint>
+								<JumpPoint z="88074" r="50.0" dSC="misc" dSI="wormhole_hyper" sO="1000.0">
+									<loc z="88075">3585.026|1085.2162</loc>
+									<vel z="88076">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Inner System Jump-point","f2":[255,204,164,255],"f4":"5a0"}</j0>
+									<ow ref="24"/>
+									<orbit cl="COrbt" z="88077" r="3745.678" op="168.68549" ca="16.841492">
+										<e cl="JumpPoint" ref="88074"/>
+										<f cl="Plnt" ref="87940"/>
+									</orbit>
+									<cL cl="Sstm" ref="87932"/>
+									<ls cl="Plnt" ref="87940"/>
+									<sc z="88078"/>
+									<tags z="88079">
+										<st>jump_point</st>
+									</tags>
+									<dst z="88080">
+										<JumpDestination z="88081" l="hyperspace" minD="0.0" maxD="0.0">
+											<d cl="JumpPoint" z="88082" r="78.73768" dSC="misc" dSI="wormhole_stars" sO="77770.65">
+												<loc z="88083">59456.68|-6204.016</loc>
+												<vel z="88084">0.0|0.0</vel>
+												<j0>{"f6":0,"f0":"Inner System Jump-point","f2":[255,255,255,255],"f4":"5a5"}</j0>
+												<ow ref="24"/>
+												<orbit cl="UpdateFromSystemLocationOrbit" z="88085" oR="469.789" lI="0.9999997" e="0.91666645">
+													<sP cl="LocationToken" ref="88056"/>
+													<s cl="Plnt" ref="87940"/>
+													<iSE cl="JumpPoint" ref="88074"/>
+													<iH cl="JumpPoint" ref="88082"/>
+													<p z="88086">59456.195|-6202.4287</p>
+													<l z="88087">59456.723|-6204.16</l>
+												</orbit>
+												<cL cl="Hyperspace" ref="2"/>
+												<me z="88088">
+													<d z="88089"/>
+												</me>
+												<sc z="88090"/>
+												<tags z="88091">
+													<st>jump_point</st>
+												</tags>
+												<dst z="88092">
+													<JumpDestination z="88093" l="the Asmoday star system" minD="0.0" maxD="0.0">
+														<d cl="JumpPoint" ref="88074"/>
+													</JumpDestination>
+												</dst>
+												<dP ref="87981"/>
+												<f z="88094" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+												<layers z="88095" enum-type="CaEnLa">JUMP_POINTS</layers>
+											</d>
+										</JumpDestination>
+									</dst>
+									<rP ref="87981"/>
+									<f z="88096" b="0.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+									<layers z="88097" enum-type="CaEnLa">JUMP_POINTS</layers>
+								</JumpPoint>
+								<JumpPoint z="88098" r="50.0" dSC="misc" dSI="wormhole_hyper" sO="1000.0">
+									<loc z="88099">-3719.178|3883.8887</loc>
+									<vel z="88100">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Outer System Jump-point","f2":[255,204,164,255],"f4":"5a1"}</j0>
+									<ow ref="24"/>
+									<orbit cl="COrbt" z="88101" r="5377.4414" op="250.42026" ca="133.75897">
+										<e cl="JumpPoint" ref="88098"/>
+										<f cl="Plnt" ref="87940"/>
+									</orbit>
+									<cL cl="Sstm" ref="87932"/>
+									<ls cl="Plnt" ref="87940"/>
+									<sc z="88102"/>
+									<tags z="88103">
+										<st>jump_point</st>
+									</tags>
+									<dst z="88104">
+										<JumpDestination z="88105" l="hyperspace" minD="0.0" maxD="0.0">
+											<d cl="JumpPoint" z="88106" r="75.0" dSC="misc" dSI="wormhole_stars" sO="77770.65">
+												<loc z="88107">58541.223|-5853.494</loc>
+												<vel z="88108">0.0|0.0</vel>
+												<j0>{"f6":0,"f0":"Outer System Jump-point","f2":[255,255,255,255],"f4":"5a7"}</j0>
+												<ow ref="24"/>
+												<orbit cl="UpdateFromSystemLocationOrbit" z="88109" oR="673.5267" lI="0.9999997" e="0.91666645">
+													<sP cl="LocationToken" ref="88056"/>
+													<s cl="Plnt" ref="87940"/>
+													<iSE cl="JumpPoint" ref="88098"/>
+													<iH cl="JumpPoint" ref="88106"/>
+													<p z="88110">58540.086|-5854.582</p>
+													<l z="88111">58541.324|-5853.3955</l>
+												</orbit>
+												<cL cl="Hyperspace" ref="2"/>
+												<me z="88112">
+													<d z="88113"/>
+												</me>
+												<sc z="88114"/>
+												<tags z="88115">
+													<st>jump_point</st>
+												</tags>
+												<dst z="88116">
+													<JumpDestination z="88117" l="the Asmoday star system" minD="0.0" maxD="0.0">
+														<d cl="JumpPoint" ref="88098"/>
+													</JumpDestination>
+												</dst>
+												<dP ref="88031"/>
+												<f z="88118" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+												<layers z="88119" enum-type="CaEnLa">JUMP_POINTS</layers>
+											</d>
+										</JumpDestination>
+									</dst>
+									<rP ref="88031"/>
+									<f z="88120" b="0.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+									<layers z="88121" enum-type="CaEnLa">JUMP_POINTS</layers>
+								</JumpPoint>
+								<CCEnt z="88122" fL="STATIONS">
+									<loc z="88123">5119.9395|5341.427</loc>
+									<vel z="88124">0.0|0.0</vel>
+									<j0>{"f6":46.21289,"f0":"Stable Location","f3":"stable_location","f2":[255,204,164,255],"f4":"5aa"}</j0>
+									<ow ref="69"/>
+									<orbit cl="COrbtPD" z="88125" r="7398.9604" op="320.0992" ca="46.21289">
+										<e cl="CCEnt" ref="88122"/>
+										<f cl="Plnt" ref="87940"/>
+									</orbit>
+									<cL cl="Sstm" ref="87932"/>
+									<ls cl="Plnt" ref="87940"/>
+									<sc z="88126"/>
+									<cV z="88127" sn="graphics/illustrations/free_orbit.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+									<tags z="88128">
+										<st>has_interaction_dialog</st>
+										<st>stable_location</st>
+									</tags>
+									<j1>{"f1":64,"f0":64,"f3":-1,"f2":75,"f5":"stable_location","f4":-1}</j1>
+									<la z="88129" enum-type="CaEnLa">STATIONS</la>
+								</CCEnt>
+								<CCEnt z="88130" fL="STATIONS">
+									<loc z="88131">-5162.4224|1505.4152</loc>
+									<vel z="88132">0.0|0.0</vel>
+									<j0>{"f6":163.7428,"f0":"Stable Location","f3":"stable_location","f2":[255,204,164,255],"f4":"5ab"}</j0>
+									<ow ref="69"/>
+									<orbit cl="COrbtPD" z="88133" r="5377.4414" op="250.42026" ca="163.7428">
+										<e cl="CCEnt" ref="88130"/>
+										<f cl="Plnt" ref="87940"/>
+									</orbit>
+									<cL cl="Sstm" ref="87932"/>
+									<ls cl="Plnt" ref="87940"/>
+									<sc z="88134"/>
+									<cV z="88135" sn="graphics/illustrations/free_orbit.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+									<tags z="88136">
+										<st>has_interaction_dialog</st>
+										<st>stable_location</st>
+									</tags>
+									<j1>{"f1":64,"f0":64,"f3":-1,"f2":75,"f5":"stable_location","f4":-1}</j1>
+									<la z="88137" enum-type="CaEnLa">STATIONS</la>
+								</CCEnt>
+								<CampaignTerrain z="88138" type="nebula" radius="0.0">
+									<loc z="88139">0.0|0.0</loc>
+									<vel z="88140">0.0|0.0</vel>
+									<j0>{"f6":90,"f2":[255,204,164,255],"f4":"5ac"}</j0>
+									<ow ref="69"/>
+									<cL cl="Sstm" ref="87932"/>
+									<ls cl="Plnt" ref="87940"/>
+									<sc z="88141"/>
+									<tags z="88142">
+										<st>terrain</st>
+									</tags>
+									<plugin cl="NTP" z="88143" tid="nebula" n="Nebula">
+										<entity cl="CampaignTerrain" ref="88138"/>
+										<params z="88144">
+											<w>128</w>
+											<h>128</h>
+											<cat>terrain</cat>
+											<key>nebula</key>
+											<tW>4</tW>
+											<tH>4</tH>
+										</params>
+										<tileSeed>-3321884588609252655</tileSeed>
+										<savedTiles>eJxNlV9sFFUUxr87M7uzpcvOlFa6QukMIdIihq4migJ2tyQmJD7Q+CIPhG4DCaiJlEhiiW3nbqMtEsX6RB9Q9gGDxpcmxFD81ynGlMQHypMaCB0CkSKanVKg23Y713N3Fss83A==9nfP3TPnnvOdM0FnCT14/IjS/YZhNhnC7xnTCub2DaucTeNDqG1esx7MXSkpUPMoAtxPMlFyfOAtqLQilYBYcoqI7obq1XIkDaSF8LFChcrrfcT1vCXofEs/GKzrUNRuXcx7Sg==7QhsrBOA0qqKKS+x00eWfulCvZATU+7GiGemFEd4YHNuh+BbM55tQ4hpMOEVzmA/z+yEJuYeUPy+CHBwA+/HRkdMIBMUz5Xg5NhHiAjhccz3jBXhrFQ5WIeY4ejuo/CcgWgMKw==OsRVF0dbHQ9iSD2N1ywxM4JeS7gszasboI+Jh6Nw1ogc0m5jNwbGxJ+3ka4WKnFDF/SC+PcsthpBAun2bSY23BM3TWxLlhJo9V6mFC2Kr8DXa8VGJFPtHo4JEb+PTYN+q0yciw==y72iZR6vDvp9qJbJD8T8d+/zpgkvQBUhy1yc7+jwq2+NB9Bd2tjjzK9xpq1bbgCDmCU/mP/+cLG2kwdYOS4dvDcjRNG6qQeIjNvEzlWxUDQk67k8sTVFduOmEmgWlw4NKlVRnQ==qQ6wjhPmWbogJvWZ+kcw+qGgh4nzNybVmXSgvcmJGyCuCb/MvXQ+luApjPlsxgmQJo63miBREAs4nCNmyZhSkpUSI9MnocaOOIvKHrjQL5XRPDInlC5GfDK0Z88Llop4mlKDtg==Jo9YiFxM9eJJlsAgKaZzMy1qNo5IY3ZQcHSKgHNmx8ES9m5SkD0WuHTbOFTiJQpsToSO1cbMtlnia6UKW+7zC0jhU5+SRfs7rfzan7EDDQ9C1kzUbiT+zE8BVM+IicZm4kJpBA==6JahQ/saz+EKNYZ9SLISs1GHQpau3VB+heZjNQoPoNkhMw9R3KNLJctYo3pojpLoKk+SZZCMTrjxCsdItTHjW8q8Em6spLCsFGKPf0BdFjPoXIaFHKWdpz3FtLH8RI9TeE9wLQ==dDRXTlOEiHKdJ59gC/X8pZA1uW7hF4YTlXjk8izmRsNwqikBtOZmi3VlruLlP8qt0cqrOJ073qyL4vLb1ct2lHg5oEPU10/YFUqkKGq8gkxtJx0v21NVPHZgtlgJBawuwUkgkg==M5JzZxQXhUUq8PqymW2JZHHwF7JXBl6aeO7uH8Bi+Ty2kxAPPuyBMpuV94vK1pwQfcAPMoIa5V1aW8ReisklSTVU7yAuTHUBZ4mPRQ0pfBobdJR43+pWiybW1BgJroYE0qCddg==yC01GUeVZCM440l/veRFTs9o39gQtEHxigtqAErOjTRpwVrankFG2tmNwxyrLGGR0ZPhBnTtFmPJsk24/9e3IAzXlKdD1u8EXwyZNTAjPKzZQ9EYZotYFu438TZntB8BezRAWw==ry9Vg/EMVJOVMjJppf4MbUiPC+Usyv4hpUJRfpT8ThBLwpi07Sj6ZMW2ixco6CG6MzVHCkr9YmsMLXlkFWUH8xFdK8hmjCoxBSZ9NOJW0I+YfneAYk4SawY1cYzdV8vlT5GkVg==yf/2KySCUAaNkAPRtD2EG1JtLiZR+Wj1d8dd7Tba0BXyePdfrnaHpMwRl5L2/lly0Rm6kmn23hj+GOHwQaSNuIsb0KnBaWYwSqK3Ja/j1xP24y6djtH8nDhJnCrzqFqn894vaQ==HIQv9CMwuPPowAgmyw1TwotR1wkm2lHWGAtwVHXTS6f8POTMwEU+Xpu1Fr/h5BHJXWxpfOacZy00HZdGG7mfrrbNekZxUzniXfs/D3KYNfUSdVPexrSyaXMOzohyvYYr9gjzBg==n2kiiQ2z65S8EyOKr0Qjlxh9afd1AmtstTh0Cn/jqb2wshmqPrnR/gNJJi57</savedTiles>
+										<elapsed>7824.163</elapsed>
+									</plugin>
+								</CampaignTerrain>
+								<CCEnt z="88145" di="true" sP="1.0" fL="STATIONS">
+									<loc z="88146">2698.525|-2735.2585</loc>
+									<vel z="88147">0.0|0.0</vel>
+									<j0>{"f6":196.38403,"f0":"Domain-era Probe","f3":"derelict_probe","f2":[255,204,164,255],"f4":"1f6c"}</j0>
+									<ow ref="21585"/>
+									<orbit cl="CircularOrbitWithSpin" z="88148" r="385.19403" op="17.664509" ca="78.82419" cF="196.38403" sV="-10.37571">
+										<e cl="CCEnt" ref="88145"/>
+										<f cl="Plnt" ref="87994"/>
+									</orbit>
+									<cL cl="Sstm" ref="87932"/>
+									<ls cl="Plnt" ref="87940"/>
+									<me z="88149">
+										<d z="88150">
+											<e>
+												<st>$salvageSeed</st>
+												<Lp>-6005253063013317789</Lp>
+											</e>
+											<e>
+												<st>$salvageSpecialData</st>
+												<SurveyDataSpecialData z="88151" t="PLANET_INTERESTING_PROPERTY" eI="system_58d:planet_0" sI="rare_ore_rich" r="false"/>
+											</e>
+										</d>
+									</me>
+									<sc z="88152"/>
+									<cV z="88153" sn="graphics/illustrations/space_wreckage.jpg" sIW="640.0" sIH="400.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+									<tags z="88154">
+										<st>has_interaction_dialog</st>
+										<st>salvageable</st>
+										<st>neutrino</st>
+									</tags>
+									<dRM z="88155" fB="0.0" m="1.0" pM="0.0" nR="true">
+										<fBs z="88156" s="gen" v="1700.0"/>
+									</dRM>
+									<j1>{"f1":40,"f0":40,"f3":-1,"f2":35,"f5":"derelict_probe","f4":-1}</j1>
+									<la z="88157" enum-type="CaEnLa">STATIONS</la>
+								</CCEnt>
+							</saved>
+						</o>
+						<b z="88158" hM="false">
+							<bgO z="88159">106.63547|246.19246</bgO>
+							<s z="88160" o="graphics/backgrounds/background4.jpg" t="graphics/backgrounds/background4.jpg" p="graphics/backgrounds/background2.jpg">
+								<d cl="BackgroundAndStars" ref="88158"/>
+							</s>
+						</b>
+						<hP z="88161" d="1.0" nF="1" lp="false" r="false" e="0.0" pr="0.0" cF="0" cL="0" sN="false" l="500">
+							<p z="88162"/>
+						</hP>
+						<l z="88163">59007.0|-6340.0</l>
+						<lC z="88164">255,204,164,255</lC>
+						<lH z="88165" b="0.24000004" i="10.0" o="10.0" s="IN" d="true" u="true"/>
+						<fS z="88166"/>
+						<pDat z="88167"/>
+						<sPts z="88168"/>
+						<scr z="88169"/>
+						<activeThisFrame>false</activeThisFrame>
+						<tags z="88170">
+							<st>theme_derelict</st>
+							<st>theme_derelict_probes</st>
+							<st>theme_misc</st>
+						</tags>
+						<con ref="87718"/>
+						<star ref="87940"/>
+						<hA cl="LocationToken" ref="88056"/>
+					</Sstm>
+					<Sstm z="88171" dN="Gamma Xanthe Che Star System" bTF="graphics/backgrounds/background2.jpg" hM="false" lPV="0" ty="SINGLE" pg="true" bN="Gamma Xanthe Che" mRIH="924.7473" eBP="false">
+						<o z="88172">
+							<lists z="88173"/>
+							<maps z="88174"/>
+							<classifier cl="FastIterationClassifier" z="88175">
+								<cache z="88176"/>
+							</classifier>
+							<nextId>0</nextId>
+							<forFastContains z="88177"/>
+							<saved z="88178">
+								<Plnt z="88179">
+									<loc z="88180">0.0|0.0</loc>
+									<vel z="88181">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Gamma Xanthe Che","f2":[255,180,144,255],"f4":"system_56a"}</j0>
+									<ow ref="24"/>
+									<cL cl="Sstm" ref="88171"/>
+									<ls cl="Plnt" ref="88179"/>
+									<me z="88182">
+										<d z="88183"/>
+									</me>
+									<sc z="88184"/>
+									<tags z="88185">
+										<st>star</st>
+									</tags>
+									<angle>-234640.4</angle>
+									<cloudAngle>0.0</cloudAngle>
+									<radius>525.8657</radius>
+									<type>star_red_dwarf</type>
+									<layers z="88186" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+								</Plnt>
+								<CampaignTerrain z="88187" type="corona" radius="0.0">
+									<loc z="88188">0.0|0.0</loc>
+									<vel z="88189">0.0|0.0</vel>
+									<j0>{"f6":90,"f2":[255,180,144,255],"f4":"56b"}</j0>
+									<ow ref="69"/>
+									<orbit cl="COrbt" z="88190" r="0.0" op="100.0" ca="0.0">
+										<e cl="CampaignTerrain" ref="88187"/>
+										<f cl="Plnt" ref="88179"/>
+									</orbit>
+									<cL cl="Sstm" ref="88171"/>
+									<ls cl="Plnt" ref="88179"/>
+									<sc z="88191"/>
+									<tags z="88192">
+										<st>terrain</st>
+									</tags>
+									<plugin cl="StarCoronaTerrainPlugin" z="88193" tid="corona" n="Corona">
+										<entity cl="CampaignTerrain" ref="88187"/>
+										<params cl="CoronaParams" defined-in="BaseRingTerrain" z="88194" bWIE="1110.4226" mR="555.2113" wBL="5.0" fP="0.8354" crLM="2.0">
+											<e cl="Plnt" ref="88179"/>
+										</params>
+										<renderer z="88195" a="62.907593">
+											<d cl="StarCoronaTerrainPlugin" ref="88193"/>
+										</renderer>
+										<flareManager z="88196">
+											<fT z="88197" i="0.5" a="1.5" c="1.4011853" e="1.0000001" ie="false"/>
+											<f z="88198">
+												<Flare z="88199" d="76.400024" a="17.67603" eLM="1.0274863" eLF="79.49795" sFM="0.05" c="ffff0000">
+													<f z="88200" b="0.80103385" i="1.6229026" o="1.9235525" s="IN" d="true" u="false"/>
+												</Flare>
+												<Flare z="88201" d="77.05832" a="37.584354" eLM="1.3046759" eLF="324.50415" sFM="0.05" c="ffff0000">
+													<f z="88202" b="0.0" i="3.1943815" o="7.8918843" s="IDLE" d="true" u="false"/>
+												</Flare>
+											</f>
+											<d cl="StarCoronaTerrainPlugin" ref="88193"/>
+										</flareManager>
+										<params ref="88194"/>
+									</plugin>
+								</CampaignTerrain>
+								<Plnt z="88203">
+									<loc z="88204">-818.3276|1401.4014</loc>
+									<vel z="88205">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Gamma Xanthe Che I","f2":[255,180,144,255],"f4":"system_56a:planet_0"}</j0>
+									<ow ref="24"/>
+									<orbit cl="COrbt" z="88206" r="1622.8326" op="71.18196" ca="120.282166">
+										<e cl="Plnt" ref="88203"/>
+										<f cl="Plnt" ref="88179"/>
+									</orbit>
+									<cL cl="Sstm" ref="88171"/>
+									<ls cl="Plnt" ref="88179"/>
+									<me z="88207">
+										<d z="88208">
+											<e>
+												<st>$salvageSeed</st>
+												<Lp>-3718886301286054180</Lp>
+											</e>
+										</d>
+									</me>
+									<market cl="PCMarket" z="88209">
+										<id>market_system_56a:planet_0</id>
+										<name>Gamma Xanthe Che I</name>
+										<primaryEntity cl="Plnt" ref="88203"/>
+										<cond z="88210">
+											<st>rare_ore_ultrarich</st>
+											<st>very_hot</st>
+											<st>extreme_tectonic_activity</st>
+											<st>ore_ultrarich</st>
+											<st>toxic_atmosphere</st>
+										</cond>
+										<surveyed z="88211">
+											<st>very_hot</st>
+											<st>extreme_tectonic_activity</st>
+											<st>toxic_atmosphere</st>
+										</surveyed>
+									</market>
+									<sc z="88212"/>
+									<tags z="88213">
+										<st>planet</st>
+									</tags>
+									<angle>-273613.6</angle>
+									<cloudAngle>0.0</cloudAngle>
+									<radius>103.63539</radius>
+									<type>lava</type>
+									<diff z="88214">
+										<j>{"atmosphereColor":[221,98,73,60],"tilt":-2.023070812225342,"glowTexture":"graphics/planets/clouds_aurorae.png","glowColor":[255,0,0,100],"useReverseLightForGlow":true,"pitch":17.731168746948242,"planetColor":[238,240,246,255],"atmosphereThickness":0.5}</j>
+									</diff>
+									<layers z="88215" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+								</Plnt>
+								<Plnt z="88216">
+									<loc z="88217">1724.6473|2323.1396</loc>
+									<vel z="88218">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Gamma Xanthe Che II","f2":[255,180,144,255],"f4":"system_56a:planet_1"}</j0>
+									<ow ref="24"/>
+									<orbit cl="COrbt" z="88219" r="2893.335" op="130.19719" ca="53.410645">
+										<e cl="Plnt" ref="88216"/>
+										<f cl="Plnt" ref="88179"/>
+									</orbit>
+									<cL cl="Sstm" ref="88171"/>
+									<ls cl="Plnt" ref="88179"/>
+									<me z="88220">
+										<d z="88221">
+											<e>
+												<st>$salvageSeed</st>
+												<Lp>-8692944054979681724</Lp>
+											</e>
+										</d>
+									</me>
+									<market cl="PCMarket" z="88222">
+										<id>market_system_56a:planet_1</id>
+										<name>Gamma Xanthe Che II</name>
+										<primaryEntity cl="Plnt" ref="88216"/>
+										<cond z="88223">
+											<st>rare_ore_sparse</st>
+											<st>ore_sparse</st>
+											<st>no_atmosphere</st>
+											<st>hot</st>
+										</cond>
+										<surveyed z="88224">
+											<st>no_atmosphere</st>
+											<st>hot</st>
+										</surveyed>
+									</market>
+									<sc z="88225"/>
+									<tags z="88226">
+										<st>planet</st>
+									</tags>
+									<angle>-312686.72</angle>
+									<cloudAngle>0.0</cloudAngle>
+									<radius>137.38055</radius>
+									<type>barren-bombarded</type>
+									<diff z="88227">
+										<j>{"tilt":-23.603046417236328,"planetColor":[239,245,223,255]}</j>
+									</diff>
+									<layers z="88228" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+								</Plnt>
+								<Plnt z="88229">
+									<loc z="88230">-5568.406|646.56506</loc>
+									<vel z="88231">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Gamma Xanthe Che III","f2":[255,180,144,255],"f4":"system_56a:planet_2"}</j0>
+									<ow ref="24"/>
+									<orbit cl="COrbt" z="88232" r="5605.8174" op="224.47144" ca="173.37683">
+										<e cl="Plnt" ref="88229"/>
+										<f cl="Plnt" ref="88179"/>
+									</orbit>
+									<cL cl="Sstm" ref="88171"/>
+									<ls cl="Plnt" ref="88179"/>
+									<me z="88233">
+										<d z="88234">
+											<e>
+												<st>$salvageSeed</st>
+												<Lp>3442491184412919306</Lp>
+											</e>
+										</d>
+									</me>
+									<market cl="PCMarket" z="88235">
+										<id>market_system_56a:planet_2</id>
+										<name>Gamma Xanthe Che III</name>
+										<primaryEntity cl="Plnt" ref="88229"/>
+										<cond z="88236">
+											<st>volatiles_diffuse</st>
+											<st>high_gravity</st>
+										</cond>
+										<surveyed z="88237">
+											<st>high_gravity</st>
+										</surveyed>
+									</market>
+									<sc z="88238"/>
+									<tags z="88239">
+										<st>planet</st>
+									</tags>
+									<angle>-234628.72</angle>
+									<cloudAngle>-547432.5</cloudAngle>
+									<radius>333.20227</radius>
+									<type>gas_giant</type>
+									<diff z="88240">
+										<j>{"atmosphereColor":[156,116,89,140],"tilt":21.542879104614258,"planetColor":[202,165,221,255]}</j>
+									</diff>
+									<layers z="88241" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+								</Plnt>
+								<CampaignTerrain z="88242" type="magnetic_field" radius="0.0">
+									<loc z="88243">-5568.406|646.56506</loc>
+									<vel z="88244">0.0|0.0</vel>
+									<j0>{"f6":90,"f2":[255,180,144,255],"f4":"575"}</j0>
+									<ow ref="69"/>
+									<orbit cl="COrbt" z="88245" r="0.0" op="100.0" ca="0.0">
+										<e cl="CampaignTerrain" ref="88242"/>
+										<f cl="Plnt" ref="88229"/>
+									</orbit>
+									<cL cl="Sstm" ref="88171"/>
+									<ls cl="Plnt" ref="88179"/>
+									<sc z="88246"/>
+									<tags z="88247">
+										<st>terrain</st>
+									</tags>
+									<plugin cl="MagneticFieldTerrainPlugin" z="88248" tid="magnetic_field" n="Magnetic Field">
+										<e cl="CampaignTerrain" ref="88242"/>
+										<params cl="MagneticFieldParams" defined-in="BaseRingTerrain" z="88249" bWIE="533.2023" mR="266.60114" c="ff5ab428|ff82915a|ffa56e91|ff5f37a0|ff2d0082|ff140082|ff0a0096" aF="0.6994042" iR="333.20227" oR="583.2023">
+											<e cl="Plnt" ref="88229"/>
+											<bC ref="1930"/>
+										</params>
+										<r z="88250" a="62.907593">
+											<d cl="MagneticFieldTerrainPlugin" ref="88248"/>
+										</r>
+										<params ref="88249"/>
+										<fM z="88251">
+											<fT z="88252" i="0.5" a="1.5" c="1.1141533" e="0.8000001" ie="false"/>
+											<f z="88253">
+												<Flare z="88254" d="321.39337" a="56.466927" eLM="1.0" eLF="0.0" sFM="0.8" c="ff5ab428|ff82915a|ffa56e91|ff5f37a0|ff2d0082|ff140082|ff0a0096">
+													<f z="88255" b="0.8604664" i="1.3945924" o="3.688529" s="IN" d="true" u="false"/>
+												</Flare>
+											</f>
+											<d cl="MagneticFieldTerrainPlugin" ref="88248"/>
+										</fM>
+									</plugin>
+								</CampaignTerrain>
+								<RingBand z="88256">
+									<loc z="88257">-5568.406|646.56506</loc>
+									<vel z="88258">0.0|0.0</vel>
+									<j0>{"f6":0,"f2":[255,180,144,255],"f4":"576"}</j0>
+									<ow ref="24"/>
+									<cL cl="Sstm" ref="88171"/>
+									<ls cl="Plnt" ref="88179"/>
+									<sc z="88259"/>
+									<j1>{"f6":-45139.27,"f7":"misc","f8":"rings_dust0","f11":2,"f10":0,"f1":1,"f0":256,"f3":256,"f2":[243,249,239,255],"f5":966.63165,"f4":61.990448}</j1>
+									<focus cl="Plnt" ref="88229"/>
+									<layers z="88260" enum-type="CaEnLa">RINGS</layers>
+								</RingBand>
+								<CampaignTerrain z="88261" type="ring" radius="0.0">
+									<loc z="88262">-5568.406|646.56506</loc>
+									<vel z="88263">0.0|0.0</vel>
+									<j0>{"f6":90,"f2":[255,180,144,255],"f4":"577"}</j0>
+									<ow ref="69"/>
+									<orbit cl="COrbt" z="88264" r="0.0" op="100.0" ca="0.0">
+										<e cl="CampaignTerrain" ref="88261"/>
+										<f cl="Plnt" ref="88229"/>
+									</orbit>
+									<cL cl="Sstm" ref="88171"/>
+									<ls cl="Plnt" ref="88179"/>
+									<sc z="88265"/>
+									<tags z="88266">
+										<st>terrain</st>
+									</tags>
+									<plugin cl="RingSystemTerrainPlugin" z="88267" tid="ring" n="Ring System">
+										<entity cl="CampaignTerrain" ref="88261"/>
+										<params z="88268" bWIE="192.0" mR="966.63165">
+											<e cl="RingBand" ref="88256"/>
+										</params>
+									</plugin>
+								</CampaignTerrain>
+								<RingBand z="88269">
+									<loc z="88270">-5568.406|646.56506</loc>
+									<vel z="88271">0.0|0.0</vel>
+									<j0>{"f6":0,"f2":[255,180,144,255],"f4":"578"}</j0>
+									<ow ref="24"/>
+									<cL cl="Sstm" ref="88171"/>
+									<ls cl="Plnt" ref="88179"/>
+									<sc z="88272"/>
+									<j1>{"f6":-33179.984,"f7":"misc","f8":"rings_dust0","f11":2,"f10":0,"f0":256,"f3":256,"f2":[243,249,239,255],"f5":1269.6316,"f4":84.42604}</j1>
+									<focus cl="Plnt" ref="88229"/>
+									<layers z="88273" enum-type="CaEnLa">RINGS</layers>
+								</RingBand>
+								<CampaignTerrain z="88274" type="ring" radius="0.0">
+									<loc z="88275">-5568.406|646.56506</loc>
+									<vel z="88276">0.0|0.0</vel>
+									<j0>{"f6":90,"f2":[255,180,144,255],"f4":"579"}</j0>
+									<ow ref="69"/>
+									<orbit cl="COrbt" z="88277" r="0.0" op="100.0" ca="0.0">
+										<e cl="CampaignTerrain" ref="88274"/>
+										<f cl="Plnt" ref="88229"/>
+									</orbit>
+									<cL cl="Sstm" ref="88171"/>
+									<ls cl="Plnt" ref="88179"/>
+									<sc z="88278"/>
+									<tags z="88279">
+										<st>terrain</st>
+									</tags>
+									<plugin cl="RingSystemTerrainPlugin" z="88280" tid="ring" n="Ring System">
+										<entity cl="CampaignTerrain" ref="88274"/>
+										<params z="88281" bWIE="192.0" mR="1269.6316">
+											<e cl="RingBand" ref="88269"/>
+										</params>
+									</plugin>
+								</CampaignTerrain>
+								<CampaignTerrain z="88282" type="asteroid_field" radius="0.0">
+									<loc z="88283">-2225.422|5145.161</loc>
+									<vel z="88284">0.0|0.0</vel>
+									<j0>{"f6":90,"f0":"Gamma Xanthe Che III L4 Asteroid Field","f2":[255,180,144,255],"f4":"57c"}</j0>
+									<ow ref="69"/>
+									<orbit cl="COrbt" z="88285" r="5605.8174" op="224.47144" ca="113.3898">
+										<e cl="CampaignTerrain" ref="88282"/>
+										<f cl="Plnt" ref="88179"/>
+									</orbit>
+									<cL cl="Sstm" ref="88171"/>
+									<ls cl="Plnt" ref="88179"/>
+									<sc z="88286"/>
+									<tags z="88287">
+										<st>terrain</st>
+									</tags>
+									<plugin cl="AsteroidFieldTerrainPlugin" z="88288" tid="asteroid_field" n="Gamma Xanthe Che III L4 Asteroid Field" nTCA="false">
+										<entity cl="CampaignTerrain" ref="88282"/>
+										<params cl="AsteroidFieldParams" defined-in="BaseRingTerrain" z="88289" bWIE="802.4889" mR="401.24445" minR="800.0" maxR="900.0" minA="50" maxA="50" minS="4.0" maxS="16.0" nA="50"/>
+										<params ref="88289"/>
+									</plugin>
+								</CampaignTerrain>
+								<Plnt z="88290">
+									<loc z="88291">-3342.946|-4499.989</loc>
+									<vel z="88292">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Gamma Xanthe Che III-L5","f2":[255,180,144,255],"f4":"system_56a:planet_2_L5"}</j0>
+									<ow ref="24"/>
+									<orbit cl="COrbt" z="88293" r="5605.8174" op="224.47144" ca="233.39209">
+										<e cl="Plnt" ref="88290"/>
+										<f cl="Plnt" ref="88179"/>
+									</orbit>
+									<cL cl="Sstm" ref="88171"/>
+									<ls cl="Plnt" ref="88179"/>
+									<me z="88294">
+										<d z="88295">
+											<e>
+												<st>$salvageSeed</st>
+												<Lp>1821822570237577025</Lp>
+											</e>
+										</d>
+									</me>
+									<market cl="PCMarket" z="88296">
+										<id>market_system_56a:planet_2_L5</id>
+										<name>Gamma Xanthe Che III-L5</name>
+										<primaryEntity cl="Plnt" ref="88290"/>
+										<cond z="88297">
+											<st>extreme_weather</st>
+											<st>hot</st>
+											<st>low_gravity</st>
+											<st>habitable</st>
+										</cond>
+										<surveyed z="88298">
+											<st>extreme_weather</st>
+											<st>hot</st>
+											<st>low_gravity</st>
+											<st>habitable</st>
+										</surveyed>
+									</market>
+									<sc z="88299"/>
+									<tags z="88300">
+										<st>planet</st>
+									</tags>
+									<angle>-234457.38</angle>
+									<cloudAngle>-782132.8</cloudAngle>
+									<radius>60.0</radius>
+									<type>desert</type>
+									<diff z="88301">
+										<j>{"atmosphereColor":[174,173,169,130],"tilt":-4.759419918060303,"pitch":27.596240997314453,"planetColor":[244,242,241,255]}</j>
+									</diff>
+									<layers z="88302" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+								</Plnt>
+								<JumpPoint z="88303" r="50.0" dSC="misc" dSI="wormhole_hyper" sO="1000.0">
+									<loc z="88304">7160.376|-2639.7014</loc>
+									<vel z="88305">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Fringe Jump-point","f2":[255,180,144,255],"f4":"581"}</j0>
+									<ow ref="24"/>
+									<orbit cl="COrbt" z="88306" r="7631.4487" op="399.53137" ca="339.76343">
+										<e cl="JumpPoint" ref="88303"/>
+										<f cl="Plnt" ref="88179"/>
+									</orbit>
+									<cL cl="Sstm" ref="88171"/>
+									<ls cl="Plnt" ref="88179"/>
+									<sc z="88307"/>
+									<tags z="88308">
+										<st>jump_point</st>
+									</tags>
+									<dst z="88309">
+										<JumpDestination z="88310" l="hyperspace" minD="0.0" maxD="0.0">
+											<d cl="JumpPoint" z="88311" r="50.0" dSC="misc" dSI="wormhole_stars" sO="77770.65">
+												<loc z="88312">64428.812|-6072.402</loc>
+												<vel z="88313">0.0|0.0</vel>
+												<j0>{"f6":0,"f0":"Fringe Jump-point","f2":[255,255,255,255],"f4":"58a"}</j0>
+												<ow ref="24"/>
+												<orbit cl="UpdateFromSystemLocationOrbit" z="88314" oR="874.7473" lI="0.9999997" e="0.9333331">
+													<sP cl="LocationToken" z="88315">
+														<loc z="88316">63608.0|-5770.0</loc>
+														<where cl="Hyperspace" ref="2"/>
+														<orbit cl="UFHLOrbt" z="88317">
+															<s cl="Sstm" ref="88171"/>
+															<a cl="LocationToken" ref="88315"/>
+														</orbit>
+														<id>583</id>
+														<faction ref="69"/>
+														<tags z="88318">
+															<st>system_anchor</st>
+														</tags>
+														<memory z="88319">
+															<d z="88320">
+																<e>
+																	<st>$anchor_starSystem</st>
+																	<Sstm ref="88171"/>
+																</e>
+															</d>
+														</memory>
+													</sP>
+													<s cl="Plnt" ref="88179"/>
+													<iSE cl="JumpPoint" ref="88303"/>
+													<iH cl="JumpPoint" ref="88311"/>
+													<p z="88321">64429.21|-6071.3247</p>
+													<l z="88322">64428.785|-6072.479</l>
+												</orbit>
+												<cL cl="Hyperspace" ref="2"/>
+												<me z="88323">
+													<d z="88324"/>
+												</me>
+												<sc z="88325"/>
+												<tags z="88326">
+													<st>jump_point</st>
+												</tags>
+												<dst z="88327">
+													<JumpDestination z="88328" l="the Gamma Xanthe Che star system" minD="0.0" maxD="0.0">
+														<d cl="JumpPoint" ref="88303"/>
+													</JumpDestination>
+												</dst>
+												<f z="88329" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+												<layers z="88330" enum-type="CaEnLa">JUMP_POINTS</layers>
+											</d>
+										</JumpDestination>
+									</dst>
+									<f z="88331" b="0.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+									<layers z="88332" enum-type="CaEnLa">JUMP_POINTS</layers>
+								</JumpPoint>
+								<JumpPoint z="88333" r="50.0" dSC="misc" dSI="wormhole_hyper" sO="1000.0">
+									<loc z="88334">2874.1794|-332.38596</loc>
+									<vel z="88335">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Inner System Jump-point","f2":[255,180,144,255],"f4":"582"}</j0>
+									<ow ref="24"/>
+									<orbit cl="COrbt" z="88336" r="2893.335" op="130.19719" ca="353.40332">
+										<e cl="JumpPoint" ref="88333"/>
+										<f cl="Plnt" ref="88179"/>
+									</orbit>
+									<cL cl="Sstm" ref="88171"/>
+									<ls cl="Plnt" ref="88179"/>
+									<sc z="88337"/>
+									<tags z="88338">
+										<st>jump_point</st>
+									</tags>
+									<dst z="88339">
+										<JumpDestination z="88340" l="hyperspace" minD="0.0" maxD="0.0">
+											<d cl="JumpPoint" z="88341" r="75.0" dSC="misc" dSI="wormhole_stars" sO="77770.65">
+												<loc z="88342">64031.67|-5818.7314</loc>
+												<vel z="88343">0.0|0.0</vel>
+												<j0>{"f6":0,"f0":"Inner System Jump-point","f2":[255,255,255,255],"f4":"586"}</j0>
+												<ow ref="24"/>
+												<orbit cl="UpdateFromSystemLocationOrbit" z="88344" oR="426.46643" lI="0.9999997" e="0.9333331">
+													<sP cl="LocationToken" ref="88315"/>
+													<s cl="Plnt" ref="88179"/>
+													<iSE cl="JumpPoint" ref="88333"/>
+													<iH cl="JumpPoint" ref="88341"/>
+													<p z="88345">64031.887|-5816.8223</p>
+													<l z="88346">64031.656|-5818.8677</l>
+												</orbit>
+												<cL cl="Hyperspace" ref="2"/>
+												<me z="88347">
+													<d z="88348"/>
+												</me>
+												<sc z="88349"/>
+												<tags z="88350">
+													<st>jump_point</st>
+												</tags>
+												<dst z="88351">
+													<JumpDestination z="88352" l="the Gamma Xanthe Che star system" minD="0.0" maxD="0.0">
+														<d cl="JumpPoint" ref="88333"/>
+													</JumpDestination>
+												</dst>
+												<dP ref="88216"/>
+												<f z="88353" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+												<layers z="88354" enum-type="CaEnLa">JUMP_POINTS</layers>
+											</d>
+										</JumpDestination>
+									</dst>
+									<rP ref="88216"/>
+									<f z="88355" b="0.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+									<layers z="88356" enum-type="CaEnLa">JUMP_POINTS</layers>
+								</JumpPoint>
+								<CCEnt z="88357" fL="STATIONS">
+									<loc z="88358">-1655.594|-6959.5474</loc>
+									<vel z="88359">0.0|0.0</vel>
+									<j0>{"f6":256.61877,"f0":"Stable Location","f3":"stable_location","f2":[255,180,144,255],"f4":"58b"}</j0>
+									<ow ref="69"/>
+									<orbit cl="COrbtPD" z="88360" r="7153.7607" op="287.90826" ca="256.61877">
+										<e cl="CCEnt" ref="88357"/>
+										<f cl="Plnt" ref="88179"/>
+									</orbit>
+									<cL cl="Sstm" ref="88171"/>
+									<ls cl="Plnt" ref="88179"/>
+									<sc z="88361"/>
+									<cV z="88362" sn="graphics/illustrations/free_orbit.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+									<tags z="88363">
+										<st>has_interaction_dialog</st>
+										<st>stable_location</st>
+									</tags>
+									<j1>{"f1":64,"f0":64,"f3":-1,"f2":75,"f5":"stable_location","f4":-1}</j1>
+									<la z="88364" enum-type="CaEnLa">STATIONS</la>
+								</CCEnt>
+								<CampaignTerrain z="88365" type="nebula" radius="0.0">
+									<loc z="88366">0.0|0.0</loc>
+									<vel z="88367">0.0|0.0</vel>
+									<j0>{"f6":90,"f2":[255,180,144,255],"f4":"58c"}</j0>
+									<ow ref="69"/>
+									<cL cl="Sstm" ref="88171"/>
+									<ls cl="Plnt" ref="88179"/>
+									<sc z="88368"/>
+									<tags z="88369">
+										<st>terrain</st>
+									</tags>
+									<plugin cl="NTP" z="88370" tid="nebula" n="Nebula">
+										<entity cl="CampaignTerrain" ref="88365"/>
+										<params z="88371">
+											<w>128</w>
+											<h>128</h>
+											<cat>terrain</cat>
+											<key>nebula</key>
+											<tW>4</tW>
+											<tH>4</tH>
+										</params>
+										<tileSeed>2243665575013678566</tileSeed>
+										<savedTiles>eJw9lX9sG2cZx7/vvWffJU18N1ZRlzjzhZXyB6WxqCCVutYOLbRIk9ZpYiqaRNwf2iYx5QdCMGhav21G3W10ziRg/LW4Gtr2x7ZE6h9LRYgvs5iHBk0Rm1JNY3lDpGYFVDtUSw==LtS+h/d8zk5nWZ973/f5/T4PrdwEm/CYiBtemm4mB6iGrrvvoQfJp3dPrlhWY8O9139ae0AOeO2La8/30WfCulPHWTEws32iZn14d13xdPyn4szs9olq4Y+0IIZGbhzZiaH6Fg==q9GXXl8WK3dG39vR8UR9S5UoR3++aG09lkl96atkzVNpYH3k0uDa6MPHvtnm80J1Nrm8ZA36dW7veJbY93KF9PpK91kfwChfiTxG80QrFknFv+AjeUNx9ZdJUoho/3fz+2g2tw==9n7SAwRYrH/sCpXob893SdwdUjseHlugJDK8TVjUwaDvGbtDMQEdGMpdbJf61fMr/nW1z2RVKlp1PFt+ia4LwLb+3fBiHnrKZfICVekqSaXEKP+IvMC03GRDWh62zaVzns+AAw==xifDvR5iYOTVEUdsYjGb/jQ4yesNMQ02Q3MLawEjRUcdYP+8oNebDKUhgW8N9tOjwXYX9atIIto4f62IGvSzoBmWlAblLRcOe/ehLJVYl9REfhUZk9XnXJqNJP6DK9YUR5yRuw==SnWr+094JDIeRYyRTJHcbj3ufoMVvxywd5qOfq3wahbbRBZgDZ9T7aEX1qDpTDnONnLnSB4uXI0jHgmM66IaSSr8/AD2bm26U3Kr/bn8rRgcBzZz+b5pKlOFZtRZYSsR6Q9ojA==Kn/fkQFH8Kb/Qoba4UDTAEPAWkwbuTLhiNkPtAs7Ql+0aLkRJAE6121GHyXp5GpUaCpfnbotFrcmacSNZhGFShzXBhLpxgjXXVwAHgcv7p/eTyn+oioHgSHTQGJvH8X1oDxcMw==A5a1pnJUbAY6g19BPwH7jC+aLHY9yPL/RI0oTAQS02bkiuJai7fHkX9lLru5rPLKLnTJng18/jjn3xeXXegqHAHZDti4ayJXaHIqNYw3ixmV4gvhdvsEXh1Wf7dDA36dOYX2nw==qDDddlvybuPcWeDwNSeUDgmeBLfc4XCZeeD/gJGfO9YRsh+86F0eNpusfcBxWoX5dIuZy47cArpPhh5psMURKTqfea3loQbtr2+hY1tp02MY1byOhTMypG7w3jy6P0rKbIuNNw==CvjBI9TiXePReQt992zyIfB+C12/WWzxTo2xy+AvLkrZ0ofLS8J05uWmw6i4wtSqNVc0lzOs7CKhUcgMF9n9NXTwSekKHkZQXZC2NqN13oZjuOAFLjMt8arkdL7bkJvi2+PPwQ==eLnHRRgw6KKdOZMvqZTZZlByDr7C2My8i50JtdoRtAaw3xZcPJAUyCjSfqgKe/4djCZDmU6bKoLKu9hnhfzktLBjXRXca4U5PfYyOvQ9FdFlhApvLRbb9bcrIv0MhNLYaT6ILw==4A8V94CAGHfB4gn7tQuliky4gTtA7D58x6hWZDccMRXoY9jizldkHEvBhQV30IYtFZWwf50bVp2nPwur42DAvnhSmcs/FXjKqqheEVcdUX34vQRT/sFMNw3khzZjozil+LDYjA==FZhi7EiYn38IDOj5WF08+HYQ8d+pn1jFpWrZxw0V6r2KozUtbyj+MY8GkkzUM70Ly6TvYlEtPoyIftfdRst0PtqvB5ciDpLdtETiuUwExwW7R3GalgbmXMfAzwRLwJf3qXUpUg==Ef24kij84WTv6qLM7GVj5ZqS759S42CiBjuizU1lovCfMvpc8uy4ETVqGQ27H+V0g1QX5peMKVUXZPANL+frNsxmztS4+lANPoyjqHKaAVXchjdASpWTlEUZpao8U+8kN+Vgjw==dFyNqLa/3qsmkImT6jyjtGfWkqpJ6BhZUhfez9ctydPBnPiv6mk9dcPnp7bOBmOCzzk4UU8Sk6xBmwW68TaJ4+xjCgL6bbDMtRIpK+u5IHovqPV1oqOmMZoLo+kY6zny2MH/lQ==Qs52Upp8HLxZClP0RIzUA7bySVjig5Nq4Cpnvn4d3+fjsAetz9S6jaLqf/cfAtYG/g/V2J7v</savedTiles>
+										<elapsed>7826.393</elapsed>
+									</plugin>
+								</CampaignTerrain>
+							</saved>
+						</o>
+						<b z="88372" hM="false">
+							<bgO z="88373">51.69944|314.1072</bgO>
+							<s z="88374" o="graphics/backgrounds/background4.jpg" t="graphics/backgrounds/background4.jpg" p="graphics/backgrounds/background2.jpg">
+								<d cl="BackgroundAndStars" ref="88372"/>
+							</s>
+						</b>
+						<hP z="88375" d="1.0" nF="1" lp="false" r="false" e="0.0" pr="0.0" cF="0" cL="0" sN="false" l="500">
+							<p z="88376"/>
+						</hP>
+						<l z="88377">63608.0|-5770.0</l>
+						<lC z="88378">255,180,144,255</lC>
+						<lH z="88379" b="0.58999974" i="10.0" o="10.0" s="IN" d="true" u="true"/>
+						<fS z="88380"/>
+						<pDat z="88381"/>
+						<sPts z="88382"/>
+						<scr z="88383"/>
+						<activeThisFrame>false</activeThisFrame>
+						<tags z="88384">
+							<st>theme_core_unpopulated</st>
+						</tags>
+						<con ref="87718"/>
+						<star ref="88179"/>
+						<hA cl="LocationToken" ref="88315"/>
+					</Sstm>
+					<Sstm ref="87634"/>
+				</systems>
+				<type>NEBULA</type>
+			</con>
+			<star ref="87642"/>
+			<hA cl="LocationToken" ref="87631"/>
+		</s>
+		<a cl="LocationToken" ref="87631"/>
+	</orbit>
+	<id>565</id>
+	<faction ref="69"/>
+	<tags z="88385">
+		<st>system_anchor</st>
+	</tags>
+	<memory z="88386">
+		<d z="88387">
+			<e>
+				<st>$anchor_starSystem</st>
+				<Sstm ref="87634"/>
+			</e>
+		</d>
+	</memory>
+</LocationToken>

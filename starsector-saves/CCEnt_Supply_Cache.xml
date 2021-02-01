@@ -1,0 +1,39 @@
+<CCEnt z="20694" di="true" sP="1.0" fL="TERRAIN_7A">
+	<loc z="20695">-4438.854|4638.208</loc>
+	<vel z="20696">0.0|0.0</vel>
+	<j0>{"f6":90,"f0":"Minor Equipment Cache","f3":"supply_cache","f2":[235,235,225,255],"f4":"nikolaev_scrap1"}</j0>
+	<ow ref="824"/>
+	<orbit cl="COrbt" z="20697" r="6420.0" op="223.0" ca="133.74185">
+		<e cl="CCEnt" ref="20694"/>
+		<f cl="Plnt" ref="19831"/>
+	</orbit>
+	<cL cl="Sstm" ref="19834"/>
+	<ls cl="Plnt" ref="19831"/>
+	<me z="20698">
+		<d z="20699">
+			<e>
+				<st>$salvageSeed</st>
+				<Lp>-7564487599826518317</Lp>
+			</e>
+			<e>
+				<st>$salvageDOv</st>
+				<DDOv z="20700" p="0.0" i="0.0" a="0.0" d="4" t="0.0" f="derelict"/>
+			</e>
+		</d>
+	</me>
+	<sc z="20701"/>
+	<cV z="20702" sn="graphics/illustrations/cargo_pod_drift.jpg" sIW="640.0" sIH="400.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+	<tags z="20703">
+		<st>has_interaction_dialog</st>
+		<st>neutrino</st>
+		<st>salvageable</st>
+	</tags>
+	<dRM z="20704" fB="0.0" m="1.0" pM="0.0" nR="true">
+		<fBs z="20705" s="gen" v="1200.0"/>
+	</dRM>
+	<j1>{"f1":64,"f0":64,"f3":-1,"f2":25,"f5":"equipment_cache_small","f4":-1}</j1>
+	<la z="20706" enum-type="CaEnLa">TERRAIN_7A</la>
+	<p cl="SCEPlugin" z="20707">
+		<e cl="CCEnt" ref="20694"/>
+	</p>
+</CCEnt>

@@ -1,0 +1,109 @@
+<JumpPoint z="11937" r="50.0" dSC="misc" dSI="wormhole_hyper" sO="3009.4402">
+	<loc z="11938">8472.326|11515.416</loc>
+	<vel z="11939">0.0|0.0</vel>
+	<j0>{"f6":0,"f0":"Fringe Jump-point","f2":[255,210,200,255],"f4":"8c"}</j0>
+	<ow ref="24"/>
+	<orbit cl="COrbt" z="11940" r="14296.332" op="1386.1113" ca="53.656677">
+		<e cl="JumpPoint" ref="11937"/>
+		<f cl="Plnt" ref="9954"/>
+	</orbit>
+	<cL cl="Sstm" ref="9957"/>
+	<ls cl="Plnt" ref="9954"/>
+	<me z="11941">
+		<d z="11942"/>
+	</me>
+	<sc z="11943"/>
+	<tags z="11944">
+		<st>jump_point</st>
+	</tags>
+	<dst z="11945">
+		<JumpDestination z="11946" l="hyperspace" minD="0.0" maxD="0.0">
+			<d cl="JumpPoint" z="11947" r="50.0" dSC="misc" dSI="wormhole_stars" sO="3034.7957">
+				<loc z="11948">-3764.7458|-3635.8772</loc>
+				<vel z="11949">0.0|0.0</vel>
+				<j0>{"f6":0,"f0":"Askonia, Fringe Jump-point","f2":[255,255,255,255],"f4":"8b"}</j0>
+				<ow ref="24"/>
+				<orbit cl="UpdateFromSystemLocationOrbit" z="11950" oR="1072.5" lI="0.9999997" e="0.31666672">
+					<sP cl="LocationToken" ref="10001"/>
+					<s cl="Plnt" ref="9954"/>
+					<iSE cl="JumpPoint" ref="11937"/>
+					<iH cl="JumpPoint" ref="11947"/>
+					<p z="11951">-3764.9197|-3635.7495</p>
+					<l z="11952">-3764.3708|-3636.1528</l>
+				</orbit>
+				<cL cl="Hyperspace" ref="2"/>
+				<me z="11953">
+					<d z="11954"/>
+				</me>
+				<sc z="11955"/>
+				<tags z="11956">
+					<st>jump_point</st>
+				</tags>
+				<dst z="11957">
+					<JumpDestination z="11958" l="the fringe of the Askonia system" minD="0.0" maxD="0.0">
+						<d cl="JumpPoint" ref="11937"/>
+					</JumpDestination>
+				</dst>
+				<f z="11959" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+				<layers z="11960" enum-type="CaEnLa">JUMP_POINTS</layers>
+			</d>
+		</JumpDestination>
+	</dst>
+	<f z="11961" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+	<layers z="11962" enum-type="CaEnLa">JUMP_POINTS</layers>
+</JumpPoint>
+
+<JumpPoint z="11446" r="50.0" dSC="misc" dSI="wormhole_hyper" sO="2674.9402">
+	<loc z="11447">7498.709|-139.16516</loc>
+	<vel z="11448">0.0|0.0</vel>
+	<j0>{"f6":0,"f0":"Salus L5 Jump-point","f2":[255,210,200,255],"f4":"salus_jump"}</j0>
+	<ow ref="24"/>
+	<orbit cl="COrbt" z="11449" r="7500.0" op="250.0" ca="358.93677">
+		<e cl="JumpPoint" ref="11446"/>
+		<f cl="Plnt" ref="9954"/>
+	</orbit>
+	<cL cl="Sstm" ref="9957"/>
+	<ls cl="Plnt" ref="9954"/>
+	<me z="11450">
+		<d z="11451"/>
+	</me>
+	<sc z="11452"/>
+	<tags z="11453">
+		<st>jump_point</st>
+	</tags>
+	<dst z="11454">
+		<JumpDestination z="11455" l="hyperspace" minD="0.0" maxD="0.0">
+			<d cl="JumpPoint" z="11456" r="50.0" dSC="misc" dSI="wormhole_stars" sO="3222.4617">
+				<loc z="11457">-3750.0862|-4510.5737</loc>
+				<vel z="11458">0.0|0.0</vel>
+				<j0>{"f6":0,"f0":"Salus L5 Jump-point","f2":[255,255,255,255],"f4":"88"}</j0>
+				<ow ref="24"/>
+				<orbit cl="UpdateFromSystemLocationOrbit" z="11459" oR="650.0" lI="0.9999997" e="0.31666672">
+					<sP cl="LocationToken" ref="10001"/>
+					<s cl="Plnt" ref="9954"/>
+					<iSE cl="JumpPoint" ref="11446"/>
+					<iH cl="JumpPoint" ref="11456"/>
+					<p z="11460">-3750.0796|-4510.175</p>
+					<l z="11461">-3750.1006|-4511.435</l>
+				</orbit>
+				<cL cl="Hyperspace" ref="2"/>
+				<me z="11462">
+					<d z="11463"/>
+				</me>
+				<sc z="11464"/>
+				<tags z="11465">
+					<st>jump_point</st>
+				</tags>
+				<dst z="11466">
+					<JumpDestination z="11467" l="Salus L5 Jump-point" minD="0.0" maxD="0.0">
+						<d cl="JumpPoint" ref="11446"/>
+					</JumpDestination>
+				</dst>
+				<f z="11468" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+				<layers z="11469" enum-type="CaEnLa">JUMP_POINTS</layers>
+			</d>
+		</JumpDestination>
+	</dst>
+	<f z="11470" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+	<layers z="11471" enum-type="CaEnLa">JUMP_POINTS</layers>
+</JumpPoint>

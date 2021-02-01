@@ -1,0 +1,280 @@
+<?xml version="1.0" ?>
+<SaveGameData z="1">
+<portraitName>graphics/portraits/portrait_hegemony03.png</portraitName>
+<characterName>SmallGalaxy</characterName>
+<saveFileVersion>0.5</saveFileVersion>
+<characterLevel>1</characterLevel>
+<compressed>false</compressed>
+<isIronMode>false</isIronMode>
+<difficulty>easy</difficulty>
+<gameDate z="2">
+<secondsPerDay>10.0</secondsPerDay>
+<timestamp>-55660714363000</timestamp>
+</gameDate>
+<saveDate z="3">2020-10-06 09:09:19.4 UTC</saveDate>
+<allModsEverEnabled z="4">
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="5">
+<spec z="6">
+<id>sd_advancedHullMods</id>
+<version>1.0</version>
+<desc>Adds Advanced Hullmods which extend Vanilla hullmod capabilities; incorporates Eased and Relaxed Logistics (see readme) and Sundiving changes to Solar Shielding.</desc>
+<name>Advanced Hullmods</name>
+<gameVersion>0.9.1a</gameVersion>
+<author>ShadowDragon8685</author>
+<path>C:\Program Files (x86)\Fractal Softworks\Starsector\starsector-core\..\mods\SD_Advanced Hullmods</path>
+<dirName>SD_Advanced Hullmods</dirName>
+<totalConversion>false</totalConversion>
+<utility>false</utility>
+<fullOverrides z="7">
+<st>data\hullmods\MilitarizedSubsystems.java</st>
+<st>data\hullmods\SolarShielding.java</st>
+</fullOverrides>
+<jars z="8"></jars>
+</spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="9">
+<spec z="10">
+<id>timid_admins</id>
+<version>1.5</version>
+<desc>QoL for Late Game Colony Management. Simple as.</desc>
+<name>Better Colonies</name>
+<gameVersion>0.9.1a</gameVersion>
+<author>Techpriest</author>
+<path>C:\Program Files (x86)\Fractal Softworks\Starsector\starsector-core\..\mods\Better Colonies</path>
+<dirName>Better Colonies</dirName>
+<totalConversion>false</totalConversion>
+<utility>false</utility>
+<modPluginClassName>data.scripts.GDModPlugin</modPluginClassName>
+<fullOverrides z="11"></fullOverrides>
+<jars z="12">
+<st>jar/Bettercolonies.jar</st>
+</jars>
+</spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="13">
+<spec z="14">
+<id>sd_boardable_unboardables_vanilla</id>
+<version>1.0</version>
+<desc>Removes the UNBOARDABLE tag from [REDACTED] hulls, allowing you to shoot down and salvage [REDACTED] vessels. May cause Lore and Balance issues. Sure to be fun for the whole family!</desc>
+<name>Boardable Unboardables: Vanilla</name>
+<gameVersion>0.9.1a</gameVersion>
+<author>ShadowDragon8685</author>
+<path>C:\Program Files (x86)\Fractal Softworks\Starsector\starsector-core\..\mods\SD_Boardable_Unboardables</path>
+<dirName>SD_Boardable_Unboardables</dirName>
+<totalConversion>false</totalConversion>
+<utility>false</utility>
+<fullOverrides z="15"></fullOverrides>
+<jars z="16"></jars>
+</spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="17">
+<spec z="18">
+<id>lw_console</id>
+<version>3.0</version>
+<desc>An in-game developer's console. For a complete list of commands enter 'help'. For more information on a specific command enter 'help &lt;command&gt;'. Enter 'settings' to customize the console's appearance and behavior.
+
+This should be compatible with all mods and doesn't require a new game.</desc>
+<name>Console Commands</name>
+<gameVersion>0.9.1a</gameVersion>
+<author>LazyWizard</author>
+<path>C:\Program Files (x86)\Fractal Softworks\Starsector\starsector-core\..\mods\Console Commands</path>
+<dirName>Console Commands</dirName>
+<totalConversion>false</totalConversion>
+<utility>true</utility>
+<modPluginClassName>org.lazywizard.console.ConsoleModPlugin</modPluginClassName>
+<fullOverrides z="19"></fullOverrides>
+<jars z="20">
+<st>jars/lw_Console.jar</st>
+</jars>
+</spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="21">
+<spec z="22">
+<id>lw_lazylib</id>
+<version>2.4f</version>
+<desc>A collection of classes to aid modding. Not a mod in itself, but required by certain other mods.</desc>
+<name>LazyLib</name>
+<gameVersion>0.9.1a</gameVersion>
+<author>LazyWizard</author>
+<path>C:\Program Files (x86)\Fractal Softworks\Starsector\starsector-core\..\mods\LazyLib</path>
+<dirName>LazyLib</dirName>
+<totalConversion>false</totalConversion>
+<utility>true</utility>
+<modPluginClassName>org.lazywizard.lazylib.LazyLib</modPluginClassName>
+<fullOverrides z="23"></fullOverrides>
+<jars z="24">
+<st>jars/LazyLib.jar</st>
+<st>jars/LazyLib-Kotlin.jar</st>
+<st>jars/lib/Kotlin-Runtime.jar</st>
+</jars>
+</spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="25">
+<spec z="26">
+<id>MagicLib</id>
+<version>0.29</version>
+<desc>A collection of classes to aid modding. Not a mod in itself, but required by other mods.</desc>
+<name>MagicLib</name>
+<gameVersion>0.9.1a</gameVersion>
+<author>Modding Community</author>
+<path>C:\Program Files (x86)\Fractal Softworks\Starsector\starsector-core\..\mods\MagicLib</path>
+<dirName>MagicLib</dirName>
+<totalConversion>false</totalConversion>
+<utility>true</utility>
+<modPluginClassName>data.scripts.Magic_modPlugin</modPluginClassName>
+<fullOverrides z="27"></fullOverrides>
+<jars z="28">
+<st>jars/MagicLib.jar</st>
+</jars>
+</spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="29">
+<spec z="30">
+<id>more_hullmods</id>
+<version>1.4.0</version>
+<desc>Adds more hullmods</desc>
+<name>More HullMods</name>
+<gameVersion>0.9.1a-RC8</gameVersion>
+<author>PureTilt</author>
+<path>C:\Program Files (x86)\Fractal Softworks\Starsector\starsector-core\..\mods\More HullMods</path>
+<dirName>More HullMods</dirName>
+<totalConversion>false</totalConversion>
+<utility>false</utility>
+<fullOverrides z="31"></fullOverrides>
+<jars z="32">
+<st>jars/More HullMods.jar</st>
+</jars>
+</spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="33">
+<spec z="34">
+<id>bonomel_skilledup</id>
+<version>1.1</version>
+<desc>Raises the maximum player level to 103 and gradually lowers the required XP per level after level 35.</desc>
+<name>SkilledUp</name>
+<gameVersion>0.9.1a</gameVersion>
+<author>bonomel</author>
+<path>C:\Program Files (x86)\Fractal Softworks\Starsector\starsector-core\..\mods\SkilledUp</path>
+<dirName>SkilledUp</dirName>
+<totalConversion>false</totalConversion>
+<utility>false</utility>
+<fullOverrides z="35"></fullOverrides>
+<jars z="36"></jars>
+</spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="37">
+<spec z="38">
+<id>speedUp</id>
+<version>0.6.1</version>
+<desc>Adds a key binding to speed the game up. Hold the middle mouse button or press the caps lock key. Controls are fully customizable.</desc>
+<name>SpeedUp</name>
+<gameVersion>0.9.1a</gameVersion>
+<author>DarkRevenant</author>
+<path>C:\Program Files (x86)\Fractal Softworks\Starsector\starsector-core\..\mods\SpeedUp</path>
+<dirName>SpeedUp</dirName>
+<totalConversion>false</totalConversion>
+<utility>true</utility>
+<modPluginClassName>org.dark.speedup.SUModPlugin</modPluginClassName>
+<fullOverrides z="39"></fullOverrides>
+<jars z="40">
+<st>jars/SpeedUp.jar</st>
+</jars>
+</spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="41">
+<spec z="42">
+<id>sun_starship_legends</id>
+<version>1.4.2</version>
+<desc>Gives your ships and their crew personality as their reputations grow, granting traits that influence the ship's performance.</desc>
+<name>Starship Legends</name>
+<gameVersion>0.9.1a-RC8</gameVersion>
+<author>Sundog</author>
+<path>C:\Program Files (x86)\Fractal Softworks\Starsector\starsector-core\..\mods\Starship Legends</path>
+<dirName>Starship Legends</dirName>
+<totalConversion>false</totalConversion>
+<utility>false</utility>
+<modPluginClassName>starship_legends.ModPlugin</modPluginClassName>
+<fullOverrides z="43"></fullOverrides>
+<jars z="44">
+<st>jars/StarshipLegends.jar</st>
+</jars>
+</spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="45">
+<spec z="46">
+<id>US</id>
+<version>0.42</version>
+<desc>Enhance your journey into the unknown with a vastly expanded variety of planets and environments.</desc>
+<name>Unknown Skies</name>
+<gameVersion>0.9.1a</gameVersion>
+<author>Tartiflette</author>
+<path>C:\Program Files (x86)\Fractal Softworks\Starsector\starsector-core\..\mods\UnknownSkies</path>
+<dirName>UnknownSkies</dirName>
+<totalConversion>false</totalConversion>
+<utility>false</utility>
+<modPluginClassName>data.scripts.US_modPlugin</modPluginClassName>
+<fullOverrides z="47"></fullOverrides>
+<jars z="48">
+<st>jars/US.jar</st>
+</jars>
+</spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="49">
+<spec z="50">
+<id>shaderLib</id>
+<version>1.4.2</version>
+<desc>An arcane tome of black magic and sorcery.</desc>
+<name>ZZ GraphicsLib</name>
+<gameVersion>0.9.1a</gameVersion>
+<author>DarkRevenant</author>
+<path>C:\Program Files (x86)\Fractal Softworks\Starsector\starsector-core\..\mods\GraphicsLib</path>
+<dirName>GraphicsLib</dirName>
+<totalConversion>false</totalConversion>
+<utility>true</utility>
+<modPluginClassName>org.dark.shaders.ShaderModPlugin</modPluginClassName>
+<fullOverrides z="51"></fullOverrides>
+<jars z="52">
+<st>jars/Graphics.jar</st>
+</jars>
+</spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+</allModsEverEnabled>
+<enabledMods z="53">
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="54">
+<spec ref="6"></spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="55">
+<spec ref="10"></spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="56">
+<spec ref="14"></spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="57">
+<spec ref="18"></spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="58">
+<spec ref="22"></spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="59">
+<spec ref="26"></spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="60">
+<spec ref="30"></spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="61">
+<spec ref="34"></spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="62">
+<spec ref="38"></spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="63">
+<spec ref="42"></spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="64">
+<spec ref="46"></spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+<com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData z="65">
+<spec ref="50"></spec>
+</com.fs.starfarer.campaign.ModAndPluginData_-EnabledModData>
+</enabledMods>
+</SaveGameData>

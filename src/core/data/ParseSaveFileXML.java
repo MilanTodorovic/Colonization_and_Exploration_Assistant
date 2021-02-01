@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Hashtable;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 
@@ -57,6 +58,9 @@ public final class ParseSaveFileXML {
 	private final String playerFleet = "<CampaingEngine><playerFleet ref='XXXXX'>"; //unused for now
 
 	private final Document doc;
+	private final long fileSize;
+
+    private final long startTime;
 
 	public ParseSaveFileXML(String path) throws ParserConfigurationException, IOException, SAXException {
 		super();
@@ -66,11 +70,14 @@ public final class ParseSaveFileXML {
 
 		// TODO set thread to daemon?
 		System.out.println("File path to parse " + path);
-        final File fXmlFile = new File(path);
+		startTime = System.nanoTime();
+
+        final File xmlSaveFile = new File(path);
         final DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         final DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-        doc = dBuilder.parse(fXmlFile);
+        doc = dBuilder.parse(xmlSaveFile);
         //doc.getDocumentElement().normalize(); // TODO check if it is performance intensive for larger files
+        fileSize = xmlSaveFile.length();
 	}
 
 //	@Override
@@ -87,6 +94,8 @@ public final class ParseSaveFileXML {
     }
 
 	private void handleTheMess() {
+	    // TODO this mess is messy.
+        //  <orbit><f><orbit><f> this can happen for real. Why?
 		System.out.println("Entering handlethemess");
 		// In Nexerlin LocationTokens can refer to jumppoints within other tags, check vanilla
 
@@ -105,14 +114,27 @@ public final class ParseSaveFileXML {
 				System.out.println("o tag " + o);
 				Element saved = (Element) o.getElementsByTagName("saved").item(0);
 
-				NodeList allChildrenOfSaved = saved.getChildNodes();
-				System.out.println(allChildrenOfSaved.toString());
+				NodeList plnts = saved.getElementsByTagName("Plnt");
+                NodeList lk = saved.getElementsByTagName("LocationToken");
+                NodeList ccents = saved.getElementsByTagName("CCEnt");
+                NodeList ct = saved.getElementsByTagName("CampaignTerrain");
+                NodeList jp = saved.getElementsByTagName("JumpPoint");
+
+                parseEachChildNode(plnts);
+                parseEachChildNode(lk);
+                parseEachChildNode(ccents);
+                parseEachChildNode(ct);
+                parseEachChildNode(jp);
+
+				// TODO staro
+//				NodeList allChildrenOfSaved = saved.getChildNodes();
+//				System.out.println(allChildrenOfSaved.toString());
 
 				// parses all child tags: LocationToken, Plnt and so on
-				parseEachChildNode(allChildrenOfSaved);
+//				parseEachChildNode(allChildrenOfSaved);
 
 				// Player Location on hyperspace map
-				// TODO
+				// TODO staro
 //				NodeList uiData = (Element) node.getElementsByTagName("uiData");
 //				this.playerLocation = this.parseLocTag(uiData);
 				System.out.println("Leaving handlethemess");
@@ -125,7 +147,7 @@ public final class ParseSaveFileXML {
 	
 	private void parseLocationToken(Element node) {
 		// TODO how to leave empty classes for nodes that refer to other nodes?
-
+        System.out.println("<LocationToken>--------------------------------------------------------------");
 		LocationToken lk = new LocationToken();
 
 		// TODO we only need one parent variable, ref and z point tot the same location
@@ -133,13 +155,13 @@ public final class ParseSaveFileXML {
 		//	it points to a subtag <sP> which contains additional info
 		if (node.hasAttribute("ref")){
 			int ref = Integer.parseInt(node.getAttribute("ref"));
-			lk.setzValue(ref);
-			System.out.println("Parsing LocationToken ref: " + ref);
+			lk.setrefValue(ref);
+			System.out.println("ref: " + ref);
 			LocationTokens.put(ref, lk);
 		} else {
 			int zValue = Integer.parseInt(node.getAttribute("z"));
 			lk.setzValue(zValue);
-			System.out.println("Parsing LocationToken ref: " + zValue);
+			System.out.println("z: " + zValue);
             LocationTokens.put(zValue, lk);
 
 			// get <loc> tag
@@ -147,23 +169,57 @@ public final class ParseSaveFileXML {
 			float[] location = parseLocTag(nList);
 			// walk the tree and find specific children
 			// TODO since some LocationTokens can be empty, we should extract <orbit><e> and <f>
-			try {
-				Element orbit = (Element) node.getElementsByTagName("orbit").item(0);
-				Element s = (Element) orbit.getElementsByTagName("s").item(0);
-				Element o = (Element) s.getElementsByTagName("o").item(0);
-				Element saved = (Element) o.getElementsByTagName("saved").item(0);
-
-				NodeList allChildrenOfSaved = saved.getChildNodes();
-
-				// contains all the elements of a star system: planets, debris fields, entities etc.
-				parseEachChildNode(allChildrenOfSaved);
-			} catch (Exception e) {
-				// no nested information
-				System.out.println("parseLocationToken " + e.toString());
-			}
-
+            // TODO staro
+//			try {
+//				Element orbit = (Element) node.getElementsByTagName("orbit").item(0);
+//				Element s = (Element) orbit.getElementsByTagName("s").item(0);
+//				Element o = (Element) s.getElementsByTagName("o").item(0);
+//				Element saved = (Element) o.getElementsByTagName("saved").item(0);
+//
+//				NodeList allChildrenOfSaved = saved.getChildNodes();
+//
+//				// contains all the elements of a star system: planets, debris fields, entities etc.
+//				parseEachChildNode(allChildrenOfSaved);
+//
+//				// I noticed LocationToken can also have a <con> tag under <s> which contains <systems>
+//                // which then contain one or more <SStm> tags which act like <s> with children (<o><saved>)
+//                try {
+//                    this.parseSystemsTag(s);
+//                } catch (Exception e) {
+//                    System.out.println("LocationToken has no nested <systems> tags.");
+//                }
+//			} catch (Exception e) {
+//				// no nested information
+//				System.out.println("LocationToken has no <orbit><s><os><saved>.");
+//			}
 		}
+        System.out.println("--------------------------------------------------------------</LocationToken>");
 	}
+
+	private void parseSStm(NodeList systems){
+        System.out.println("<Sstm>--------------------------------------------------------------");
+        for (int i=0; i < systems.getLength(); i++) {
+            Node node = systems.item(i);
+            if (node.getNodeType() == Node.ELEMENT_NODE) {
+                Element sstm = (Element) node;
+                if (sstm.hasChildNodes()){
+                    try {
+                        Element o = (Element) sstm.getElementsByTagName("o").item(0);
+                        Element saved = (Element) o.getElementsByTagName("saved").item(0);
+
+                        NodeList allChildrenOfSaved = saved.getChildNodes();
+
+                        // contains all the elements of a star system: planets, debris fields, entities etc.
+                        parseEachChildNode(allChildrenOfSaved);
+                    } catch (Exception e){
+                        System.out.println("Sstm "+ sstm.getAttribute("z")+" couldn't load child nodes."
+                                +"\n"+e.toString());
+                    }
+                }
+            }
+        }
+        System.out.println("--------------------------------------------------------------</Sstm>");
+    }
 
 	private String parsej0Tag(String content, String pattern) {
 	    String result = "";
@@ -190,30 +246,36 @@ public final class ParseSaveFileXML {
 		// if it doesnt contain <orbit> then it is a star
 		// don't get <loc>, loc refers to the location within the star system
 		// take care of <market>: a normal Planet never has <economy><stepper>... under market
-
+        System.out.println("<Plnt>--------------------------------------------------------------");
 		Plnt planet = new Plnt();
 
         if (node.hasAttribute("ref")){
             int ref = Integer.parseInt(node.getAttribute("ref"));
             planet.setzValue(ref);
             Plnts.put(ref, planet);
-			System.out.println("Parsing Planet ref: "+ ref);
+			System.out.println("Planet ref: "+ ref);
         } else {
             int zValue = Integer.parseInt(node.getAttribute("z"));
             planet.setzValue(zValue);
-			System.out.println("Parsing Planet z: "+ zValue);
+			System.out.println("Planet z: "+ zValue);
 
             Element j0 = (Element) node.getElementsByTagName("j0").item(0);
             String json_ = j0.getTextContent();
             String nameOfPlnt = this.parsej0Tag(json_, "\"f0\"");
             // TODO parent id
             planet.setName(nameOfPlnt);
+            // TODO staro
+//            try {
+//                this.parseSystemsTag(node);
+//            } catch (Exception e){
+//                System.out.println("Plnt has no <systems> tag.");
+//            }
+
 
             NodeList orbit = node.getElementsByTagName("obit");
             if (orbit.getLength() > 0) {
                 Element orb = (Element) orbit.item(0);
                 Element f = (Element) orb.getElementsByTagName("f").item(0);
-                // TODO store parent id
                 int parent = Integer.parseInt(f.getAttribute("ref"));
             }
 
@@ -223,25 +285,26 @@ public final class ParseSaveFileXML {
 
 			Plnts.put(zValue, planet);
 
-            try {
-                Element market = (Element) node.getElementsByTagName("market").item(0);
-
-                Element economy = (Element) market.getElementsByTagName("economy").item(0);
-
-                // stepper > econ > markets can occur multiple times, but they stay empty
-                NodeList stepper = economy.getElementsByTagName("stepper");
-                this.checkForStepperTag(stepper);
-            } catch (Exception e) {
-                // doesn't have any nested information
-				System.out.println("parsePlnt no nested nodes: " + e.toString());
-            }
-
+			// TODO staro
+//            try {
+//                Element market = (Element) node.getElementsByTagName("market").item(0);
+//
+//                Element economy = (Element) market.getElementsByTagName("economy").item(0);
+//
+//                // stepper > econ > markets can occur multiple times, but they stay empty
+//                NodeList stepper = economy.getElementsByTagName("stepper");
+//                this.checkForStepperTag(stepper);
+//            } catch (Exception e) {
+//                // doesn't have any nested information
+//				System.out.println("parsePlnt no nested nodes: " + e.toString());
+//            }
 			System.out.println(planet);
         }
+        System.out.println("--------------------------------------------------------------</Plnt>");
 	}
 	
 	private void parseCCEnt(Element node) {
-		System.out.println("Parsing CCEnt");
+        System.out.println("<CCEnt>--------------------------------------------------------------");
 		// TODO where do I see which items where discovered?
         int zValue = 0;
         int ref = 0;
@@ -255,9 +318,9 @@ public final class ParseSaveFileXML {
 		// many more objects are under this tag. scrape anyway and just dont show?
 		// scrape nexerlin and other folders for CCEnt data?
         if (node.hasAttribute("ref")){
-            zValue = Integer.parseInt(node.getAttribute("ref"));
+            ref = Integer.parseInt(node.getAttribute("ref"));
         } else {
-            ref = Integer.parseInt(node.getAttribute("z"));
+            zValue = Integer.parseInt(node.getAttribute("z"));
         }
 		System.out.println("CCEnt z:" + zValue + ", ref:" + ref);
 
@@ -286,7 +349,7 @@ public final class ParseSaveFileXML {
 					parentBody = Integer.parseInt(fTag.getAttribute("ref"));
 				} catch (Exception e) {
 					// CCEnt that doesn't have an orbit tag
-					System.out.println("parseCCEnt " + e.toString());
+					System.out.println("parseCCEnt - (no orbit/f tag): " + e.toString());
 				}
 
 				Element cL = (Element) node.getElementsByTagName("cL").item(0);
@@ -308,11 +371,11 @@ public final class ParseSaveFileXML {
 					}
 				} catch (Exception e){
 					// isn't a makeshift object
-					System.out.println("parseCCEnt - second catch: " + e.toString());
+					System.out.println("parseCCEnt - (no me/d tag): " + e.toString());
 				}
 			}
 		} catch (Exception e) {
-			System.out.println("parseCCEnt - third catch: (empty tag) " + e.toString());
+			System.out.println("parseCCEnt - (empty CCEnt tag): " + e.toString());
 		}
 
 		CCEntFactory factory = new CCEntFactory();
@@ -323,36 +386,40 @@ public final class ParseSaveFileXML {
 		} else {
 			System.out.println("Empty CCEnt object due to empty CCEnt tag");
 		}
+        System.out.println("--------------------------------------------------------------</CCEnt>");
 	}
 
 	private void parseJumpPoint(Element node) {
-		System.out.println("Parsing JumpPoint");
+		System.out.println("<JumpPoint>--------------------------------------------------------------");
         int zValue = 0;
         int parentStar = 0;
+        float[] location = new float[]{0.0f, 0.0f};
 		if (node.hasAttribute("ref")){
             zValue = Integer.parseInt(node.getAttribute("ref"));
 			System.out.println("Jumppoint " + zValue);
 		} else {
-			try {
-				zValue = Integer.parseInt(node.getAttribute("z"));
-				System.out.println("Jumppoint " + zValue);
-				// get <loc> tag
-				NodeList nList = node.getElementsByTagName("loc");
-				float[] location = parseLocTag(nList);
-				// maybe also cL tag? might not be needed
-				Element lsTag = (Element) node.getElementsByTagName("ls").item(0);
-				parentStar = Integer.parseInt(lsTag.getAttribute("ref"));
-			} catch (Exception e) {
-				System.out.println("Jumppoint exception: " + e);
-			}
+            zValue = Integer.parseInt(node.getAttribute("z"));
+            System.out.println("Jumppoint " + zValue);
+        }
+		try {
+		    // get <loc> tag
+            NodeList nList = node.getElementsByTagName("loc");
+            location = parseLocTag(nList);
+            // maybe also cL tag? might not be needed
+            Element lsTag = (Element) node.getElementsByTagName("ls").item(0);
+            parentStar = Integer.parseInt(lsTag.getAttribute("ref"));
+		} catch (Exception e) {
+		    System.out.println("Jumppoint - no <loc>: " + e.toString());
 		}
-        JumpPoint jmp = new JumpPoint(zValue, parentStar);
+        JumpPoint jmp = new JumpPoint(zValue, parentStar, location);
         JumpPoints.put(zValue, jmp);
 
 		System.out.println(jmp.toString());
+        System.out.println("--------------------------------------------------------------</JumpPoint>");
 	}
 	
 	private void parseCampaignTerrain(Element node) {
+        System.out.println("<CampaignTerrain>--------------------------------------------------------------");
 		int zValue = 0;
 		int ref = 0;
 		if (node.hasAttribute("z")){
@@ -360,7 +427,7 @@ public final class ParseSaveFileXML {
 		} else {
 			ref = Integer.parseInt(node.getAttribute("ref"));
 		}
-		System.out.println("Parsing CampaignTerrain z:" + zValue + ", ref: " + ref);
+		System.out.println("CampaignTerrain z:" + zValue + ", ref: " + ref);
 		// we are only interested in the debris_field type
 		// other types are nebula and corona
 		boolean isDebrisField = node.getAttribute("type").equalsIgnoreCase("debris_field");
@@ -381,7 +448,145 @@ public final class ParseSaveFileXML {
 		} catch (Exception e) {
 			System.out.println("CampaignTerrain - Debris Field - error with parsing:" + e.toString());
 		}
+        System.out.println("--------------------------------------------------------------</CampaignTerrain>");
 	}
+
+	private void parseFlt(Element node){
+	    // parsing Flt only for the nested tags, no fleet data is being scraped
+        System.out.println("<Flt>--------------------------------------------------------------");
+
+        int zValue = 0;
+        int ref = 0;
+        if (node.hasAttribute("z")){
+            zValue = Integer.parseInt(node.getAttribute("z"));
+        } else {
+            ref = Integer.parseInt(node.getAttribute("ref"));
+        }
+
+        if (node.hasChildNodes()){
+            // using the "direct" path to the stored tags. Hopefully this will remain like this
+            this.parseAITag(node, zValue, ref);
+
+        } else {
+            System.out.println("Empty Flt tag - z: "+zValue+", ref: "+ref);
+        }
+        System.out.println("--------------------------------------------------------------</Flt>");
+    }
+
+    private void parseAITag(Element node, int zValue, int ref){
+        try {
+            // <Flt z="7804"
+            Element ai = (Element) node.getElementsByTagName("ai").item(0);
+            System.out.println("<ai> "+ai.getNodeName()+ai.getAttribute("cl")+ai.getAttribute("z"));
+//            Element t = (Element) ai.getElementsByTagName("t").item(0); // cl="TacticalModule"
+            NodeList t_ = ai.getElementsByTagName("t"); // cl="TacticalModule"
+            for (int q=0; q< t_.getLength(); q++){
+                Element elem = (Element) t_.item(q);
+                System.out.println("<t> "+elem.getNodeName()+elem.getAttribute("cl"));
+            }
+            Element t = (Element) ai.getElementsByTagName("t").item(0); // cl="TacticalModule"
+            System.out.println("<t> "+t.getNodeName()+t.getAttribute("cl"));
+            Element t2 = (Element) t.getElementsByTagName("t").item(0); // cl="Flt"
+            System.out.println("<t>2 "+t2.getNodeName());
+            Element sc = (Element) t2.getElementsByTagName("sc").item(0);
+            System.out.println("<sc> "+sc.getNodeName());
+            Element DisposableAggroAssignmentAI = (Element) sc.getElementsByTagName("DisposableAggroAssignmentAI").item(0);
+            System.out.println("<DisposableAggroAssignmentAI> "+DisposableAggroAssignmentAI.getNodeName());
+            Element manager = (Element) DisposableAggroAssignmentAI.getElementsByTagName("manager").item(0);
+            System.out.println("<manager> "+manager.getNodeName());
+            Element active = (Element) manager.getElementsByTagName("active").item(0);
+            System.out.println("<active> "+active.getNodeName());
+            NodeList ManagedFleetDataList = active.getElementsByTagName("ManagedFleetData");
+
+            for (int i=0; i < ManagedFleetDataList.getLength(); i++) {
+                Node ManagedFleetDataNode = ManagedFleetDataList.item(i);
+                if (ManagedFleetDataNode.getNodeType() == Node.ELEMENT_NODE) {
+                    Element ManagedFleetData = (Element) ManagedFleetDataNode;
+                    System.out.println("<ManagedFleetData> "+ManagedFleetData.getNodeName());
+                    Element fleet = (Element) ManagedFleetData.getElementsByTagName("fleet").item(0);
+                    System.out.println("<fleet> "+fleet.getNodeName());
+                    this.parseNestedAITag(fleet);
+                }
+            }
+        } catch (Exception e) {
+            System.out.printf("Flt (z: %d, ref: %d) has no important child tags%n", zValue, ref);
+        }
+    }
+
+    private void parseNestedAITag(Element fleet){
+            Element ai2 = (Element) fleet.getElementsByTagName("ai").item(0);
+            Element n = (Element) ai2.getElementsByTagName("n").item(0);
+            Element a = (Element) n.getElementsByTagName("a").item(0);
+            Element items = (Element) a.getElementsByTagName("items").item(0);
+            NodeList IDs = items.getElementsByTagName("IDt");
+
+            for (int j=0; j < IDs.getLength(); j++) {
+                Node IDtNode = IDs.item(j);
+                if (IDtNode.getNodeType() == Node.ELEMENT_NODE) {
+                    Element IDt = (Element) IDtNode;
+                    try{
+                        Element i_ = (Element) IDt.getElementsByTagName("i").item(0);
+                        // TODO here we can find more nested ai elements and starts from the beginning - ai>n>a...
+                        //  nested <ai> can also have a <t><t> tag under <n>
+                        //   row 20746 <ai cl="MFAI" z="8071">
+                        Element e = (Element) i_.getElementsByTagName("e").item(0);
+                        Element nested_ai = (Element) e.getElementsByTagName("ai").item(0);
+                        if (nested_ai != null){
+                            this.parseNestedAITag(nested_ai);
+                        } else {
+                            System.out.println("There is no nested <ai> tag.");
+                        }
+                        Element dL = (Element) e.getElementsByTagName("dL").item(0);
+                        Element RouteManager = (Element) dL.getElementsByTagName("RouteManager").item(0);
+                        Element r = (Element) RouteManager.getElementsByTagName("r").item(0);
+                        NodeList RouteData = r.getElementsByTagName("RouteData");
+                        if (RouteData.getLength() > 0){
+                            System.out.println("Found RouteData items to parse.");
+                            this.parseRouteData(RouteData);
+                        }
+                    } catch (Exception e) {
+                        // ignore
+                    }
+                }
+            }
+        }
+
+    private void parseRouteData(NodeList nList){
+        for (int i=0; i < nList.getLength(); i++) {
+            Node node = nList.item(i);
+            if (node.getNodeType() == Node.ELEMENT_NODE) {
+                Element RouteData = (Element) node;
+                // this has two main child tags: <e> and <m>
+                Element e = (Element) RouteData.getElementsByTagName("e").item(0);
+                if (e != null){
+                    NodeList RtSeg = e.getElementsByTagName("RtSeg");
+                    this.parseRtSeg(RtSeg);
+                }
+                Element m = (Element) RouteData.getElementsByTagName("m").item(0);
+                if (m != null){
+                    Element primaryEntity = (Element) RouteData.getElementsByTagName("e").item(0);
+                    this.parsePrimaryEntityTag(primaryEntity);
+                }
+            }
+        }
+    }
+
+    private void parseRtSeg(NodeList nList){
+        for (int i=0; i < nList.getLength(); i++) {
+            Node node = nList.item(i);
+            if (node.getNodeType() == Node.ELEMENT_NODE) {
+                Element RtSeg = (Element) node;
+                try{
+                    Element tTag = (Element) RtSeg.getElementsByTagName("t").item(0);
+                    // tTag acts just like primaryEntity
+                    this.parsePrimaryEntityTag(tTag);
+                } catch (Exception e){
+                    System.out.println("Empty RtSeg tag.");
+                }
+
+            }
+        }
+    }
 
 	private float[] parseLocTag(NodeList nList){
 		float[] location = new float[2];
@@ -425,9 +630,19 @@ public final class ParseSaveFileXML {
 						this.parseCCEnt(n);
 						break;
 					}
+                    case "Flt":{
+//                        this.parseFlt(n);
+                        break;
+                    }
 					default: {
-						// Flt, NGW, RingBand
-						System.out.println("parseEachChildNode - Default switch triggered on: " + name);
+						// NGW, RingBand
+                        String id;
+                        if (n.hasAttribute("z")){
+                            id = n.getAttribute("z");
+                        } else {
+                            id = n.getAttribute("ref");
+                        }
+						System.out.println("parseEachChildNode - Default switch triggered on: " + name + ": " +id);
 						break;
 					}
 				}
@@ -455,7 +670,7 @@ public final class ParseSaveFileXML {
 	}
 
 	private void parseUppercaseMarket(Element uMarket) {
-		System.out.println("------------Parsing uppercaseMarket-----------");
+        System.out.println("<Market>--------------------------------------------------------------");
 		int zValue = 0;
 		int ref = 0;
 		// only occurs under lowercase <markets>
@@ -473,30 +688,7 @@ public final class ParseSaveFileXML {
 
 			// primaryEntity under <Market> is equivalent to Plnt, CCEnt and maybe something else so we need to parse it
 			// other primaryEntity tags under parent <Plnt> etc. aren't important for now
-			String cl = primaryEntity.getAttribute("cl");
-			System.out.println("Uppercase Market, cl tag:" + cl);
-			switch (cl) {
-				case "CCEnt": {
-					System.out.println("Uppercase Market, primaryEntity:" + cl);
-					this.parseCCEnt(primaryEntity);
-					break;
-				}
-				case "Plnt": {
-					System.out.println("Uppercase Market, primaryEntity:" + cl);
-					this.parsePlnt(primaryEntity);
-					break;
-				}
-                case "CampaignTerrain":{
-                    // maybe this can't happen
-					System.out.println("Uppercase Market, primaryEntity:" + cl);
-                    this.parseCampaignTerrain(primaryEntity);
-                    break;
-                }
-				default: {
-					System.out.println("Uppercase Market, primaryEntity default:" + cl);
-					break;
-				}
-			}
+            this.parsePrimaryEntityTag(primaryEntity);
 
 			Element orbit = (Element) primaryEntity.getElementsByTagName("orbit").item(0);
 			Element f = (Element) orbit.getElementsByTagName("f").item(0);
@@ -514,20 +706,69 @@ public final class ParseSaveFileXML {
 			ref = Integer.parseInt(uMarket.getAttribute("ref"));
 			System.out.println("Uppercase Market, 'No children' z:" + zValue + " ref:" + ref);
 		}
+        System.out.println("--------------------------------------------------------------</Market>");
 	}
 
 	private void parseLowercaseMarket(Element lMarket) {
         // TODO finish parseLowercaseMarket method later on
+        System.out.println("<market>--------------------------------------------------------------");
+        System.out.println("--------------------------------------------------------------</market>");
 	}
+
+	private void parsePrimaryEntityTag(Element primaryEntity){
+
+        String cl = primaryEntity.getAttribute("cl");
+        switch (cl) {
+            case "CCEnt": {
+                this.parseCCEnt(primaryEntity);
+                break;
+            }
+            case "Plnt": {
+                this.parsePlnt(primaryEntity);
+                break;
+            }
+            case "CampaignTerrain":{
+                // maybe this can't happen
+                this.parseCampaignTerrain(primaryEntity);
+                break;
+            }
+            case "Flt":{
+                this.parsePrimaryEntityTag(primaryEntity);
+                break;
+            }
+            default: {
+                System.out.println("primaryEntity default:" + cl);
+                break;
+            }
+        }
+    }
+
+    private void parseSystemsTag(Element node){
+	    try {
+            Element con = (Element) node.getElementsByTagName("con").item(0);
+            Element systems = (Element) con.getElementsByTagName("systems").item(0);
+            NodeList allChildrenOfSystems = systems.getChildNodes();
+            this.parseSStm(allChildrenOfSystems);
+        } catch (Exception e){
+	        System.out.println("No <systems> tag found.");
+        }
+
+    }
 
 	private void mergeData(){
 		// TODO fill all Hashsets and then merge all missing values
         System.out.println(this.LocationTokens);
+        System.out.println(this.LocationTokens.keySet());
         System.out.println(this.Plnts);
         System.out.println(this.CCEnts);
         System.out.println(this.DebrisFields);
         System.out.println(this.JumpPoints);
 		System.out.println(Arrays.toString(this.playerLocation));
+        System.out.println("LocationTokens: "+ this.LocationTokens.size() + "\nPlnts: "+this.Plnts.size()+"\nCCEnts: "+this.CCEnts.size()+
+                "\nDebris fields: "+this.DebrisFields.size()+"\nJumpPoints: "+this.JumpPoints.size());
+        System.out.printf("Time elapsed: %.4f \n", (System.nanoTime()-startTime)/1E9);
+//        System.out.println("Time elapsed: "+TimeUnit.SECONDS.convert(System.nanoTime()-startTime, TimeUnit.NANOSECONDS));
+        System.out.printf("File size: %.2f MB\n", fileSize/(1024.0*1024.0));
 	}
 
 }

@@ -4,7 +4,7 @@ import core.data.AlertBox.AboutAlertBox;
 import core.data.AlertBox.LoadDifferentSaveFile;
 import core.data.AlertBox.ReloadSaveFile;
 import core.data.ListenForSaveUpdate;
-import core.data.ParseSaveFileXML;
+import core.data.ParseSaveFileXML_2;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import org.xml.sax.SAXException;
@@ -82,16 +82,12 @@ public class MenuBarController {
 
             startWatchServices();
 
-            ParseSaveFileXML ps = new ParseSaveFileXML(WATCH_FILE.getAbsolutePath());
+            ParseSaveFileXML_2 ps = new ParseSaveFileXML_2(WATCH_FILE.getAbsolutePath());
             ps.parse();
 
         } catch (NullPointerException e) {
             // ignore
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        } catch (IOException exception) {
-            exception.printStackTrace();
-        } catch (SAXException e) {
+        } catch (ParserConfigurationException | IOException | SAXException e) {
             e.printStackTrace();
         }
     }

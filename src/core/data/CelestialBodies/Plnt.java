@@ -6,7 +6,7 @@ import java.util.Hashtable;
 public class Plnt { // <LocationToken>
 
     protected int zValue; // ID of the planet/star <Plnt z="99999">
-    protected int parentZValue;
+    protected int parentZValue; // if planet, then star, else if star, then system <cL>
     protected Hashtable<Integer,Object> satelites; // stores objects that orbit this object (planets, entities etc.)
 
     // <Plnt><market>
@@ -16,6 +16,7 @@ public class Plnt { // <LocationToken>
     protected String[] surveyedConds; // <surveyed> foreach <st>
 
     protected boolean isStar; // <Plnt><tags><st> 'star' or 'planet'
+    protected float[] location;
 
     protected float planetRadius; // <Plnt><radius>
 
@@ -75,6 +76,6 @@ public class Plnt { // <LocationToken>
     @Override
     public String toString(){
         // TODO make a toString
-        return "Plnt " + zValue+ " " + name + " "+ isStar;
+        return "Plnt " + zValue+ " " + name + " "+ isStar + " at: "+location;
     }
 }

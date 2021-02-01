@@ -11,7 +11,7 @@ public class DebrisField {
 
     @Override
     public String toString(){
-        return "Jumppoint at: " + zValue + " " + parent;
+        return "Debris field at: " + zValue + " " + parent;
     }
 
 }

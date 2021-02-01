@@ -1,0 +1,41 @@
+<CCEnt z="87402">
+	<loc z="87403">500.0|-2000.0</loc>
+	<vel z="87404">0.0|0.0</vel>
+	<j0>{"f6":90,"f0":"Atlantian Cloud","f2":[255,255,255,255],"f4":"atlantic_label_id"}</j0>
+	<ow ref="69"/>
+	<cL cl="Hyperspace" ref="2"/>
+	<me z="87405">
+		<d z="87406"/>
+	</me>
+	<sc z="87407"/>
+	<j1>{"f1":64,"f0":64,"f3":-1,"f2":64,"f5":"atlantic_label","f4":-1}</j1>
+	<la z="87408" enum-type="CaEnLa"/>
+</CCEnt>
+
+<CCEnt z="87409">
+	<loc z="87410">-10000.0|1000.0</loc>
+	<vel z="87411">0.0|0.0</vel>
+	<j0>{"f6":90,"f0":"The League Worlds","f2":[255,255,255,255],"f4":"persean_label_id"}</j0>
+	<ow ref="69"/>
+	<cL cl="Hyperspace" ref="2"/>
+	<me z="87412">
+		<d z="87413"/>
+	</me>
+	<sc z="87414"/>
+	<j1>{"f1":64,"f0":64,"f3":-1,"f2":64,"f5":"persean_label","f4":-1}</j1>
+	<la z="87415" enum-type="CaEnLa"/>
+</CCEnt>
+
+<CCEnt z="87416">
+	<loc z="87417">-14000.0|-9500.0</loc>
+	<vel z="87418">0.0|0.0</vel>
+	<j0>{"f6":90,"f0":"Pilgrim's Path","f2":[255,255,255,255],"f4":"luddic_label_id"}</j0>
+	<ow ref="69"/>
+	<cL cl="Hyperspace" ref="2"/>
+	<me z="87419">
+		<d z="87420"/>
+	</me>
+	<sc z="87421"/>
+	<j1>{"f1":64,"f0":64,"f3":-1,"f2":64,"f5":"luddic_label","f4":-1}</j1>
+	<la z="87422" enum-type="CaEnLa"/>
+</CCEnt>

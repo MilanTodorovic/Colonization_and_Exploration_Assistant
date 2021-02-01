@@ -73,6 +73,10 @@ public class CCEntFactory {
                 obj = new Abandoned_station(nameOfCCEnt, parentSystem, parentStar);
                 break;
             }
+            case "warning_beacon": {
+                obj = new Warning_beacon(nameOfCCEnt, parentSystem, parentStar, location);
+                break;
+            }
             default:{
                 // TODO do we need this?
                 obj = null;

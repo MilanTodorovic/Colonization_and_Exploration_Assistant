@@ -1,0 +1,81 @@
+<LocationToken ref="9081"/>
+<JumpPoint z="52665" r="150.0" dSC="misc" dSI="wormhole_stars" sO="665.9882">
+	<loc z="52666">-200.0|400.0</loc>
+	<vel z="52667">0.0|0.0</vel>
+	<j0>{"f6":0,"f0":"Hybrasil, White Dwarf","f2":[255,255,255,255],"f4":"2da"}</j0>
+	<ow ref="24"/>
+	<orbit cl="UpdateFromSystemLocationOrbit" z="52668" oR="0.0" lI="0.0" e="665.9882">
+		<sP cl="LocationToken" ref="9081"/> //References a LocationToken
+		<s cl="Plnt" ref="8483"/>
+		<iSE cl="Plnt" ref="8483"/>
+		<iH cl="JumpPoint" ref="52665"/>
+		<p z="52669">-200.0|400.0</p>
+		<l z="52670">-200.0|400.0</l>
+	</orbit>
+	<cL cl="Hyperspace" ref="2"/>
+	<me z="52671">
+		<d z="52672"/>
+	</me>
+	<sc z="52673"/>
+	<tags z="52674">
+		<st>jump_point</st>
+	</tags>
+	<dst z="52675">
+		<JumpDestination z="52676" l="Hybrasil" minD="650.0" maxD="1000.0">
+			<d cl="Plnt" ref="8483"/>
+		</JumpDestination>
+	</dst>
+	<dP ref="8483"/>
+	<f z="52677" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+	<layers z="52678" enum-type="CaEnLa">JUMP_POINTS</layers>
+</JumpPoint>
+<NGW z="52679" r="40.0">
+	<l z="52680">-494.81894|559.08105</l>
+	<v z="52681">0.0|0.0</v>
+	<j0>{"f6":0,"f2":[255,255,255,255],"f4":"2db"}</j0>
+	<o ref="24"/>
+	<orbit cl="UpdateFromSystemLocationOrbit" z="52682" oR="335.0" lI="1.0" e="0.0">
+		<sP cl="LocationToken" ref="9081"/>
+		<s cl="Plnt" ref="8483"/>
+		<iSE cl="Plnt" ref="8451"/>
+		<iH cl="NGW" ref="52679"/>
+		<p z="52683">-494.81894|559.08105</p>
+		<l z="52684">-493.97415|560.63684</l>
+	</orbit>
+	<cLoc cl="Hyperspace" ref="2"/>
+	<sc z="52685"/>
+	<tags z="52686">
+		<st>non_clickable</st>
+	</tags>
+	<p ref="8451"/>
+</NGW>
+<JumpPoint z="52687" r="125.0" dSC="misc" dSI="wormhole_stars" sO="665.9882">
+	<loc z="52688">-193.22652|-94.95364</loc>
+	<vel z="52689">0.0|0.0</vel>
+	<j0>{"f6":0,"f0":"Elada Gravity Well","f2":[255,255,255,255],"f4":"2dc"}</j0>
+	<ow ref="24"/>
+	<orbit cl="UpdateFromSystemLocationOrbit" z="52690" oR="495.0" lI="1.0" e="0.0">
+		<sP cl="LocationToken" ref="9081"/>
+		<s cl="Plnt" ref="8483"/>
+		<iSE cl="Plnt" ref="8539"/>
+		<iH cl="JumpPoint" ref="52687"/>
+		<p z="52691">-193.22652|-94.95364</p>
+		<l z="52692">-194.67259|-94.97131</l>
+	</orbit>
+	<cL cl="Hyperspace" ref="2"/>
+	<me z="52693">
+		<d z="52694"/>
+	</me>
+	<sc z="52695"/>
+	<tags z="52696">
+		<st>jump_point</st>
+	</tags>
+	<dst z="52697">
+		<JumpDestination z="52698" l="Elada" minD="450.0" maxD="800.0">
+			<d cl="Plnt" ref="8539"/>
+		</JumpDestination>
+	</dst>
+	<dP ref="8539"/>
+	<f z="52699" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+	<layers z="52700" enum-type="CaEnLa">JUMP_POINTS</layers>
+</JumpPoint>

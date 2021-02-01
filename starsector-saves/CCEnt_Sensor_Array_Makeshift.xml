@@ -1,0 +1,56 @@
+<CCEnt z="11903" fL="STATIONS">
+	<loc z="11904">3537.655|-10415.613</loc>
+	<vel z="11905">0.0|0.0</vel>
+	<j0>{"f6":288.76,"f0":"Askonia Fringe Listening Station","f3":"sensor_array_makeshift","f2":[255,210,200,255],"f4":"7e"}</j0>
+	<ow ref="555"/>
+	<orbit cl="COrbtPD" z="11906" r="11000.0" op="600.0" ca="288.76">
+		<e cl="CCEnt" ref="11903"/>
+		<f cl="Plnt" ref="9954"/>
+	</orbit>
+	<cL cl="Sstm" ref="9957"/>
+	<ls cl="Plnt" ref="9954"/>
+	<me z="11907">
+		<d z="11908"/>
+	</me>
+	<sc z="11909"/>
+	<cV z="11910" sn="graphics/illustrations/sensor_array_makeshift.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+	<tags z="11911">
+		<st>objective</st>
+		<st>makeshift</st>
+		<st>sensor_array</st>
+		<st>neutrino_high</st>
+	</tags>
+	<j1>{"f1":86,"f0":86,"f3":-1,"f2":75,"f5":"sensor_array_makeshift","f4":-1}</j1>
+	<la z="11912" enum-type="CaEnLa">STATIONS</la>
+	<p cl="SensorArrayEP" z="11913">
+		<e cl="CCEnt" ref="11903"/>
+	</p>
+</CCEnt>
+
+<CCEnt z="12865" fL="STATIONS">
+	<loc z="12866">-4127.393|-777.5761</loc>
+	<vel z="12867">0.0|0.0</vel>
+	<j0>{"f6":190.66913,"f0":"Sensor Array","f3":"sensor_array","f2":[255,220,190,255],"f4":"1b8"}</j0>
+	<ow ref="114"/>
+	<orbit cl="COrbtPD" z="12868" r="4200.0" op="300.0" ca="190.66913">
+		<e cl="CCEnt" ref="12865"/>
+		<f cl="Plnt" ref="12778"/>
+	</orbit>
+	<cL cl="Sstm" ref="12781"/>
+	<ls cl="Plnt" ref="12778"/>
+	<me z="12869">
+		<d z="12870"/>
+	</me>
+	<sc z="12871"/>
+	<cV z="12872" sn="graphics/illustrations/sensor_array.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+	<tags z="12873">
+		<st>objective</st>
+		<st>sensor_array</st>
+		<st>neutrino_high</st>
+	</tags>
+	<j1>{"f1":86,"f0":86,"f3":-1,"f2":75,"f5":"sensor_array","f4":-1}</j1>
+	<la z="12874" enum-type="CaEnLa">STATIONS</la>
+	<p cl="SensorArrayEP" z="12875">
+		<e cl="CCEnt" ref="12865"/>
+	</p>
+</CCEnt>

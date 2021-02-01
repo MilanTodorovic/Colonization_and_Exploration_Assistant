@@ -1,0 +1,1319 @@
+<LocationToken z="52731">
+	<loc z="52732">-2300.0|-7950.0</loc>
+	<where cl="Hyperspace" ref="2"/>
+	<orbit cl="UFHLOrbt" z="52733">
+		<s cl="Sstm" z="52734" dN="Duzahk Star System" bTF="graphics/backgrounds/background1.jpg" hM="false" lPV="-55660714363000" ty="SINGLE" pg="false" bN="Duzahk" mRIH="850.8143" eBP="true">
+			<o z="52735">
+				<lists z="52736"/>
+				<maps z="52737"/>
+				<classifier cl="FastIterationClassifier" z="52738">
+					<cache z="52739"/>
+				</classifier>
+				<nextId>0</nextId>
+				<forFastContains z="52740"/>
+				<saved z="52741">
+					<Plnt z="52742">
+						<loc z="52743">0.0|0.0</loc>
+						<vel z="52744">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Duzahk","f2":[255,240,220,255],"f4":"duzahk"}</j0>
+						<ow ref="24"/>
+						<cL cl="Sstm" ref="52734"/>
+						<ls cl="Plnt" ref="52742"/>
+						<me z="52745">
+							<d z="52746"/>
+						</me>
+						<sc z="52747"/>
+						<tags z="52748">
+							<st>star</st>
+						</tags>
+						<angle>-1938.935</angle>
+						<cloudAngle>0.0</cloudAngle>
+						<radius>600.0</radius>
+						<type>star_orange</type>
+						<diff z="52749">
+							<j>{"glowTexture":"graphics/planets/clouds_banded01.png","glowColor":[255,235,50,128],"atmosphereThickness":0.5}</j>
+						</diff>
+						<layers z="52750" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<CampaignTerrain z="52751" type="corona" radius="0.0">
+						<loc z="52752">0.0|0.0</loc>
+						<vel z="52753">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,240,220,255],"f4":"313"}</j0>
+						<ow ref="70"/>
+						<orbit cl="COrbt" z="52754" r="0.0" op="100.0" ca="0.0">
+							<e cl="CampaignTerrain" ref="52751"/>
+							<f cl="Plnt" ref="52742"/>
+						</orbit>
+						<cL cl="Sstm" ref="52734"/>
+						<ls cl="Plnt" ref="52742"/>
+						<me z="52755">
+							<d z="52756"/>
+						</me>
+						<sc z="52757"/>
+						<tags z="52758">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="StarCoronaTerrainPlugin" z="52759" tid="corona" n="Corona">
+							<entity cl="CampaignTerrain" ref="52751"/>
+							<params cl="CoronaParams" defined-in="BaseRingTerrain" z="52760" bWIE="1100.0" mR="550.0" wBL="10.0" fP="0.25" crLM="3.0">
+								<e cl="Plnt" ref="52742"/>
+							</params>
+							<renderer z="52761" a="147.38751">
+								<d cl="StarCoronaTerrainPlugin" ref="52759"/>
+							</renderer>
+							<flareManager z="52762">
+								<fT z="52763" i="0.5" a="1.5" c="0.5631995" e="0.40866634" ie="false"/>
+								<f z="52764">
+									<Flare z="52765" d="206.8823" a="40.818687" eLM="1.07149" eLF="201.87912" sFM="0.05" c="fffff096">
+										<f z="52766" b="0.69173384" i="4.253806" o="9.566017" s="OUT" d="true" u="false"/>
+									</Flare>
+								</f>
+								<d cl="StarCoronaTerrainPlugin" ref="52759"/>
+							</flareManager>
+							<params ref="52760"/>
+						</plugin>
+					</CampaignTerrain>
+					<Plnt z="52767">
+						<loc z="52768">329.4807|1514.5767</loc>
+						<vel z="52769">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Aka Mainyu","f3":"planet_aka_mainyu","f2":[255,240,220,255],"f4":"duzahk1"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="52770" r="1550.0" op="24.0" ca="77.72711">
+							<e cl="Plnt" ref="52767"/>
+							<f cl="Plnt" ref="52742"/>
+						</orbit>
+						<cL cl="Sstm" ref="52734"/>
+						<ls cl="Plnt" ref="52742"/>
+						<me z="52771">
+							<d z="52772">
+								<e>
+									<st>$salvageSeed</st>
+									<Lp>-37034277683329781</Lp>
+								</e>
+							</d>
+						</me>
+						<market cl="PCMarket" z="52773">
+							<id>market_duzahk1</id>
+							<name>Aka Mainyu</name>
+							<primaryEntity cl="Plnt" ref="52767"/>
+							<surveyLevel>SEEN</surveyLevel>
+							<cond z="52774">
+								<st>very_hot</st>
+								<st>volatiles_trace</st>
+								<st>high_gravity</st>
+							</cond>
+							<surveyed z="52775">
+								<st>very_hot</st>
+								<st>high_gravity</st>
+							</surveyed>
+						</market>
+						<sc z="52776"/>
+						<tags z="52777">
+							<st>planet</st>
+						</tags>
+						<angle>-1810.8842</angle>
+						<cloudAngle>10022.838</cloudAngle>
+						<radius>230.0</radius>
+						<type>gas_giant</type>
+						<diff z="52778">
+							<j>{"atmosphereColor":[138,118,255,245],"cloudRotation":15,"tilt":30,"glowTexture":"graphics/planets/clouds_banded01.png","glowColor":[235,38,8,145],"useReverseLightForGlow":true,"pitch":-5,"planetColor":[16,16,255,255],"atmosphereThickness":0.5}</j>
+						</diff>
+						<layers z="52779" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<CampaignTerrain z="52780" type="corona_aka_mainyu" radius="0.0">
+						<loc z="52781">329.4807|1514.5767</loc>
+						<vel z="52782">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,240,220,255],"f4":"314"}</j0>
+						<ow ref="70"/>
+						<orbit cl="COrbt" z="52783" r="0.0" op="100.0" ca="0.0">
+							<e cl="CampaignTerrain" ref="52780"/>
+							<f cl="Plnt" ref="52767"/>
+						</orbit>
+						<cL cl="Sstm" ref="52734"/>
+						<ls cl="Plnt" ref="52742"/>
+						<me z="52784">
+							<d z="52785"/>
+						</me>
+						<sc z="52786"/>
+						<tags z="52787">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="StarCoronaAkaMainyuTerrainPlugin" z="52788" tid="corona_aka_mainyu" n="Corona">
+							<entity cl="CampaignTerrain" ref="52780"/>
+							<params cl="CoronaParams" defined-in="BaseRingTerrain" z="52789" bWIE="530.0" mR="265.0" wBL="5.0" fP="0.0" crLM="1.0">
+								<e cl="Plnt" ref="52767"/>
+							</params>
+							<renderer z="52790" a="147.38751">
+								<d cl="StarCoronaAkaMainyuTerrainPlugin" ref="52788"/>
+							</renderer>
+							<flareManager z="52791">
+								<fT z="52792" i="0.5" a="1.5" c="1.0534829" e="0.16999988" ie="false"/>
+								<d cl="StarCoronaAkaMainyuTerrainPlugin" ref="52788"/>
+							</flareManager>
+							<params ref="52789"/>
+						</plugin>
+					</CampaignTerrain>
+					<CampaignTerrain z="52793" type="magnetic_field" radius="0.0">
+						<loc z="52794">0.0|0.0</loc>
+						<vel z="52795">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,240,220,255],"f4":"315"}</j0>
+						<ow ref="70"/>
+						<orbit cl="COrbt" z="52796" r="0.0" op="150.0" ca="0.0">
+							<e cl="CampaignTerrain" ref="52793"/>
+							<f cl="Plnt" ref="52742"/>
+						</orbit>
+						<cL cl="Sstm" ref="52734"/>
+						<ls cl="Plnt" ref="52742"/>
+						<me z="52797">
+							<d z="52798"/>
+						</me>
+						<sc z="52799"/>
+						<tags z="52800">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="MagneticFieldTerrainPlugin" z="52801" tid="magnetic_field" n="Magnetic Field">
+							<e cl="CampaignTerrain" ref="52793"/>
+							<params cl="MagneticFieldParams" defined-in="BaseRingTerrain" z="52802" bWIE="500.0" mR="2000.0" c="ff32146e|ff961e78|ffc83282|fffa4696|ffc85082|ff4b00a0|ff7f00ff" aF="1.0" iR="1750.0" oR="2250.0">
+								<e cl="Plnt" ref="52742"/>
+								<bC z="52803">50,20,100,40</bC>
+							</params>
+							<r z="52804" a="147.38751">
+								<d cl="MagneticFieldTerrainPlugin" ref="52801"/>
+							</r>
+							<params ref="52802"/>
+							<fM z="52805">
+								<fT z="52806" i="0.5" a="1.5" c="1.092995" e="0.84139925" ie="false"/>
+								<f z="52807">
+									<Flare z="52808" d="14.163753" a="13.382611" eLM="1.0" eLF="0.0" sFM="0.8" c="fffa4696|ffc85082|ff4b00a0|ff7f00ff">
+										<f z="52809" b="0.60809255" i="0.77345586" o="0.86334515" s="IN" d="true" u="false"/>
+									</Flare>
+									<Flare z="52810" d="68.08292" a="10.679192" eLM="1.0" eLF="0.0" sFM="0.8" c="ffc85082|ff4b00a0|ff7f00ff">
+										<f z="52811" b="0.0" i="0.81989706" o="0.6984533" s="IDLE" d="true" u="false"/>
+									</Flare>
+									<Flare z="52812" d="61.217697" a="15.076837" eLM="1.0" eLF="0.0" sFM="0.8" c="ff4b00a0|ff7f00ff">
+										<f z="52813" b="0.0" i="0.9678775" o="0.97979325" s="IDLE" d="true" u="false"/>
+									</Flare>
+									<Flare z="52814" d="35.46118" a="10.785946" eLM="1.0" eLF="0.0" sFM="0.8" c="ffc83282|fffa4696|ffc85082|ff4b00a0|ff7f00ff">
+										<f z="52815" b="0.0" i="0.90068877" o="0.9403112" s="IDLE" d="true" u="false"/>
+									</Flare>
+									<Flare z="52816" d="43.903233" a="15.323982" eLM="1.0" eLF="0.0" sFM="0.8" c="fffa4696|ffc85082|ff4b00a0|ff7f00ff">
+										<f z="52817" b="0.0" i="0.54256094" o="0.5970094" s="IDLE" d="true" u="false"/>
+									</Flare>
+									<Flare z="52818" d="35.472626" a="74.33773" eLM="1.0" eLF="0.0" sFM="0.8" c="ff32146e|ff961e78|ffc83282|fffa4696|ffc85082|ff4b00a0|ff7f00ff">
+										<f z="52819" b="0.0" i="1.1233107" o="3.938228" s="IDLE" d="true" u="false"/>
+									</Flare>
+								</f>
+								<d cl="MagneticFieldTerrainPlugin" ref="52801"/>
+							</fM>
+						</plugin>
+					</CampaignTerrain>
+					<RingBand z="52820">
+						<loc z="52821">0.0|0.0</loc>
+						<vel z="52822">0.0|0.0</vel>
+						<j0>{"f6":0,"f2":[255,240,220,255],"f4":"316"}</j0>
+						<ow ref="24"/>
+						<cL cl="Sstm" ref="52734"/>
+						<ls cl="Plnt" ref="52742"/>
+						<me z="52823">
+							<d z="52824"/>
+						</me>
+						<sc z="52825"/>
+						<j1>{"f6":-518.2536,"f7":"misc","f8":"rings_asteroids0","f11":2,"f10":0,"f0":256,"f3":256,"f2":[255,255,255,255],"f5":2420,"f4":34}</j1>
+						<focus cl="Plnt" ref="52742"/>
+						<layers z="52826" enum-type="CaEnLa">RINGS</layers>
+					</RingBand>
+					<CampaignTerrain z="52827" type="asteroid_belt" radius="0.0">
+						<loc z="52828">0.0|0.0</loc>
+						<vel z="52829">0.0|0.0</vel>
+						<j0>{"f6":90,"f2":[255,240,220,255],"f4":"317"}</j0>
+						<ow ref="70"/>
+						<orbit cl="COrbt" z="52830" r="0.0" op="100.0" ca="0.0">
+							<e cl="CampaignTerrain" ref="52827"/>
+							<f cl="Plnt" ref="52742"/>
+						</orbit>
+						<cL cl="Sstm" ref="52734"/>
+						<ls cl="Plnt" ref="52742"/>
+						<me z="52831">
+							<d z="52832"/>
+						</me>
+						<sc z="52833"/>
+						<tags z="52834">
+							<st>terrain</st>
+						</tags>
+						<plugin cl="AsteroidBeltTerrainPlugin" z="52835" tid="asteroid_belt" n="The Daevas" nTCA="false">
+							<entity cl="CampaignTerrain" ref="52827"/>
+							<params cl="AsteroidBeltParams" defined-in="BaseRingTerrain" z="52836" bWIE="100.0" mR="2400.0" n="The Daevas" nA="50" minO="30.0" maxO="40.0" minS="4.0" maxS="16.0"/>
+							<params ref="52836"/>
+						</plugin>
+					</CampaignTerrain>
+					<Plnt z="52837">
+						<loc z="52838">2799.4255|-3131.0088</loc>
+						<vel z="52839">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Druj","f3":"planet_druj","f2":[255,240,220,255],"f4":"duzahk2"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="52840" r="4200.0" op="135.0" ca="311.7998">
+							<e cl="Plnt" ref="52837"/>
+							<f cl="Plnt" ref="52742"/>
+						</orbit>
+						<cL cl="Sstm" ref="52734"/>
+						<ls cl="Plnt" ref="52742"/>
+						<me z="52841">
+							<d z="52842">
+								<e>
+									<st>$salvageSeed</st>
+									<Lp>-7879246429387728254</Lp>
+								</e>
+							</d>
+						</me>
+						<market cl="PCMarket" z="52843">
+							<id>market_duzahk2</id>
+							<name>Druj</name>
+							<primaryEntity cl="Plnt" ref="52837"/>
+							<surveyLevel>PRELIMINARY</surveyLevel>
+							<cond z="52844">
+								<st>ore_abundant</st>
+								<st>no_atmosphere</st>
+								<st>hot</st>
+							</cond>
+							<surveyed z="52845">
+								<st>no_atmosphere</st>
+								<st>hot</st>
+							</surveyed>
+						</market>
+						<sc z="52846"/>
+						<tags z="52847">
+							<st>planet</st>
+						</tags>
+						<angle>-1689.1361</angle>
+						<cloudAngle>0.0</cloudAngle>
+						<radius>60.0</radius>
+						<type>barren</type>
+						<diff z="52848">
+							<j>{"glowTexture":"graphics/planets/clouds_aurorae.png","glowColor":[20,255,48,125],"useReverseLightForGlow":true}</j>
+						</diff>
+						<layers z="52849" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<CCEnt z="52850" fL="STATIONS">
+						<loc z="52851">-1311.6407|-3989.937</loc>
+						<vel z="52852">0.0|0.0</vel>
+						<j0>{"f6":251.80237,"f0":"Makeshift Sensor Array","f3":"sensor_array_makeshift","f2":[255,240,220,255],"f4":"318"}</j0>
+						<ow ref="478"/>
+						<orbit cl="COrbtPD" z="52853" r="4200.0" op="135.0" ca="251.80237">
+							<e cl="CCEnt" ref="52850"/>
+							<f cl="Plnt" ref="52742"/>
+						</orbit>
+						<cL cl="Sstm" ref="52734"/>
+						<ls cl="Plnt" ref="52742"/>
+						<me z="52854">
+							<d z="52855"/>
+						</me>
+						<sc z="52856"/>
+						<cV z="52857" sn="graphics/illustrations/sensor_array_makeshift.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+						<tags z="52858">
+							<st>objective</st>
+							<st>makeshift</st>
+							<st>sensor_array</st>
+							<st>neutrino_high</st>
+						</tags>
+						<j1>{"f1":86,"f0":86,"f3":-1,"f2":75,"f5":"sensor_array_makeshift","f4":-1}</j1>
+						<la z="52859" enum-type="CaEnLa">STATIONS</la>
+						<p cl="SensorArrayEP" z="52860">
+							<e cl="CCEnt" ref="52850"/>
+						</p>
+					</CCEnt>
+					<CCEnt z="52861" fL="STATIONS">
+						<loc z="52862">4111.2964|858.62933</loc>
+						<vel z="52863">0.0|0.0</vel>
+						<j0>{"f6":11.796448,"f0":"Stable Location","f3":"stable_location","f2":[255,240,220,255],"f4":"319"}</j0>
+						<ow ref="70"/>
+						<orbit cl="COrbtPD" z="52864" r="4200.0" op="135.0" ca="11.796448">
+							<e cl="CCEnt" ref="52861"/>
+							<f cl="Plnt" ref="52742"/>
+						</orbit>
+						<cL cl="Sstm" ref="52734"/>
+						<ls cl="Plnt" ref="52742"/>
+						<me z="52865">
+							<d z="52866"/>
+						</me>
+						<sc z="52867"/>
+						<cV z="52868" sn="graphics/illustrations/free_orbit.jpg" sIW="480.0" sIH="300.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+						<tags z="52869">
+							<st>has_interaction_dialog</st>
+							<st>stable_location</st>
+						</tags>
+						<j1>{"f1":64,"f0":64,"f3":-1,"f2":75,"f5":"stable_location","f4":-1}</j1>
+						<la z="52870" enum-type="CaEnLa">STATIONS</la>
+					</CCEnt>
+					<Plnt z="52871">
+						<loc z="52872">6264.7754|-3532.5376</loc>
+						<vel z="52873">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Duzahk III","f2":[255,240,220,255],"f4":"duzahk:planet_3"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="52874" r="7192.095" op="326.53705" ca="330.58252">
+							<e cl="Plnt" ref="52871"/>
+							<f cl="Plnt" ref="52742"/>
+						</orbit>
+						<cL cl="Sstm" ref="52734"/>
+						<ls cl="Plnt" ref="52742"/>
+						<me z="52875">
+							<d z="52876">
+								<e>
+									<st>$salvageSeed</st>
+									<Lp>6096151923733734143</Lp>
+								</e>
+							</d>
+						</me>
+						<market cl="PCMarket" z="52877">
+							<id>market_duzahk:planet_3</id>
+							<name>Duzahk III</name>
+							<primaryEntity cl="Plnt" ref="52871"/>
+							<surveyLevel>SEEN</surveyLevel>
+							<cond z="52878">
+								<st>ore_abundant</st>
+								<st>extreme_weather</st>
+								<st>hot</st>
+								<st>habitable</st>
+							</cond>
+							<surveyed z="52879">
+								<st>extreme_weather</st>
+								<st>hot</st>
+								<st>habitable</st>
+							</surveyed>
+						</market>
+						<sc z="52880"/>
+						<tags z="52881">
+							<st>planet</st>
+						</tags>
+						<angle>-1945.8839</angle>
+						<cloudAngle>-668.18243</cloudAngle>
+						<radius>192.0952</radius>
+						<type>US_arid</type>
+						<diff z="52882">
+							<j>{"atmosphereColor":[168,169,186,140],"tilt":-9.695903778076172,"planetColor":[251,225,248,255]}</j>
+						</diff>
+						<layers z="52883" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<Plnt z="52884">
+						<loc z="52885">1514.3011|8851.529</loc>
+						<vel z="52886">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Duzahk IV","f2":[255,240,220,255],"f4":"duzahk:planet_5"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="52887" r="8980.127" op="395.10492" ca="80.29193">
+							<e cl="Plnt" ref="52884"/>
+							<f cl="Plnt" ref="52742"/>
+						</orbit>
+						<cL cl="Sstm" ref="52734"/>
+						<ls cl="Plnt" ref="52742"/>
+						<me z="52888">
+							<d z="52889">
+								<e>
+									<st>$salvageSeed</st>
+									<Lp>5310710665665367735</Lp>
+								</e>
+							</d>
+						</me>
+						<market cl="PCMarket" z="52890">
+							<id>market_duzahk:planet_5</id>
+							<name>Duzahk IV</name>
+							<primaryEntity cl="Plnt" ref="52884"/>
+							<surveyLevel>SEEN</surveyLevel>
+							<cond z="52891">
+								<st>cold</st>
+								<st>no_atmosphere</st>
+								<st>ore_moderate</st>
+							</cond>
+							<surveyed z="52892">
+								<st>cold</st>
+								<st>no_atmosphere</st>
+							</surveyed>
+						</market>
+						<sc z="52893"/>
+						<tags z="52894">
+							<st>planet</st>
+						</tags>
+						<angle>-1661.7549</angle>
+						<cloudAngle>0.0</cloudAngle>
+						<radius>121.31744</radius>
+						<type>US_barrenD</type>
+						<diff z="52895">
+							<j>{"tilt":-48.976417541503906,"pitch":19.592737197875977,"planetColor":[250,245,248,255]}</j>
+						</diff>
+						<layers z="52896" enum-type="CaEnLa">PLANETS,ABOVE</layers>
+					</Plnt>
+					<JumpPoint z="52897" r="50.0" dSC="misc" dSI="wormhole_hyper" sO="1000.0">
+						<loc z="52898">12807.833|-1614.5604</loc>
+						<vel z="52899">0.0|0.0</vel>
+						<j0>{"f6":0,"f0":"Fringe Jump-point","f2":[255,240,220,255],"f4":"328"}</j0>
+						<ow ref="24"/>
+						<orbit cl="COrbt" z="52900" r="12909.198" op="1098.0127" ca="352.8152">
+							<e cl="JumpPoint" ref="52897"/>
+							<f cl="Plnt" ref="52742"/>
+						</orbit>
+						<cL cl="Sstm" ref="52734"/>
+						<ls cl="Plnt" ref="52742"/>
+						<me z="52901">
+							<d z="52902"/>
+						</me>
+						<sc z="52903"/>
+						<tags z="52904">
+							<st>jump_point</st>
+						</tags>
+						<dst z="52905">
+							<JumpDestination z="52906" l="hyperspace" minD="0.0" maxD="0.0">
+								<d cl="JumpPoint" z="52907" r="50.0" dSC="misc" dSI="wormhole_stars" sO="665.9882">
+									<loc z="52908">-1505.2864|-8048.6597</loc>
+									<vel z="52909">0.0|0.0</vel>
+									<j0>{"f6":0,"f0":"Duzahk, Fringe Jump-point","f2":[255,255,255,255],"f4":"327"}</j0>
+									<ow ref="24"/>
+									<orbit cl="UpdateFromSystemLocationOrbit" z="52910" oR="800.8143" lI="2.0" e="0.0">
+										<sP cl="LocationToken" ref="52731"/>
+										<s cl="Plnt" ref="52742"/>
+										<iSE cl="JumpPoint" ref="52897"/>
+										<iH cl="JumpPoint" ref="52907"/>
+										<p z="52911">-1505.2864|-8048.6597</p>
+										<l z="52912">-1505.3816|-8049.4243</l>
+									</orbit>
+									<cL cl="Hyperspace" ref="2"/>
+									<me z="52913">
+										<d z="52914"/>
+									</me>
+									<sc z="52915"/>
+									<tags z="52916">
+										<st>jump_point</st>
+									</tags>
+									<dst z="52917">
+										<JumpDestination z="52918" l="the fringe of the Duzahk system" minD="0.0" maxD="0.0">
+											<d cl="JumpPoint" ref="52897"/>
+										</JumpDestination>
+									</dst>
+									<f z="52919" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+									<layers z="52920" enum-type="CaEnLa">JUMP_POINTS</layers>
+								</d>
+							</JumpDestination>
+						</dst>
+						<f z="52921" b="0.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+						<layers z="52922" enum-type="CaEnLa">JUMP_POINTS</layers>
+					</JumpPoint>
+					<Flt z="52923" sS="360.0" sP="360.0" mO="false" f="25.949615" n="Player Fleet" aM="false" dF="25.661053">
+						<loc z="52924">2919.3557|-2953.6135</loc>
+						<vel z="52925">104.10714|50.02719</vel>
+						<j0>{"f6":0,"f2":[255,240,220,255],"f4":"80cd"}</j0>
+						<o ref="538"/>
+						<cL cl="Sstm" ref="52734"/>
+						<ls cl="Plnt" ref="52742"/>
+						<me z="52926">
+							<d z="52927"/>
+						</me>
+						<sc z="52928">
+							<TrA z="52929" id="transponder" dF="0" tO="false" cL="0.0" iAC="false" l="0.0">
+								<e cl="Flt" ref="52923"/>
+							</TrA>
+							<GoDA z="52930" id="go_dark" dF="0" tO="false" cL="0.0" iAC="false" l="0.0">
+								<e cl="Flt" ref="52923"/>
+							</GoDA>
+							<SeBA z="52931" id="sensor_burst" dF="0" tO="false" aDL="0.0" cL="0.0" l="0.0" lFF="0.0" fO="false">
+								<e cl="Flt" ref="52923"/>
+							</SeBA>
+							<EmB z="52932" id="emergency_burn" dF="0" tO="false" aDL="0.0" cL="0.0" l="0.0" lFF="0.0" fO="false">
+								<e cl="Flt" ref="52923"/>
+							</EmB>
+							<SuBA z="52933" id="sustained_burn" dF="0" tO="true" cL="0.0" iAC="true" l="1.0">
+								<e cl="Flt" ref="52923"/>
+							</SuBA>
+							<ScA z="52934" id="scavenge" dF="0" tO="false" aDL="0.0" cL="0.0" l="0.0" lFF="0.0" fO="false">
+								<e cl="Flt" ref="52923"/>
+							</ScA>
+							<InPA z="52935" id="interdiction_pulse" dF="0" tO="false" aDL="0.0" cL="0.0" l="0.0" lFF="0.0" fO="false">
+								<e cl="Flt" ref="52923"/>
+							</InPA>
+							<DistressCallAbility z="52936" id="distress_call" dF="0" tO="false" aDL="0.0" cL="0.0" l="0.0" lFF="0.0" fO="false" p="false" nTU="0" lU="0">
+								<e cl="Flt" ref="52923"/>
+								<u z="52937">
+									<items z="52938"/>
+								</u>
+							</DistressCallAbility>
+						</sc>
+						<abilities cl="l-h-m" z="52939">
+							<e>
+								<st>transponder</st>
+								<TrA ref="52929"/>
+							</e>
+							<e>
+								<st>go_dark</st>
+								<GoDA ref="52930"/>
+							</e>
+							<e>
+								<st>sensor_burst</st>
+								<SeBA ref="52931"/>
+							</e>
+							<e>
+								<st>emergency_burn</st>
+								<EmB ref="52932"/>
+							</e>
+							<e>
+								<st>sustained_burn</st>
+								<SuBA ref="52933"/>
+							</e>
+							<e>
+								<st>scavenge</st>
+								<ScA ref="52934"/>
+							</e>
+							<e>
+								<st>interdiction_pulse</st>
+								<InPA ref="52935"/>
+							</e>
+							<e>
+								<st>distress_call</st>
+								<DistressCallAbility ref="52936"/>
+							</e>
+						</abilities>
+						<sF z="52940" b="1.0" i="0.2" o="0.2" s="IDLE" d="false" u="false"/>
+						<sCF z="52941" b="1.0" i="0.2" o="0.2" s="IDLE" d="false" u="false"/>
+						<fD z="52942" nP="ISS" nSf="player" nS="false" oSML="false">
+							<m z="52943">
+								<FMmbr z="52944" o="0" sid="wolf_Starting" sN="ISS Eurotas" t="SHIP" iF="true" id="80cf" sUN="false" civ="false" cCiv="false">
+									<c z="52945" id="p_76e93483-d41e-4bac-842f-5ec379bc60f7" pid="steady" spr="graphics/portraits/portrait_hegemony03.png" rnk="spaceCommander" pst="fleetCommander" wTCRC="0" cW="1.0" fid="player" a="true">
+										<n z="52946" f="SmallGalaxy" l="" g="FEMALE"/>
+										<stats z="52947" xp="0" l="1" pt="0">
+											<a>{"technology":0,"leadership":0,"combat":3,"industry":0}</a>
+											<s>{"aptitude_technology":0,"aptitude_industry":0,"aptitude_leadership":0,"aptitude_combat":3}</s>
+											<fleet cl="Flt" ref="52923"/>
+										</stats>
+									</c>
+									<crew z="52948">15.0|0.0</crew>
+									<rT z="52949" cr="0.7" crPTM="0.0" sR="false" mo="false" lCR="false">
+										<m ref="52944"/>
+										<recentEvents z="52950">
+											<CREvent z="52951">
+												<crAmount>-0.028528215</crAmount>
+												<text>Star corona effect</text>
+												<elapsed>2.735516</elapsed>
+												<id>corona</id>
+											</CREvent>
+										</recentEvents>
+									</rT>
+									<fD ref="52942"/>
+								</FMmbr>
+								<FMmbr z="52952" o="0" sid="kite_Starting" sN="ISS Andromeda" t="SHIP" iF="false" id="80d1" sUN="false" civ="false" cCiv="false">
+									<c z="52953" id="p_80d3" pid="steady" spr="graphics/portraits/portrait_hegemony06.png" rnk="spaceLieutenant" pst="mercenary" wTCRC="0" cW="1.0" fid="player" a="true">
+										<n z="52954" f="Rose" l="Callisto" g="FEMALE"/>
+										<stats z="52955" xp="0" l="1" pt="0">
+											<s>{"damage_control":1,"impact_mitigation":1}</s>
+										</stats>
+									</c>
+									<crew z="52956">4.0|0.0</crew>
+									<rT z="52957" cr="0.7" crPTM="0.0" sR="false" mo="false" lCR="false">
+										<m ref="52952"/>
+										<recentEvents z="52958">
+											<CREvent z="52959">
+												<crAmount>-0.014264108</crAmount>
+												<text>Star corona effect</text>
+												<elapsed>2.735516</elapsed>
+												<id>corona</id>
+											</CREvent>
+										</recentEvents>
+									</rT>
+									<fD ref="52942"/>
+								</FMmbr>
+							</m>
+							<cargo z="52960" uS="true" mC="80.0" sU="78.0" mF="35.0" mP="60.0" fT="false">
+								<s z="52961">
+									<CIStack z="52962" rS="false" s="50.0" mS="1000000.0" cSPU="0.0" bVPU="50.0" t="RESOURCES">
+										<d cl="st">crew</d>
+										<c ref="52960"/>
+									</CIStack>
+									<CIStack z="52963" rS="false" s="63.0" mS="1000000.0" cSPU="1.0" bVPU="100.0" t="RESOURCES">
+										<d cl="st">supplies</d>
+										<c ref="52960"/>
+									</CIStack>
+									<CIStack z="52964" rS="false" s="21.0" mS="1000000.0" cSPU="0.0" bVPU="25.0" t="RESOURCES">
+										<d cl="st">fuel</d>
+										<c ref="52960"/>
+									</CIStack>
+									<CIStack z="52965" rS="false" s="15.0" mS="1000000.0" cSPU="1.0" bVPU="150.0" t="RESOURCES">
+										<d cl="st">heavy_machinery</d>
+										<c ref="52960"/>
+									</CIStack>
+								</s>
+								<c z="52966">
+									<value>32000.0</value>
+								</c>
+								<cF ref="52942"/>
+								<partials z="52967">
+									<e>
+										<st>RESOURCESfuel</st>
+										<fp>-0.21808375</fp>
+									</e>
+									<e>
+										<st>RESOURCESsupplies</st>
+										<fp>-0.36345893</fp>
+									</e>
+								</partials>
+							</cargo>
+							<c ref="52945"/>
+							<f ref="52923"/>
+							<o z="52968">
+								<OfficerData z="52969">
+									<person ref="52953"/>
+									<skillPicks z="52970"/>
+									<madePicks>false</madePicks>
+								</OfficerData>
+							</o>
+						</fD>
+						<mD z="52971">6265.001|-3532.1375</mD>
+						<fV z="52972">
+							<fleet ref="52923"/>
+							<shipViews z="52973">
+								<delegate cl="CampaignFleetView" ref="52972"/>
+								<views cl="l-h-m" z="52974">
+									<e>
+										<FMmbr ref="52944"/>
+										<CampaignFleetMemberView z="52975" oF="25.949615" tR="0.0" mTR="120.0" mS="14.0" sM="0.11" sSO="2.0" facing="25.47583" jC="7" mJR="15.0" pAn="140.05026" oOv="false" uLi="true" eAM="1.0" wOff="0.8968416">
+											<f ref="52923"/>
+											<m ref="52944"/>
+											<fa z="52976" b="1.0" i="1.0" o="1.5" s="IDLE" d="false" u="false"/>
+											<oL z="52977">0.0|0.0</oL>
+											<dO z="52978">-9.577944|8.022536</dO>
+											<mM z="52979" a="7.0" s="14.0" sC="false">
+												<v z="52980">-4.8798337|2.3243284</v>
+												<l z="52981">-2.4827073|-10.454336</l>
+												<aV z="52982">-1.8373843|6.7545557</aV>
+												<hardSpeedLimit>-1.0</hardSpeedLimit>
+											</mM>
+											<eG z="52983" sM="0.11">
+												<lM z="52984" b="1.0" m="1.0" nR="false"/>
+												<m ref="52944"/>
+												<c z="52985">100,165,255,255</c>
+												<cC z="52986">100,165,255,75</cC>
+												<s z="52987">
+													<ESlotData z="52988" a="180.0" bL="7.04" gS="5.2799997" w="1.76" we="1.0">
+														<o z="52989">-3.96|1.3199999</o>
+													</ESlotData>
+													<ESlotData z="52990" a="180.0" bL="7.04" gS="5.2799997" w="1.76" we="1.0">
+														<o z="52991">-4.4|0.0</o>
+													</ESlotData>
+													<ESlotData z="52992" a="180.0" bL="7.04" gS="5.2799997" w="1.76" we="1.0">
+														<o z="52993">-3.96|-1.21</o>
+													</ESlotData>
+												</s>
+												<cl z="52994">
+													<ESlotData z="52995" a="180.0" bL="7.0400004" gS="5.28" w="1.76" we="1.0">
+														<o z="52996">-4.106667|0.036666658</o>
+													</ESlotData>
+												</cl>
+												<aF z="52997" b="1.0" i="0.5" o="0.5" s="IN" d="false" u="false"/>
+												<fF z="52998" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+											</eG>
+											<fMod z="52999" a="1200.0" m="360.0" r="35.199978" f="25.47583"/>
+											<jClr z="53000">100,165,255,200</jClr>
+											<eC z="53001">
+												<b ref="52985"/>
+												<c ref="52985"/>
+												<d cl="l-h-m" z="53002"/>
+											</eC>
+											<eWM z="53003" b="1.0" c="2.0">
+												<d cl="l-h-m" z="53004">
+													<e>
+														<st>sustained_burn_ability_mod</st>
+														<VShiftData z="53005" t="2.0" s="1.0">
+															<f z="53006" b="1.0" i="1.0" o="1.0" s="OUT" d="true" u="false"/>
+														</VShiftData>
+													</e>
+												</d>
+											</eWM>
+											<eHM z="53007" b="1.0" c="3.0">
+												<d cl="l-h-m" z="53008">
+													<e>
+														<st>sustained_burn_ability_mod</st>
+														<VShiftData z="53009" t="3.0" s="1.0">
+															<f z="53010" b="1.0" i="1.0" o="1.0" s="OUT" d="true" u="false"/>
+														</VShiftData>
+													</e>
+												</d>
+											</eHM>
+											<eGC z="53011">
+												<b ref="52985"/>
+												<c ref="52985"/>
+												<d cl="l-h-m" z="53012"/>
+											</eGC>
+											<eGSM z="53013" b="1.0" c="1.5">
+												<d cl="l-h-m" z="53014">
+													<e>
+														<st>sustained_burn_ability_mod</st>
+														<VShiftData z="53015" t="1.5" s="1.0">
+															<f z="53016" b="1.0" i="1.0" o="1.0" s="OUT" d="true" u="false"/>
+														</VShiftData>
+													</e>
+												</d>
+											</eGSM>
+											<cC z="53017">
+												<b ref="52986"/>
+												<c z="53018">100,165,255,165</c>
+												<d cl="l-h-m" z="53019">
+													<e>
+														<st>sustained_burn_ability_mod</st>
+														<CShiftData z="53020">
+															<t ref="52985"/>
+															<s z="53021" b="1.0" i="1.0" o="1.0" s="OUT" d="true" u="false"/>
+															<shift>0.5</shift>
+														</CShiftData>
+													</e>
+												</d>
+											</cC>
+											<cWM z="53022" b="1.0" c="1.0">
+												<d cl="l-h-m" z="53023"/>
+											</cWM>
+											<cDM z="53024" b="1.0" c="1.0">
+												<d cl="l-h-m" z="53025"/>
+											</cDM>
+											<gC z="53026">
+												<b z="53027">0,0,0,0</b>
+												<c ref="53027"/>
+												<d cl="l-h-m" z="53028"/>
+											</gC>
+											<wEC z="53029">
+												<b z="53030">0,0,0,0</b>
+												<c ref="53030"/>
+												<d cl="l-h-m" z="53031"/>
+											</wEC>
+											<wEDX z="53032" b="0.0" c="0.0">
+												<d cl="l-h-m" z="53033"/>
+											</wEDX>
+											<wEDY z="53034" b="0.0" c="0.0">
+												<d cl="l-h-m" z="53035"/>
+											</wEDY>
+											<zero z="53036">0.0|0.0</zero>
+										</CampaignFleetMemberView>
+									</e>
+									<e>
+										<FMmbr ref="52952"/>
+										<CampaignFleetMemberView z="53037" oF="25.949615" tR="0.0" mTR="120.0" mS="14.0" sM="0.11" sSO="2.0" facing="25.47583" jC="7" mJR="15.0" pAn="200.62573" oOv="false" uLi="true" eAM="1.0" wOff="0.13829894">
+											<f ref="52923"/>
+											<m ref="52952"/>
+											<fa z="53038" b="1.0" i="1.0" o="1.5" s="IDLE" d="false" u="false"/>
+											<oL z="53039">0.0|0.0</oL>
+											<dO z="53040">-8.841977|-3.3280168</dO>
+											<mM z="53041" a="7.0" s="14.0" sC="false">
+												<v z="53042">-5.422458|-1.3078202</v>
+												<l z="53043">5.7894845|-3.5008445</l>
+												<aV z="53044">-6.983653|0.47811654</aV>
+												<hardSpeedLimit>-1.0</hardSpeedLimit>
+											</mM>
+											<eG z="53045" sM="0.11">
+												<lM z="53046" b="1.0" m="1.0" nR="false"/>
+												<m ref="52952"/>
+												<c z="53047">255,145,75,255</c>
+												<cC z="53048">150,120,100,75</cC>
+												<s z="53049">
+													<ESlotData z="53050" a="180.0" bL="4.4" gS="3.3000002" w="1.1" we="1.0">
+														<o z="53051">-2.97|1.43</o>
+													</ESlotData>
+													<ESlotData z="53052" a="180.0" bL="4.4" gS="3.3000002" w="1.1" we="1.0">
+														<o z="53053">-2.97|-1.43</o>
+													</ESlotData>
+													<ESlotData z="53054" a="180.0" bL="3.3" gS="2.475" w="1.0" we="1.0">
+														<o z="53055">-2.31|3.08</o>
+													</ESlotData>
+													<ESlotData z="53056" a="180.0" bL="3.3" gS="2.475" w="1.0" we="1.0">
+														<o z="53057">-2.31|-3.08</o>
+													</ESlotData>
+												</s>
+												<cl z="53058">
+													<ESlotData z="53059" a="180.0" bL="3.876191" gS="2.907143" w="1.1" we="1.0">
+														<o z="53060">-2.6557143|0.0</o>
+													</ESlotData>
+												</cl>
+												<aF z="53061" b="1.0" i="0.5" o="0.5" s="IN" d="false" u="false"/>
+												<fF z="53062" b="1.0" i="1.0" o="1.0" s="IDLE" d="false" u="false"/>
+											</eG>
+											<fMod z="53063" a="1200.0" m="360.0" r="35.199978" f="25.47583"/>
+											<jClr z="53064">255,145,75,200</jClr>
+											<eC z="53065">
+												<b ref="53047"/>
+												<c ref="53047"/>
+												<d cl="l-h-m" z="53066"/>
+											</eC>
+											<eWM z="53067" b="1.0" c="2.0">
+												<d cl="l-h-m" z="53068">
+													<e>
+														<st>sustained_burn_ability_mod</st>
+														<VShiftData z="53069" t="2.0" s="1.0">
+															<f z="53070" b="1.0" i="1.0" o="1.0" s="OUT" d="true" u="false"/>
+														</VShiftData>
+													</e>
+												</d>
+											</eWM>
+											<eHM z="53071" b="1.0" c="3.0">
+												<d cl="l-h-m" z="53072">
+													<e>
+														<st>sustained_burn_ability_mod</st>
+														<VShiftData z="53073" t="3.0" s="1.0">
+															<f z="53074" b="1.0" i="1.0" o="1.0" s="OUT" d="true" u="false"/>
+														</VShiftData>
+													</e>
+												</d>
+											</eHM>
+											<eGC z="53075">
+												<b ref="53047"/>
+												<c ref="53047"/>
+												<d cl="l-h-m" z="53076"/>
+											</eGC>
+											<eGSM z="53077" b="1.0" c="1.5">
+												<d cl="l-h-m" z="53078">
+													<e>
+														<st>sustained_burn_ability_mod</st>
+														<VShiftData z="53079" t="1.5" s="1.0">
+															<f z="53080" b="1.0" i="1.0" o="1.0" s="OUT" d="true" u="false"/>
+														</VShiftData>
+													</e>
+												</d>
+											</eGSM>
+											<cC z="53081">
+												<b ref="53048"/>
+												<c z="53082">202,132,87,165</c>
+												<d cl="l-h-m" z="53083">
+													<e>
+														<st>sustained_burn_ability_mod</st>
+														<CShiftData z="53084">
+															<t ref="53047"/>
+															<s z="53085" b="1.0" i="1.0" o="1.0" s="OUT" d="true" u="false"/>
+															<shift>0.5</shift>
+														</CShiftData>
+													</e>
+												</d>
+											</cC>
+											<cWM z="53086" b="1.0" c="1.0">
+												<d cl="l-h-m" z="53087"/>
+											</cWM>
+											<cDM z="53088" b="1.0" c="1.0">
+												<d cl="l-h-m" z="53089"/>
+											</cDM>
+											<gC z="53090">
+												<b z="53091">0,0,0,0</b>
+												<c ref="53091"/>
+												<d cl="l-h-m" z="53092"/>
+											</gC>
+											<wEC z="53093">
+												<b z="53094">0,0,0,0</b>
+												<c ref="53094"/>
+												<d cl="l-h-m" z="53095"/>
+											</wEC>
+											<wEDX z="53096" b="0.0" c="0.0">
+												<d cl="l-h-m" z="53097"/>
+											</wEDX>
+											<wEDY z="53098" b="0.0" c="0.0">
+												<d cl="l-h-m" z="53099"/>
+											</wEDY>
+											<zero z="53100">0.0|0.0</zero>
+										</CampaignFleetMemberView>
+									</e>
+								</views>
+								<sortedViews z="53101">
+									<comparator cl="com.fs.starfarer.campaign.util.CollectionView$1" z="53102">
+										<outer-class ref="52973"/>
+									</comparator>
+									<CampaignFleetMemberView ref="52975"/>
+								</sortedViews>
+								<orphaned z="53103">
+									<FMmbr ref="52952"/>
+									<FMmbr ref="52944"/>
+								</orphaned>
+								<notified z="53104"/>
+							</shipViews>
+							<lightSource cl="Plnt" ref="52742"/>
+							<lightColor z="53105">255,240,220,255</lightColor>
+							<contrails z="53106">
+								<contrails z="53107">
+									<e>
+										<st>80d1_1_0</st>
+										<Contrail z="53108" r="false" tL="142.59839" w="3.3000002" d="0.75" minSL="5.0" maxSL="50.0" m="WIDEN" bM="GLOW" aC="true">
+											<src cl="st">80d1_1_0</src>
+											<points z="53109">
+												<ConPt z="53110" w="28.05" d="0.75" mW="3.3" mB="0.0" e="0.75" pr="1.0" dTP="0.0" tC="37.58808" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53111">2825.88|-3068.27</pt>
+													<dTN z="53112">0.54|0.83</dTN>
+													<pp z="53113">0.85|-0.51</pp>
+													<v z="53114">-52.4|-85.16</v>
+												</ConPt>
+												<ConPt z="53115" w="28.05" d="0.75" mW="3.3" mB="1.0" e="0.75" pr="1.0" dTP="5.8" tC="37.610756" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53116">2827.06|-3062.14</pt>
+													<dTN z="53117">0.57|0.81</dTN>
+													<pp z="53118">0.83|-0.54</pp>
+													<v z="53119">-55.09|-83.45</v>
+												</ConPt>
+												<ConPt z="53120" w="26.95" d="0.75" mW="3.3" mB="1.0" e="0.71" pr="0.95" dTP="5.84" tC="37.633583" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53121">2828.54|-3056.07</pt>
+													<dTN z="53122">0.6|0.79</dTN>
+													<pp z="53123">0.81|-0.57</pp>
+													<v z="53124">-57.72|-81.65</v>
+												</ConPt>
+												<ConPt z="53125" w="25.85" d="0.75" mW="3.3" mB="1.0" e="0.68" pr="0.91" dTP="5.88" tC="37.656567" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53126">2830.31|-3050.08</pt>
+													<dTN z="53127">0.62|0.78</dTN>
+													<pp z="53128">0.79|-0.6</pp>
+													<v z="53129">-60.3|-79.77</v>
+												</ConPt>
+												<ConPt z="53130" w="24.75" d="0.75" mW="3.3" mB="1.0" e="0.65" pr="0.86" dTP="5.92" tC="37.679718" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53131">2832.37|-3044.17</pt>
+													<dTN z="53132">0.64|0.76</dTN>
+													<pp z="53133">0.78|-0.62</pp>
+													<v z="53134">-62.81|-77.81</v>
+												</ConPt>
+												<ConPt z="53135" w="23.65" d="0.75" mW="3.3" mB="1.0" e="0.61" pr="0.82" dTP="5.97" tC="37.703045" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53136">2834.73|-3038.35</pt>
+													<dTN z="53137">0.66|0.74</dTN>
+													<pp z="53138">0.76|-0.64</pp>
+													<v z="53139">-65.26|-75.76</v>
+												</ConPt>
+												<ConPt z="53140" w="22.55" d="0.75" mW="3.3" mB="1.0" e="0.58" pr="0.77" dTP="6.01" tC="37.72655" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53141">2837.36|-3032.65</pt>
+													<dTN z="53142">0.69|0.72</dTN>
+													<pp z="53143">0.74|-0.66</pp>
+													<v z="53144">-67.64|-73.65</v>
+												</ConPt>
+												<ConPt z="53145" w="21.45" d="0.75" mW="3.3" mB="1.0" e="0.55" pr="0.73" dTP="6.06" tC="37.750248" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53146">2840.28|-3027.05</pt>
+													<dTN z="53147">0.71|0.7</dTN>
+													<pp z="53148">0.72|-0.69</pp>
+													<v z="53149">-69.95|-71.45</v>
+												</ConPt>
+												<ConPt z="53150" w="20.35" d="0.75" mW="3.3" mB="1.0" e="0.51" pr="0.68" dTP="6.11" tC="37.774136" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53151">2843.47|-3021.58</pt>
+													<dTN z="53152">0.73|0.68</dTN>
+													<pp z="53153">0.7|-0.71</pp>
+													<v z="53154">-72.19|-69.19</v>
+												</ConPt>
+												<ConPt z="53155" w="19.25" d="0.75" mW="3.3" mB="1.0" e="0.48" pr="0.64" dTP="6.16" tC="37.798225" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53156">2846.92|-3016.24</pt>
+													<dTN z="53157">0.74|0.66</dTN>
+													<pp z="53158">0.68|-0.73</pp>
+													<v z="53159">-74.36|-66.85</v>
+												</ConPt>
+												<ConPt z="53160" w="18.15" d="0.75" mW="3.3" mB="1.0" e="0.45" pr="0.6" dTP="6.21" tC="37.82252" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53161">2850.64|-3011.03</pt>
+													<dTN z="53162">0.76|0.63</dTN>
+													<pp z="53163">0.66|-0.74</pp>
+													<v z="53164">-76.46|-64.44</v>
+												</ConPt>
+												<ConPt z="53165" w="17.05" d="0.75" mW="3.3" mB="1.0" e="0.41" pr="0.55" dTP="6.27" tC="37.847023" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53166">2854.93|-3006.38</pt>
+													<dTN z="53167">0.78|0.61</dTN>
+													<pp z="53168">0.63|-0.76</pp>
+													<v z="53169">-77.75|-62.88</v>
+												</ConPt>
+												<ConPt z="53170" w="15.95" d="0.75" mW="3.3" mB="1.0" e="0.38" pr="0.51" dTP="6.32" tC="37.871735" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53171">2859.69|-3002.21</pt>
+													<dTN z="53172">0.78|0.61</dTN>
+													<pp z="53173">0.61|-0.78</pp>
+													<v z="53174">-78.28|-62.21</v>
+												</ConPt>
+												<ConPt z="53175" w="14.85" d="0.75" mW="3.3" mB="1.0" e="0.35" pr="0.46" dTP="6.38" tC="37.89666" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53176">2864.04|-2997.4</pt>
+													<dTN z="53177">0.8|0.59</dTN>
+													<pp z="53178">0.61|-0.78</pp>
+													<v z="53179">-80.23|-59.68</v>
+												</ConPt>
+												<ConPt z="53180" w="13.75" d="0.75" mW="3.3" mB="1.0" e="0.31" pr="0.42" dTP="6.43" tC="37.921806" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53181">2868.86|-2993.08</pt>
+													<dTN z="53182">0.81|0.57</dTN>
+													<pp z="53183">0.59|-0.8</pp>
+													<v z="53184">-81.42|-58.05</v>
+												</ConPt>
+												<ConPt z="53185" w="12.65" d="0.75" mW="3.3" mB="1.0" e="0.28" pr="0.37" dTP="6.49" tC="37.94718" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53186">2873.65|-2988.58</pt>
+													<dTN z="53187">0.83|0.55</dTN>
+													<pp z="53188">0.57|-0.81</pp>
+													<v z="53189">-83.23|-55.42</v>
+												</ConPt>
+												<ConPt z="53190" w="11.55" d="0.75" mW="3.3" mB="1.0" e="0.25" pr="0.33" dTP="6.55" tC="37.972786" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53191">2878.83|-2984.52</pt>
+													<dTN z="53192">0.84|0.53</dTN>
+													<pp z="53193">0.55|-0.83</pp>
+													<v z="53194">-84.33|-53.73</v>
+												</ConPt>
+												<ConPt z="53195" w="10.45" d="0.75" mW="3.3" mB="1.0" e="0.21" pr="0.28" dTP="6.61" tC="37.99862" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53196">2884.32|-2980.83</pt>
+													<dTN z="53197">0.85|0.52</dTN>
+													<pp z="53198">0.53|-0.84</pp>
+													<v z="53199">-84.79|-53.0</v>
+												</ConPt>
+												<ConPt z="53200" w="9.35" d="0.75" mW="3.3" mB="1.0" e="0.18" pr="0.24" dTP="6.67" tC="38.024685" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53201">2889.92|-2977.2</pt>
+													<dTN z="53202">0.85|0.51</dTN>
+													<pp z="53203">0.52|-0.85</pp>
+													<v z="53204">-85.25|-52.27</v>
+												</ConPt>
+												<ConPt z="53205" w="8.25" d="0.75" mW="3.3" mB="1.0" e="0.15" pr="0.2" dTP="6.73" tC="38.050987" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53206">2895.53|-2973.46</pt>
+													<dTN z="53207">0.86|0.49</dTN>
+													<pp z="53208">0.51|-0.85</pp>
+													<v z="53209">-86.29|-50.53</v>
+												</ConPt>
+												<ConPt z="53210" w="7.7" d="0.75" mW="3.3" mB="1.0" e="0.13" pr="0.17" dTP="5.14" tC="38.071083" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53211">2899.91|-2970.77</pt>
+													<dTN z="53212">0.86|0.49</dTN>
+													<pp z="53213">0.49|-0.86</pp>
+													<v z="53214">-86.94|-49.4</v>
+												</ConPt>
+												<ConPt z="53215" w="6.6" d="0.75" mW="3.3" mB="1.0" e="0.1" pr="0.13" dTP="6.87" tC="38.097942" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53216">2905.65|-2966.92</pt>
+													<dTN z="53217">0.88|0.46</dTN>
+													<pp z="53218">0.49|-0.86</pp>
+													<v z="53219">-89.27|-45.05</v>
+												</ConPt>
+												<ConPt z="53220" w="5.5" d="0.75" mW="3.3" mB="1.0" e="0.06" pr="0.08" dTP="5.12" tC="38.117947" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53221">2910.1|-2964.37</pt>
+													<dTN z="53222">0.89|0.44</dTN>
+													<pp z="53223">0.46|-0.88</pp>
+													<v z="53224">-90.41|-42.71</v>
+												</ConPt>
+												<ConPt z="53225" w="4.4" d="0.75" mW="3.3" mB="1.0" e="0.03" pr="0.04" dTP="6.95" tC="38.145107" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53226">2916.32|-2961.27</pt>
+													<pp z="53227">0.44|-0.89</pp>
+													<v z="53228">-90.78|-41.93</v>
+												</ConPt>
+											</points>
+											<lP z="53229">2919.3545|-2959.8738</lP>
+											<c z="53230">202,132,87,165</c>
+											<widthMultiplier>7.5</widthMultiplier>
+										</Contrail>
+									</e>
+									<e>
+										<st>80cf_1_0</st>
+										<Contrail z="53231" r="false" tL="145.27554" w="5.2799997" d="0.75" minSL="5.0" maxSL="50.0" m="WIDEN" bM="GLOW" aC="true">
+											<src cl="st">80cf_1_0</src>
+											<points z="53232">
+												<ConPt z="53233" w="44.87" d="0.75" mW="5.28" mB="0.0" e="0.75" pr="1.0" dTP="0.0" tC="37.658222" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53234">2817.59|-3080.6</pt>
+													<dTN z="53235">0.51|0.85</dTN>
+													<pp z="53236">0.87|-0.47</pp>
+													<v z="53237">-50.79|-86.14</v>
+												</ConPt>
+												<ConPt z="53238" w="44.87" d="0.75" mW="5.28" mB="1.0" e="0.75" pr="1.0" dTP="5.69" tC="37.680485" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53239">2818.46|-3074.45</pt>
+													<dTN z="53240">0.54|0.83</dTN>
+													<pp z="53241">0.85|-0.51</pp>
+													<v z="53242">-53.51|-84.47</v>
+												</ConPt>
+												<ConPt z="53243" w="44.0" d="0.75" mW="5.28" mB="1.0" e="0.73" pr="0.97" dTP="5.74" tC="37.70292" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53244">2819.64|-3068.36</pt>
+													<dTN z="53245">0.57|0.82</dTN>
+													<pp z="53246">0.83|-0.54</pp>
+													<v z="53247">-56.17|-82.72</v>
+												</ConPt>
+												<ConPt z="53248" w="42.24" d="0.75" mW="5.28" mB="1.0" e="0.7" pr="0.93" dTP="5.79" tC="37.725536" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53249">2821.12|-3062.32</pt>
+													<dTN z="53250">0.59|0.8</dTN>
+													<pp z="53251">0.82|-0.57</pp>
+													<v z="53252">-58.78|-80.89</v>
+												</ConPt>
+												<ConPt z="53253" w="40.48" d="0.75" mW="5.28" mB="1.0" e="0.66" pr="0.88" dTP="5.83" tC="37.748344" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53254">2822.91|-3056.36</pt>
+													<dTN z="53255">0.62|0.78</dTN>
+													<pp z="53256">0.8|-0.59</pp>
+													<v z="53257">-61.33|-78.98</v>
+												</ConPt>
+												<ConPt z="53258" w="38.72" d="0.75" mW="5.28" mB="1.0" e="0.63" pr="0.84" dTP="5.88" tC="37.77135" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53259">2824.99|-3050.49</pt>
+													<dTN z="53260">0.64|0.76</dTN>
+													<pp z="53261">0.78|-0.62</pp>
+													<v z="53262">-63.82|-76.98</v>
+												</ConPt>
+												<ConPt z="53263" w="36.96" d="0.75" mW="5.28" mB="1.0" e="0.6" pr="0.8" dTP="5.94" tC="37.794563" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53264">2827.37|-3044.69</pt>
+													<dTN z="53265">0.66|0.74</dTN>
+													<pp z="53266">0.76|-0.64</pp>
+													<v z="53267">-66.24|-74.91</v>
+												</ConPt>
+												<ConPt z="53268" w="35.2" d="0.75" mW="5.28" mB="1.0" e="0.56" pr="0.75" dTP="5.99" tC="37.817986" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53269">2830.03|-3039.0</pt>
+													<dTN z="53270">0.68|0.72</dTN>
+													<pp z="53271">0.74|-0.66</pp>
+													<v z="53272">-68.59|-72.76</v>
+												</ConPt>
+												<ConPt z="53273" w="33.44" d="0.75" mW="5.28" mB="1.0" e="0.53" pr="0.71" dTP="6.05" tC="37.84163" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53274">2832.97|-3033.42</pt>
+													<dTN z="53275">0.7|0.7</dTN>
+													<pp z="53276">0.72|-0.68</pp>
+													<v z="53277">-70.88|-70.53</v>
+												</ConPt>
+												<ConPt z="53278" w="31.68" d="0.75" mW="5.28" mB="1.0" e="0.5" pr="0.66" dTP="6.11" tC="37.865498" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53279">2836.19|-3027.96</pt>
+													<dTN z="53280">0.72|0.68</dTN>
+													<pp z="53281">0.7|-0.7</pp>
+													<v z="53282">-73.09|-68.24</v>
+												</ConPt>
+												<ConPt z="53283" w="29.92" d="0.75" mW="5.28" mB="1.0" e="0.46" pr="0.62" dTP="6.16" tC="37.8896" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53284">2839.68|-3022.62</pt>
+													<dTN z="53285">0.74|0.66</dTN>
+													<pp z="53286">0.68|-0.72</pp>
+													<v z="53287">-75.23|-65.87</v>
+												</ConPt>
+												<ConPt z="53288" w="28.16" d="0.75" mW="5.28" mB="1.0" e="0.43" pr="0.57" dTP="6.23" tC="37.913937" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53289">2843.44|-3017.42</pt>
+													<dTN z="53290">0.77|0.63</dTN>
+													<pp z="53291">0.66|-0.74</pp>
+													<v z="53292">-77.29|-63.44</v>
+												</ConPt>
+												<ConPt z="53293" w="26.4" d="0.75" mW="5.28" mB="1.0" e="0.4" pr="0.53" dTP="6.28" tC="37.9385" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53294">2848.08|-3013.17</pt>
+													<dTN z="53295">0.77|0.62</dTN>
+													<pp z="53296">0.63|-0.77</pp>
+													<v z="53297">-77.83|-62.77</v>
+												</ConPt>
+												<ConPt z="53298" w="24.64" d="0.75" mW="5.28" mB="1.0" e="0.36" pr="0.48" dTP="6.35" tC="37.963306" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53299">2852.56|-3008.59</pt>
+													<dTN z="53300">0.78|0.61</dTN>
+													<pp z="53301">0.62|-0.77</pp>
+													<v z="53302">-79.09|-61.19</v>
+												</ConPt>
+												<ConPt z="53303" w="22.88" d="0.75" mW="5.28" mB="1.0" e="0.33" pr="0.44" dTP="6.41" tC="37.988365" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53304">2856.96|-3003.77</pt>
+													<dTN z="53305">0.8|0.59</dTN>
+													<pp z="53306">0.61|-0.78</pp>
+													<v z="53307">-81.0|-58.63</v>
+												</ConPt>
+												<ConPt z="53308" w="21.12" d="0.75" mW="5.28" mB="1.0" e="0.3" pr="0.4" dTP="6.47" tC="38.01367" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53309">2861.82|-2999.43</pt>
+													<dTN z="53310">0.81|0.58</dTN>
+													<pp z="53311">0.59|-0.8</pp>
+													<v z="53312">-82.17|-56.98</v>
+												</ConPt>
+												<ConPt z="53313" w="19.35" d="0.75" mW="5.28" mB="1.0" e="0.26" pr="0.35" dTP="6.54" tC="38.03924" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53314">2866.67|-2994.9</pt>
+													<dTN z="53315">0.83|0.55</dTN>
+													<pp z="53316">0.58|-0.81</pp>
+													<v z="53317">-83.94|-54.33</v>
+												</ConPt>
+												<ConPt z="53318" w="17.6" d="0.75" mW="5.28" mB="1.0" e="0.23" pr="0.31" dTP="6.6" tC="38.065056" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53319">2872.07|-2991.09</pt>
+													<dTN z="53320">0.84|0.54</dTN>
+													<pp z="53321">0.55|-0.83</pp>
+													<v z="53322">-84.41|-53.61</v>
+												</ConPt>
+												<ConPt z="53323" w="15.83" d="0.75" mW="5.28" mB="1.0" e="0.2" pr="0.26" dTP="6.67" tC="38.09113" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53324">2877.59|-2987.33</pt>
+													<dTN z="53325">0.84|0.53</dTN>
+													<pp z="53326">0.54|-0.84</pp>
+													<v z="53327">-84.87|-52.88</v>
+												</ConPt>
+												<ConPt z="53328" w="14.07" d="0.75" mW="5.28" mB="1.0" e="0.16" pr="0.22" dTP="6.74" tC="38.117474" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53329">2883.11|-2983.42</pt>
+													<dTN z="53330">0.85|0.51</dTN>
+													<pp z="53331">0.53|-0.84</pp>
+													<v z="53332">-85.92|-51.15</v>
+												</ConPt>
+												<ConPt z="53333" w="12.32" d="0.75" mW="5.28" mB="1.0" e="0.13" pr="0.17" dTP="8.59" tC="38.15104" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53334">2890.33|-2978.75</pt>
+													<dTN z="53335">0.85|0.51</dTN>
+													<pp z="53336">0.51|-0.85</pp>
+													<v z="53337">-86.94|-49.4</v>
+												</ConPt>
+												<ConPt z="53338" w="10.56" d="0.75" mW="5.28" mB="1.0" e="0.1" pr="0.13" dTP="6.94" tC="38.178154" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53339">2896.04|-2974.72</pt>
+													<dTN z="53340">0.87|0.48</dTN>
+													<pp z="53341">0.51|-0.85</pp>
+													<v z="53342">-89.27|-45.05</v>
+												</ConPt>
+												<ConPt z="53343" w="8.8" d="0.75" mW="5.28" mB="1.0" e="0.06" pr="0.08" dTP="5.15" tC="38.198288" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53344">2900.48|-2972.09</pt>
+													<dTN z="53345">0.88|0.45</dTN>
+													<pp z="53346">0.48|-0.87</pp>
+													<v z="53347">-90.41|-42.71</v>
+												</ConPt>
+												<ConPt z="53348" w="7.04" d="0.75" mW="5.28" mB="1.0" e="0.03" pr="0.04" dTP="7.01" tC="38.225704" fO="false" oM="1.0" lPM="1.0" eWFO="1000.0">
+													<pt z="53349">2906.71|-2968.86</pt>
+													<pp z="53350">0.45|-0.88</pp>
+													<v z="53351">-90.78|-41.93</v>
+												</ConPt>
+											</points>
+											<lP z="53352">2909.7407|-2967.4631</lP>
+											<c z="53353">100,165,255,165</c>
+											<widthMultiplier>7.5</widthMultiplier>
+										</Contrail>
+									</e>
+								</contrails>
+							</contrails>
+						</fV>
+						<mM z="53354" a="79.99999" s="400.0" sC="true">
+							<v z="53355">104.10714|50.02719</v>
+							<l z="53356">2917.6206|-2954.4473</l>
+							<aV z="53357">78.63219|-14.730179</aV>
+							<d cl="Flt" ref="52923"/>
+							<hardSpeedLimit>-1.0</hardSpeedLimit>
+						</mM>
+						<fM z="53358" a="1040.0" m="720.0" r="5.5466003" f="25.949615"/>
+						<s z="53359">
+							<dynamic z="53360">
+								<stats z="53361"/>
+								<mods z="53362"/>
+							</dynamic>
+							<aM z="53363" b="1.0" m="0.19999999" nR="false">
+								<mMs z="53364" s="sustained_burn_ability_mod" v="0.19999999"/>
+							</aM>
+							<fMBM z="53365" fB="0.0" m="1.0" pM="100.0" nR="false">
+								<pBs z="53366" s="sustained_burn_ability_mod" d="Sustained burn" v="100.0"/>
+							</fMBM>
+							<dRM z="53367" fB="0.0" m="1.0" pM="100.0" nR="false">
+								<pBs z="53368" s="sustained_burn_ability_mod" d="Sustained burn" v="100.0"/>
+							</dRM>
+						</s>
+						<iT cl="Plnt" ref="52871"/>
+						<aMg z="53369">
+							<randomSeed>8100340422882672640</randomSeed>
+							<tracker z="53370" i="0.5" a="1.5" c="1.195034" e="1.1833323" ie="false"/>
+							<fleet ref="52923"/>
+							<currentChance>0.0</currentChance>
+							<context z="53371">
+								<daysWithoutSupplies>0.0</daysWithoutSupplies>
+							</context>
+						</aMg>
+						<lgst z="53372">
+							<f ref="52923"/>
+						</lgst>
+						<nCP z="53373" b="0.0" i="0.1" o="0.1" s="IDLE" d="true" u="false"/>
+					</Flt>
+				</saved>
+			</o>
+			<b z="53374" hM="false">
+				<bgO z="53375">215.4869|384.84204</bgO>
+				<s z="53376" o="graphics/backgrounds/background4.jpg" t="graphics/backgrounds/background1.jpg">
+					<d cl="BackgroundAndStars" ref="53374"/>
+				</s>
+			</b>
+			<hP z="53377" d="1.0" nF="1" lp="false" r="false" e="0.0" pr="0.0" cF="0" cL="0" sN="false" l="500">
+				<p z="53378"/>
+			</hP>
+			<l z="53379">-2300.0|-7950.0</l>
+			<lC ref="53105"/>
+			<lH z="53380" b="0.5899273" i="10.0" o="10.0" s="OUT" d="true" u="true"/>
+			<fS z="53381"/>
+			<pDat z="53382"/>
+			<sPts z="53383"/>
+			<scr z="53384"/>
+			<activeThisFrame>true</activeThisFrame>
+			<tags z="53385">
+				<st>theme_core_unpopulated</st>
+			</tags>
+			<memory z="53386">
+				<d z="53387"/>
+			</memory>
+			<star ref="52742"/>
+			<hA cl="LocationToken" ref="52731"/>
+		</s>
+		<a cl="LocationToken" ref="52731"/>
+	</orbit>
+	<id>321</id>
+	<faction ref="70"/>
+	<tags z="53388">
+		<st>system_anchor</st>
+	</tags>
+	<memory z="53389">
+		<d z="53390">
+			<e>
+				<st>$anchor_starSystem</st>
+				<Sstm ref="52734"/>
+			</e>
+		</d>
+	</memory>
+</LocationToken>

@@ -1,0 +1,23 @@
+<CCEnt z="11472" fL="STATIONS">
+	<loc z="11473">6283.1323|-3085.8135</loc>
+	<vel z="11474">0.0|0.0</vel>
+	<j0>{"f6":90,"f0":"Askonia Gate","f3":"inactive_gate","f2":[255,210,200,255],"f4":"askonia_gate"}</j0>
+	<ow ref="69"/>
+	<orbit cl="COrbt" z="11475" r="7000.0" op="230.0" ca="333.84314">
+		<e cl="CCEnt" ref="11472"/>
+		<f cl="Plnt" ref="9954"/>
+	</orbit>
+	<cL cl="Sstm" ref="9957"/>
+	<ls cl="Plnt" ref="9954"/>
+	<me z="11476">
+		<d z="11477"/>
+	</me>
+	<sc z="11478"/>
+	<cV z="11479" sn="graphics/illustrations/dead_gate.jpg" sIW="640.0" sIH="400.0" sRSI="true" sIX="0.0" sIY="0.0" sIDW="480.0" sIWH="300.0"/>
+	<tags z="11480">
+		<st>neutrino</st>
+		<st>gate</st>
+	</tags>
+	<j1>{"f1":192,"f0":192,"f3":-1,"f2":120,"f5":"inactive_gate","f4":-1}</j1>
+	<la z="11481" enum-type="CaEnLa">STATIONS</la>
+</CCEnt>
