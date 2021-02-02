@@ -1,4 +1,4 @@
 package core.data.CelestialBodies;
 
-public class CCEnt {
+public class CCEnt_ {
 }
